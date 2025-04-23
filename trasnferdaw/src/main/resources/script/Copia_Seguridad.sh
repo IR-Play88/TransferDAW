@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Definimos la ruta del archivo a copiar y dónde guardarlo
-RUTA_ARCHIVO="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/resources/archivo/export.txt"
+RUTA_ARCHIVO="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/resources/sql/TransferDAW"
 RUTA_COLOCAR="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/resources/backups"
 
 # Fecha actual para nombrar el backup
 FECHA=$(date +"%Y_%m_%d_%H")
-BACKUP="copiaoficial_$FECHA.txt"
+BACKUP="TransferDAW_$FECHA.db"
 
 # Creamos la copia de seguridad
 cp "$RUTA_ARCHIVO" "$RUTA_COLOCAR/$BACKUP"
