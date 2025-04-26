@@ -1,0 +1,23 @@
+@startuml Caso de uso
+left to right direction
+
+actor "Lector" as lector
+actor "Administrador" as administrador
+
+rectangle TransferDAW {
+    usecase "Consultar datos" as ver
+    usecase "Descargar ficha de jugador" as descargar
+    usecase "Añadir datos" as anadir
+    usecase "Modificar datos" as modificar
+    usecase "Eliminar datos" as eliminar
+}
+
+lector <|-- administrador
+
+lector -- ver
+lector -- descargar
+administrador -- anadir
+administrador -- modificar
+administrador -- eliminar
+
+@enduml
