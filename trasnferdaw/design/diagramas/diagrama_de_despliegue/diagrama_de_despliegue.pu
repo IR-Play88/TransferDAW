@@ -1,0 +1,24 @@
+@startuml Diagrama de despliegue
+
+left to right direction
+
+node "PC Usuario" <<device>> {
+    node "Navegador Web" {
+        artifact "Solicitud HTTP" as solicitud
+    }
+}
+
+node "Máquina Virtual" <<device>> {
+    node "Tomcat" {
+        artifact "TransferDAW" as app
+    }
+
+    node "MariaDB" {
+        artifact "Base de datos MariaDB" as db
+    }
+}
+
+solicitud -- app : "puerto 8080"
+app -- db : "puerto 3306"
+
+@enduml
