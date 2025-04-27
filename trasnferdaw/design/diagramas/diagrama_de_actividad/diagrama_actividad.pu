@@ -1,0 +1,104 @@
+@startuml Imprimir ficha del jugador
+|Usuario|
+start
+
+:Acceder a TransferDAW;
+:Consultar lista de jugadores;
+:Seleccionar un jugador;
+
+|Sistema|
+:Generar ficha del jugador seleccionado;
+
+|Usuario|
+:Descargar ficha;
+
+stop
+@enduml
+
+@startuml Ver datos
+|Usuario|
+start
+
+:Acceder a TransferDAW;
+:Seleccionar categoría a consultar;
+:Seleccionar el elemento concreto a visualizar;
+
+|Sistema|
+:Mostrar datos de la categoría seleccionada;
+
+|Usuario|
+:Visualizar la información;
+
+stop
+@enduml
+
+@startuml Añadir información
+|Administrador|
+start
+
+:Acceder a TransferDAW;
+:Seleccionar opción "Añadir datos";
+:Elegir tipo de datos a añadir;
+:Seleccionar el elemento concreto a añadir;
+
+:Introducir la información requerida;
+
+|Sistema|
+:Validar datos introducidos;
+
+if (¿Datos válidos?) then (Sí)
+    :Guardar en base de datos;
+    :Mostrar mensaje de éxito;
+else (No)
+    :Mostrar errores;
+endif
+
+stop
+@enduml
+
+@startuml Modificar información
+|Administrador|
+start
+
+:Acceder a TransferDAW;
+:Seleccionar opción "Modificar datos";
+:Elegir tipo de datos a modificar;
+:Seleccionar el elemento concreto a modificar;
+
+:Editar la información necesaria;
+
+|Sistema|
+:Validar los nuevos datos;
+
+if (¿Datos válidos?) then (Sí)
+    :Actualizar información en la base de datos;
+    :Mostrar mensaje de éxito;
+else (No)
+    :Mostrar errores;
+endif
+
+stop
+@enduml
+
+@startuml Eliminar información
+|Administrador|
+start
+
+:Acceder a TransferDAW;
+:Seleccionar opción "Eliminar datos";
+:Elegir tipo de datos a eliminar;
+:Seleccionar el elemento concreto a eliminar;
+
+|Sistema|
+:Confirmar si realmente desea eliminar;
+
+if (¿Confirmar eliminación?) then (Sí)
+    :Eliminar de la base de datos;
+    :Mostrar mensaje de éxito;
+else (No)
+    :Cancelar operación;
+endif
+
+stop
+@enduml
+
