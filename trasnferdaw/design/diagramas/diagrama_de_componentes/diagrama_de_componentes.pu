@@ -69,177 +69,124 @@ package "model"{
     package bbdd{
         component Database <<java>>
 
-        interface RepresentanteDAO {
+        interface TranferDAWDAO {
             +insertar(representante: Representante): void
             +modificar(representante: Representante): void
             +eliminar(idRepresentante: int): void
             +listar(): List<Representante>
-        }
-
-        interface EntrenadorDAO {
+        
             +insertar(entrenador: Entrenador): void
             +modificar(entrenador: Entrenador): void
             +eliminar(idEntrenador: int): void
             +listar(): List<Entrenador>
-        }
+        
 
-        interface CategoriaPosicionDAO {
             +insertar(categoriaPosicion: CategoriaPosicion): void
             +modificar(categoriaPosicion: CategoriaPosicion): void
             +eliminar(idCategoria: int): void
             +listar(): List<CategoriaPosicion>
-        }
+        
 
-        interface PosicionDAO {
             +insertar(posicion: Posicion): void
             +modificar(posicion: Posicion): void
             +eliminar(idPosicion: int): void
             +listar(): List<Posicion>
-        }
-
-        interface TemporadaDAO {
+     
             +insertar(temporada: Temporada): void
             +modificar(temporada: Temporada): void
             +eliminar(idTemporada: int): void
             +listar(): List<Temporada>
-        }
-
-        interface JugadorDAO {
+        
             +insertar(jugador: Jugador): void
             +modificar(jugador: Jugador): void
             +eliminar(idJugador: int): void
             +listar(): List<Jugador>
             +buscarPorId(int idJugador);
 
-        }
-
-        interface SeleccionDAO {
+        
             +insertar(seleccion: Seleccion): void
             +modificar(seleccion: Seleccion): void
             +eliminar(idSeleccion: int): void
             +listar(): List<Seleccion>
-        }
-
-        interface EquipoDAO {
+     
             +insertar(equipo: Equipo): void
             +modificar(equipo: Equipo): void
             +eliminar(idEquipo: int): void
             +listar(): List<Equipo>
-        }
-
-        interface CompeticionDAO {
+        
             +insertar(competicion: Competicion): void
             +modificar(competicion: Competicion): void
             +eliminar(idCompeticion: int): void
             +listar(): List<Competicion>
-        }
-
-        interface EquipoCompeticionDAO {
+       
             +insertar(equipoCompeticion: EquipoCompeticion): void
             +modificar(equipoCompeticion: EquipoCompeticion): void
             +eliminar(equipoId: int, competicionId: int, temporadaId: int): void
             +listar(): List<EquipoCompeticion>
-        }
-
-        interface ContratoDAO {
+       
             +insertar(contrato: Contrato): void
             +modificar(contrato: Contrato): void
             +eliminar(idContrato: int): void
             +listar(): List<Contrato>
-        }
-
-        interface EstadioDAO {
+        
             +insertar(estadio: Estadio): void
             +modificar(estadio: Estadio): void
             +eliminar(idEstadio: int): void
             +listar(): List<Estadio>
-        }
-
-        interface EquipoEstadioDAO {
+       
             +insertar(equipoEstadio: EquipoEstadio): void
             +modificar(equipoEstadio: EquipoEstadio): void
             +eliminar(equipoId: int, estadioId: int): void
             +listar(): List<EquipoEstadio>
-        }
-
-        interface JugadorPosicionDAO {
+        
             +insertar(jugadorPosicion: JugadorPosicion): void
             +modificar(jugadorPosicion: JugadorPosicion): void
             +eliminar(jugadorId: int, posicionId: int, temporadaId: int): void
             +listar(): List<JugadorPosicion>
-        }
-
-        interface EstadisticasTemporadaDAO {
+       
             +insertar(estadisticasTemporada: EstadisticasTemporada): void
             +modificar(estadisticasTemporada: EstadisticasTemporada): void
             +eliminar(jugadorId: int, temporadaId: int, competicionId: int, equipoId: int): void
             +listar(): List<EstadisticasTemporada>
-        }
-
-        interface TraspasoDAO {
+     
             +insertar(traspaso: Traspaso): void
             +modificar(traspaso: Traspaso): void
             +eliminar(idTraspaso: int): void
             +listar(): List<Traspaso>
-        }
-
-        interface ValorMercadoHistorialDAO {
+        
             +insertar(valorMercadoHistorial: ValorMercadoHistorial): void
             +modificar(valorMercadoHistorial: ValorMercadoHistorial): void
             +eliminar(idHistorial: int): void
             +listar(): List<ValorMercadoHistorial>
-        }
-
-        interface NoticiaDAO {
+       
             +insertar(noticia: Noticia): void
             +modificar(noticia: Noticia): void
             +eliminar(idNoticia: int): void
             +listar(): List<Noticia>
-        }
-
-        interface UsuarioDAO {
+        
             +insertar(usuario: Usuario): void
             +modificar(usuario: Usuario): void
             +eliminar(idUsuario: int): void
             +listar(): List<Usuario>
-        }
-
-        interface EquipoEntrenadorDAO {
+       
             +insertar(equipoEntrenador: EquipoEntrenador): void
             +modificar(equipoEntrenador: EquipoEntrenador): void
             +eliminar(entrenadorId: int, equipoId: int): void
             +listar(): List<EquipoEntrenador>
+        
         }
 
-        interface VistaEstadisticasTotalesDAO {
-            List<EstadisticasTotales> listarTodos();
-            List<EstadisticasTotales> buscarPorJugador(String nombreJugador);
+        interface IEstadistcas_temporada{
+              List<EstadisticasTotales> listarTodos();
+              List<EstadisticasTotales> buscarPorJugador(String nombreJugador);
         }
 
 
     }
 
-    RepresentanteDAO <|.. Database
-    CategoriaPosicionDAO <|.. Database
-    PosicionDAO <|.. Database
-    TemporadaDAO <|.. Database
-    JugadorDAO<|.. Database
-    EquipoDAO <|.. Database
-    CompeticionDAO <|.. Database
-    EquipoCompeticionDAO <|.. Database
-    ContratoDAO <|.. Database
-    JugadorPosicionDAO <|.. Database
-    EntrenadorDAO <|.. Database
-    TraspasoDAO <|.. Database
-    UsuarioDAO <|.. Database
-    EstadisticasTemporadaDAO <|.. Database
-    VistaEstadisticasTotalesDAO <|.. Database
-    EstadioDAO <|.. Database
-    NoticiaDAO <|.. Database
-    EquipoEstadioDAO<|.. Database
-    EquipoEntrenadorDAO <|.. Database
-    ValorMercadoHistorialDAO <|.. Database
-    SeleccionDAO <|.. Database
+    TranferDAWDAO <|.. Database
+    IEstadistcas_temporada <|.. Database
+   
 }
 
 package util{
@@ -269,28 +216,9 @@ package entity{
 
 TransferDAWServlet ..> TransferDAW : use
 TransferDAWServlet ..> Fichero : use
-TransferDAWServlet ..> VistaEstadisticasTotalesDAO : use
-TransferDAWServlet ..> EquipoEntrenadorDAO : use
-TransferDAWServlet ..> UsuarioDAO : use
-TransferDAWServlet ..> NoticiaDAO : use
-TransferDAWServlet ..> ValorMercadoHistorialDAO : use
-TransferDAWServlet ..> TraspasoDAO : use
-TransferDAWServlet ..> EstadisticasTemporadaDAO : use
-TransferDAWServlet ..> JugadorDAO : use
-TransferDAWServlet ..> JugadorPosicionDAO : use
-TransferDAWServlet ..> EquipoEstadioDAO : use
-TransferDAWServlet ..> EstadioDAO : use
-TransferDAWServlet ..> ContratoDAO : use
-TransferDAWServlet ..> EquipoCompeticionDAO : use
-TransferDAWServlet ..> CompeticionDAO : use
-TransferDAWServlet ..> EquipoDAO : use
-TransferDAWServlet ..> SeleccionDAO : use
-TransferDAWServlet ..> TemporadaDAO : use
-TransferDAWServlet ..> PosicionDAO : use
-TransferDAWServlet ..> EntrenadorDAO : use
-TransferDAWServlet ..> RepresentanteDAO : use
-TransferDAWServlet ..> CategoriaPosicionDAO : use
-TransferDAWServlet ..> Fichero : use
+TransferDAWServlet ..> TranferDAWDAO : use
+TransferDAWServlet ..> IEstadistcas_temporada : use
+
 
 TransferDAWServlet ..> TransferDAWException : use
 @enduml
