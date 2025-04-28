@@ -16,13 +16,29 @@ TransferDAWHTML ..> TransferDAWServlet : solicita datos
 TransferDAWJS ..> TransferDAWServlet : hace solicitudes dinámicas
 
 package "es.tierno.daw.transferdaw.model"{
- component TransferDAW
+    component TransferDAW
 
- package data { 
+    package bbdd {
+
         [TransferDAWJDBC] <<java>>
 
         [TransferDAWDAO] <<interface>>
     }
+
+    package util{
+        package input{
+            component Input <<java>>
+        }
+    }
+
+    package exception{
+        component TransferDAWException <<java>>
+    }
+
+    package entity{
+        component TransferDAWEntity <<java>>
+    }
+
 }
 
 TransferDAWServlet --> TransferDAW : manages
@@ -31,5 +47,68 @@ TransferDAWJDBC -|> TransferDAWDAO
 
 @enduml
 
+
+@startuml disenyo
+allow_mixing
+top to bottom direction
+package "view" {
+    component TransferDAWHTML <<html>>
+    component TransferDAWSCSS <<css>>
+    component TransferDAWJS <<javascript>>
+}
+
+package "controller" {
+    component TransferDAWServlet <<servlet>>
+}
+
+TransferDAWHTML ..> TransferDAWServlet : solicita datos
+TransferDAWJS ..> TransferDAWServlet : hace solicitudes dinámicas
+
+package "model"{
+
+    package bbdd{
+        component Database <<java>>
+
+        interface TransferDAWDAO{
+        
+        }
+
+        TransferDAWDAO <|.. Database 
+    }
+
+    package util{
+
+        package input{
+            component Input <<java>>
+            interface Fichero {
+                + leer(): byte[]
+                + escribir(byte[])
+            }
+        } 
+        Fichero <|.. Input  
+
+    }
+
+    
+
+    package exception{
+        component TransferDAWException <<java>>
+    }
+
+    package entity{
+        interface ITransferDAW{
+            
+        }
+
+        component TransferDAW <<java>>
+
+        ITransferDAW <|.. TransferDAW
+    }
+}
+
+TransferDAWServlet ..> ITransferDAW : use
+TransferDAWServlet ..> Fichero : use
+TransferDAWServlet ..> TransferDAWDAO : use
+@enduml
 
 
