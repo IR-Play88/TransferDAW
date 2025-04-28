@@ -1,75 +1,13 @@
-@startuml Diagrama de componentes
-
-left to right direction
-
-package "es.tierno.daw.transferdaw.view" {
-    component TransferDAWHTML <<html>>
-    component TransferDAWSCSS <<css>>
-    component TransferDAWJS <<javascript>>
-}
-
-package "es.tierno.daw.transferdaw.controller" {
-    component TransferDAWServlet <<servlet>>
-}
-
-TransferDAWHTML ..> TransferDAWServlet : solicita datos
-TransferDAWJS ..> TransferDAWServlet : hace solicitudes dinámicas
-
-package "es.tierno.daw.transferdaw.model"{
-    component TransferDAW
-
-    package bbdd {
-
-        [TransferDAWJDBC] <<java>>
-
-        [TransferDAWDAO] <<interface>>
-    }
-
-    package util{
-        package input{
-            component Input <<java>>
-        }
-    }
-
-    package exception{
-        component TransferDAWException <<java>>
-    }
-
-    package entity{
-        component TransferDAWEntity <<java>>
-    }
-
-}
-
-TransferDAWServlet --> TransferDAW : manages
-TransferDAW --> TransferDAWDAO : uses
-TransferDAWJDBC -|> TransferDAWDAO
-
-@enduml
-
-
-@startuml disenyo
+@startuml bbdd
 allow_mixing
+set separator none
 top to bottom direction
-package "view" {
-    component TransferDAWHTML <<html>>
-    component TransferDAWSCSS <<css>>
-    component TransferDAWJS <<javascript>>
-}
-
-package "controller" {
-    component TransferDAWServlet <<servlet>>
-}
-
-TransferDAWHTML ..> TransferDAWServlet : solicita datos
-TransferDAWJS ..> TransferDAWServlet : hace solicitudes dinámicas
-
-package "model"{
-
     package bbdd{
-        component Database <<java>>
+        enum Database{
+            MARIADB, MOCK
+        }
 
-        interface TranferDAWDAO {
+        interface TransferDAWDAO {
             +insertar(representante: Representante): void
             +modificar(representante: Representante): void
             +eliminar(idRepresentante: int): void
@@ -177,45 +115,36 @@ package "model"{
             +List<EstadisticasTotales> listarTodos();
             +List<EstadisticasTotales> buscarPorJugador(String nombreJugador);
         }
+    
 
-
-    }
-
-    TranferDAWDAO <|.. Database
-
-}
-
-package util{
-
-    package input{
-        component Input <<java>>
-        interface Fichero {
-            + leer(): byte[]
-            + escribir(byte[])
+        class TransferDAWDBFactory{
+            {static} obtener(d:Database): MercaDAO
         }
+
+        abstract TransferDAWDAOImp {
+            - {abstract} connection: Connection  
+            + {abstract} crearCliente()
+            + {abstract} crearProducto()         
+            + {abstract} crearCompra()         
+            + {abstract} crearEmpleado()         
+
+        }
+
+        class TransferDAOImpMock{
+
+        }
+
+        class TransferDAOImpMariaDB{
+            
+        }
+           
     }
 
-    Fichero <|.. Input
+    component org.mariadb.database.jdbc <<JDBC driver>>
 
-}
-
-
-
-package exception{
-    component TransferDAWException <<java>>
-}
-
-package entity{
-
-    component TransferDAW <<java>>
-}
-
-TransferDAWServlet ..> TransferDAW : use
-TransferDAWServlet ..> Fichero : use
-TransferDAWServlet ..> TranferDAWDAO : use
-
-
-TransferDAWServlet ..> TransferDAWException : use
+    TransferDAOImpMariaDB ..> org.mariadb.database.jdbc
+    TransferDAWDAOImp <|-- TransferDAOImpMariaDB
+    TransferDAWDAOImp..|> TransferDAWDAO
+    TransferDAOImpMock..|> TransferDAWDAO 
+    
 @enduml
-
-

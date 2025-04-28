@@ -1,0 +1,37 @@
+@startuml input
+
+set separator none
+package input{
+
+    enum Formato{
+        BINARIO, MOCK
+    }
+
+    class FicheroFactory{
+        {static} + obtenerFicheroBinario():Fichero
+    }
+
+    class FicheroMock{
+
+    }
+
+    class FicheroBinario{
+
+    }
+
+    abstract FicheroImp{
+
+    }
+
+    interface Fichero{
+        + escribir(fichero: String, texto :String) : void 
+        + leer(fichero: String): byte[]
+
+    }
+}
+
+
+FicheroImp <|-- FicheroBinario
+FicheroMock ..|> Fichero
+FicheroImp ..|> Fichero
+@enduml
