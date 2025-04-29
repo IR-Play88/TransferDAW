@@ -8,6 +8,10 @@ import java.util.List;
 
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 
+/**
+ * Clase que gestiona los metodos para la base de datos MariaDB.
+ * \author: Iván Rafael Redondo
+ */
 public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     private final String URL = "jdbc:mariadb://localhost:3306/%s?user=%s&password=%s";

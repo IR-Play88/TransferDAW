@@ -14,7 +14,17 @@ import es.tierno.daw.trasnferdaw.model.util.input.Fichero;
 import es.tierno.daw.trasnferdaw.model.util.input.FicheroFactory;
 import es.tierno.daw.trasnferdaw.model.util.input.FormatoFichero;
 
+/**
+ * Clase de pruebas para validar la funcionalidad de escritura y lectura
+ * \author: Iván Rafael Redondo
+ */
 public class FicheroBinarioTest {
+
+    /**
+     * Prueba unitaria para verificar que los datos de un jugador pueden escribirse correctamente en un fichero binario y leerse sin pérdida de información.
+     * \author: Iván Rafael Redondo
+     * @throws IOException si ocurre un error durante la escritura o lectura del fichero.
+     */
     @Test
     public void testEscribirJugadorEnFichero() throws IOException {
         // Crear un jugador de prueba
@@ -50,11 +60,16 @@ public class FicheroBinarioTest {
         // new File(ruta).delete();
     }
 
+    /**
+     * Prueba unitaria para verificar que los datos de un jugador  de la BBDD pueden escribirse correctamente en un fichero binario y leerse sin pérdida de información.
+     * \author: Iván Rafael Redondo
+     * @throws Exception si ocurre un error al acceder a la base de datos o al manejar el fichero.
+     */
     @Test
     public void testEscribirJugadorDesdeBBDDEnFichero() throws Exception {
         // Obtener el jugador desde la base de datos
         TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
-        int idJugador = 1; // ID del jugador que quieres leer
+        int idJugador = 1;
         Jugador jugador = dao.buscarPorId(idJugador);
 
         // Verifica que no sea null

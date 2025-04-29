@@ -13,21 +13,39 @@ import org.junit.jupiter.api.Test;
 
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 
+/**
+ * Clase de pruebas unitarias para comprobar el correcto funcionamiento de la clase TransferDAOImpMariaDB.
+ * \author: Iván Rafael Redondo
+ */
 public class BBDDTest {
-    private static TransferDAOImpMariaDB dao;  // Usamos static porque @BeforeAll es estático
 
+    /**
+     * Instancia estática de la clase DAO que se usará para las pruebas.
+     * \author: Iván Rafael Redondo
+     */
+    private static TransferDAOImpMariaDB dao;
+
+    /**
+     * Método que se ejecuta una vez antes de todos los tests.
+     * \author: Iván Rafael Redondo
+     * 
+     * @throws Exception si ocurre un error al crear la instancia del DAO.
+     */
     @BeforeAll
     public static void setUp() throws Exception {
-        // Crear instancia de TransferDAOImpMariaDB para establecer la conexión
         dao = new TransferDAOImpMariaDB();
     }
 
+    /**
+     * Prueba que verifica que la conexión a la base de datos no sea nula
+     * y\author: Iván Rafael Redondo
+     * 
+     * @throws SQLException si ocurre un error al verificar la validez de la conexión.
+     */
     @Test
     public void testConnection() throws SQLException {
-        // Verificar que la conexión no sea nula y que sea válida
-        var connection = dao.conn;  // Usamos var para inferir el tipo de conexión
+        var connection = dao.conn;
 
-        // Verificación con un bloque de control de excepciones
         try {
             if (connection == null) {
                 fail("La conexión no debería ser nula");
@@ -42,10 +60,16 @@ public class BBDDTest {
         }
     }
 
+    /**
+     * Prueba para buscar un jugador por ID
+     * \author: Iván Rafael Redondo
+     * 
+     * @throws SQLException si ocurre un error al acceder a la base de datos.
+     */
     @Test
     public void testObtenerJugadorPorID() throws SQLException {
-        int idJugador = 1; 
-        
+        int idJugador = 1;
+
         Jugador jugador = dao.buscarPorId(idJugador);
 
         assertNotNull(jugador, "El jugador no debería ser nulo");
@@ -62,6 +86,5 @@ public class BBDDTest {
         assertEquals(20f, jugador.getValorMercado(), 0.01f, "El valor de mercado del jugador debería ser 200000000f");
         assertEquals(1, jugador.getRepresentanteId(), "El ID del representante del jugador debería ser 1");
         assertEquals(1, jugador.getSeleccionId(), "El ID de la selección del jugador debería ser 1");
-
     }
 }

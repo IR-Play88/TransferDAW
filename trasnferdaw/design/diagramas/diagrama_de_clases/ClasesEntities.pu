@@ -1,0 +1,18 @@
+@startuml entities
+
+class Jugador{
+    - idJugador: int
+    - nombre: String
+    - alias: String
+    - fotoUrl: String
+    - fechaNacimiento: LocalDate
+    - nacionalidad: String
+    - altura: float
+    - peso: float
+    - pieDominante: String
+    - valorMercado: float
+    - representanteId: Integer
+    - seleccionId: Integer
+
+}
+@enduml

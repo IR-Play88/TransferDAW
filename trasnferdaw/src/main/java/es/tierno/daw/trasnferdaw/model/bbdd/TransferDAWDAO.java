@@ -5,6 +5,10 @@ import java.util.List;
 
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 
+/**
+* Esta interface nos permite Visualizar, añadir, modificar, eliminar por cada entidad.
+* \author: Iván Rafael Redondo
+*/
 public interface TransferDAWDAO {
     // Representante
     //void insertar(Representante representante);
