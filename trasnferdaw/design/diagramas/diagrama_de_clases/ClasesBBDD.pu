@@ -121,12 +121,7 @@ top to bottom direction
             {static} obtener(d:Database): MercaDAO
         }
 
-        abstract TransferDAWDAOImp {
-            - {abstract} connection: Connection  
-            + {abstract} crearCliente()
-            + {abstract} crearProducto()         
-            + {abstract} crearCompra()         
-            + {abstract} crearEmpleado()         
+        abstract TransferDAWDAOImp {       
 
         }
 
@@ -140,9 +135,9 @@ top to bottom direction
            
     }
 
-    component org.mariadb.database.jdbc <<JDBC driver>>
+    component org.mariadb.jdbc <<JDBC driver>>
 
-    TransferDAOImpMariaDB ..> org.mariadb.database.jdbc
+    TransferDAOImpMariaDB ..> org.mariadb.jdbc
     TransferDAWDAOImp <|-- TransferDAOImpMariaDB
     TransferDAWDAOImp..|> TransferDAWDAO
     TransferDAOImpMock..|> TransferDAWDAO 
