@@ -1,5 +1,5 @@
 package es.tierno.daw.trasnferdaw.model.exception;
 
-public class TransferDAWException {
+public class TransferDAWException extends Exception {
     
 }
