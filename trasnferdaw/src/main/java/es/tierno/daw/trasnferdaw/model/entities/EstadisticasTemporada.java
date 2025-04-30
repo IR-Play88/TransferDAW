@@ -1,6 +1,6 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-public class Estadisticas_Temporada {
+public class EstadisticasTemporada {
     private int jugadorId;
     private int temporadaId;
     private int competicionId;
@@ -13,10 +13,10 @@ public class Estadisticas_Temporada {
     private int rojas;
     private int promedioGoles;
 
-    public Estadisticas_Temporada() {
+    public EstadisticasTemporada() {
     }
 
-    public Estadisticas_Temporada(int jugadorId, int temporadaId, int competicionId, int equipoId, int goles,
+    public EstadisticasTemporada(int jugadorId, int temporadaId, int competicionId, int equipoId, int goles,
             int asistencias, int minutos, int partidosJugados, int amarillas, int rojas, int promedioGoles) {
         this.jugadorId = jugadorId;
         this.temporadaId = temporadaId;

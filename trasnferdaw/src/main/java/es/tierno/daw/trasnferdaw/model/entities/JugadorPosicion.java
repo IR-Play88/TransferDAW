@@ -1,15 +1,15 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-public class Jugador_Posicion {
+public class JugadorPosicion {
     private int jugadorId;
     private int posicionId;
     private int temporadaId;
     private boolean esPrincipal;
 
-    public Jugador_Posicion() {
+    public JugadorPosicion() {
     }
 
-    public Jugador_Posicion(int jugadorId, int posicionId, int temporadaId, boolean esPrincipal) {
+    public JugadorPosicion(int jugadorId, int posicionId, int temporadaId, boolean esPrincipal) {
         this.jugadorId = jugadorId;
         this.posicionId = posicionId;
         this.temporadaId = temporadaId;

@@ -1,15 +1,15 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-public class Equipo_Competicion {
+public class EquipoCompeticion {
     private int equipoId;
     private int competicionId;
     private int temporadaId;
     private int rango;
 
-    public Equipo_Competicion() {
+    public EquipoCompeticion() {
     }
 
-    public Equipo_Competicion(int equipoId, int competicionId, int temporadaId, int rango) {
+    public EquipoCompeticion(int equipoId, int competicionId, int temporadaId, int rango) {
         this.equipoId = equipoId;
         this.competicionId = competicionId;
         this.temporadaId = temporadaId;
