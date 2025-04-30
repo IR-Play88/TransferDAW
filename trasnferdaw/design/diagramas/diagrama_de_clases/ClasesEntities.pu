@@ -1,6 +1,6 @@
 @startuml entities
 
-class Jugador{
+class Jugador {
     - idJugador: int
     - nombre: String
     - alias: String
@@ -13,6 +13,185 @@ class Jugador{
     - valorMercado: float
     - representanteId: Integer
     - seleccionId: Integer
-
 }
+
+class Representante {
+    - idRepresentante: int
+    - fotoUrl: String
+    - nombre: String
+    - telefono: String
+    - email: String
+    - direccion: String
+}
+
+class Entrenador {
+    - idEntrenador: int
+    - fotoUrl: String
+    - nombre: String
+    - fechaNacimiento: LocalDate
+    - nacionalidad: String
+    - experiencia: String
+}
+
+class CategoriaPosicion {
+    - idCategoria: int
+    - nombre: String
+    - descripcion: String
+}
+
+class Posicion {
+    - idPosicion: int
+    - nombre: String
+    - idCategoria: Integer
+    - descripcion: String
+}
+
+class Temporada {
+    - idTemporada: int
+    - nombre: String
+    - fechaInicio: LocalDate
+    - fechaFin: LocalDate
+    - descripcion: String
+}
+
+class Seleccion {
+    - idSeleccion: int
+    - logoUrl: String
+    - nombre: String
+    - pais: String
+    - federacion: String
+    - fechaFundacion: LocalDate
+    - ranking: int
+    - entrenadorId: Integer
+    - capitanId: Integer
+}
+
+class Equipo {
+    - idEquipo: int
+    - nombre: String
+    - ciudad: String
+    - pais: String
+    - escudoUrl: String
+    - descripcion: String
+    - anioFundacion: int
+    - presupuesto: float
+    - propietario: String
+    - entrenadorId: Integer
+}
+
+class Competicion {
+    - idCompeticion: int
+    - nombre: String
+    - pais: String
+    - tipo: String
+    - fotoUrl: String
+    - numeroEquipos: int
+    - anioCreacion: int
+}
+
+class EquipoCompeticion {
+    - equipoId: int
+    - competicionId: int
+    - temporadaId: int
+    - rango: int
+}
+
+class Contrato {
+    - idContrato: int
+    - jugadorId: int
+    - equipoId: Integer
+    - fechaInicio: LocalDate
+    - fechaFin: LocalDate
+    - salario: float
+    - bonificaciones: float
+    - tipoContrato: String
+    - clausulaRescision: float
+}
+
+class Estadio {
+    - idEstadio: int
+    - fotoUrl: String
+    - nombre: String
+    - capacidad: int
+    - ubicacion: String
+    - anioInauguracion: int
+}
+
+class EquipoEstadio {
+    - equipoId: int
+    - estadioId: int
+    - fechaInicio: LocalDate
+    - fechaFin: LocalDate
+}
+
+class JugadorPosicion {
+    - jugadorId: int
+    - posicionId: int
+    - temporadaId: int
+    - esPrincipal: boolean
+}
+
+class EstadisticasTemporada {
+    - jugadorId: int
+    - temporadaId: int
+    - competicionId: int
+    - equipoId: int
+    - goles: int
+    - asistencias: int
+    - minutos: int
+    - partidosJugados: int
+    - amarillas: int
+    - rojas: int
+    - promedioGoles: int
+}
+
+class Traspaso {
+    - idTraspaso: int
+    - jugadorId: int
+    - equipoOrigenId: Integer
+    - equipoDestinoId: Integer
+    - temporadaId: Integer
+    - fechaTraspaso: LocalDate
+    - cantidad: float
+    - clausulaTraspaso: float
+    - bonificaciones: float
+    - tipo: String
+}
+
+class ValorMercadoHistorial {
+    - idHistorial: int
+    - jugadorId: int
+    - fecha: LocalDate
+    - valorMercado: float
+    - motivo: String
+}
+
+class Noticia {
+    - idNoticia: int
+    - jugadorId: Integer
+    - equipoId: Integer
+    - usuarioId: Integer
+    - titulo: String
+    - contenido: String
+    - fotoUrl: String
+    - categoria: String
+    - fecha: LocalDate
+}
+
+class Usuario {
+    - idUsuario: int
+    - nombre: String
+    - email: String
+    - contraseña: String
+    - rol: String
+    - fechaRegistro: LocalDate
+}
+
+class EquipoEntrenador {
+    - entrenadorId: int
+    - equipoId: int
+    - fechaInicio: LocalDate
+    - fechaFin: LocalDate
+}
+
 @enduml
