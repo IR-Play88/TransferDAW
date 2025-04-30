@@ -1,16 +1,20 @@
 package es.tierno.daw.trasnferdaw.model.bbdd;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import java.sql.SQLException;
 import java.time.LocalDate;
 
+import java.util.List;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 
 /**
@@ -87,4 +91,30 @@ public class BBDDTest {
         assertEquals(1, jugador.getRepresentanteId(), "El ID del representante del jugador debería ser 1");
         assertEquals(1, jugador.getSeleccionId(), "El ID de la selección del jugador debería ser 1");
     }
+
+   
+    @Test
+    public void testListarTodos() throws Exception {
+        List<EstadisticasTemporada> lista = dao.listarTodos();
+
+        assertNotNull(lista, "La lista no debería ser null");
+        assertTrue(lista.size() > 0, "La lista debería contener elementos");
+    }
+
+    @Test
+    public void testBuscarPorJugador() throws Exception {
+        int jugadorId = 1; // Usa un ID válido que tengas en tu BBDD
+        List<EstadisticasTemporada> resultados = dao.buscarPorJugador(jugadorId);
+    
+        assertNotNull(resultados, "La lista de resultados no debería ser null");
+        assertFalse(resultados.isEmpty(), "Debería devolver estadísticas para ese jugador");
+    
+        // Imprimir estadísticas por consola
+        for (EstadisticasTemporada est : resultados) {
+            System.out.println(est);
+        }
+    }
+    
+    
+    
 }

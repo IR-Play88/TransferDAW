@@ -4,8 +4,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 
+import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 
 /**
@@ -76,4 +78,61 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
             }
         }
     }
+
+    @Override
+    public List<EstadisticasTemporada> listarTodos() throws SQLException {
+        List<EstadisticasTemporada> estadisticas = new ArrayList<>();
+        String sql = "SELECT * FROM Estadisticas_Temporada";
+
+        try (PreparedStatement stmt = conn.prepareStatement(sql);
+                ResultSet rs = stmt.executeQuery()) {
+
+            while (rs.next()) {
+                estadisticas.add(new EstadisticasTemporada(
+                        rs.getInt("jugador_id"),
+                        rs.getInt("temporada_id"),
+                        rs.getInt("competicion_id"),
+                        rs.getInt("equipo_id"),
+                        rs.getInt("goles"),
+                        rs.getInt("asistencias"),
+                        rs.getInt("minutos"),
+                        rs.getInt("partidos_jugados"),
+                        rs.getInt("amarillas"),
+                        rs.getInt("rojas"),
+                        rs.getInt("promedio_goles")));
+            }
+        }
+
+        return estadisticas;
+    }
+
+    @Override
+    public List<EstadisticasTemporada> buscarPorJugador(int jugadorId) throws SQLException {
+        List<EstadisticasTemporada> lista = new ArrayList<>();
+        String sql = "SELECT * FROM Estadisticas_Temporada WHERE jugador_id = ?";
+
+        try (PreparedStatement stmt = conn.prepareStatement(sql)) {
+            stmt.setInt(1, jugadorId);
+            try (ResultSet rs = stmt.executeQuery()) {
+                while (rs.next()) {
+                    EstadisticasTemporada est = new EstadisticasTemporada(
+                            rs.getInt("jugador_id"),
+                            rs.getInt("temporada_id"),
+                            rs.getInt("competicion_id"),
+                            rs.getInt("equipo_id"),
+                            rs.getInt("goles"),
+                            rs.getInt("asistencias"),
+                            rs.getInt("minutos"),
+                            rs.getInt("partidos_jugados"),
+                            rs.getInt("amarillas"),
+                            rs.getInt("rojas"),
+                            rs.getInt("promedio_goles"));
+                    lista.add(est);
+                }
+            }
+        }
+
+        return lista;
+    }
+
 }

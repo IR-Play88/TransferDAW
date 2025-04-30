@@ -3,6 +3,7 @@ package es.tierno.daw.trasnferdaw.model.bbdd;
 import java.sql.SQLException;
 import java.util.List;
 
+import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 
 /**
@@ -132,6 +133,6 @@ public interface TransferDAWDAO {
     //List<EquipoEntrenador> listarEquiposEntrenador();
 
     // Estadísticas Totales
-    //List<EstadisticasTotales> listarTodos();
-    //List<EstadisticasTotales> buscarPorJugador(String nombreJugador);
+    List<EstadisticasTemporada> listarTodos() throws SQLException;
+    List<EstadisticasTemporada> buscarPorJugador(int jugadorId) throws SQLException;
 }
