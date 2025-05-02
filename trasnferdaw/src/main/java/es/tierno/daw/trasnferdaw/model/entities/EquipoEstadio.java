@@ -2,16 +2,16 @@ package es.tierno.daw.trasnferdaw.model.entities;
 
 import java.sql.Date;
 
-public class Equipo_Estadio {
+public class EquipoEstadio {
     private int equipoId;
     private int estadioId;
     private Date fechaInicio;
     private Date fechaFin;
 
-    public Equipo_Estadio() {
+    public EquipoEstadio() {
     }
 
-    public Equipo_Estadio(int equipoId, int estadioId, Date fechaInicio, Date fechaFin) {
+    public EquipoEstadio(int equipoId, int estadioId, Date fechaInicio, Date fechaFin) {
         this.equipoId = equipoId;
         this.estadioId = estadioId;
         this.fechaInicio = fechaInicio;

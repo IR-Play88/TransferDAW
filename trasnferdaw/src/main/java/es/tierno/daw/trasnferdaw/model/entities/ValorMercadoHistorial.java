@@ -2,17 +2,17 @@ package es.tierno.daw.trasnferdaw.model.entities;
 
 import java.sql.Date;
 
-public class Valor_mercado_Historial {
+public class ValorMercadoHistorial {
     private int idHistorial;
     private int jugadorId;
     private Date fecha;
     private float valorMercado;
     private String motivo;
 
-    public Valor_mercado_Historial() {
+    public ValorMercadoHistorial() {
     }
 
-    public Valor_mercado_Historial(int idHistorial, int jugadorId, Date fecha, float valorMercado, String motivo) {
+    public ValorMercadoHistorial(int idHistorial, int jugadorId, Date fecha, float valorMercado, String motivo) {
         this.idHistorial = idHistorial;
         this.jugadorId = jugadorId;
         this.fecha = fecha;
