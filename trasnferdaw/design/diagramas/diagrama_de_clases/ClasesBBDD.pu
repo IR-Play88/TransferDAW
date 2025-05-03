@@ -18,21 +18,10 @@ top to bottom direction
             +eliminar(idEntrenador: int): void
             +listar(): List<Entrenador>
 
-
-            +insertar(categoriaPosicion: CategoriaPosicion): void
-            +modificar(categoriaPosicion: CategoriaPosicion): void
-            +eliminar(idCategoria: int): void
             +listar(): List<CategoriaPosicion>
 
-
-            +insertar(posicion: Posicion): void
-            +modificar(posicion: Posicion): void
-            +eliminar(idPosicion: int): void
             +listar(): List<Posicion>
 
-            +insertar(temporada: Temporada): void
-            +modificar(temporada: Temporada): void
-            +eliminar(idTemporada: int): void
             +listar(): List<Temporada>
 
             +insertar(jugador: Jugador): void
@@ -86,6 +75,7 @@ top to bottom direction
             +modificar(estadisticasTemporada: EstadisticasTemporada): void
             +eliminar(jugadorId: int, temporadaId: int, competicionId: int, equipoId: int): void
             +listar(): List<EstadisticasTemporada>
+             +List<EstadisticasTotales> buscarPorJugador(int id_jugador);
 
             +insertar(traspaso: Traspaso): void
             +modificar(traspaso: Traspaso): void
@@ -111,14 +101,11 @@ top to bottom direction
             +modificar(equipoEntrenador: EquipoEntrenador): void
             +eliminar(entrenadorId: int, equipoId: int): void
             +listar(): List<EquipoEntrenador>
-
-            +List<EstadisticasTotales> listarTodos();
-            +List<EstadisticasTotales> buscarPorJugador(String nombreJugador);
         }
     
 
         class TransferDAWDBFactory{
-            {static} obtener(d:Database): MercaDAO
+            {static} obtener(d:Database): TransferDAWDAO
         }
 
         abstract TransferDAWDAOImp {       

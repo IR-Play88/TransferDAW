@@ -1,19 +1,19 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Entrenador {
     private int id_entrenador;
     private String foto_url;
     private String nombre;
-    private Date fecha_nacimiento;
+    private LocalDate fecha_nacimiento;
     private String nacionalidad;
     private String experiencia;
 
     public Entrenador() {
     }
 
-    public Entrenador(int id_entrenador, String foto_url, String nombre, Date fecha_nacimiento, String nacionalidad,
+    public Entrenador(int id_entrenador, String foto_url, String nombre, LocalDate fecha_nacimiento, String nacionalidad,
             String experiencia) {
         this.id_entrenador = id_entrenador;
         this.foto_url = foto_url;
@@ -47,11 +47,11 @@ public class Entrenador {
         this.nombre = nombre;
     }
 
-    public Date getFecha_nacimiento() {
+    public LocalDate getFecha_nacimiento() {
         return fecha_nacimiento;
     }
 
-    public void setFecha_nacimiento(Date fecha_nacimiento) {
+    public void setFecha_nacimiento(LocalDate fecha_nacimiento) {
         this.fecha_nacimiento = fecha_nacimiento;
     }
 

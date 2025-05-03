@@ -50,30 +50,12 @@ public interface TransferDAWDAO {
     public List<Entrenador> listarEntrenadores() throws BBDDException;
 
     // CategoriaPosicion
-    public int insertar(CategoriaPosicion categoriaPosicion) throws BBDDException;
-
-    public int modificar(CategoriaPosicion categoriaPosicion) throws BBDDException;
-
-    public int eliminarCategoria(int idCategoria) throws BBDDException;
-
     public List<CategoriaPosicion> listarCategoriasPosicion() throws BBDDException;
 
     // Posicion
-    public int insertar(Posicion posicion) throws BBDDException;
-
-    public int modificar(Posicion posicion) throws BBDDException;
-
-    public int eliminarPosicion(int idPosicion) throws BBDDException;
-
     public List<Posicion> listarPosiciones() throws BBDDException;
 
     // Temporada
-    public int insertar(Temporada temporada) throws BBDDException;
-
-    public int modificar(Temporada temporada) throws BBDDException;
-
-    public int eliminarTemporada(int idTemporada) throws BBDDException;
-
     public List<Temporada> listarTemporadas() throws BBDDException;
 
     // Jugador
@@ -164,10 +146,11 @@ public interface TransferDAWDAO {
 
     public int modificar(EstadisticasTemporada estadisticasTemporada) throws BBDDException;
 
-    public int eliminarEstadisticasTemporada(int jugadorId, int temporadaId, int competicionId, int equipoId)
-            throws BBDDException;
+    public int eliminarEstadisticasTemporada(int jugadorId, int temporadaId, int competicionId, int equipoId) throws BBDDException;
 
     public List<EstadisticasTemporada> listarEstadisticasTemporada() throws BBDDException;
+
+    public List<EstadisticasTemporada> buscarPorJugador(int jugadorId) throws BBDDException;
 
     // Traspaso
     public int insertar(Traspaso traspaso) throws BBDDException;
@@ -213,9 +196,4 @@ public interface TransferDAWDAO {
     public int eliminarEquipoEntrenador(int entrenadorId, int equipoId) throws BBDDException;
 
     public List<EquipoEntrenador> listarEquiposEntrenador() throws BBDDException;
-
-    // Estadísticas Totales
-    // List<EstadisticasTemporada> listarTodos() throws BBDDException;
-    // List<EstadisticasTemporada> buscarPorJugador(int jugadorId) throws
-    // BBDDException;
 }

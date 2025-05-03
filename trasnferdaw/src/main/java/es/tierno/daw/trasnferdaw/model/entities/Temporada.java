@@ -1,18 +1,18 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Temporada {
     private int id_temporada;
     private String nombre;
-    private Date fecha_inicio;
-    private Date fecha_fin;
+    private LocalDate fecha_inicio;
+    private LocalDate fecha_fin;
     private String descripcion;
 
     public Temporada() {
     }
 
-    public Temporada(int id_temporada, String nombre, Date fecha_inicio, Date fecha_fin, String descripcion) {
+    public Temporada(int id_temporada, String nombre, LocalDate fecha_inicio, LocalDate fecha_fin, String descripcion) {
         this.id_temporada = id_temporada;
         this.nombre = nombre;
         this.fecha_inicio = fecha_inicio;
@@ -36,19 +36,19 @@ public class Temporada {
         this.nombre = nombre;
     }
 
-    public Date getFecha_inicio() {
+    public LocalDate getFecha_inicio() {
         return fecha_inicio;
     }
 
-    public void setFecha_inicio(Date fecha_inicio) {
+    public void setFecha_inicio(LocalDate fecha_inicio) {
         this.fecha_inicio = fecha_inicio;
     }
 
-    public Date getFecha_fin() {
+    public LocalDate getFecha_fin() {
         return fecha_fin;
     }
 
-    public void setFecha_fin(Date fecha_fin) {
+    public void setFecha_fin(LocalDate fecha_fin) {
         this.fecha_fin = fecha_fin;
     }
 
