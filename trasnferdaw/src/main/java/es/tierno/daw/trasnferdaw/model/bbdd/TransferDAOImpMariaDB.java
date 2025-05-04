@@ -601,17 +601,15 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
-            ps.setString(1, jugador.getNombre());
-            ps.setString(2, jugador.getAlias());
-            ps.setObject(3, jugador.getFotoUrl(), java.sql.Types.VARCHAR);
-            ps.setDate(4, java.sql.Date.valueOf(jugador.getFechaNacimiento()));
-            ps.setString(5, jugador.getNacionalidad());
-            ps.setFloat(6, jugador.getAltura());
-            ps.setFloat(7, jugador.getPeso());
-            ps.setString(8, jugador.getPieDominante());
-            ps.setFloat(9, jugador.getValorMercado());
-            ps.setObject(10, jugador.getRepresentanteId(), java.sql.Types.INTEGER);
-            ps.setObject(11, jugador.getSeleccionId(), java.sql.Types.INTEGER);
+            ps.setString(1, equipo.getNombre());
+            ps.setString(2, equipo.getCiudad());
+            ps.setString(3, equipo.getPais());   
+            ps.setObject(4, equipo.getEscudoUrl(), java.sql.Types.VARCHAR);
+            ps.setString(5, equipo.getDescripcion());
+            ps.setInt(6,equipo.getAnioFundacion());
+            ps.setFloat(7, equipo.getPresupuesto());            
+            ps.setObject(8, equipo.getPropietario(), java.sql.Types.INTEGER);
+            ps.setObject(9, equipo.getEntrenadorId(), java.sql.Types.INTEGER);
 
             resultado = ps.executeUpdate();
         } catch (Exception e) {
@@ -630,19 +628,13 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, equipo.getNombre());
             ps.setString(2, equipo.getCiudad());
-            ps.setString(3, equipo.getPais());
-            ps.setString(4, equipo.getEscudoUrl());
+            ps.setString(3, equipo.getPais());   
+            ps.setObject(4, equipo.getEscudoUrl(), java.sql.Types.VARCHAR);
             ps.setString(5, equipo.getDescripcion());
-            ps.setInt(6, equipo.getAnioFundacion());
-            ps.setFloat(7, equipo.getPresupuesto());
-            ps.setString(8, equipo.getPropietario());
-
-            if (equipo.getEntrenadorId() != null) {
-                ps.setInt(9, equipo.getEntrenadorId());
-            } else {
-                ps.setNull(9, java.sql.Types.INTEGER);
-            }
-
+            ps.setInt(6,equipo.getAnioFundacion());
+            ps.setFloat(7, equipo.getPresupuesto());            
+            ps.setObject(8, equipo.getPropietario(), java.sql.Types.INTEGER);
+            ps.setObject(9, equipo.getEntrenadorId(), java.sql.Types.INTEGER);
             ps.setInt(10, equipo.getIdEquipo());
 
             resultado = ps.executeUpdate();
@@ -708,10 +700,10 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, competicion.getNombre());
             ps.setString(2, competicion.getPais());
-            ps.setString(3, competicion.getTipo());
-            ps.setString(4, competicion.getFotoUrl());
+            ps.setString(3, competicion.getTipo());   
+            ps.setObject(4, competicion.getFotoUrl(), java.sql.Types.VARCHAR);
             ps.setInt(5, competicion.getNumeroEquipos());
-            ps.setInt(6, competicion.getAnioCreacion());
+            ps.setInt(6,competicion.getAnioCreacion());
 
             resultado = ps.executeUpdate();
         } catch (Exception e) {
@@ -731,10 +723,10 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, competicion.getNombre());
             ps.setString(2, competicion.getPais());
-            ps.setString(3, competicion.getTipo());
-            ps.setString(4, competicion.getFotoUrl());
+            ps.setString(3, competicion.getTipo());   
+            ps.setObject(4, competicion.getFotoUrl(), java.sql.Types.VARCHAR);
             ps.setInt(5, competicion.getNumeroEquipos());
-            ps.setInt(6, competicion.getAnioCreacion());
+            ps.setInt(6,competicion.getAnioCreacion());
             ps.setInt(7, competicion.getIdCompeticion());
 
             resultado = ps.executeUpdate();
@@ -794,9 +786,9 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         final String sql = "INSERT INTO Equipo_Competicion (equipo_id, competicion_id, temporada_id, rango) VALUES (?, ?, ?, ?)";
 
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
-            ps.setInt(1, ec.getEquipoId());
-            ps.setInt(2, ec.getCompeticionId());
-            ps.setInt(3, ec.getTemporadaId());
+            ps.setObject(1, ec.getEquipoId(), java.sql.Types.INTEGER);
+            ps.setObject(2, ec.getCompeticionId(), java.sql.Types.INTEGER);
+            ps.setObject(3, ec.getTemporadaId(), java.sql.Types.INTEGER);
             ps.setInt(4, ec.getRango());
 
             resultado = ps.executeUpdate();
@@ -811,20 +803,21 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     public int modificar(EquipoCompeticion ec) throws BBDDException {
         int resultado = 0;
         final String sql = "UPDATE Equipo_Competicion SET rango = ? WHERE equipo_id = ? AND competicion_id = ? AND temporada_id = ?";
-
+    
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setInt(1, ec.getRango());
             ps.setInt(2, ec.getEquipoId());
             ps.setInt(3, ec.getCompeticionId());
             ps.setInt(4, ec.getTemporadaId());
-
+    
             resultado = ps.executeUpdate();
         } catch (Exception e) {
             throw new BBDDException(e.getMessage());
         }
-
+    
         return resultado;
     }
+    
 
     @Override
     public int eliminarEquipoCompeticion(int equipoId, int competicionId, int temporadaId) throws BBDDException {
