@@ -83,7 +83,6 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setInt(1, jugador.getIdJugador()); // Asignamos el ID manual
             ps.setString(1, jugador.getNombre());
             ps.setString(2, jugador.getAlias());
             ps.setString(3, jugador.getFotoUrl());
@@ -273,7 +272,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     @Override
     public List<Representante> listarRepresentantes() throws BBDDException {
-        final String query = "SELECT * FROM Representante";
+        final String query = "SELECT * FROM vista_representante";
         List<Representante> representantes = new ArrayList<>();
         try {
             PreparedStatement ps = conn.prepareStatement(query);
@@ -309,32 +308,11 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
 
-            if (entrenador.getFoto_url() != null) {
-                ps.setString(1, entrenador.getFoto_url());
-            } else {
-                ps.setNull(1, java.sql.Types.VARCHAR);
-            }
-
+            ps.setString(1, entrenador.getFoto_url());
             ps.setString(2, entrenador.getNombre());
-
-            if (entrenador.getFecha_nacimiento() != null) {
-                ps.setDate(3, java.sql.Date.valueOf(entrenador.getFecha_nacimiento()));
-
-            } else {
-                ps.setNull(3, java.sql.Types.DATE);
-            }
-
-            if (entrenador.getNacionalidad() != null) {
-                ps.setString(4, entrenador.getNacionalidad());
-            } else {
-                ps.setNull(4, java.sql.Types.VARCHAR);
-            }
-
-            if (entrenador.getExperiencia() != null) {
-                ps.setString(5, entrenador.getExperiencia());
-            } else {
-                ps.setNull(5, java.sql.Types.VARCHAR);
-            }
+            ps.setDate(3, java.sql.Date.valueOf(entrenador.getFecha_nacimiento()));
+            ps.setString(4, entrenador.getNacionalidad());
+            ps.setString(5, entrenador.getExperiencia());
 
             numRegistrosActualizados = ps.executeUpdate();
             ps.close();
@@ -353,33 +331,11 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
 
-            if (entrenador.getFoto_url() != null) {
-                ps.setString(1, entrenador.getFoto_url());
-            } else {
-                ps.setNull(1, java.sql.Types.VARCHAR);
-            }
-
+            ps.setString(1, entrenador.getFoto_url());
             ps.setString(2, entrenador.getNombre());
-
-            if (entrenador.getFecha_nacimiento() != null) {
-                ps.setDate(3, java.sql.Date.valueOf(entrenador.getFecha_nacimiento()));
-
-            } else {
-                ps.setNull(3, java.sql.Types.DATE);
-            }
-
-            if (entrenador.getNacionalidad() != null) {
-                ps.setString(4, entrenador.getNacionalidad());
-            } else {
-                ps.setNull(4, java.sql.Types.VARCHAR);
-            }
-
-            if (entrenador.getExperiencia() != null) {
-                ps.setString(5, entrenador.getExperiencia());
-            } else {
-                ps.setNull(5, java.sql.Types.VARCHAR);
-            }
-
+            ps.setDate(3, java.sql.Date.valueOf(entrenador.getFecha_nacimiento()));
+            ps.setString(4, entrenador.getNacionalidad());
+            ps.setString(5, entrenador.getExperiencia());
             ps.setInt(6, entrenador.getId_entrenador());
 
             numRegistrosActualizados = ps.executeUpdate();
@@ -411,7 +367,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     @Override
     public List<Entrenador> listarEntrenadores() throws BBDDException {
-        final String query = "SELECT * FROM Entrenador";
+        final String query = "SELECT * FROM vista_entrenador";
         List<Entrenador> entrenadores = new ArrayList<>();
         try {
             PreparedStatement ps = conn.prepareStatement(query);
@@ -441,7 +397,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     @Override
     public List<CategoriaPosicion> listarCategoriasPosicion() throws BBDDException {
-        final String query = "SELECT * FROM Categoria_Posicion";
+        final String query = "SELECT * FROM vista_categoria_posicion";
         List<CategoriaPosicion> categorias = new ArrayList<>();
 
         try {
@@ -468,7 +424,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     @Override
     public List<Posicion> listarPosiciones() throws BBDDException {
-        final String query = "SELECT * FROM Posicion";
+        final String query = "SELECT * FROM vista_posicion";
         List<Posicion> posiciones = new ArrayList<>();
 
         try {
@@ -496,7 +452,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     @Override
     public List<Temporada> listarTemporadas() throws BBDDException {
-        final String query = "SELECT * FROM Temporada";
+        final String query = "SELECT * FROM vista_temporada";
         List<Temporada> temporadas = new ArrayList<>();
 
         try {
@@ -534,34 +490,14 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
 
-            ps.setString(1, seleccion.getLogoUrl());
+            ps.setObject(1, seleccion.getLogoUrl(), java.sql.Types.VARCHAR);
             ps.setString(2, seleccion.getNombre());
             ps.setString(3, seleccion.getPais());
             ps.setString(4, seleccion.getFederacion());
-
-            if (seleccion.getFechaFundacion() != null) {
-                ps.setDate(5, seleccion.getFechaFundacion());
-            } else {
-                ps.setNull(5, java.sql.Types.DATE);
-            }
-
-            if (seleccion.getRanking() != null) {
-                ps.setInt(6, seleccion.getRanking());
-            } else {
-                ps.setNull(6, java.sql.Types.INTEGER);
-            }
-
-            if (seleccion.getEntrenadorId() != null) {
-                ps.setInt(7, seleccion.getEntrenadorId());
-            } else {
-                ps.setNull(7, java.sql.Types.INTEGER);
-            }
-
-            if (seleccion.getCapitanId() != null) {
-                ps.setInt(8, seleccion.getCapitanId());
-            } else {
-                ps.setNull(8, java.sql.Types.INTEGER);
-            }
+            ps.setDate(5, java.sql.Date.valueOf(seleccion.getFechaFundacion()));
+            ps.setInt(6, seleccion.getRanking());
+            ps.setObject(7, seleccion.getEntrenadorId(), java.sql.Types.INTEGER);
+            ps.setObject(8, seleccion.getCapitanId(), java.sql.Types.INTEGER);
 
             resultado = ps.executeUpdate();
             ps.close();
@@ -576,42 +512,19 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     @Override
     public int modificar(Seleccion seleccion) throws BBDDException {
         int resultado = 0;
-        final String sql = "UPDATE Seleccion SET logo_url = ?, nombre = ?, pais = ?, federacion = ?, fecha_fundacion = ?, "
-                +
-                "ranking = ?, entrenador_id = ?, capitan_id = ? WHERE id_seleccion = ?";
+        final String sql = "UPDATE Seleccion SET logo_url = ?, nombre = ?, pais = ?, federacion = ?, fecha_fundacion = ?, ranking = ?, entrenador_id = ?, capitan_id = ? WHERE id_seleccion = ?";
 
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
 
-            ps.setString(1, seleccion.getLogoUrl());
+            ps.setObject(1, seleccion.getLogoUrl(), java.sql.Types.VARCHAR);
             ps.setString(2, seleccion.getNombre());
             ps.setString(3, seleccion.getPais());
             ps.setString(4, seleccion.getFederacion());
-
-            if (seleccion.getFechaFundacion() != null) {
-                ps.setDate(5, seleccion.getFechaFundacion());
-            } else {
-                ps.setNull(5, java.sql.Types.DATE);
-            }
-
-            if (seleccion.getRanking() != null) {
-                ps.setInt(6, seleccion.getRanking());
-            } else {
-                ps.setNull(6, java.sql.Types.INTEGER);
-            }
-
-            if (seleccion.getEntrenadorId() != null) {
-                ps.setInt(7, seleccion.getEntrenadorId());
-            } else {
-                ps.setNull(7, java.sql.Types.INTEGER);
-            }
-
-            if (seleccion.getCapitanId() != null) {
-                ps.setInt(8, seleccion.getCapitanId());
-            } else {
-                ps.setNull(8, java.sql.Types.INTEGER);
-            }
-
+            ps.setDate(5, java.sql.Date.valueOf(seleccion.getFechaFundacion()));
+            ps.setInt(6, seleccion.getRanking());
+            ps.setObject(7, seleccion.getEntrenadorId(), java.sql.Types.INTEGER);
+            ps.setObject(8, seleccion.getCapitanId(), java.sql.Types.INTEGER);
             ps.setInt(9, seleccion.getIdSeleccion());
 
             resultado = ps.executeUpdate();
@@ -644,37 +557,41 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     @Override
     public List<Seleccion> listarSelecciones() throws BBDDException {
-        List<Seleccion> lista = new ArrayList<>();
-        final String sql = "SELECT * FROM Seleccion";
-
+        final String query = "SELECT * FROM Seleccion";
+        List<Seleccion> selecciones = new ArrayList<>();
+    
         try {
-            PreparedStatement ps = conn.prepareStatement(sql);
+            PreparedStatement ps = conn.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
-
+    
             while (rs.next()) {
-                Seleccion seleccion = new Seleccion(
-                        rs.getInt("id_seleccion"),
-                        rs.getString("logo_url"),
-                        rs.getString("nombre"),
-                        rs.getString("pais"),
-                        rs.getString("federacion"),
-                        rs.getDate("fecha_fundacion"),
-                        rs.getObject("ranking") != null ? rs.getInt("ranking") : null,
-                        rs.getObject("entrenador_id") != null ? rs.getInt("entrenador_id") : null,
-                        rs.getObject("capitan_id") != null ? rs.getInt("capitan_id") : null);
-
-                lista.add(seleccion);
+                int id = rs.getInt("id_seleccion");
+                String logoUrl = rs.getString("logo_url");
+                String nombre = rs.getString("nombre");
+                String pais = rs.getString("pais");
+                String federacion = rs.getString("federacion");
+                LocalDate fechaFundacion = rs.getDate("fecha_fundacion") != null
+                        ? rs.getDate("fecha_fundacion").toLocalDate()
+                        : null;
+                Integer ranking = rs.getObject("ranking") != null ? rs.getInt("ranking") : null;
+                Integer entrenadorId = rs.getObject("entrenador_id") != null ? rs.getInt("entrenador_id") : null;
+                Integer capitanId = rs.getObject("capitan_id") != null ? rs.getInt("capitan_id") : null;
+    
+                Seleccion seleccion = new Seleccion(id, logoUrl, nombre, pais, federacion,
+                        fechaFundacion, ranking, entrenadorId, capitanId);
+    
+                selecciones.add(seleccion);
             }
-
+    
             rs.close();
             ps.close();
-
         } catch (Exception e) {
             throw new BBDDException(e.getMessage());
         }
-
-        return lista;
+    
+        return selecciones;
     }
+    
 
     @Override
     public int insertar(Equipo equipo) throws BBDDException {
@@ -684,20 +601,17 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
-            ps.setString(1, equipo.getNombre());
-            ps.setString(2, equipo.getCiudad());
-            ps.setString(3, equipo.getPais());
-            ps.setString(4, equipo.getEscudoUrl());
-            ps.setString(5, equipo.getDescripcion());
-            ps.setInt(6, equipo.getAnioFundacion());
-            ps.setFloat(7, equipo.getPresupuesto());
-            ps.setString(8, equipo.getPropietario());
-
-            if (equipo.getEntrenadorId() != null) {
-                ps.setInt(9, equipo.getEntrenadorId());
-            } else {
-                ps.setNull(9, java.sql.Types.INTEGER);
-            }
+            ps.setString(1, jugador.getNombre());
+            ps.setString(2, jugador.getAlias());
+            ps.setObject(3, jugador.getFotoUrl(), java.sql.Types.VARCHAR);
+            ps.setDate(4, java.sql.Date.valueOf(jugador.getFechaNacimiento()));
+            ps.setString(5, jugador.getNacionalidad());
+            ps.setFloat(6, jugador.getAltura());
+            ps.setFloat(7, jugador.getPeso());
+            ps.setString(8, jugador.getPieDominante());
+            ps.setFloat(9, jugador.getValorMercado());
+            ps.setObject(10, jugador.getRepresentanteId(), java.sql.Types.INTEGER);
+            ps.setObject(11, jugador.getSeleccionId(), java.sql.Types.INTEGER);
 
             resultado = ps.executeUpdate();
         } catch (Exception e) {

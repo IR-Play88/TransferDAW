@@ -12,8 +12,13 @@ import java.util.List;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import es.tierno.daw.trasnferdaw.model.entities.CategoriaPosicion;
+import es.tierno.daw.trasnferdaw.model.entities.Entrenador;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
+import es.tierno.daw.trasnferdaw.model.entities.Posicion;
 import es.tierno.daw.trasnferdaw.model.entities.Representante;
+import es.tierno.daw.trasnferdaw.model.entities.Seleccion;
+import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
 
 /**
@@ -188,22 +193,20 @@ public class BBDDTest {
 
     @Test
     public void insertarEntrenadorTest() throws Exception {
-        Jugador jugador = new Jugador(0, "Isco", "Alarcon", null,
-                LocalDate.of(1986, 3, 30), "España", 1.84f, 82f,
-                "derecho", 10f, null, null);
+        Entrenador entrenador = new Entrenador(0, null, "entrenador_prueba", LocalDate.of(1986, 3, 30), "española_prueba", "experiencia_prueba");
 
-        int real = dao.insertar(jugador);
+        int real = dao.insertar(entrenador);
         assertEquals(1, real);
     }
 
     @Test
     public void actualizarEntrenadorTest() throws Exception {
         // Recuperamos el jugador para actualizarlo
-        List<Jugador> jugadores = dao.listarJugadores();
-        for (Jugador j : jugadores) {
-            if (j.getNombre().equals("Isco")) {
-                j.setValorMercado(400000f); // modificamos algo
-                int actualizados = dao.modificar(j);
+        List<Entrenador> entrenadores = dao.listarEntrenadores();
+        for (Entrenador e: entrenadores) {
+            if (e.getNombre().equals("entrenador_prueba")) {
+                e.setExperiencia("experiencia_2_prueba");; // modificamos algo
+                int actualizados = dao.modificar(e);
                 assertEquals(1, actualizados);
                 break;
             }
@@ -212,62 +215,60 @@ public class BBDDTest {
 
     @Test
     public void eliminarEntrenadorTest() throws Exception {
-        List<Jugador> jugadores = dao.listarJugadores();
+        List<Entrenador> entrenadores = dao.listarEntrenadores();
         int idEliminar = -1;
-        for (Jugador j : jugadores) {
-            if (j.getNombre().equals("Isco")) {
-                idEliminar = j.getIdJugador();
+        for (Entrenador e : entrenadores) {
+            if (e.getNombre().equals("entrenador_prueba")) {
+                idEliminar = e.getId_entrenador();
                 break;
             }
         }
 
-        int real = dao.eliminarJugador(idEliminar);
+        int real = dao.eliminarEntrenador(idEliminar);
         assertEquals(1, real);
 
     }
 
     @Test
     public void listarEntrenadorTest() throws Exception {
-        List<Jugador> jugadores = dao.listarJugadores();
-        assertEquals(4, jugadores.size());// o puedes comprobar exacto si conoces el número
+        List<Entrenador> entrenadores = dao.listarEntrenadores();
+        assertEquals(6, entrenadores.size());// o puedes comprobar exacto si conoces el número
     }
 
     @Test
     public void listarCategoriaPosicionrTest() throws Exception {
-        List<Jugador> jugadores = dao.listarJugadores();
-        assertEquals(4, jugadores.size());// o puedes comprobar exacto si conoces el número
+        List<CategoriaPosicion> categoriaPosiciones = dao.listarCategoriasPosicion();
+        assertEquals(4, categoriaPosiciones.size());// o puedes comprobar exacto si conoces el número
     }
 
     @Test
     public void listarPosicionTest() throws Exception {
-        List<Jugador> jugadores = dao.listarJugadores();
-        assertEquals(4, jugadores.size());// o puedes comprobar exacto si conoces el número
+        List<Posicion> posiciones = dao.listarPosiciones();
+        assertEquals(13, posiciones.size());// o puedes comprobar exacto si conoces el número
     }
 
     @Test
     public void listarTemporadaTest() throws Exception {
-        List<Jugador> jugadores = dao.listarJugadores();
-        assertEquals(4, jugadores.size());// o puedes comprobar exacto si conoces el número
+        List<Temporada> temporadas = dao.listarTemporadas();
+        assertEquals(56, temporadas.size());// o puedes comprobar exacto si conoces el número
     }
 
     @Test
     public void insertarSelecionTest() throws Exception {
-        Jugador jugador = new Jugador(0, "Isco", "Alarcon", null,
-                LocalDate.of(1986, 3, 30), "España", 1.84f, 82f,
-                "derecho", 10f, null, null);
+        Seleccion seleccion = new Seleccion(0, null, "pais_prueba", "españa_prueba", "federacion_prueba", LocalDate.of(1986, 3, 30), 11, null, null);
 
-        int real = dao.insertar(jugador);
+        int real = dao.insertar(seleccion);
         assertEquals(1, real);
     }
 
     @Test
     public void actualizarSelecionTest() throws Exception {
         // Recuperamos el jugador para actualizarlo
-        List<Jugador> jugadores = dao.listarJugadores();
-        for (Jugador j : jugadores) {
-            if (j.getNombre().equals("Isco")) {
-                j.setValorMercado(400000f); // modificamos algo
-                int actualizados = dao.modificar(j);
+        List<Seleccion> selecciones = dao.listarSelecciones();
+        for (Seleccion s : selecciones) {
+            if (s.getNombre().equals("pais_prueba")) {
+                s.setRanking(20);; // modificamos algo
+                int actualizados = dao.modificar(s);
                 assertEquals(1, actualizados);
                 break;
             }
@@ -276,24 +277,24 @@ public class BBDDTest {
 
     @Test
     public void eliminarSelecionTest() throws Exception {
-        List<Jugador> jugadores = dao.listarJugadores();
+        List<Seleccion> selecciones = dao.listarSelecciones();
         int idEliminar = -1;
-        for (Jugador j : jugadores) {
-            if (j.getNombre().equals("Isco")) {
-                idEliminar = j.getIdJugador();
+        for (Seleccion s : selecciones) {
+            if (s.getNombre().equals("pais_prueba")) {
+                idEliminar = s.getIdSeleccion();
                 break;
             }
         }
 
-        int real = dao.eliminarJugador(idEliminar);
+        int real = dao.eliminarSeleccion(idEliminar);
         assertEquals(1, real);
 
     }
 
     @Test
     public void listarSelecionTest() throws Exception {
-        List<Jugador> jugadores = dao.listarJugadores();
-        assertEquals(4, jugadores.size());// o puedes comprobar exacto si conoces el número
+        List<Seleccion> selecciones = dao.listarSelecciones();
+        assertEquals(2, selecciones.size());// o puedes comprobar exacto si conoces el número
     }
 
     @Test
