@@ -73,12 +73,12 @@ public class TransferDAOImpMock implements TransferDAWDAO {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'listarEntrenadores'");
     }
+
     @Override
     public List<CategoriaPosicion> listarCategoriasPosicion() throws BBDDException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'listarCategoriasPosicion'");
     }
-
 
     @Override
     public List<Posicion> listarPosiciones() throws BBDDException {
@@ -340,9 +340,15 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     }
 
     @Override
-    public List<EstadisticasTemporada> buscarPorJugador(int jugadorId) throws BBDDException {
+    public EstadisticasTemporada buscarEstadisticasTotalesPorJugador(int jugadorId) throws BBDDException {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarPorJugador'");
+        throw new UnsupportedOperationException("Unimplemented method 'buscarEstadisticasTotalesPorJugador'");
+    }
+
+    @Override
+    public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buscarEstadisticasPorTemporadas'");
     }
 
     @Override
@@ -464,4 +470,6 @@ public class TransferDAOImpMock implements TransferDAWDAO {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'listarEquiposEntrenador'");
     }
+
+     
 }

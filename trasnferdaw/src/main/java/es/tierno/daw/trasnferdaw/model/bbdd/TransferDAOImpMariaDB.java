@@ -3,6 +3,7 @@ package es.tierno.daw.trasnferdaw.model.bbdd;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
@@ -1244,35 +1245,225 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     }
 
     @Override
-    public int insertar(EstadisticasTemporada estadisticasTemporada) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertar'");
+    public int insertar(EstadisticasTemporada est) throws BBDDException {
+        int numRegistrosActualizados = 0;
+
+        final String sql = "INSERT INTO Estadisticas_Temporada "
+                + "(jugador_id, temporada_id, competicion_id, equipo_id, goles, asistencias, minutos, partidos_jugados, amarillas, rojas, promedio_goles) "
+                + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+
+            ps.setInt(1, est.getJugadorId());
+            ps.setInt(2, est.getTemporadaId());
+            ps.setInt(3, est.getCompeticionId());
+            ps.setInt(4, est.getEquipoId());
+            ps.setInt(5, est.getGoles());
+            ps.setInt(6, est.getAsistencias());
+            ps.setInt(7, est.getMinutos());
+            ps.setInt(8, est.getPartidosJugados());
+            ps.setInt(9, est.getAmarillas());
+            ps.setInt(10, est.getRojas());
+            ps.setFloat(11, est.getPromedioGoles());
+
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return numRegistrosActualizados;
     }
 
     @Override
-    public int modificar(EstadisticasTemporada estadisticasTemporada) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'modificar'");
+    public int modificar(EstadisticasTemporada est) throws BBDDException {
+        int numRegistrosActualizados = 0;
+
+        final String sql = "UPDATE Estadisticas_Temporada SET goles = ?, asistencias = ?, minutos = ?, partidos_jugados = ?, "
+                + "amarillas = ?, rojas = ?, promedio_goles = ? "
+                + "WHERE jugador_id = ? AND temporada_id = ? AND competicion_id = ? AND equipo_id = ?";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+
+            ps.setInt(1, est.getGoles());
+            ps.setInt(2, est.getAsistencias());
+            ps.setInt(3, est.getMinutos());
+            ps.setInt(4, est.getPartidosJugados());
+            ps.setInt(5, est.getAmarillas());
+            ps.setInt(6, est.getRojas());
+            ps.setFloat(7, est.getPromedioGoles());
+
+            ps.setInt(8, est.getJugadorId());
+            ps.setInt(9, est.getTemporadaId());
+            ps.setInt(10, est.getCompeticionId());
+            ps.setInt(11, est.getEquipoId());
+
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return numRegistrosActualizados;
     }
 
     @Override
     public int eliminarEstadisticasTemporada(int jugadorId, int temporadaId, int competicionId, int equipoId)
             throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminarEstadisticasTemporada'");
+        int numRegistrosActualizados = 0;
+
+        final String sql = "DELETE FROM Estadisticas_Temporada WHERE jugador_id = ? AND temporada_id = ? AND competicion_id = ? AND equipo_id = ?";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, jugadorId);
+            ps.setInt(2, temporadaId);
+            ps.setInt(3, competicionId);
+            ps.setInt(4, equipoId);
+
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+        return numRegistrosActualizados;
     }
 
     @Override
     public List<EstadisticasTemporada> listarEstadisticasTemporada() throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarEstadisticasTemporada'");
+        final String query = "SELECT * FROM Estadisticas_Temporada";
+        List<EstadisticasTemporada> lista = new ArrayList<>();
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                int jugadorId = rs.getInt("jugador_id");
+                int temporadaId = rs.getInt("temporada_id");
+                int competicionId = rs.getInt("competicion_id");
+                int equipoId = rs.getInt("equipo_id");
+                int goles = rs.getInt("goles");
+                int asistencias = rs.getInt("asistencias");
+                int minutos = rs.getInt("minutos");
+                int partidos = rs.getInt("partidos_jugados");
+                int amarillas = rs.getInt("amarillas");
+                int rojas = rs.getInt("rojas");
+                int promedioGoles = rs.getInt("promedio_goles");
+
+                EstadisticasTemporada est = new EstadisticasTemporada(jugadorId, temporadaId, competicionId, equipoId,
+                        goles, asistencias, minutos, partidos, amarillas, rojas, promedioGoles);
+                lista.add(est);
+            }
+
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return lista;
     }
 
     @Override
-    public List<EstadisticasTemporada> buscarPorJugador(int jugadorId) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarPorJugador'");
+    public EstadisticasTemporada buscarEstadisticasTotalesPorJugador(int jugadorId) throws BBDDException {
+        final String query = """
+            SELECT jugador_id,
+                   SUM(goles) AS goles,
+                   SUM(asistencias) AS asistencias,
+                   SUM(minutos) AS minutos,
+                   SUM(partidos_jugados) AS partidos,
+                   SUM(amarillas) AS amarillas,
+                   SUM(rojas) AS rojas
+            FROM Estadisticas_Temporada
+            WHERE jugador_id = ?
+            GROUP BY jugador_id
+        """;
+    
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, jugadorId);
+            ResultSet rs = ps.executeQuery();
+    
+            if (rs.next()) {
+                int goles = rs.getInt("goles");
+                int asistencias = rs.getInt("asistencias");
+                int minutos = rs.getInt("minutos");
+                int partidos = rs.getInt("partidos");
+                int amarillas = rs.getInt("amarillas");
+                int rojas = rs.getInt("rojas");
+    
+                int promedioGoles = (goles > 0) ? (minutos / goles) : 0;
+    
+                EstadisticasTemporada est = new EstadisticasTemporada(
+                        jugadorId, 0, 0, 0, goles, asistencias, minutos, partidos, amarillas, rojas, promedioGoles);
+    
+                rs.close();
+                ps.close();
+                return est;
+            }
+    
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener estadísticas totales del jugador: " + e.getMessage());
+        }
+    
+        return null;
     }
+
+    
+    @Override
+public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException {
+    final String query = """
+        SELECT jugador_id, temporada_id,
+               SUM(goles) AS goles,
+               SUM(asistencias) AS asistencias,
+               SUM(minutos) AS minutos,
+               SUM(partidos_jugados) AS partidos,
+               SUM(amarillas) AS amarillas,
+               SUM(rojas) AS rojas
+        FROM Estadisticas_Temporada
+        WHERE jugador_id = ? AND temporada_id = ?
+        GROUP BY jugador_id, temporada_id
+    """;
+
+    try {
+        PreparedStatement ps = conn.prepareStatement(query);
+        ps.setInt(1, jugadorId);
+        ps.setInt(2, temporadaId);
+        ResultSet rs = ps.executeQuery();
+
+        if (rs.next()) {
+            int goles = rs.getInt("goles");
+            int asistencias = rs.getInt("asistencias");
+            int minutos = rs.getInt("minutos");
+            int partidos = rs.getInt("partidos");
+            int amarillas = rs.getInt("amarillas");
+            int rojas = rs.getInt("rojas");
+
+            int promedioGoles = (goles > 0) ? (minutos / goles) : 0;
+
+            EstadisticasTemporada est = new EstadisticasTemporada(
+                    jugadorId, temporadaId, 0, 0, goles, asistencias, minutos, partidos, amarillas, rojas, promedioGoles);
+
+            rs.close();
+            ps.close();
+            return est;
+        }
+
+        rs.close();
+        ps.close();
+    } catch (Exception e) {
+        throw new BBDDException("Error al obtener estadísticas por temporada: " + e.getMessage());
+    }
+
+    return null;
+}
+
+    
 
     @Override
     public int insertar(Traspaso traspaso) throws BBDDException {
@@ -1385,109 +1576,109 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     }
 
     @Override
-public int insertar(ValorMercadoHistorial historial) throws BBDDException {
-    int numRegistrosActualizados = 0;
+    public int insertar(ValorMercadoHistorial historial) throws BBDDException {
+        int numRegistrosActualizados = 0;
 
-    final String sql = "INSERT INTO Valor_Mercado_Historial (jugador_id, fecha, valor_mercado, motivo) VALUES (?, ?, ?, ?)";
+        final String sql = "INSERT INTO Valor_Mercado_Historial (jugador_id, fecha, valor_mercado, motivo) VALUES (?, ?, ?, ?)";
 
-    try {
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ps.setInt(1, historial.getJugadorId());
-        ps.setDate(2, java.sql.Date.valueOf(historial.getFecha()));
-        ps.setFloat(3, historial.getValorMercado());
-        ps.setString(4, historial.getMotivo());
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, historial.getJugadorId());
+            ps.setDate(2, java.sql.Date.valueOf(historial.getFecha()));
+            ps.setFloat(3, historial.getValorMercado());
+            ps.setString(4, historial.getMotivo());
 
-        numRegistrosActualizados = ps.executeUpdate();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
-    }
-
-    return numRegistrosActualizados;
-}
-
-@Override
-public int modificar(ValorMercadoHistorial historial) throws BBDDException {
-    int numRegistrosActualizados = 0;
-
-    final String sql = "UPDATE Valor_Mercado_Historial SET jugador_id = ?, fecha = ?, valor_mercado = ?, motivo = ? WHERE id_historial = ?";
-
-    try {
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ps.setInt(1, historial.getJugadorId());
-        ps.setDate(2, java.sql.Date.valueOf(historial.getFecha()));
-        ps.setFloat(3, historial.getValorMercado());
-        ps.setString(4, historial.getMotivo());
-        ps.setInt(5, historial.getIdHistorial());
-
-        numRegistrosActualizados = ps.executeUpdate();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
-    }
-
-    return numRegistrosActualizados;
-}
-
-@Override
-public int eliminarValorMercadoHistorial(int idHistorial) throws BBDDException {
-    int numRegistrosActualizados = 0;
-
-    final String sql = "DELETE FROM Valor_Mercado_Historial WHERE id_historial = ?";
-
-    try {
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ps.setInt(1, idHistorial);
-
-        numRegistrosActualizados = ps.executeUpdate();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
-    }
-
-    return numRegistrosActualizados;
-}
-
-@Override
-public List<ValorMercadoHistorial> listarValorMercadoHistorial() throws BBDDException {
-    final String query = "SELECT * FROM Valor_Mercado_Historial";
-    List<ValorMercadoHistorial> lista = new ArrayList<>();
-
-    try {
-        PreparedStatement ps = conn.prepareStatement(query);
-        ResultSet rs = ps.executeQuery();
-
-        while (rs.next()) {
-            int idHistorial = rs.getInt("id_historial");
-            int jugadorId = rs.getInt("jugador_id");
-            LocalDate fecha = rs.getDate("fecha").toLocalDate();
-            float valorMercado = rs.getFloat("valor_mercado");
-            String motivo = rs.getString("motivo");
-
-            ValorMercadoHistorial historial = new ValorMercadoHistorial(idHistorial, jugadorId, fecha, valorMercado, motivo);
-            lista.add(historial);
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
         }
 
-        rs.close();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
+        return numRegistrosActualizados;
     }
 
-    return lista;
-}
+    @Override
+    public int modificar(ValorMercadoHistorial historial) throws BBDDException {
+        int numRegistrosActualizados = 0;
 
+        final String sql = "UPDATE Valor_Mercado_Historial SET jugador_id = ?, fecha = ?, valor_mercado = ?, motivo = ? WHERE id_historial = ?";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, historial.getJugadorId());
+            ps.setDate(2, java.sql.Date.valueOf(historial.getFecha()));
+            ps.setFloat(3, historial.getValorMercado());
+            ps.setString(4, historial.getMotivo());
+            ps.setInt(5, historial.getIdHistorial());
+
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return numRegistrosActualizados;
+    }
+
+    @Override
+    public int eliminarValorMercadoHistorial(int idHistorial) throws BBDDException {
+        int numRegistrosActualizados = 0;
+
+        final String sql = "DELETE FROM Valor_Mercado_Historial WHERE id_historial = ?";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, idHistorial);
+
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return numRegistrosActualizados;
+    }
+
+    @Override
+    public List<ValorMercadoHistorial> listarValorMercadoHistorial() throws BBDDException {
+        final String query = "SELECT * FROM Valor_Mercado_Historial";
+        List<ValorMercadoHistorial> lista = new ArrayList<>();
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                int idHistorial = rs.getInt("id_historial");
+                int jugadorId = rs.getInt("jugador_id");
+                LocalDate fecha = rs.getDate("fecha").toLocalDate();
+                float valorMercado = rs.getFloat("valor_mercado");
+                String motivo = rs.getString("motivo");
+
+                ValorMercadoHistorial historial = new ValorMercadoHistorial(idHistorial, jugadorId, fecha, valorMercado,
+                        motivo);
+                lista.add(historial);
+            }
+
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return lista;
+    }
 
     @Override
     public int insertar(Noticia noticia) throws BBDDException {
         int numRegistrosActualizados = 0;
-    
+
         final String sql = "INSERT INTO Noticia (jugador_id, equipo_id, usuario_id, titulo, contenido, foto_url, categoria, fecha) "
                 + "VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
-    
+
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
-    
+
             ps.setObject(1, noticia.getJugadorId(), java.sql.Types.INTEGER);
             ps.setObject(2, noticia.getEquipoId(), java.sql.Types.INTEGER);
             ps.setInt(3, noticia.getUsuarioId());
@@ -1496,26 +1687,26 @@ public List<ValorMercadoHistorial> listarValorMercadoHistorial() throws BBDDExce
             ps.setString(6, noticia.getFotoUrl());
             ps.setString(7, noticia.getCategoria());
             ps.setDate(8, java.sql.Date.valueOf(noticia.getFecha()));
-    
+
             numRegistrosActualizados = ps.executeUpdate();
             ps.close();
         } catch (Exception e) {
             throw new BBDDException(e.getMessage());
         }
-    
+
         return numRegistrosActualizados;
     }
-    
+
     @Override
     public int modificar(Noticia noticia) throws BBDDException {
         int numRegistrosActualizados = 0;
-    
+
         final String sql = "UPDATE Noticia SET jugador_id = ?, equipo_id = ?, usuario_id = ?, titulo = ?, contenido = ?, foto_url = ?, categoria = ?, fecha = ? "
                 + "WHERE id_noticia = ?";
-    
+
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
-    
+
             ps.setObject(1, noticia.getJugadorId(), java.sql.Types.INTEGER);
             ps.setObject(2, noticia.getEquipoId(), java.sql.Types.INTEGER);
             ps.setInt(3, noticia.getUsuarioId());
@@ -1525,44 +1716,44 @@ public List<ValorMercadoHistorial> listarValorMercadoHistorial() throws BBDDExce
             ps.setString(7, noticia.getCategoria());
             ps.setDate(8, java.sql.Date.valueOf(noticia.getFecha()));
             ps.setInt(9, noticia.getIdNoticia());
-    
+
             numRegistrosActualizados = ps.executeUpdate();
             ps.close();
         } catch (Exception e) {
             throw new BBDDException(e.getMessage());
         }
-    
+
         return numRegistrosActualizados;
     }
-    
+
     @Override
     public int eliminarNoticia(int idNoticia) throws BBDDException {
         int numRegistrosActualizados = 0;
-    
+
         final String sql = "DELETE FROM Noticia WHERE id_noticia = ?";
-    
+
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setInt(1, idNoticia);
-    
+
             numRegistrosActualizados = ps.executeUpdate();
             ps.close();
         } catch (Exception e) {
             throw new BBDDException(e.getMessage());
         }
-    
+
         return numRegistrosActualizados;
     }
-    
+
     @Override
     public List<Noticia> listarNoticias() throws BBDDException {
         final String query = "SELECT * FROM Noticia";
         List<Noticia> lista = new ArrayList<>();
-    
+
         try {
             PreparedStatement ps = conn.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
-    
+
             while (rs.next()) {
                 int id = rs.getInt("id_noticia");
                 Integer jugadorId = rs.getObject("jugador_id") != null ? rs.getInt("jugador_id") : null;
@@ -1573,211 +1764,209 @@ public List<ValorMercadoHistorial> listarValorMercadoHistorial() throws BBDDExce
                 String fotoUrl = rs.getString("foto_url");
                 String categoria = rs.getString("categoria");
                 LocalDate fecha = rs.getDate("fecha").toLocalDate();
-    
-                Noticia noticia = new Noticia(id, jugadorId, equipoId, usuarioId, titulo, contenido, fotoUrl, categoria, fecha);
+
+                Noticia noticia = new Noticia(id, jugadorId, equipoId, usuarioId, titulo, contenido, fotoUrl, categoria,
+                        fecha);
                 lista.add(noticia);
             }
-    
+
             rs.close();
             ps.close();
         } catch (Exception e) {
             throw new BBDDException(e.getMessage());
         }
-    
+
         return lista;
     }
-    
 
     @Override
-public int insertar(Usuario usuario) throws BBDDException {
-    int numRegistrosActualizados = 0;
+    public int insertar(Usuario usuario) throws BBDDException {
+        int numRegistrosActualizados = 0;
 
-    final String sql = "INSERT INTO Usuario (nombre, email, contraseña, rol, fecha_registro) VALUES (?, ?, ?, ?, ?)";
+        final String sql = "INSERT INTO Usuario (nombre, email, contraseña, rol, fecha_registro) VALUES (?, ?, ?, ?, ?)";
 
-    try {
-        PreparedStatement ps = conn.prepareStatement(sql);
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
 
-        ps.setString(1, usuario.getNombre());
-        ps.setString(2, usuario.getEmail());
-        ps.setString(3, usuario.getContrasena());
-        ps.setString(4, usuario.getRol());
-        ps.setDate(5, java.sql.Date.valueOf(usuario.getFechaRegistro()));
+            ps.setString(1, usuario.getNombre());
+            ps.setString(2, usuario.getEmail());
+            ps.setString(3, usuario.getContrasena());
+            ps.setString(4, usuario.getRol());
+            ps.setDate(5, java.sql.Date.valueOf(usuario.getFechaRegistro()));
 
-        numRegistrosActualizados = ps.executeUpdate();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
-    }
-
-    return numRegistrosActualizados;
-}
-
-@Override
-public int modificar(Usuario usuario) throws BBDDException {
-    int numRegistrosActualizados = 0;
-
-    final String sql = "UPDATE Usuario SET nombre = ?, email = ?, contraseña = ?, rol = ?, fecha_registro = ? WHERE id_usuario = ?";
-
-    try {
-        PreparedStatement ps = conn.prepareStatement(sql);
-
-        ps.setString(1, usuario.getNombre());
-        ps.setString(2, usuario.getEmail());
-        ps.setString(3, usuario.getContrasena());
-        ps.setString(4, usuario.getRol());
-        ps.setDate(5, java.sql.Date.valueOf(usuario.getFechaRegistro()));
-        ps.setInt(6, usuario.getIdUsuario());
-
-        numRegistrosActualizados = ps.executeUpdate();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
-    }
-
-    return numRegistrosActualizados;
-}
-
-@Override
-public int eliminarUsuario(int idUsuario) throws BBDDException {
-    int numRegistrosActualizados = 0;
-
-    final String sql = "DELETE FROM Usuario WHERE id_usuario = ?";
-
-    try {
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ps.setInt(1, idUsuario);
-
-        numRegistrosActualizados = ps.executeUpdate();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
-    }
-
-    return numRegistrosActualizados;
-}
-
-@Override
-public List<Usuario> listarUsuarios() throws BBDDException {
-    final String query = "SELECT * FROM Usuario";
-    List<Usuario> lista = new ArrayList<>();
-
-    try {
-        PreparedStatement ps = conn.prepareStatement(query);
-        ResultSet rs = ps.executeQuery();
-
-        while (rs.next()) {
-            int id = rs.getInt("id_usuario");
-            String nombre = rs.getString("nombre");
-            String email = rs.getString("email");
-            String contrasena = rs.getString("contraseña");
-            String rol = rs.getString("rol");
-            LocalDate fechaRegistro = rs.getDate("fecha_registro").toLocalDate();
-
-            Usuario usuario = new Usuario(id, nombre, email, contrasena, rol, fechaRegistro);
-            lista.add(usuario);
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
         }
 
-        rs.close();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
+        return numRegistrosActualizados;
     }
 
-    return lista;
-}
+    @Override
+    public int modificar(Usuario usuario) throws BBDDException {
+        int numRegistrosActualizados = 0;
 
+        final String sql = "UPDATE Usuario SET nombre = ?, email = ?, contraseña = ?, rol = ?, fecha_registro = ? WHERE id_usuario = ?";
 
-@Override
-public int insertar(EquipoEntrenador relacion) throws BBDDException {
-    int numRegistrosActualizados = 0;
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
 
-    final String sql = "INSERT INTO Equipo_Entrenador (entrenador_id, equipo_id, fecha_inicio, fecha_fin) VALUES (?, ?, ?, ?)";
+            ps.setString(1, usuario.getNombre());
+            ps.setString(2, usuario.getEmail());
+            ps.setString(3, usuario.getContrasena());
+            ps.setString(4, usuario.getRol());
+            ps.setDate(5, java.sql.Date.valueOf(usuario.getFechaRegistro()));
+            ps.setInt(6, usuario.getIdUsuario());
 
-    try {
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ps.setInt(1, relacion.getEntrenadorId());
-        ps.setInt(2, relacion.getEquipoId());
-        ps.setDate(3, java.sql.Date.valueOf(relacion.getFechaInicio()));
-        ps.setObject(4, relacion.getFechaFin(), java.sql.Types.DATE);
-
-        numRegistrosActualizados = ps.executeUpdate();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
-    }
-
-    return numRegistrosActualizados;
-}
-
-@Override
-public int modificar(EquipoEntrenador relacion) throws BBDDException {
-    int numRegistrosActualizados = 0;
-
-    final String sql = "UPDATE Equipo_Entrenador SET entrenador_id = ?, equipo_id = ?, fecha_inicio = ?, fecha_fin = ? WHERE id = ?";
-
-    try {
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ps.setInt(1, relacion.getEntrenadorId());
-        ps.setInt(2, relacion.getEquipoId());
-        ps.setDate(3, java.sql.Date.valueOf(relacion.getFechaInicio()));
-        ps.setObject(4, relacion.getFechaFin(), java.sql.Types.DATE);
-
-        numRegistrosActualizados = ps.executeUpdate();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
-    }
-
-    return numRegistrosActualizados;
-}
-
-@Override
-public int eliminarEquipoEntrenador(int entrenadorId, int equipoId) throws BBDDException{
-    int numRegistrosActualizados = 0;
-
-    final String sql = "DELETE FROM Equipo_Entrenador WHERE id = ?";
-
-    try {
-        PreparedStatement ps = conn.prepareStatement(sql);
-        ps.setInt(1, entrenadorId);
-
-        numRegistrosActualizados = ps.executeUpdate();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
-    }
-
-    return numRegistrosActualizados;
-}
-
-@Override
-public List<EquipoEntrenador> listarEquiposEntrenador() throws BBDDException {
-    final String query = "SELECT * FROM Equipo_Entrenador";
-    List<EquipoEntrenador> lista = new ArrayList<>();
-
-    try {
-        PreparedStatement ps = conn.prepareStatement(query);
-        ResultSet rs = ps.executeQuery();
-
-        while (rs.next()) {
-            int id = rs.getInt("id");
-            int entrenadorId = rs.getInt("entrenador_id");
-            int equipoId = rs.getInt("equipo_id");
-            LocalDate fechaInicio = rs.getDate("fecha_inicio").toLocalDate();
-            LocalDate fechaFin = rs.getObject("fecha_fin") != null ? rs.getDate("fecha_fin").toLocalDate() : null;
-
-            EquipoEntrenador relacion = new EquipoEntrenador(entrenadorId, equipoId, fechaInicio, fechaFin);
-            lista.add(relacion);
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
         }
 
-        rs.close();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException(e.getMessage());
+        return numRegistrosActualizados;
     }
 
-    return lista;
-}
+    @Override
+    public int eliminarUsuario(int idUsuario) throws BBDDException {
+        int numRegistrosActualizados = 0;
 
+        final String sql = "DELETE FROM Usuario WHERE id_usuario = ?";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, idUsuario);
+
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return numRegistrosActualizados;
+    }
+
+    @Override
+    public List<Usuario> listarUsuarios() throws BBDDException {
+        final String query = "SELECT * FROM Usuario";
+        List<Usuario> lista = new ArrayList<>();
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                int id = rs.getInt("id_usuario");
+                String nombre = rs.getString("nombre");
+                String email = rs.getString("email");
+                String contrasena = rs.getString("contraseña");
+                String rol = rs.getString("rol");
+                LocalDate fechaRegistro = rs.getDate("fecha_registro").toLocalDate();
+
+                Usuario usuario = new Usuario(id, nombre, email, contrasena, rol, fechaRegistro);
+                lista.add(usuario);
+            }
+
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return lista;
+    }
+
+    @Override
+    public int insertar(EquipoEntrenador relacion) throws BBDDException {
+        int numRegistrosActualizados = 0;
+
+        final String sql = "INSERT INTO Equipo_Entrenador (entrenador_id, equipo_id, fecha_inicio, fecha_fin) VALUES (?, ?, ?, ?)";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, relacion.getEntrenadorId());
+            ps.setInt(2, relacion.getEquipoId());
+            ps.setDate(3, java.sql.Date.valueOf(relacion.getFechaInicio()));
+            ps.setObject(4, relacion.getFechaFin(), java.sql.Types.DATE);
+
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return numRegistrosActualizados;
+    }
+
+    @Override
+    public int modificar(EquipoEntrenador relacion) throws BBDDException {
+        int numRegistrosActualizados = 0;
+
+        final String sql = "UPDATE Equipo_Entrenador SET entrenador_id = ?, equipo_id = ?, fecha_inicio = ?, fecha_fin = ? WHERE id = ?";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, relacion.getEntrenadorId());
+            ps.setInt(2, relacion.getEquipoId());
+            ps.setDate(3, java.sql.Date.valueOf(relacion.getFechaInicio()));
+            ps.setObject(4, relacion.getFechaFin(), java.sql.Types.DATE);
+
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return numRegistrosActualizados;
+    }
+
+    @Override
+    public int eliminarEquipoEntrenador(int entrenadorId, int equipoId) throws BBDDException {
+        int numRegistrosActualizados = 0;
+
+        final String sql = "DELETE FROM Equipo_Entrenador WHERE id = ?";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setInt(1, entrenadorId);
+
+            numRegistrosActualizados = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return numRegistrosActualizados;
+    }
+
+    @Override
+    public List<EquipoEntrenador> listarEquiposEntrenador() throws BBDDException {
+        final String query = "SELECT * FROM Equipo_Entrenador";
+        List<EquipoEntrenador> lista = new ArrayList<>();
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ResultSet rs = ps.executeQuery();
+
+            while (rs.next()) {
+                int id = rs.getInt("id");
+                int entrenadorId = rs.getInt("entrenador_id");
+                int equipoId = rs.getInt("equipo_id");
+                LocalDate fechaInicio = rs.getDate("fecha_inicio").toLocalDate();
+                LocalDate fechaFin = rs.getObject("fecha_fin") != null ? rs.getDate("fecha_fin").toLocalDate() : null;
+
+                EquipoEntrenador relacion = new EquipoEntrenador(entrenadorId, equipoId, fechaInicio, fechaFin);
+                lista.add(relacion);
+            }
+
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return lista;
+    }
 
 }

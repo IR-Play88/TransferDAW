@@ -146,11 +146,14 @@ public interface TransferDAWDAO {
 
     public int modificar(EstadisticasTemporada estadisticasTemporada) throws BBDDException;
 
-    public int eliminarEstadisticasTemporada(int jugadorId, int temporadaId, int competicionId, int equipoId) throws BBDDException;
+    public int eliminarEstadisticasTemporada(int jugadorId, int temporadaId, int competicionId, int equipoId)
+            throws BBDDException;
 
     public List<EstadisticasTemporada> listarEstadisticasTemporada() throws BBDDException;
 
-    public List<EstadisticasTemporada> buscarPorJugador(int jugadorId) throws BBDDException;
+    public EstadisticasTemporada buscarEstadisticasTotalesPorJugador(int jugadorId) throws BBDDException;
+
+    public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException;
 
     // Traspaso
     public int insertar(Traspaso traspaso) throws BBDDException;
