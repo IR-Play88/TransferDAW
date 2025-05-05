@@ -1,6 +1,6 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Noticia {
     private int idNoticia;
@@ -11,13 +11,13 @@ public class Noticia {
     private String contenido;
     private String fotoUrl;
     private String categoria;
-    private Date fecha;
+    private LocalDate fecha;
 
     public Noticia() {
     }
 
     public Noticia(int idNoticia, Integer jugadorId, Integer equipoId, Integer usuarioId, String titulo,
-            String contenido, String fotoUrl, String categoria, Date fecha) {
+            String contenido, String fotoUrl, String categoria, LocalDate fecha) {
         this.idNoticia = idNoticia;
         this.jugadorId = jugadorId;
         this.equipoId = equipoId;
@@ -93,11 +93,11 @@ public class Noticia {
         this.categoria = categoria;
     }
 
-    public Date getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
 

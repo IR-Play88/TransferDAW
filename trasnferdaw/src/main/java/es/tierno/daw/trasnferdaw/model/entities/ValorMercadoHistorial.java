@@ -1,18 +1,19 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
 import java.sql.Date;
+import java.time.LocalDate;
 
 public class ValorMercadoHistorial {
     private int idHistorial;
     private int jugadorId;
-    private Date fecha;
+    private LocalDate fecha;
     private float valorMercado;
     private String motivo;
 
     public ValorMercadoHistorial() {
     }
 
-    public ValorMercadoHistorial(int idHistorial, int jugadorId, Date fecha, float valorMercado, String motivo) {
+    public ValorMercadoHistorial(int idHistorial, int jugadorId, LocalDate fecha, float valorMercado, String motivo) {
         this.idHistorial = idHistorial;
         this.jugadorId = jugadorId;
         this.fecha = fecha;
@@ -36,11 +37,11 @@ public class ValorMercadoHistorial {
         this.jugadorId = jugadorId;
     }
 
-    public Date getFecha() {
+    public LocalDate getFecha() {
         return fecha;
     }
 
-    public void setFecha(Date fecha) {
+    public void setFecha(LocalDate fecha) {
         this.fecha = fecha;
     }
 

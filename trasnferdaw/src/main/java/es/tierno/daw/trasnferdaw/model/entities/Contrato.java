@@ -1,13 +1,13 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Contrato {
     private int idContrato;
     private int jugadorId;
     private Integer equipoId;
-    private Date fechaInicio;
-    private Date fechaFin;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
     private float salario;
     private float bonificaciones;
     private String tipoContrato;
@@ -16,7 +16,7 @@ public class Contrato {
     public Contrato() {
     }
 
-    public Contrato(int idContrato, int jugadorId, Integer equipoId, Date fechaInicio, Date fechaFin, float salario,
+    public Contrato(int idContrato, int jugadorId, Integer equipoId, LocalDate fechaInicio, LocalDate fechaFin, float salario,
             float bonificaciones, String tipoContrato, float clausulaRescision) {
         this.idContrato = idContrato;
         this.jugadorId = jugadorId;
@@ -53,19 +53,19 @@ public class Contrato {
         this.equipoId = equipoId;
     }
 
-    public Date getFechaInicio() {
+    public LocalDate getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(Date fechaInicio) {
+    public void setFechaInicio(LocalDate fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public Date getFechaFin() {
+    public LocalDate getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(Date fechaFin) {
+    public void setFechaFin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
     }
 

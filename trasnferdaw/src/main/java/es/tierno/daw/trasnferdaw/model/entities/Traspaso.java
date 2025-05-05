@@ -1,6 +1,6 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Traspaso {
     private int idTraspaso;
@@ -8,7 +8,7 @@ public class Traspaso {
     private Integer equipoOrigenId;
     private Integer equipoDestinoId;
     private Integer temporadaId;
-    private Date fechaTraspaso;
+    private LocalDate fechaTraspaso;
     private float cantidad;
     private float clausulaTraspaso;
     private float bonificaciones;
@@ -18,7 +18,7 @@ public class Traspaso {
     }
 
     public Traspaso(int idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId,
-            Date fechaTraspaso, float cantidad, float clausulaTraspaso, float bonificaciones, String tipo) {
+    LocalDate fechaTraspaso, float cantidad, float clausulaTraspaso, float bonificaciones, String tipo) {
         this.idTraspaso = idTraspaso;
         this.jugadorId = jugadorId;
         this.equipoOrigenId = equipoOrigenId;
@@ -71,11 +71,11 @@ public class Traspaso {
         this.temporadaId = temporadaId;
     }
 
-    public Date getFechaTraspaso() {
+    public LocalDate getFechaTraspaso() {
         return fechaTraspaso;
     }
 
-    public void setFechaTraspaso(Date fechaTraspaso) {
+    public void setFechaTraspaso(LocalDate fechaTraspaso) {
         this.fechaTraspaso = fechaTraspaso;
     }
 

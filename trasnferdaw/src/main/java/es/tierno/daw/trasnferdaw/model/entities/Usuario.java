@@ -1,6 +1,6 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class Usuario {
     private int idUsuario;
@@ -8,12 +8,12 @@ public class Usuario {
     private String email;
     private String contrasena;
     private String rol;
-    private Date fechaRegistro;
+    private LocalDate fechaRegistro;
 
     public Usuario() {
     }
 
-    public Usuario(int idUsuario, String nombre, String email, String contrasena, String rol, Date fechaRegistro) {
+    public Usuario(int idUsuario, String nombre, String email, String contrasena, String rol, LocalDate fechaRegistro) {
         this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.email = email;
@@ -62,11 +62,11 @@ public class Usuario {
         this.rol = rol;
     }
 
-    public Date getFechaRegistro() {
+    public LocalDate getFechaRegistro() {
         return fechaRegistro;
     }
 
-    public void setFechaRegistro(Date fechaRegistro) {
+    public void setFechaRegistro(LocalDate fechaRegistro) {
         this.fechaRegistro = fechaRegistro;
     }
 

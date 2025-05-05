@@ -1,17 +1,17 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-import java.sql.Date;
+import java.time.LocalDate;
 
 public class EquipoEntrenador {
     private int entrenadorId;
     private int equipoId;
-    private Date fechaInicio;
-    private Date fechaFin;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
 
     public EquipoEntrenador() {
     }
 
-    public EquipoEntrenador(int entrenadorId, int equipoId, Date fechaInicio, Date fechaFin) {
+    public EquipoEntrenador(int entrenadorId, int equipoId, LocalDate fechaInicio, LocalDate fechaFin) {
         this.entrenadorId = entrenadorId;
         this.equipoId = equipoId;
         this.fechaInicio = fechaInicio;
@@ -34,19 +34,19 @@ public class EquipoEntrenador {
         this.equipoId = equipoId;
     }
 
-    public Date getFechaInicio() {
+    public LocalDate getFechaInicio() {
         return fechaInicio;
     }
 
-    public void setFechaInicio(Date fechaInicio) {
+    public void setFechaInicio(LocalDate fechaInicio) {
         this.fechaInicio = fechaInicio;
     }
 
-    public Date getFechaFin() {
+    public LocalDate getFechaFin() {
         return fechaFin;
     }
 
-    public void setFechaFin(Date fechaFin) {
+    public void setFechaFin(LocalDate fechaFin) {
         this.fechaFin = fechaFin;
     }
 

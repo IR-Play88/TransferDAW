@@ -4,6 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.fail;
 
 import java.sql.SQLException;
@@ -15,14 +16,23 @@ import org.junit.jupiter.api.Test;
 
 import es.tierno.daw.trasnferdaw.model.entities.CategoriaPosicion;
 import es.tierno.daw.trasnferdaw.model.entities.Competicion;
+import es.tierno.daw.trasnferdaw.model.entities.Contrato;
 import es.tierno.daw.trasnferdaw.model.entities.Entrenador;
 import es.tierno.daw.trasnferdaw.model.entities.Equipo;
 import es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion;
+import es.tierno.daw.trasnferdaw.model.entities.EquipoEntrenador;
+import es.tierno.daw.trasnferdaw.model.entities.EquipoEstadio;
+import es.tierno.daw.trasnferdaw.model.entities.Estadio;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
+import es.tierno.daw.trasnferdaw.model.entities.JugadorPosicion;
+import es.tierno.daw.trasnferdaw.model.entities.Noticia;
 import es.tierno.daw.trasnferdaw.model.entities.Posicion;
 import es.tierno.daw.trasnferdaw.model.entities.Representante;
 import es.tierno.daw.trasnferdaw.model.entities.Seleccion;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
+import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
+import es.tierno.daw.trasnferdaw.model.entities.Usuario;
+import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
 import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
 
 /**
@@ -445,10 +455,366 @@ public void eliminarEquipoCompeticionTest() throws Exception {
         assertEquals(45, equipoCompeticiones.size());// o puedes comprobar exacto si conoces el número
     }
 
+@Test
+public void insertarContratoTest() throws Exception {
+    Contrato contrato = new Contrato(0, 1, 1, LocalDate.of(2025, 1, 1), LocalDate.of(2026, 1, 1), 5000000.0f, 560000.0f,"cesion",1000);
+    int real = dao.insertar(contrato);
+    assertEquals(1, real);
+}
+
+@Test
+public void actualizarContratoTest() throws Exception {
+    List<Contrato> contratos = dao.listarContratos();
+    for (Contrato contrato : contratos) {
+        if (contrato.getJugadorId() == 9 && contrato.getEquipoId() == 9) {
+            contrato.setSalario(7500000.0f); // modificamos algo
+            int actualizados = dao.modificar(contrato);
+            assertEquals(1, actualizados);
+            break;
+        }
+    }
+}
+
+@Test
+public void eliminarContratoTest() throws Exception {
+    List<Contrato> contratos = dao.listarContratos();
+
+    int idContratoAEliminar = -1;
+    for (Contrato contrato : contratos) {
+        if (contrato.getSalario() == 7500000.0f) { // criterio de prueba
+            idContratoAEliminar = contrato.getIdContrato();
+            break;
+        }
+    }
+
+    // Validación defensiva
+    assertNotEquals(-1, idContratoAEliminar, "No se encontró un contrato con salario 7500000");
+
+    int real = dao.eliminarContrato(idContratoAEliminar);
+    assertEquals(1, real);
+}
+
+@Test
+public void listarContratosTest() throws Exception {
+    List<Contrato> contratos = dao.listarContratos();
+    assertEquals(5, contratos.size()); // o usa assertEquals si conoces el número exacto
+}
+
+@Test
+public void insertarEstadioTest() throws Exception {
+    Estadio estadio = new Estadio(0, null, "Nuevo Estadio", 35000, "Sevilla, España", 2025);
+    int real = dao.insertar(estadio);
+    assertEquals(1, real);
+}
+
+@Test
+public void actualizarEstadioTest() throws Exception {
+    List<Estadio> estadios = dao.listarEstadios();
+    for (Estadio estadio : estadios) {
+        if ("Nuevo Estadio".equals(estadio.getNombre())) {
+            estadio.setCapacidad(40000); // modificamos algo
+            int actualizados = dao.modificar(estadio);
+            assertEquals(1, actualizados);
+            break;
+        }
+    }
+}
+
+@Test
+public void eliminarEstadioTest() throws Exception {
+    List<Estadio> estadios = dao.listarEstadios();
+    int idEstadio = -1;
+    for (Estadio estadio : estadios) {
+        if (estadio.getCapacidad() == 40000) {
+            idEstadio = estadio.getIdEstadio();
+            break;
+        }
+    }
+
+    assertNotEquals(-1, idEstadio, "No se encontró un estadio con capacidad 40000");
+
+    int real = dao.eliminarEstadio(idEstadio);
+    assertEquals(1, real);
+}
+
+@Test
+public void listarEstadiosTest() throws Exception {
+    List<Estadio> estadios = dao.listarEstadios();
+    assertEquals(5, estadios.size()); // ajusta el número si cambia el total real
+}
 
 
+@Test
+public void insertarEquipoEstadioTest() throws Exception {
+    EquipoEstadio ee = new EquipoEstadio(9, 3, LocalDate.of(2024, 1, 1), null);
+    int real = dao.insertar(ee);
+    assertEquals(1, real);
+}
 
+@Test
+public void actualizarEquipoEstadioTest() throws Exception {
+    List<EquipoEstadio> relaciones = dao.listarEquiposEstadio();
+    for (EquipoEstadio ee : relaciones) {
+        if (ee.getEquipoId() == 9 && ee.getEstadioId() == 3 && ee.getFechaInicio().equals(LocalDate.of(2024, 1, 1))) {
+            ee.setFechaFin(LocalDate.of(2025, 1, 1));
+            int actualizados = dao.modificar(ee);
+            assertEquals(1, actualizados);
+            break;
+        }
+    }
+}
+
+@Test
+public void eliminarEquipoEstadioTest() throws Exception {
+    List<EquipoEstadio> relaciones = dao.listarEquiposEstadio();
+    int equipoId = -1, estadioId = -1;
+    LocalDate fechaInicio = null;
+
+    for (EquipoEstadio ee : relaciones) {
+        if (ee.getFechaFin() != null && ee.getFechaFin().equals(LocalDate.of(2025, 1, 1))) {
+            equipoId = ee.getEquipoId();
+            estadioId = ee.getEstadioId();
+            fechaInicio = ee.getFechaInicio();
+            break;
+        }
+    }
+
+    assertNotEquals(-1, equipoId, "No se encontró relación con fecha_fin 2025-01-01");
+
+    int real = dao.eliminarEquipoEstadio(equipoId, estadioId);
+    assertEquals(1, real);
+}
+
+@Test
+public void listarEquipoEstadioTest() throws Exception {
+    List<EquipoEstadio> relaciones = dao.listarEquiposEstadio();
+    assertEquals(5, relaciones.size()); // actualiza según tu dataset
+}
 
     
+@Test
+public void insertarJugadorPosicionTest() throws Exception {
+    JugadorPosicion jp = new JugadorPosicion(2, 12, 50, true); // datos de prueba
+    int real = dao.insertar(jp);
+    assertEquals(1, real);
+}
+
+@Test
+public void modificarJugadorPosicionTest() throws Exception {
+    List<JugadorPosicion> posiciones = dao.listarJugadoresPosicion();
+    for (JugadorPosicion jp : posiciones) {
+        if (jp.getJugadorId() == 2 && jp.getPosicionId() == 12 && jp.getTemporadaId() == 50) {
+            jp.setEsPrincipal(false); // cambiar valor
+            int actualizados = dao.modificar(jp);
+            assertEquals(1, actualizados);
+            break;
+        }
+    }
+}
+
+@Test
+public void eliminarJugadorPosicionTest() throws Exception {
+    List<JugadorPosicion> posiciones = dao.listarJugadoresPosicion();
+
+    int jugadorId = -1, posicionId = -1, temporadaId = -1;
+
+    for (JugadorPosicion jp : posiciones) {
+        if (jp.getPosicionId() == 12 && jp.getTemporadaId() == 50) { // criterio usado antes
+            jugadorId = jp.getJugadorId();
+            posicionId = jp.getPosicionId();
+            temporadaId = jp.getTemporadaId();
+            break;
+        }
+    }
+
+    assertNotEquals(-1, jugadorId, "No se encontró una posición de jugador válida para eliminar");
+
+    int real = dao.eliminarJugadorPosicion(jugadorId, posicionId, temporadaId);
+    assertEquals(1, real);
+}
+
+@Test
+public void listarJugadorPosicionTest() throws Exception {
+    List<JugadorPosicion> posiciones = dao.listarJugadoresPosicion();
+    assertEquals(12, posiciones.size()); // o assertEquals(x, size) si sabes el número exacto
+}
+
+/*Estadisticas_temporada */
+
+
+@Test
+public void insertarTraspasoTest() throws Exception {
+    Traspaso traspaso = new Traspaso(0, 2, 3, 2, 50, 
+        LocalDate.of(2025, 1, 1), 1000000.0f, 0.0f, 0.0f, "compra");
+    int real = dao.insertar(traspaso);
+    assertEquals(1, real);
+}
+
+@Test
+public void modificarTraspasoTest() throws Exception {
+    List<Traspaso> traspasos = dao.listarTraspasos();
+    for (Traspaso t : traspasos) {
+        if (t.getJugadorId() == 2 && t.getTemporadaId() == 50 && t.getEquipoOrigenId() == 3) {
+            t.setCantidad(2000000.0f); // modificamos algo
+            int actualizados = dao.modificar(t);
+            assertEquals(1, actualizados);
+            break;
+        }
+    }
+}
+
+@Test
+public void eliminarTraspasoTest() throws Exception {
+    List<Traspaso> traspasos = dao.listarTraspasos();
+    int idTraspaso = -1;
+
+    for (Traspaso t : traspasos) {
+        if (t.getCantidad() == 2000000.0f) {
+            idTraspaso = t.getIdTraspaso();
+            break;
+        }
+    }
+
+    assertNotEquals(-1, idTraspaso, "No se encontró un traspaso con la cantidad esperada");
+
+    int real = dao.eliminarTraspaso(idTraspaso);
+    assertEquals(1, real);
+}
+
+@Test
+public void listarTraspasosTest() throws Exception {
+    List<Traspaso> traspasos = dao.listarTraspasos();
+    assertEquals(4, traspasos.size()); // o usa assertEquals(n, size) si sabes el número exacto
+}
+
+
+
+@Test
+public void insertarValorMercadoHistoriaTest() throws Exception {
+    ValorMercadoHistorial historia = new ValorMercadoHistorial(0, 1, LocalDate.of(2025, 7, 1), 999_000_000, "Sube por buena temporada");
+    int real = dao.insertar(historia);
+    assertEquals(1, real);
+}
+
+@Test
+public void modificarValorMercadoHistoriaTest() throws Exception {
+    List<ValorMercadoHistorial> historiales = dao.listarValorMercadoHistorial();
+    for (ValorMercadoHistorial h : historiales) {
+        if (h.getValorMercado() == 999_000_000 && h.getJugadorId() == 1) {
+            h.setValorMercado(1_000_000);
+            int actualizados = dao.modificar(h);
+            assertEquals(1, actualizados);
+            break;
+        }
+    }
+}
+
+@Test
+public void eliminarValorMercadoHistoriaTest() throws Exception {
+    List<ValorMercadoHistorial> historiales = dao.listarValorMercadoHistorial();
+    int id = -1;
+    for (ValorMercadoHistorial h : historiales) {
+        if (h.getValorMercado() == 1_000_000) {
+            id = h.getIdHistorial();
+            break;
+        }
+    }
+
+    assertNotEquals(-1, id, "No se encontró historial con valor esperado");
+    int real = dao.eliminarValorMercadoHistorial(id);
+    assertEquals(1, real);
+}
+
+@Test
+public void listarValorMercadoHistoriaTest() throws Exception {
+    List<ValorMercadoHistorial> historiales = dao.listarValorMercadoHistorial();
+    assertEquals(11, historiales.size());
+}
+
+
+@Test
+public void insertarNoticiaTest() throws Exception {
+    Noticia noticia = new Noticia(0, 1, 1, 1, "Título de prueba", "Contenido de prueba", "", "Deportes", LocalDate.of(2025, 5, 5));
+    int real = dao.insertar(noticia);
+    assertEquals(1, real);
+}
+
+@Test
+public void modificarNoticiaTest() throws Exception {
+    List<Noticia> noticias = dao.listarNoticias();
+    for (Noticia n : noticias) {
+        if ("Título de prueba".equals(n.getTitulo())) {
+            n.setTitulo("Título actualizado");
+            int actualizados = dao.modificar(n);
+            assertEquals(1, actualizados);
+            break;
+        }
+    }
+}
+
+@Test
+public void eliminarNoticiaTest() throws Exception {
+    List<Noticia> noticias = dao.listarNoticias();
+    int id = -1;
+    for (Noticia n : noticias) {
+        if ("Título actualizado".equals(n.getTitulo())) {
+            id = n.getIdNoticia();
+            break;
+        }
+    }
+
+    assertNotEquals(-1, id, "No se encontró la noticia esperada");
+    int real = dao.eliminarNoticia(id);
+    assertEquals(1, real);
+}
+
+@Test
+public void listarNoticiasTest() throws Exception {
+    List<Noticia> noticias = dao.listarNoticias();
+    assertEquals(1, noticias.size());
+}
+
+
+@Test
+public void insertarUsuarioTest() throws Exception {
+    Usuario usuario = new Usuario(0, "Test User", "test@example.com", "1234567899", "lector", LocalDate.now());
+    int real = dao.insertar(usuario);
+    assertEquals(1, real);
+}
+
+@Test
+public void modificarUsuarioTest() throws Exception {
+    List<Usuario> usuarios = dao.listarUsuarios();
+    for (Usuario u : usuarios) {
+        if ("test@example.com".equals(u.getEmail())) {
+            u.setNombre("Usuario Modificado");
+            int actualizados = dao.modificar(u);
+            assertEquals(1, actualizados);
+            break;
+        }
+    }
+}
+
+@Test
+public void eliminarUsuarioTest() throws Exception {
+    List<Usuario> usuarios = dao.listarUsuarios();
+    int id = -1;
+    for (Usuario u : usuarios) {
+        if ("Usuario Modificado".equals(u.getNombre())) {
+            id = u.getIdUsuario();
+            break;
+        }
+    }
+
+    assertNotEquals(-1, id, "No se encontró el usuario a eliminar");
+    int real = dao.eliminarUsuario(id);
+    assertEquals(1, real);
+}
+
+@Test
+public void listarUsuariosTest() throws Exception {
+    List<Usuario> usuarios = dao.listarUsuarios();
+    assertEquals(2, usuarios.size());
+}
 
 }
