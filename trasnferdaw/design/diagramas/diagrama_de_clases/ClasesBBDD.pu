@@ -8,28 +8,13 @@ top to bottom direction
         }
 
         interface TransferDAWDAO {
-            +insertar(representante: Representante): void
-            +modificar(representante: Representante): void
-            +eliminar(idRepresentante: int): void
-            +listar(): List<Representante>
-
-            +insertar(entrenador: Entrenador): void
-            +modificar(entrenador: Entrenador): void
-            +eliminar(idEntrenador: int): void
-            +listar(): List<Entrenador>
-
-            +listar(): List<CategoriaPosicion>
-
-            +listar(): List<Posicion>
-
-            +listar(): List<Temporada>
+             +listar(): List<Temporada>
 
             +insertar(jugador: Jugador): void
             +modificar(jugador: Jugador): void
             +eliminar(idJugador: int): void
             +listar(): List<Jugador>
             +buscarPorId(int idJugador);
-
 
             +insertar(seleccion: Seleccion): void
             +modificar(seleccion: Seleccion): void
@@ -56,26 +41,13 @@ top to bottom direction
             +eliminar(idContrato: int): void
             +listar(): List<Contrato>
 
-            +insertar(estadio: Estadio): void
-            +modificar(estadio: Estadio): void
-            +eliminar(idEstadio: int): void
-            +listar(): List<Estadio>
-
-            +insertar(equipoEstadio: EquipoEstadio): void
-            +modificar(equipoEstadio: EquipoEstadio): void
-            +eliminar(equipoId: int, estadioId: int): void
-            +listar(): List<EquipoEstadio>
-
-            +insertar(jugadorPosicion: JugadorPosicion): void
-            +modificar(jugadorPosicion: JugadorPosicion): void
-            +eliminar(jugadorId: int, posicionId: int, temporadaId: int): void
-            +listar(): List<JugadorPosicion>
-
             +insertar(estadisticasTemporada: EstadisticasTemporada): void
             +modificar(estadisticasTemporada: EstadisticasTemporada): void
             +eliminar(jugadorId: int, temporadaId: int, competicionId: int, equipoId: int): void
             +listar(): List<EstadisticasTemporada>
-             +List<EstadisticasTotales> buscarPorJugador(int id_jugador);
+            +obtenerPorTemporadaYJugador(jugadorId: int, temporadaId: int): List<EstadisticasTemporada>
+            +buscarPorJugador(id_jugador: int): List<EstadisticasTemporada>
+
 
             +insertar(traspaso: Traspaso): void
             +modificar(traspaso: Traspaso): void
@@ -87,20 +59,11 @@ top to bottom direction
             +eliminar(idHistorial: int): void
             +listar(): List<ValorMercadoHistorial>
 
-            +insertar(noticia: Noticia): void
-            +modificar(noticia: Noticia): void
-            +eliminar(idNoticia: int): void
-            +listar(): List<Noticia>
 
             +insertar(usuario: Usuario): void
             +modificar(usuario: Usuario): void
             +eliminar(idUsuario: int): void
             +listar(): List<Usuario>
-
-            +insertar(equipoEntrenador: EquipoEntrenador): void
-            +modificar(equipoEntrenador: EquipoEntrenador): void
-            +eliminar(entrenadorId: int, equipoId: int): void
-            +listar(): List<EquipoEntrenador>
         }
     
 
