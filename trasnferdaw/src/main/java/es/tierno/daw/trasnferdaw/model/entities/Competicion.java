@@ -5,20 +5,18 @@ public class Competicion {
     private String nombre;
     private String pais;
     private String tipo;
-    private String fotoUrl;
     private int numeroEquipos;
     private int anioCreacion;
 
     public Competicion() {
     }
 
-    public Competicion(int idCompeticion, String nombre, String pais, String tipo, String fotoUrl, int numeroEquipos,
+    public Competicion(int idCompeticion, String nombre, String pais, String tipo, int numeroEquipos,
             int anioCreacion) {
         this.idCompeticion = idCompeticion;
         this.nombre = nombre;
         this.pais = pais;
         this.tipo = tipo;
-        this.fotoUrl = fotoUrl;
         this.numeroEquipos = numeroEquipos;
         this.anioCreacion = anioCreacion;
     }
@@ -53,14 +51,6 @@ public class Competicion {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
-    }
-
-    public String getFotoUrl() {
-        return fotoUrl;
-    }
-
-    public void setFotoUrl(String fotoUrl) {
-        this.fotoUrl = fotoUrl;
     }
 
     public int getNumeroEquipos() {

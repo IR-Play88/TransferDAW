@@ -28,19 +28,17 @@ public class FicheroBinarioTest {
     @Test
     public void testEscribirJugadorEnFichero() throws IOException {
         // Crear un jugador de prueba
-        Jugador jugador = new Jugador(
-                1,
-                "Marco Asensio Willisem",
+        Jugador jugador = new Jugador(1,"Marco Asensio Willisem",
                 "La perla mallorquina",
-                "No disponible de momento",
                 LocalDate.of(1996, 1, 21),
                 "Española",
                 1.82f,
                 76.0f,
                 "izquierdo",
                 200_000_000f,
-                null,
-                null);
+                "mediocampista",
+                "Gesfusito",
+                1);
 
         String contenidoEsperado = jugador.toString();
         String ruta = "test_jugador.dat";

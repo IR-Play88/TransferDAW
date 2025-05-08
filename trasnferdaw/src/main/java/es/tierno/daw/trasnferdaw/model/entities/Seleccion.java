@@ -1,31 +1,27 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
-import java.time.LocalDate;
-
 public class Seleccion {
     private int idSeleccion;
-    private String logoUrl;
     private String nombre;
     private String pais;
     private String federacion;
-    private LocalDate fechaFundacion;
-    private Integer ranking;
-    private Integer entrenadorId;
+    private int anioFundacion;
+    private int ranking;
+    private String entrenadorNombre;
     private Integer capitanId;
 
     public Seleccion() {
     }
 
-    public Seleccion(int idSeleccion, String logoUrl, String nombre, String pais, String federacion,
-    LocalDate fechaFundacion, Integer ranking, Integer entrenadorId, Integer capitanId) {
+    public Seleccion(int idSeleccion, String nombre, String pais, String federacion, int anioFundacion, int ranking,
+            String entrenadorNombre, Integer capitanId) {
         this.idSeleccion = idSeleccion;
-        this.logoUrl = logoUrl;
         this.nombre = nombre;
         this.pais = pais;
         this.federacion = federacion;
-        this.fechaFundacion = fechaFundacion;
+        this.anioFundacion = anioFundacion;
         this.ranking = ranking;
-        this.entrenadorId = entrenadorId;
+        this.entrenadorNombre = entrenadorNombre;
         this.capitanId = capitanId;
     }
 
@@ -35,14 +31,6 @@ public class Seleccion {
 
     public void setIdSeleccion(int idSeleccion) {
         this.idSeleccion = idSeleccion;
-    }
-
-    public String getLogoUrl() {
-        return logoUrl;
-    }
-
-    public void setLogoUrl(String logoUrl) {
-        this.logoUrl = logoUrl;
     }
 
     public String getNombre() {
@@ -69,28 +57,28 @@ public class Seleccion {
         this.federacion = federacion;
     }
 
-    public LocalDate getFechaFundacion() {
-        return fechaFundacion;
+    public int getAnioFundacion() {
+        return anioFundacion;
     }
 
-    public void setFechaFundacion(LocalDate fechaFundacion) {
-        this.fechaFundacion = fechaFundacion;
+    public void setAnioFundacion(int anioFundacion) {
+        this.anioFundacion = anioFundacion;
     }
 
-    public Integer getRanking() {
+    public int getRanking() {
         return ranking;
     }
 
-    public void setRanking(Integer ranking) {
+    public void setRanking(int ranking) {
         this.ranking = ranking;
     }
 
-    public Integer getEntrenadorId() {
-        return entrenadorId;
+    public String getEntrenadorNombre() {
+        return entrenadorNombre;
     }
 
-    public void setEntrenadorId(Integer entrenadorId) {
-        this.entrenadorId = entrenadorId;
+    public void setEntrenadorNombre(String entrenadorNombre) {
+        this.entrenadorNombre = entrenadorNombre;
     }
 
     public Integer getCapitanId() {
@@ -105,13 +93,12 @@ public class Seleccion {
     public String toString() {
         return "Seleccion{" +
                 "idSeleccion=" + idSeleccion +
-                ", logoUrl='" + logoUrl + '\'' +
                 ", nombre='" + nombre + '\'' +
                 ", pais='" + pais + '\'' +
                 ", federacion='" + federacion + '\'' +
-                ", fechaFundacion=" + fechaFundacion +
+                ", fechaFundacion=" + anioFundacion +
                 ", ranking=" + ranking +
-                ", entrenadorId=" + entrenadorId +
+                ", entrenadorId=" + entrenadorNombre +
                 ", capitanId=" + capitanId +
                 '}';
     }

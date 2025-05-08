@@ -5,30 +5,22 @@ public class EstadisticasTemporada {
     private int temporadaId;
     private int competicionId;
     private int equipoId;
+    private int partidosJugados;
     private int goles;
     private int asistencias;
-    private int minutos;
-    private int partidosJugados;
-    private int amarillas;
-    private int rojas;
-    private int promedioGoles;
 
     public EstadisticasTemporada() {
     }
 
-    public EstadisticasTemporada(int jugadorId, int temporadaId, int competicionId, int equipoId, int goles,
-            int asistencias, int minutos, int partidosJugados, int amarillas, int rojas, int promedioGoles) {
+    public EstadisticasTemporada(int jugadorId, int temporadaId, int competicionId, int equipoId, int partidosJugados,
+            int goles, int asistencias) {
         this.jugadorId = jugadorId;
         this.temporadaId = temporadaId;
         this.competicionId = competicionId;
+        this.partidosJugados = partidosJugados;
         this.equipoId = equipoId;
         this.goles = goles;
         this.asistencias = asistencias;
-        this.minutos = minutos;
-        this.partidosJugados = partidosJugados;
-        this.amarillas = amarillas;
-        this.rojas = rojas;
-        this.promedioGoles = promedioGoles;
     }
 
     public int getJugadorId() {
@@ -79,44 +71,12 @@ public class EstadisticasTemporada {
         this.asistencias = asistencias;
     }
 
-    public int getMinutos() {
-        return minutos;
-    }
-
-    public void setMinutos(int minutos) {
-        this.minutos = minutos;
-    }
-
     public int getPartidosJugados() {
         return partidosJugados;
     }
 
     public void setPartidosJugados(int partidosJugados) {
         this.partidosJugados = partidosJugados;
-    }
-
-    public int getAmarillas() {
-        return amarillas;
-    }
-
-    public void setAmarillas(int amarillas) {
-        this.amarillas = amarillas;
-    }
-
-    public int getRojas() {
-        return rojas;
-    }
-
-    public void setRojas(int rojas) {
-        this.rojas = rojas;
-    }
-
-    public int getPromedioGoles() {
-        return promedioGoles;
-    }
-
-    public void setPromedioGoles(int promedioGoles) {
-        this.promedioGoles = promedioGoles;
     }
 
     @Override
@@ -127,13 +87,8 @@ public class EstadisticasTemporada {
                 ", competicionId=" + competicionId +
                 ", equipoId=" + equipoId +
                 ", goles=" + goles +
-                ", asistencias=" + asistencias +
-                ", minutos=" + minutos +
-                ", partidosJugados=" + partidosJugados +
-                ", amarillas=" + amarillas +
-                ", rojas=" + rojas +
-                ", promedioGoles=" + promedioGoles +
-                '}';
+                ", asistencias=" + asistencias
+                + '}';
     }
 
 }

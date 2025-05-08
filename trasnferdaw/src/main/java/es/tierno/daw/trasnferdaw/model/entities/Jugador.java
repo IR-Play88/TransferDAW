@@ -6,34 +6,34 @@ public class Jugador {
     private int idJugador;
     private String nombre;
     private String alias;
-    private String fotoUrl;
     private LocalDate fechaNacimiento;
     private String nacionalidad;
     private float altura;
     private float peso;
     private String pieDominante;
     private float valorMercado;
-    private Integer representanteId;
-    private Integer seleccionId;
+    private String posicion;
+    private String representanteNombre;
+    private Integer seleccionNombre;
 
     public Jugador() {
     }
 
-    public Jugador(int idJugador, String nombre, String alias, String fotoUrl, LocalDate fechaNacimiento,
-            String nacionalidad, float altura, float peso, String pieDominante, float valorMercado,
-            Integer representanteId, Integer seleccionId) {
+    public Jugador(int idJugador, String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad,
+            float altura, float peso, String pieDominante, float valorMercado, String posicion,
+            String representanteNombre,  Integer seleccionNombre) {
         this.idJugador = idJugador;
         this.nombre = nombre;
         this.alias = alias;
-        this.fotoUrl = fotoUrl;
         this.fechaNacimiento = fechaNacimiento;
         this.nacionalidad = nacionalidad;
         this.altura = altura;
         this.peso = peso;
         this.pieDominante = pieDominante;
         this.valorMercado = valorMercado;
-        this.representanteId = representanteId;
-        this.seleccionId = seleccionId;
+        this.posicion = posicion;
+        this.representanteNombre = representanteNombre;
+        this.seleccionNombre = seleccionNombre;
     }
 
     public int getIdJugador() {
@@ -58,14 +58,6 @@ public class Jugador {
 
     public void setAlias(String alias) {
         this.alias = alias;
-    }
-
-    public String getFotoUrl() {
-        return fotoUrl;
-    }
-
-    public void setFotoUrl(String fotoUrl) {
-        this.fotoUrl = fotoUrl;
     }
 
     public LocalDate getFechaNacimiento() {
@@ -116,20 +108,28 @@ public class Jugador {
         this.valorMercado = valorMercado;
     }
 
-    public Integer getRepresentanteId() {
-        return representanteId;
+    public String getPosicion() {
+        return posicion;
     }
 
-    public void setRepresentanteId(Integer representanteId) {
-        this.representanteId = representanteId;
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
     }
 
-    public Integer getSeleccionId() {
-        return seleccionId;
+    public String getRepresentanteNombre() {
+        return representanteNombre;
     }
 
-    public void setSeleccionId(Integer seleccionId) {
-        this.seleccionId = seleccionId;
+    public void setRepresentanteNombre(String representanteNombre) {
+        this.representanteNombre = representanteNombre;
+    }
+
+    public Integer getSeleccionNombre() {
+        return seleccionNombre;
+    }
+
+    public void setSeleccionNombre(Integer seleccionNombre) {
+        this.seleccionNombre = seleccionNombre;
     }
 
     @Override
@@ -138,15 +138,15 @@ public class Jugador {
                 "ID: " + idJugador + "\n" +
                 "Nombre: " + nombre + "\n" +
                 "Alias: " + alias + "\n" +
-                "Foto URL: " + fotoUrl + "\n" +
                 "Fecha de Nacimiento: " + fechaNacimiento + "\n" +
                 "Nacionalidad: " + nacionalidad + "\n" +
                 "Altura: " + altura + " m\n" +
                 "Peso: " + peso + " kg\n" +
                 "Pie Dominante: " + pieDominante + "\n" +
                 "Valor de Mercado: " + valorMercado + " €\n" +
-                "ID Representante: " + representanteId + "\n" +
-                "ID Selección: " + seleccionId + "\n";
+                "Posicion: " + posicion  + "\n" +
+                "ID Representante: " + representanteNombre + "\n" +
+                "ID Selección: " + seleccionNombre + "\n";
     }
 
 }

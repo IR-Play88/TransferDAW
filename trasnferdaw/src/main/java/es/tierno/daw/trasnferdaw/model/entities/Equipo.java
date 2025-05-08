@@ -5,28 +5,26 @@ public class Equipo {
     private String nombre;
     private String ciudad;
     private String pais;
-    private String escudoUrl;
-    private String descripcion;
     private int anioFundacion;
     private float presupuesto;
     private String propietario;
-    private Integer entrenadorId;
+    private String estadioNombre;
+    private String entrenadorNombre;
 
     public Equipo() {
     }
 
-    public Equipo(int idEquipo, String nombre, String ciudad, String pais, String escudoUrl, String descripcion,
-            int anioFundacion, float presupuesto, String propietario, Integer entrenadorId) {
+    public Equipo(int idEquipo, String nombre, String ciudad, String pais, int anioFundacion, float presupuesto,
+            String propietario, String estadioNombre, String entrenadorNombre) {
         this.idEquipo = idEquipo;
         this.nombre = nombre;
         this.ciudad = ciudad;
         this.pais = pais;
-        this.escudoUrl = escudoUrl;
-        this.descripcion = descripcion;
         this.anioFundacion = anioFundacion;
         this.presupuesto = presupuesto;
         this.propietario = propietario;
-        this.entrenadorId = entrenadorId;
+        this.estadioNombre = estadioNombre;
+        this.entrenadorNombre = entrenadorNombre;
     }
 
     public int getIdEquipo() {
@@ -61,22 +59,6 @@ public class Equipo {
         this.pais = pais;
     }
 
-    public String getEscudoUrl() {
-        return escudoUrl;
-    }
-
-    public void setEscudoUrl(String escudoUrl) {
-        this.escudoUrl = escudoUrl;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
     public int getAnioFundacion() {
         return anioFundacion;
     }
@@ -101,12 +83,20 @@ public class Equipo {
         this.propietario = propietario;
     }
 
-    public Integer getEntrenadorId() {
-        return entrenadorId;
+    public String getEstadioNombre() {
+        return estadioNombre;
     }
 
-    public void setEntrenadorId(Integer entrenadorId) {
-        this.entrenadorId = entrenadorId;
+    public void setEstadioNombre(String estadioNombre) {
+        this.estadioNombre = estadioNombre;
+    }
+
+    public String getEntrenadorNombre() {
+        return entrenadorNombre;
+    }
+
+    public void setEntrenadorNombre(String entrenadorNombre) {
+        this.entrenadorNombre = entrenadorNombre;
     }
 
     @Override
@@ -116,12 +106,11 @@ public class Equipo {
                 ", nombre='" + nombre + '\'' +
                 ", ciudad='" + ciudad + '\'' +
                 ", pais='" + pais + '\'' +
-                ", escudoUrl='" + escudoUrl + '\'' +
-                ", descripcion='" + descripcion + '\'' +
                 ", anioFundacion=" + anioFundacion +
                 ", presupuesto=" + presupuesto +
                 ", propietario='" + propietario + '\'' +
-                ", entrenadorId=" + entrenadorId +
+                ", estadio='" + estadioNombre + '\'' +
+                ", entrenador=" + entrenadorNombre +
                 '}';
     }
 

@@ -9,24 +9,19 @@ public class Contrato {
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
     private float salario;
-    private float bonificaciones;
     private String tipoContrato;
-    private float clausulaRescision;
 
     public Contrato() {
     }
 
-    public Contrato(int idContrato, int jugadorId, Integer equipoId, LocalDate fechaInicio, LocalDate fechaFin, float salario,
-            float bonificaciones, String tipoContrato, float clausulaRescision) {
+    public Contrato(int idContrato, int jugadorId, Integer equipoId, LocalDate fechaInicio, LocalDate fechaFin, float salario, String tipoContrato) {
         this.idContrato = idContrato;
         this.jugadorId = jugadorId;
         this.equipoId = equipoId;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
         this.salario = salario;
-        this.bonificaciones = bonificaciones;
         this.tipoContrato = tipoContrato;
-        this.clausulaRescision = clausulaRescision;
     }
 
     public int getIdContrato() {
@@ -77,28 +72,12 @@ public class Contrato {
         this.salario = salario;
     }
 
-    public float getBonificaciones() {
-        return bonificaciones;
-    }
-
-    public void setBonificaciones(float bonificaciones) {
-        this.bonificaciones = bonificaciones;
-    }
-
     public String getTipoContrato() {
         return tipoContrato;
     }
 
     public void setTipoContrato(String tipoContrato) {
         this.tipoContrato = tipoContrato;
-    }
-
-    public float getClausulaRescision() {
-        return clausulaRescision;
-    }
-
-    public void setClausulaRescision(float clausulaRescision) {
-        this.clausulaRescision = clausulaRescision;
     }
 
     @Override

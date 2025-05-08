@@ -10,15 +10,13 @@ public class Traspaso {
     private Integer temporadaId;
     private LocalDate fechaTraspaso;
     private float cantidad;
-    private float clausulaTraspaso;
-    private float bonificaciones;
     private String tipo;
 
     public Traspaso() {
     }
 
     public Traspaso(int idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId,
-    LocalDate fechaTraspaso, float cantidad, float clausulaTraspaso, float bonificaciones, String tipo) {
+    LocalDate fechaTraspaso, float cantidad,String tipo) {
         this.idTraspaso = idTraspaso;
         this.jugadorId = jugadorId;
         this.equipoOrigenId = equipoOrigenId;
@@ -26,8 +24,6 @@ public class Traspaso {
         this.temporadaId = temporadaId;
         this.fechaTraspaso = fechaTraspaso;
         this.cantidad = cantidad;
-        this.clausulaTraspaso = clausulaTraspaso;
-        this.bonificaciones = bonificaciones;
         this.tipo = tipo;
     }
 
@@ -85,22 +81,6 @@ public class Traspaso {
 
     public void setCantidad(float cantidad) {
         this.cantidad = cantidad;
-    }
-
-    public float getClausulaTraspaso() {
-        return clausulaTraspaso;
-    }
-
-    public void setClausulaTraspaso(float clausulaTraspaso) {
-        this.clausulaTraspaso = clausulaTraspaso;
-    }
-
-    public float getBonificaciones() {
-        return bonificaciones;
-    }
-
-    public void setBonificaciones(float bonificaciones) {
-        this.bonificaciones = bonificaciones;
     }
 
     public String getTipo() {
