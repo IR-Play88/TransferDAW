@@ -1,0 +1,107 @@
+/* Estilos para el contenido principal */
+#content {
+    float: left; /* Flota a la izquierda */
+    width: calc(100% - 300px); /* Resta el ancho del aside */
+    margin-top: 40px; /* Espaciado superior */
+    padding: 0 20px; /* Padding horizontal */
+    box-sizing: border-box;
+}
+
+/* Estilos para el título principal en el contenido */
+#content h1 {
+    margin: 0;
+    font-size: 30px; /* Tamaño de fuente */
+    color: var(--secundary-color); /* Color secundario */
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px var(--gray-color); /* Sombra gris */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para los artículos dentro del contenido */
+#content article {
+    background-color: white; /* Fondo blanco */
+    padding: 40px;
+    margin-bottom: 30px; /* Espaciado inferior */
+    border: solid 1px var(--gray-color); /* Borde gris claro */
+    box-shadow: 2px 2px 5px var(--gray-color); /* Sombra gris */
+}
+
+/* Estilos para los títulos dentro de los artículos */
+#content article h2 {
+    margin: 0;
+    color: var(--secundary-color); /* Color secundario */
+}
+
+/* Estilos para enlaces dentro de artículos */
+#content article a {
+    font-size: 20px;
+    float: right; /* Ubicación flotante a la derecha */
+}
+
+/* Estilos de la paginación */
+.pagination {
+    float: right; /* Flotada a la derecha */
+    margin-top: 20px;
+}
+
+/* Estilos de elementos de la paginación */
+.pagination li {
+    display: inline-block; /* Elementos en línea */
+}
+
+/* Estilos para enlaces de la paginación */
+.pagination li a {
+    padding: 5px 10px;
+    background-color: white; /* Fondo blanco */
+    border: solid 1px var(--gray-color); /* Borde gris claro */
+}
+
+/* Efecto hover para la paginación */
+.pagination li:hover a {
+    color: white;
+    background-color: var(--primary-color); /* Fondo color primario */
+    border: solid 1px var(--primary-color-dark); /* Borde primario oscuro */
+}
+
+.acciones-jugadores {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.accion {
+    flex: 1 1 calc(20% - 20px);
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.accion h3 {
+    margin-bottom: 10px;
+}
+
+.accion button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.accion button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Media query para pantallas pequeñas */
+@media(max-width: 700px) {
+    #content {
+        width: 100%; /* El contenido ocupa el 100% del ancho */
+    }
+}

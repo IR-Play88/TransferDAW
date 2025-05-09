@@ -1,0 +1,76 @@
+/* Estilos para el menú principal (main-menu) */
+#main-menu {
+    float: left; /* Flota el menú a la izquierda del contenedor */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    background-color: var(--primary-color); /* Fondo del menú en color primario */
+    box-shadow: 2px 2px 5px var(--gray-color); /* Sombra para darle profundidad */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+}
+
+/* Estilos para los elementos de la lista principal dentro del menú */
+#main-menu > ul > li {
+    float: left; /* Coloca los elementos de la lista en una línea horizontal */
+    margin: 10px 0; /* Margen superior e inferior */
+}
+
+/* Estilos para los enlaces principales del menú */
+#main-menu > ul > li > a {
+    color: white; /* Color de texto blanco */
+    padding: 10px 20px; /* Espaciado alrededor del texto del enlace */
+    border-right: solid 1px var(--gray-color); /* Borde derecho para separar los elementos del menú */
+}
+
+/* Efecto hover para los enlaces del menú principal */
+#main-menu > ul > li > a:hover {
+    background-color: var(--primary-color-dark); /* Cambia el fondo al pasar el cursor */
+}
+
+/* Submenú: inicialmente oculto */
+#main-menu > ul > li > ul {
+    display: none; /* Oculta el submenú por defecto */
+    position: absolute; /* Posiciona el submenú sobre el menú principal */
+    margin-top: 10px; /* Separa el submenú del menú principal */
+}
+
+/* Estilos para enlaces dentro del submenú */
+#main-menu > ul > li > ul > li > a {
+    display: block; /* Hace que cada enlace ocupe una línea completa */
+    color: white; /* Texto blanco */
+    background-color: var(--secundary-color); /* Fondo en color secundario */
+    padding: 15px; /* Espaciado interno para los enlaces del submenú */
+    font-size: 18px; /* Tamaño de fuente un poco más pequeño */
+    border-top: solid 1px var(--gray-color); /* Borde superior entre elementos del submenú */
+}
+
+/* Efecto hover para enlaces del submenú */
+#main-menu > ul > li > ul > li > a:hover {
+    background-color: var(--secundary-color-dark); /* Cambia el color de fondo del submenú al hacer hover */
+}
+
+/* Muestra el submenú al hacer hover en el elemento del menú principal */
+#main-menu > ul > li:hover > ul {
+    display: block; /* Muestra el submenú al pasar el cursor */
+    box-shadow: 2px 2px 5px var(--gray-color); /* Sombra para darle profundidad al submenú */
+}
+
+/* Ajustes de menú para pantallas pequeñas (menú vertical) */
+@media (max-width: 700px) {
+    #main-menu > ul > li {
+        width: 100%; /* Cada elemento del menú ocupa toda la línea */
+        margin: 0; /* Sin margen superior e inferior */
+        border-bottom: solid 1px var(--gray-color); /* Borde inferior entre elementos */
+    }
+
+    #main-menu ul > li > a {
+        text-align: center; /* Centra el texto en el enlace */
+        display: block; /* Hace que el enlace ocupe toda la línea */
+    }
+
+    #main-menu > ul > li > ul {
+        width: 100%; /* Submenú ocupa el ancho total en móviles */
+    }
+
+    #main-menu > ul > li > ul > li {
+        text-align: center; /* Centra el texto en el submenú */
+    }
+}
