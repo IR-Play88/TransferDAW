@@ -1,0 +1,21 @@
+/* Estilos para el encabezado de la página (header) */
+header {
+    float: left; /* Ubica el header a la izquierda del contenedor */
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    font-family: "jrandomc", 'Courier New', Courier, monospace; /* Fuente personalizada para el header */
+    text-align: center; /* Centra el contenido dentro del header */
+    margin: 20px 0; /* Margen vertical para separar del resto de la página */
+}
+
+/* Estilos para la imagen dentro del header */
+header img {
+    width: 400px; /* Define un ancho fijo para la imagen */
+}
+
+/* Estilos para el título principal dentro del header */
+header h1 {
+    color: var(--primary-color); /* Color primario para el texto */
+    font-size: 50px; /* Tamaño de fuente grande para el título */
+    margin: 0; /* Sin margen alrededor del título */
+    text-shadow: 2px 2px 5px #ccc; /* Sombra en el texto para un efecto destacado */
+}
