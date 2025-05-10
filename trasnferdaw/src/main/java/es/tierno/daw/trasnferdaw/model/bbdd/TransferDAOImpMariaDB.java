@@ -16,7 +16,6 @@ import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 import es.tierno.daw.trasnferdaw.model.entities.Seleccion;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
-import es.tierno.daw.trasnferdaw.model.entities.Usuario;
 import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
 import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
 
@@ -153,7 +152,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     }
 
     @Override
-    public Jugador buscarPorId(int idJugador) throws BBDDException {
+    public Jugador visualizarJugador(int idJugador) throws BBDDException {
         final String query = "SELECT * FROM vista_jugador WHERE id_jugador = ?";
         Jugador jugador = null;
 
@@ -221,6 +220,35 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     }
 
     @Override
+    public Temporada visualizarTemporada(int idTemporada) throws BBDDException {
+        final String query = "SELECT * FROM vista_temporada WHERE id_temporada = ?";
+        Temporada temporada = null;
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, idTemporada);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                int id = rs.getInt("id_temporada");
+                String nombre = rs.getString("nombre");
+                LocalDate fechaInicio = rs.getDate("fecha_inicio").toLocalDate();
+                LocalDate fechaFin = rs.getDate("fecha_fin").toLocalDate();
+
+                temporada = new Temporada(id, nombre, fechaInicio, fechaFin);
+            }
+
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return temporada; // Devuelve null si no se encuentra
+    }
+
+    @Override
     public int insertar(Seleccion seleccion) throws BBDDException {
         int resultado = 0;
         final String sql = "INSERT INTO seleccion (nombre, pais, federacion, anio_fundacion, ranking, entrenador_nombre, capitan_id) "
@@ -259,7 +287,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
             ps.setString(1, seleccion.getNombre());
             ps.setString(2, seleccion.getPais());
             ps.setString(3, seleccion.getFederacion());
-            ps.setInt(4,seleccion.getAnioFundacion());
+            ps.setInt(4, seleccion.getAnioFundacion());
             ps.setInt(5, seleccion.getRanking());
             ps.setString(6, seleccion.getEntrenadorNombre());
             ps.setObject(7, seleccion.getCapitanId(), java.sql.Types.INTEGER);
@@ -325,6 +353,40 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         }
 
         return selecciones;
+    }
+
+    @Override
+    public Seleccion visualizarSeleccion(int idSeleccion) throws BBDDException {
+        final String query = "SELECT * FROM vista_seleccion WHERE id_seleccion = ?";
+        Seleccion seleccion = null;
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, idSeleccion);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                int id = rs.getInt("id_seleccion");
+                String nombre = rs.getString("nombre");
+                String pais = rs.getString("pais");
+                String federacion = rs.getString("federacion");
+                int anioFundacion = rs.getInt("anio_fundacion");
+                int ranking = rs.getInt("ranking");
+                String entrenadorNombre = rs.getString("entrenador_nombre");
+                Integer capitanId = rs.getObject("capitan_id") != null ? rs.getInt("capitan_id") : null;
+
+                seleccion = new Seleccion(id, nombre, pais, federacion, anioFundacion, ranking, entrenadorNombre,
+                        capitanId);
+            }
+
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return seleccion; // null si no se encuentra
     }
 
     @Override
@@ -422,6 +484,42 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     }
 
     @Override
+    public Equipo visualizarEquipo(int idEquipo) throws BBDDException {
+        final String query = "SELECT * FROM vista_equipo WHERE id_equipo = ?";
+        Equipo equipo = null;
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, idEquipo);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                int id = rs.getInt("id_equipo");
+                String nombre = rs.getString("nombre");
+                String ciudad = rs.getString("ciudad");
+                String pais = rs.getString("pais");
+                int anioFundacion = rs.getInt("anio_fundacion");
+                float presupuesto = rs.getFloat("presupuesto");
+                String propietario = rs.getString("propietario");
+                String estadioNombre = rs.getString("estadio_nombre");
+                String entrenadorNombre = rs.getString("entrenador_nombre");
+
+                // Crear un objeto Equipo con los datos obtenidos
+                equipo = new Equipo(id, nombre, ciudad, pais, anioFundacion, presupuesto, propietario, estadioNombre,
+                        entrenadorNombre);
+            }
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            // Capturar el mensaje de error
+            throw new BBDDException(e.getMessage());
+        }
+
+        return equipo; // Puede devolver null si no se encuentra el equipo
+    }
+
+    @Override
     public int insertar(Competicion competicion) throws BBDDException {
         int resultado = 0;
         final String sql = "INSERT INTO competicion (nombre, pais, tipo, numero_equipos, anio_creacion) " +
@@ -508,6 +606,38 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     }
 
     @Override
+    public Competicion visualizarCompeticion(int idCompeticion) throws BBDDException {
+        final String query = "SELECT * FROM vista_competicion WHERE id_competicion = ?";
+        Competicion competicion = null;
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, idCompeticion);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                int id = rs.getInt("id_competicion");
+                String nombre = rs.getString("nombre");
+                String pais = rs.getString("pais");
+                String tipo = rs.getString("tipo");
+                int numeroEquipos = rs.getInt("numero_equipos");
+                int anioCreacion = rs.getInt("anio_creacion");
+
+                // Crear un objeto Competicion con los datos obtenidos
+                competicion = new Competicion(id, nombre, pais, tipo, numeroEquipos, anioCreacion);
+            }
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            // Capturar el mensaje de error
+            throw new BBDDException(e.getMessage());
+        }
+
+        return competicion; // Puede devolver null si no se encuentra la competición
+    }
+
+    @Override
     public int insertar(EquipoCompeticion ec) throws BBDDException {
         int resultado = 0;
         final String sql = "INSERT INTO equipo_competicion (equipo_id, competicion_id, temporada_id, rango) VALUES (?, ?, ?, ?)";
@@ -586,6 +716,39 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         }
 
         return lista;
+    }
+
+    @Override
+    public EquipoCompeticion visualizarEquipoCompeticion(int equipoId, int competicionId, int temporadaId)
+            throws BBDDException {
+        final String query = "SELECT * FROM vista_equipo_competicion WHERE equipo_id = ? AND competicion_id = ? AND temporada_id = ?";
+        EquipoCompeticion equipoCompeticion = null;
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, equipoId);
+            ps.setInt(2, competicionId);
+            ps.setInt(3, temporadaId);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                int idEquipo = rs.getInt("equipo_id");
+                int idCompeticion = rs.getInt("competicion_id");
+                int idTemporada = rs.getInt("temporada_id");
+                int rango = rs.getObject("rango") != null ? rs.getInt("rango") : 0; // o usar Integer si tu modelo lo
+                                                                                    // permite
+
+                // Crear un objeto EquipoCompeticion con los datos obtenidos
+                equipoCompeticion = new EquipoCompeticion(idEquipo, idCompeticion, idTemporada, rango);
+            }
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return equipoCompeticion; // Puede devolver null si no se encuentra
     }
 
     @Override
@@ -674,7 +837,8 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 float salario = rs.getFloat("salario");
                 String tipoContrato = rs.getString("tipo_contrato");
 
-                Contrato contrato = new Contrato(idContrato, jugadorId, equipoId, fechaInicio, fechaFin, salario, tipoContrato);
+                Contrato contrato = new Contrato(idContrato, jugadorId, equipoId, fechaInicio, fechaFin, salario,
+                        tipoContrato);
                 contratos.add(contrato);
             }
 
@@ -684,6 +848,39 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
             throw new BBDDException(e.getMessage());
         }
         return contratos;
+    }
+
+    @Override
+    public Contrato visualizarContrato(int idContrato) throws BBDDException {
+        final String query = "SELECT * FROM vista_contrato WHERE id_contrato = ?";
+        Contrato contrato = null;
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, idContrato);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                int id = rs.getInt("id_contrato");
+                int jugadorId = rs.getInt("jugador_id");
+                Integer equipoId = rs.getObject("equipo_id") != null ? rs.getInt("equipo_id") : null;
+                LocalDate fechaInicio = rs.getDate("fecha_inicio").toLocalDate();
+                LocalDate fechaFin = rs.getDate("fecha_fin").toLocalDate();
+                float salario = rs.getFloat("salario");
+                String tipoContrato = rs.getString("tipo_contrato");
+
+                // Crear un objeto Contrato con los datos obtenidos
+                contrato = new Contrato(id, jugadorId, equipoId, fechaInicio, fechaFin, salario, tipoContrato);
+            }
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            // Capturar el mensaje de error
+            throw new BBDDException(e.getMessage());
+        }
+
+        return contrato; // Puede devolver null si no se encuentra el contrato
     }
 
     @Override
@@ -780,10 +977,9 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 int partidos = rs.getInt("partidos_jugados");
                 int goles = rs.getInt("goles");
                 int asistencias = rs.getInt("asistencias");
-                
 
                 EstadisticasTemporada est = new EstadisticasTemporada(jugadorId, temporadaId, competicionId, equipoId,
-                partidos, goles, asistencias);
+                        partidos, goles, asistencias);
                 lista.add(est);
             }
 
@@ -799,67 +995,65 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     @Override
     public EstadisticasTemporada buscarEstadisticasTotalesPorJugador(int jugadorId) throws BBDDException {
         final String query = "SELECT * FROM vista_estadisticas_por_jugador WHERE jugador_id = ?";
-    
+
         try {
             PreparedStatement ps = conn.prepareStatement(query);
             ps.setInt(1, jugadorId);
             ResultSet rs = ps.executeQuery();
-    
+
             if (rs.next()) {
                 int partidos = rs.getInt("partidos_jugados");
                 int goles = rs.getInt("goles");
                 int asistencias = rs.getInt("asistencias");
-    
+
                 EstadisticasTemporada est = new EstadisticasTemporada(
-                    jugadorId, 0, 0, 0, partidos, goles, asistencias);
-    
+                        jugadorId, 0, 0, 0, partidos, goles, asistencias);
+
                 rs.close();
                 ps.close();
                 return est;
             }
-    
+
             rs.close();
             ps.close();
         } catch (Exception e) {
             throw new BBDDException("Error al obtener estadísticas totales del jugador: " + e.getMessage());
         }
-    
+
         return null;
     }
-    
 
     @Override
-public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException {
-    final String query = "SELECT * FROM vista_estadisticas_de_jugador_temporada WHERE jugador_id = ? AND temporada_id = ?";
+    public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException {
+        final String query = "SELECT * FROM vista_estadisticas_de_jugador_temporada WHERE jugador_id = ? AND temporada_id = ?";
 
-    try {
-        PreparedStatement ps = conn.prepareStatement(query);
-        ps.setInt(1, jugadorId);
-        ps.setInt(2, temporadaId);
-        ResultSet rs = ps.executeQuery();
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, jugadorId);
+            ps.setInt(2, temporadaId);
+            ResultSet rs = ps.executeQuery();
 
-        if (rs.next()) {
-            int partidos = rs.getInt("partidos_jugados");
-            int goles = rs.getInt("goles");
-            int asistencias = rs.getInt("asistencias");
+            if (rs.next()) {
+                int partidos = rs.getInt("partidos_jugados");
+                int goles = rs.getInt("goles");
+                int asistencias = rs.getInt("asistencias");
 
-            EstadisticasTemporada est = new EstadisticasTemporada(
-                jugadorId, temporadaId, 0, 0, partidos, goles, asistencias);
+                EstadisticasTemporada est = new EstadisticasTemporada(
+                        jugadorId, temporadaId, 0, 0, partidos, goles, asistencias);
+
+                rs.close();
+                ps.close();
+                return est;
+            }
 
             rs.close();
             ps.close();
-            return est;
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener estadísticas por temporada: " + e.getMessage());
         }
 
-        rs.close();
-        ps.close();
-    } catch (Exception e) {
-        throw new BBDDException("Error al obtener estadísticas por temporada: " + e.getMessage());
+        return null;
     }
-
-    return null;
-}
-
 
     @Override
     public int insertar(Traspaso traspaso) throws BBDDException {
@@ -966,6 +1160,42 @@ public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int t
     }
 
     @Override
+    public Traspaso visualizarTraspaso(int idTraspaso) throws BBDDException {
+        final String query = "SELECT * FROM vista_traspaso WHERE id_traspaso = ?";
+        Traspaso traspaso = null;
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, idTraspaso);
+
+            ResultSet rs = ps.executeQuery();
+
+            if (rs.next()) {
+                int id = rs.getInt("id_traspaso");
+                int jugadorId = rs.getInt("jugador_id");
+                Integer equipoOrigenId = rs.getObject("equipo_origen_id") != null ? rs.getInt("equipo_origen_id")
+                        : null;
+                Integer equipoDestinoId = rs.getObject("equipo_destino_id") != null ? rs.getInt("equipo_destino_id")
+                        : null;
+                Integer temporadaId = rs.getObject("temporada_id") != null ? rs.getInt("temporada_id") : null;
+                LocalDate fecha = rs.getDate("fecha_traspaso").toLocalDate();
+                float cantidad = rs.getFloat("cantidad");
+                String tipo = rs.getString("tipo");
+
+                traspaso = new Traspaso(id, jugadorId, equipoOrigenId, equipoDestinoId, temporadaId, fecha, cantidad,
+                        tipo);
+            }
+
+            rs.close();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
+        }
+
+        return traspaso; // Devuelve null si no existe
+    }
+
+    @Override
     public int insertar(ValorMercadoHistorial historial) throws BBDDException {
         int numRegistrosActualizados = 0;
 
@@ -1060,89 +1290,24 @@ public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int t
     }
 
     @Override
-    public int insertar(Usuario usuario) throws BBDDException {
-        int numRegistrosActualizados = 0;
-
-        final String sql = "INSERT INTO usuario (nombre, email, contraseña, rol) VALUES (?, ?, ?, ?)";
-
-        try {
-            PreparedStatement ps = conn.prepareStatement(sql);
-
-            ps.setString(1, usuario.getNombre());
-            ps.setString(2, usuario.getEmail());
-            ps.setString(3, usuario.getContrasena());
-            ps.setString(4, usuario.getRol());
-
-            numRegistrosActualizados = ps.executeUpdate();
-            ps.close();
-        } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
-        }
-
-        return numRegistrosActualizados;
-    }
-
-    @Override
-    public int modificar(Usuario usuario) throws BBDDException {
-        int numRegistrosActualizados = 0;
-
-        final String sql = "UPDATE usuario SET nombre = ?, email = ?, contraseña = ?, rol = ? WHERE id_usuario = ?";
-
-        try {
-            PreparedStatement ps = conn.prepareStatement(sql);
-
-            ps.setString(1, usuario.getNombre());
-            ps.setString(2, usuario.getEmail());
-            ps.setString(3, usuario.getContrasena());
-            ps.setString(4, usuario.getRol());
-            ps.setInt(5, usuario.getIdUsuario());
-
-            numRegistrosActualizados = ps.executeUpdate();
-            ps.close();
-        } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
-        }
-
-        return numRegistrosActualizados;
-    }
-
-    @Override
-    public int eliminarUsuario(int idUsuario) throws BBDDException {
-        int numRegistrosActualizados = 0;
-
-        final String sql = "DELETE FROM usuario WHERE id_usuario = ?";
-
-        try {
-            PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setInt(1, idUsuario);
-
-            numRegistrosActualizados = ps.executeUpdate();
-            ps.close();
-        } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
-        }
-
-        return numRegistrosActualizados;
-    }
-
-    @Override
-    public List<Usuario> listarUsuarios() throws BBDDException {
-        final String query = "SELECT * FROM vista_usuario";
-        List<Usuario> lista = new ArrayList<>();
+    public ValorMercadoHistorial visualizarValorMercadoHistorial(int idHistorial) throws BBDDException {
+        final String query = "SELECT * FROM vista_valor_mercado_historial WHERE id_historial = ?";
+        ValorMercadoHistorial historial = null;
 
         try {
             PreparedStatement ps = conn.prepareStatement(query);
+            ps.setInt(1, idHistorial);
+
             ResultSet rs = ps.executeQuery();
 
-            while (rs.next()) {
-                int id = rs.getInt("id_usuario");
-                String nombre = rs.getString("nombre");
-                String email = rs.getString("email");
-                String contrasena = rs.getString("contraseña");
-                String rol = rs.getString("rol");
+            if (rs.next()) {
+                int id = rs.getInt("id_historial");
+                int jugadorId = rs.getInt("jugador_id");
+                LocalDate fecha = rs.getDate("fecha").toLocalDate();
+                float valor = rs.getFloat("valor_mercado");
+                String motivo = rs.getString("motivo");
 
-                Usuario usuario = new Usuario(id, nombre, email, contrasena, rol);
-                lista.add(usuario);
+                historial = new ValorMercadoHistorial(id, jugadorId, fecha, valor, motivo);
             }
 
             rs.close();
@@ -1151,6 +1316,7 @@ public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int t
             throw new BBDDException(e.getMessage());
         }
 
-        return lista;
+        return historial; // Devuelve null si no se encuentra
     }
+
 }

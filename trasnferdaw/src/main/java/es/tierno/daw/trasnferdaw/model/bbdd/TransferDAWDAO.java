@@ -11,7 +11,6 @@ import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 import es.tierno.daw.trasnferdaw.model.entities.Seleccion;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
-import es.tierno.daw.trasnferdaw.model.entities.Usuario;
 import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
 import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
 
@@ -34,7 +33,7 @@ public interface TransferDAWDAO {
 
     public List<Jugador> listarJugadores() throws BBDDException;
 
-    public Jugador buscarPorId(int idJugador) throws BBDDException;
+    public Jugador visualizarJugador(int idJugador) throws BBDDException;
 
 
     // Selección
@@ -46,6 +45,8 @@ public interface TransferDAWDAO {
 
     public List<Seleccion> listarSelecciones() throws BBDDException;
 
+    public Seleccion visualizarSeleccion(int idSeleccion) throws BBDDException;
+
 
     // Equipo
     public int insertar(Equipo equipo) throws BBDDException;
@@ -55,6 +56,8 @@ public interface TransferDAWDAO {
     public int eliminarEquipo(int idEquipo) throws BBDDException;
 
     public List<Equipo> listarEquipos() throws BBDDException;
+
+    public Equipo visualizarEquipo(int idEquipo) throws BBDDException;
 
 
     // Competición
@@ -66,6 +69,8 @@ public interface TransferDAWDAO {
 
     public List<Competicion> listarCompeticiones() throws BBDDException;
 
+    public Competicion visualizarCompeticion(int idCompeticion) throws BBDDException;
+
 
     // EquipoCompeticion
     public int insertar(EquipoCompeticion equipoCompeticion) throws BBDDException;
@@ -76,6 +81,8 @@ public interface TransferDAWDAO {
 
     public List<EquipoCompeticion> listarEquiposCompeticion() throws BBDDException;
 
+    public EquipoCompeticion visualizarEquipoCompeticion(int equipoId, int competicionId, int temporadaId) throws BBDDException;
+
 
     // Contrato
     public int insertar(Contrato contrato) throws BBDDException;
@@ -85,6 +92,8 @@ public interface TransferDAWDAO {
     public int eliminarContrato(int idContrato) throws BBDDException;
 
     public List<Contrato> listarContratos() throws BBDDException;
+
+    public Contrato visualizarContrato(int idContrato) throws BBDDException;
 
 
     // EstadisticasTemporada
@@ -100,6 +109,8 @@ public interface TransferDAWDAO {
 
     public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException;
 
+    public Temporada visualizarTemporada(int idTemporada) throws BBDDException;
+
 
     // Traspaso
     public int insertar(Traspaso traspaso) throws BBDDException;
@@ -110,6 +121,8 @@ public interface TransferDAWDAO {
 
     public List<Traspaso> listarTraspasos() throws BBDDException;
 
+    public Traspaso visualizarTraspaso(int idTraspaso) throws BBDDException;
+
     // ValorMercadoHistorial
     public int insertar(ValorMercadoHistorial valorMercadoHistorial) throws BBDDException;
 
@@ -119,14 +132,6 @@ public interface TransferDAWDAO {
 
     public List<ValorMercadoHistorial> listarValorMercadoHistorial() throws BBDDException;
 
-
-    // Usuario
-    public int insertar(Usuario usuario) throws BBDDException;
-
-    public int modificar(Usuario usuario) throws BBDDException;
-
-    public int eliminarUsuario(int idUsuario) throws BBDDException;
-
-    public List<Usuario> listarUsuarios() throws BBDDException;
+    public ValorMercadoHistorial visualizarValorMercadoHistorial(int idHistorial) throws BBDDException;
 
 }

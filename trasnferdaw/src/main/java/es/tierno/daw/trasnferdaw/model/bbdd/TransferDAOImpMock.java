@@ -11,7 +11,6 @@ import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 import es.tierno.daw.trasnferdaw.model.entities.Seleccion;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
-import es.tierno.daw.trasnferdaw.model.entities.Usuario;
 import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
 import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
 
@@ -48,9 +47,9 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     }
 
     @Override
-    public Jugador buscarPorId(int idJugador) throws BBDDException {
+    public Jugador visualizarJugador(int idJugador) throws BBDDException {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarPorId'");
+        throw new UnsupportedOperationException("Unimplemented method 'visualizarJugador'");
     }
 
     @Override
@@ -78,6 +77,12 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     }
 
     @Override
+    public Seleccion visualizarSeleccion(int idSeleccion) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visualizarSeleccion'");
+    }
+
+    @Override
     public int insertar(Equipo equipo) throws BBDDException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'insertar'");
@@ -99,6 +104,12 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     public List<Equipo> listarEquipos() throws BBDDException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'listarEquipos'");
+    }
+
+    @Override
+    public Equipo visualizarEquipo(int idEquipo) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visualizarEquipo'");
     }
 
     @Override
@@ -126,6 +137,12 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     }
 
     @Override
+    public Competicion visualizarCompeticion(int idCompeticion) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visualizarCompeticion'");
+    }
+
+    @Override
     public int insertar(EquipoCompeticion equipoCompeticion) throws BBDDException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'insertar'");
@@ -150,6 +167,13 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     }
 
     @Override
+    public EquipoCompeticion visualizarEquipoCompeticion(int equipoId, int competicionId, int temporadaId)
+            throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visualizarEquipoCompeticion'");
+    }
+
+    @Override
     public int insertar(Contrato contrato) throws BBDDException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'insertar'");
@@ -171,6 +195,12 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     public List<Contrato> listarContratos() throws BBDDException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'listarContratos'");
+    }
+
+    @Override
+    public Contrato visualizarContrato(int idContrato) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visualizarContrato'");
     }
 
     @Override
@@ -207,7 +237,13 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     @Override
     public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'buscarEstadisticasPorTemporadas'");
+        throw new UnsupportedOperationException("Unimplemented method 'buscarEstadisticasPorTemporada'");
+    }
+
+    @Override
+    public Temporada visualizarTemporada(int idTemporada) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visualizarTemporada'");
     }
 
     @Override
@@ -235,6 +271,12 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     }
 
     @Override
+    public Traspaso visualizarTraspaso(int idTraspaso) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'visualizarTraspaso'");
+    }
+
+    @Override
     public int insertar(ValorMercadoHistorial valorMercadoHistorial) throws BBDDException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'insertar'");
@@ -258,29 +300,12 @@ public class TransferDAOImpMock implements TransferDAWDAO {
         throw new UnsupportedOperationException("Unimplemented method 'listarValorMercadoHistorial'");
     }
 
-
     @Override
-    public int insertar(Usuario usuario) throws BBDDException {
+    public ValorMercadoHistorial visualizarValorMercadoHistorial(int idHistorial) throws BBDDException {
         // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertar'");
+        throw new UnsupportedOperationException("Unimplemented method 'visualizarValorMercadoHistorial'");
     }
 
-    @Override
-    public int modificar(Usuario usuario) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'modificar'");
-    }
-
-    @Override
-    public int eliminarUsuario(int idUsuario) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminarUsuario'");
-    }
-
-    @Override
-    public List<Usuario> listarUsuarios() throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarUsuarios'");
-    }
-     
+   
+   
 }

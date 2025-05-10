@@ -21,37 +21,43 @@ package "model"{
 
         interface TranferDAWDAO {
             +listar(): List<Temporada>
+            +visualiarTemporada(int idTemporada);
 
             +insertar(jugador: Jugador): void
             +modificar(jugador: Jugador): void
             +eliminar(idJugador: int): void
             +listar(): List<Jugador>
-            +buscarPorId(int idJugador);
+            +visualiarJugador(int idJugador);
 
             +insertar(seleccion: Seleccion): void
             +modificar(seleccion: Seleccion): void
             +eliminar(idSeleccion: int): void
             +listar(): List<Seleccion>
+            +visualiarSeleccion(int idSeleccion);
 
             +insertar(equipo: Equipo): void
             +modificar(equipo: Equipo): void
             +eliminar(idEquipo: int): void
             +listar(): List<Equipo>
+            +viusalizarEquipo(int idEquipo);
 
             +insertar(competicion: Competicion): void
             +modificar(competicion: Competicion): void
             +eliminar(idCompeticion: int): void
             +listar(): List<Competicion>
+            +viusalizarCompeticion(int idCompeticion);
 
             +insertar(equipoCompeticion: EquipoCompeticion): void
             +modificar(equipoCompeticion: EquipoCompeticion): void
             +eliminar(equipoId: int, competicionId: int, temporadaId: int): void
             +listar(): List<EquipoCompeticion>
+            +viusalizarEquipoCompeticion(int equipoId, int temporadaId, int competicionId);
 
             +insertar(contrato: Contrato): void
             +modificar(contrato: Contrato): void
             +eliminar(idContrato: int): void
             +listar(): List<Contrato>
+            +viusalizarContrato(int idContrato);
 
             +insertar(estadisticasTemporada: EstadisticasTemporada): void
             +modificar(estadisticasTemporada: EstadisticasTemporada): void
@@ -65,17 +71,13 @@ package "model"{
             +modificar(traspaso: Traspaso): void
             +eliminar(idTraspaso: int): void
             +listar(): List<Traspaso>
+            +viusalizarTraspaso(int idTraspaso);
 
             +insertar(valorMercadoHistorial: ValorMercadoHistorial): void
             +modificar(valorMercadoHistorial: ValorMercadoHistorial): void
             +eliminar(idHistorial: int): void
             +listar(): List<ValorMercadoHistorial>
-
-
-            +insertar(usuario: Usuario): void
-            +modificar(usuario: Usuario): void
-            +eliminar(idUsuario: int): void
-            +listar(): List<Usuario>
+            +viusalizarValorMercadoHistorial(int idValorMercadoHistorial);
         }
 
 

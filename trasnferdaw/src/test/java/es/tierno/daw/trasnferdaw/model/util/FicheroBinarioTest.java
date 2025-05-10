@@ -68,7 +68,7 @@ public class FicheroBinarioTest {
         // Obtener el jugador desde la base de datos
         TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
         int idJugador = 1;
-        Jugador jugador = dao.buscarPorId(idJugador);
+        Jugador jugador = dao.visualizarJugador(idJugador);
 
         // Verifica que no sea null
         assertNotNull(jugador, "El jugador obtenido de la BBDD no debería ser null");

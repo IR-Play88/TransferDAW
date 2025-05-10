@@ -3,27 +3,31 @@ package es.tierno.daw.trasnferdaw.model.entities;
 import java.time.LocalDate;
 
 public class Temporada {
-    private int id_temporada;
+    private int idTemporada;
     private String nombre;
-    private LocalDate fecha_inicio;
-    private LocalDate fecha_fin;
+    private LocalDate fechaInicio;
+    private LocalDate fechaFin;
 
     public Temporada() {
     }
 
-    public Temporada(int id_temporada, String nombre, LocalDate fecha_inicio, LocalDate fecha_fin) {
-        this.id_temporada = id_temporada;
+    
+
+    public Temporada(int idTemporada, String nombre, LocalDate fechaInicio, LocalDate fechaFin) {
+        this.idTemporada = idTemporada;
         this.nombre = nombre;
-        this.fecha_inicio = fecha_inicio;
-        this.fecha_fin = fecha_fin;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
     }
 
-    public int getId_temporada() {
-        return id_temporada;
+
+
+    public int getIdTemporada() {
+        return idTemporada;
     }
 
-    public void setId_temporada(int id_temporada) {
-        this.id_temporada = id_temporada;
+    public void setIdTemporada(int idTemporada) {
+        this.idTemporada = idTemporada;
     }
 
     public String getNombre() {
@@ -34,30 +38,31 @@ public class Temporada {
         this.nombre = nombre;
     }
 
-    public LocalDate getFecha_inicio() {
-        return fecha_inicio;
+    public LocalDate getFechaInicio() {
+        return fechaInicio;
     }
 
-    public void setFecha_inicio(LocalDate fecha_inicio) {
-        this.fecha_inicio = fecha_inicio;
+    public void setFechaInicio(LocalDate fechaInicio) {
+        this.fechaInicio = fechaInicio;
     }
 
-    public LocalDate getFecha_fin() {
-        return fecha_fin;
+    public LocalDate getFechaFin() {
+        return fechaFin;
     }
 
-    public void setFecha_fin(LocalDate fecha_fin) {
-        this.fecha_fin = fecha_fin;
+    public void setFechaFin(LocalDate fechaFin) {
+        this.fechaFin = fechaFin;
     }
 
     @Override
     public String toString() {
         return "Temporada{" +
-                "id_temporada=" + id_temporada +
+                "id_temporada=" + idTemporada +
                 ", nombre=" + nombre +
-                ", fecha_inicio=" + fecha_inicio +
-                ", fecha_fin=" + fecha_fin +
+                ", fecha_inicio=" + fechaInicio +
+                ", fecha_fin=" + fechaFin +
                 '}';
     }
+   
 
 }
