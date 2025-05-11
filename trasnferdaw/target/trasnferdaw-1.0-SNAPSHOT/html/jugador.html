@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Asensio Willemsen</title>
+    <title>TransferDAW</title>
     <link rel="stylesheet" href="../css/syles.css">
 </head>
 
@@ -18,7 +18,7 @@
         <nav id="main-menu">
             <ul>
                 <li>
-                    <a href="index.html">Inicio</a>
+                    <a href="../index.html">Inicio</a>
                 </li>
 
                 <li>
@@ -39,7 +39,7 @@
                 </li>
 
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="./contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -48,7 +48,7 @@
             <div class="widget">
                 <h3>Iniciar Sesión</h3>
                 <form>
-                    <input type="email" name="email" placeholder="email">
+                    <input type="text" name="usuario" placeholder="usuario">
                     <input type="password" name="password" placeholder="password">
                     <input type="submit" value="enviar">
                 </form>
@@ -84,7 +84,7 @@
                 <h3>TransferDAW</h3>
                 <blockquote>
                     Quieres ver todo lo relacionado con el mundo del fútbol, este es tu sitio, y si eres
-                    un apasionado, un expereto o quieres compartir tus conocimientos, no dudes en inicar sesión, 
+                    un apasionado, un expereto o quieres compartir tus conocimientos, no dudes en inicar sesión,
                     asi dejaras de ser un simple lector y pasaras a ser un administrados, donde podras insertar,
                     modificar, eliminar... No lo dudes.
                 </blockquote>
@@ -92,52 +92,86 @@
         </aside>
 
         <section id="content">
-            <h2>Jugadores</h2>
-            <div class="acciones-jugadores">
-    <div class="accion">
-        <h3>Insertar Jugador</h3>
-        <p>Añade un nuevo jugador al sistema.</p>
-        <button>Insertar</button>
-    </div>
-    <div class="accion">
-        <h3>Modificar Jugador</h3>
-        <p>Edita la información de un jugador existente.</p>
-        <button>Modificar</button>
-    </div>
-    <div class="accion">
-        <h3>Eliminar Jugador</h3>
-        <p>Borra un jugador del sistema.</p>
-        <button>Eliminar</button>
-    </div>
-    <div class="accion">
-        <h3>Listar Jugadores</h3>
-        <p>Muestra todos los jugadores disponibles.</p>
-        <button>Listar</button>
-    </div>
-    <div class="accion">
-        <h3>Buscar Jugador</h3>
-        <p>Encuentra un jugador específico por su nombre.</p>
-        <button>Buscar</button>
-    </div>
-</div>
+            <h2>Gestión de Jugadores</h2>
+            <!-- Formulario -->
+            <form method="POST" action="controlador.php" style="display: flex; flex-direction: column; gap: 10px;">
+                <label>Nombre: <input type="text" name="nombre" required></label>
+                <label>Alias: <input type="text" name="alias"></label>
+                <label>Fecha de nacimiento: <input type="date" name="fecha_nacimiento"></label>
+                <label>Nacionalidad: <input type="text" name="nacionalidad"></label>
+                <label>Altura: <input type="number" step="0.01" name="altura"></label>
+                <label>Peso: <input type="number" step="0.01" name="peso"></label>
+                <label>Pie dominante:
+                    <select name="pie_dominante">
+                        <option value="Derecho">Derecho</option>
+                        <option value="Izquierdo">Izquierdo</option>
+                        <option value="Ambidiestro">Ambidiestro</option>
+                    </select>
+                </label>
+                <label>Valor de mercado: <input type="number" name="valor_mercado"></label>
+                <label>Posición: 
+                        <select name="">
+                            <option value="Delantero">Delantero</option>
+                            <option value="Mediocampista">Mediocampista</option>
+                            <option value="Defensa">Defensa</option>
+                            <option value="Portero">Portero</option>
+                        </select>
+                </label>
+                <label>Representante: <input type="text" name="representante"></label>
+                <label>Selección: <input type="text" name="seleccion"></label>
 
+                <div style="margin-top: 10px; display: flex; gap: 10px;">
+                    <button type="submit" name="accion" value="añadir">Añadir</button>
+                    <button type="submit" name="accion" value="modificar">Modificar</button>
+                    <button type="submit" name="accion" value="eliminar">Eliminar</button>
+                </div>
+            </form>
 
-            <ul class="pagination">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a>...</a></li>
-                <li><a href="#">11</a></li>
-            </ul>
-        </section>
-        
-        <footer>
+            <!-- Tabla -->
             <div>
-                <a href="https://www.marcoasensiooficial.com/" target="_blank">&copy; Marco Asensio</a>
+                <table>
+                    <thead>
+                        <tr style="background-color: #4cc79a;">
+                            <th>Código</th>
+                            <th>Nombre</th>
+                            <th>Alias</th>
+                            <th>Fecha Nac.</th>
+                            <th>Nacionalidad</th>
+                            <th>Altura</th>
+                            <th>Peso</th>
+                            <th>Pie</th>
+                            <th>Valor</th>
+                            <th>Representante</th>
+                            <th>Selección</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="11" style="text-align: center; padding: 20px;">Tabla sin contenido</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div>
-                Más información en <a href="https://www.realmadrid.com/" target="_blank">Real Madrid </a>
+                <ul class="pagination">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a>...</a></li>
+                    <li><a href="#">11</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <footer>
+            <div>
+                <a href="#" target="_blank">&copy; Iván Rafael Redondo</a>
+            </div>
+
+            <div>
+                Más información en <a href="#" target="_blank">Nuestras redes sociales</a>
             </div>
         </footer>
     </div>
