@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-    
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marco Asensio Willemsen</title>
+    <title>TransferDAW</title>
     <link rel="stylesheet" href="../css/syles.css">
 </head>
 
@@ -35,11 +35,11 @@
                 </li>
 
                 <li>
-                    <a href="#">Crear cuenta</a>
+                   <a href="#">Crear cuenta</a>
                 </li>
 
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="./contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
@@ -48,7 +48,7 @@
             <div class="widget">
                 <h3>Iniciar Sesión</h3>
                 <form>
-                    <input type="email" name="email" placeholder="email">
+                    <input type="text" name="usuario" placeholder="usuario">
                     <input type="password" name="password" placeholder="password">
                     <input type="submit" value="enviar">
                 </form>
@@ -84,7 +84,7 @@
                 <h3>TransferDAW</h3>
                 <blockquote>
                     Quieres ver todo lo relacionado con el mundo del fútbol, este es tu sitio, y si eres
-                    un apasionado, un expereto o quieres compartir tus conocimientos, no dudes en inicar sesión, 
+                    un apasionado, un expereto o quieres compartir tus conocimientos, no dudes en inicar sesión,
                     asi dejaras de ser un simple lector y pasaras a ser un administrados, donde podras insertar,
                     modificar, eliminar... No lo dudes.
                 </blockquote>
@@ -92,47 +92,70 @@
         </aside>
 
         <section id="content">
-            <h2>Contrato</h2>
-            <div class="acciones-jugadores">
-        <div class="accion">
-            <h3>Insertar Contrato</h3>
-            <p>Añade un nuevo contrato al sistema.</p>
-            <button>Insertar</button>
-        </div>
-        <div class="accion">
-            <h3>Modificar Contrato</h3>
-            <p>Edita la información de un contrato existente.</p>
-            <button>Modificar</button>
-        </div>
-        <div class="accion">
-            <h3>Eliminar Contrato</h3>
-            <p>Borra un contrato del sistema.</p>
-            <button>Eliminar</button>
-        </div>
-        <div class="accion">
-            <h3>Listar Contratos</h3>
-            <p>Muestra todos los contratos disponibles.</p>
-            <button>Listar</button>
-        </div>
-    </div>
+            <h2>Gestión de Estadisticas de los jugadores</h2>
+            <!-- Formulario -->
+            <form method="POST" action="controlador.php" style="display: flex; flex-direction: column; gap: 10px;">
+                <label>Jugador:<input type="number" step="0.01" name="altura"></label>
+                <label>Equipo: <input type="number" step="0.01" name="altura"></label>
+                <label>Fecha inicio: <input type="number" step="0.01" name="altura"></label>
+                <label>Fecha fin: <input type="number" step="0.01" name="altura"></label>
+                <label>Salario: <input type="number" step="0.01" name="altura"></label>
+                <label>Tipo contrato:
+                    <select name="">
+                        <option value="Cesion">Cesion</option>
+                        <option value="Libre">Libre</option>
+                        <option value="Nuevo fichaje">Nuevo Fichaje</option>
+                    </select>
+                </label>
 
+                <div style="margin-top: 10px; display: flex; gap: 10px;">
+                    <button type="submit" name="accion" value="añadir">Añadir</button>
+                    <button type="submit" name="accion" value="modificar">Modificar</button>
+                    <button type="submit" name="accion" value="eliminar">Eliminar</button>
+                </div>
+            </form>
 
-            <ul class="pagination">
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a>...</a></li>
-                <li><a href="#">11</a></li>
-            </ul>
-        </section>
-        
-        <footer>
+            <!-- Tabla -->
             <div>
-                <a href="https://www.marcoasensiooficial.com/" target="_blank">&copy; Marco Asensio</a>
+                <table>
+                    <thead>
+                        <tr style="background-color: #4cc79a;">
+                            <th>Código</th>
+                            <th>Jugador</th>
+                            <th>Equipo</th>
+                            <th>Fecha inicio</th>
+                            <th>Fecha fin</th>
+                            <th>Salario</th>
+                            <th>Tipo comtrato</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="11" style="text-align: center; padding: 20px;">Tabla sin contenido</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div>
-                Más información en <a href="https://www.realmadrid.com/" target="_blank">Real Madrid </a>
+                <ul class="pagination">
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a>...</a></li>
+                    <li><a href="#">11</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <footer>
+            <div>
+                <a href="#" target="_blank">&copy; Iván Rafael Redondo</a>
+            </div>
+
+            <div>
+                Más información en <a href="#" target="_blank">Nuestras redes sociales</a>
             </div>
         </footer>
     </div>
