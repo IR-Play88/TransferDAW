@@ -38,7 +38,7 @@ public class FicheroBinarioTest {
                 200_000_000f,
                 "mediocampista",
                 "Gesfusito",
-                1);
+                "España");
 
         String contenidoEsperado = jugador.toString();
         String ruta = "test_jugador.dat";

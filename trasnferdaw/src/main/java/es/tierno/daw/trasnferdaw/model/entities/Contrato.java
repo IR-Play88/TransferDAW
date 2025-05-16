@@ -5,7 +5,9 @@ import java.time.LocalDate;
 public class Contrato {
     private int idContrato;
     private int jugadorId;
+    private String nombreJugador;
     private Integer equipoId;
+    private String nombreEquipo;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
     private float salario;
@@ -80,6 +82,23 @@ public class Contrato {
         this.tipoContrato = tipoContrato;
     }
 
+    public String getNombreJugador() {
+        return nombreJugador;
+    }
+
+    public void setNombreJugador(String nombreJugador) {
+        this.nombreJugador = nombreJugador;
+    }
+
+    public String getNombreEquipo() {
+        return nombreEquipo;
+    }
+
+    public void setNombreEquipo(String nombreEquipo) {
+        this.nombreEquipo = nombreEquipo;
+    }
+    
+
     @Override
     public String toString() {
         return "Contrato{" +
@@ -87,5 +106,7 @@ public class Contrato {
                 ", tipoContrato='" + tipoContrato + '\'' +
                 '}';
     }
+
+    
 
 }

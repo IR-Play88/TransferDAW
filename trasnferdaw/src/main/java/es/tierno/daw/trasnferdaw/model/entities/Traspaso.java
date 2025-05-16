@@ -5,9 +5,13 @@ import java.time.LocalDate;
 public class Traspaso {
     private int idTraspaso;
     private int jugadorId;
+    private String nombreJugador;
     private Integer equipoOrigenId;
+    private String nombreEquipoOrigen;
     private Integer equipoDestinoId;
+    private String nombreEquipoDestino;
     private Integer temporadaId;
+    private String nombreTemporada;
     private LocalDate fechaTraspaso;
     private float cantidad;
     private String tipo;
@@ -89,6 +93,38 @@ public class Traspaso {
 
     public void setTipo(String tipo) {
         this.tipo = tipo;
+    }
+
+    public String getNombreJugador() {
+        return nombreJugador;
+    }
+
+    public void setNombreJugador(String nombreJugador) {
+        this.nombreJugador = nombreJugador;
+    }
+
+    public String getNombreEquipoOrigen() {
+        return nombreEquipoOrigen;
+    }
+
+    public void setNombreEquipoOrigen(String nombreEquipoOrigen) {
+        this.nombreEquipoOrigen = nombreEquipoOrigen;
+    }
+
+    public String getNombreEquipoDestino() {
+        return nombreEquipoDestino;
+    }
+
+    public void setNombreEquipoDestino(String nombreEquipoDestino) {
+        this.nombreEquipoDestino = nombreEquipoDestino;
+    }
+
+    public String getNombreTemporada() {
+        return nombreTemporada;
+    }
+
+    public void setNombreTemporada(String nombreTemporada) {
+        this.nombreTemporada = nombreTemporada;
     }
 
     @Override

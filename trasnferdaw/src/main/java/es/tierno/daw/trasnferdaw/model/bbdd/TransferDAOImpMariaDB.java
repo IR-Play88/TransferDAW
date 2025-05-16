@@ -13,7 +13,6 @@ import es.tierno.daw.trasnferdaw.model.entities.Equipo;
 import es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion;
 import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
-import es.tierno.daw.trasnferdaw.model.entities.Seleccion;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
 import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
@@ -31,6 +30,8 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     private final String DATABASE_PASS = "1234";
 
     public TransferDAOImpMariaDB() throws Exception {
+          // Registro manual del driver
+    Class.forName("org.mariadb.jdbc.Driver");
         conn = DriverManager.getConnection(String.format(URL, DATABASE_NAME, DATABASE_USER, DATABASE_PASS));
     }
 
@@ -38,7 +39,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     public int insertar(Jugador jugador) throws BBDDException {
         int numRegistrosActualizados = 0;
 
-        final String sql = "INSERT INTO jugador (nombre, alias,  fecha_nacimiento, nacionalidad, altura, peso, pie_dominante, valor_mercado, posicion, representante_nombre, seleccion_id) "
+        final String sql = "INSERT INTO jugador (nombre, alias,  fecha_nacimiento, nacionalidad, altura, peso, pie_dominante, valor_mercado, posicion, representante_nombre, seleccion_nombre) "
                 + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         try {
@@ -54,7 +55,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
             ps.setFloat(8, jugador.getValorMercado());
             ps.setString(9, jugador.getPosicion());
             ps.setString(10, jugador.getRepresentanteNombre());
-            ps.setObject(11, jugador.getSeleccionNombre(), java.sql.Types.INTEGER);
+            ps.setString(11, jugador.getSeleccionNombre());
 
             numRegistrosActualizados = ps.executeUpdate();
             ps.close();
@@ -69,7 +70,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     public int modificar(Jugador jugador) throws BBDDException {
         int numRegistrosActualizados = 0;
 
-        final String sql = "UPDATE jugador SET nombre = ?, alias = ?, fecha_nacimiento = ?, nacionalidad = ?, altura = ?, peso = ?, pie_dominante = ?, valor_mercado = ?, posicion = ?,  representante_nombre = ?, seleccion_id = ? WHERE id_jugador = ?";
+        final String sql = "UPDATE jugador SET nombre = ?, alias = ?, fecha_nacimiento = ?, nacionalidad = ?, altura = ?, peso = ?, pie_dominante = ?, valor_mercado = ?, posicion = ?,  representante_nombre = ?, seleccion_nombre = ? WHERE id_jugador = ?";
 
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -83,7 +84,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
             ps.setFloat(8, jugador.getValorMercado());
             ps.setString(9, jugador.getPosicion());
             ps.setString(10, jugador.getRepresentanteNombre());
-            ps.setObject(11, jugador.getSeleccionNombre(), java.sql.Types.INTEGER);
+            ps.setString(11, jugador.getSeleccionNombre());
             ps.setInt(12, jugador.getIdJugador());
 
             numRegistrosActualizados = ps.executeUpdate();
@@ -135,7 +136,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 float valorMercado = rs.getFloat("valor_mercado");
                 String posicion = rs.getString("posicion");
                 String representanteNombre = rs.getString("representante_nombre");
-                int seleccionNombre = rs.getInt("seleccion_id");
+                String seleccionNombre = rs.getString("seleccion_nombre");
 
                 Jugador jugador = new Jugador(id, nombre, alias, fechaNacimiento, nacionalidad, altura, peso,
                         pieDominante, valorMercado, posicion, representanteNombre, seleccionNombre);
@@ -174,7 +175,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 float valorMercado = rs.getFloat("valor_mercado");
                 String posicion = rs.getString("posicion");
                 String representanteNombre = rs.getString("representante_nombre");
-                int seleccionNombre = rs.getInt("seleccion_id");
+                String seleccionNombre = rs.getString("seleccion_nombre");
 
                 // Crear un objeto Jugador con los datos obtenidos
                 jugador = new Jugador(id, nombre, alias, fechaNacimiento, nacionalidad, altura, peso,
@@ -246,147 +247,6 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         }
 
         return temporada; // Devuelve null si no se encuentra
-    }
-
-    @Override
-    public int insertar(Seleccion seleccion) throws BBDDException {
-        int resultado = 0;
-        final String sql = "INSERT INTO seleccion (nombre, pais, federacion, anio_fundacion, ranking, entrenador_nombre, capitan_id) "
-                +
-                "VALUES (?, ?, ?, ?, ?, ?, ?)";
-
-        try {
-            PreparedStatement ps = conn.prepareStatement(sql);
-
-            ps.setString(1, seleccion.getNombre());
-            ps.setString(2, seleccion.getPais());
-            ps.setString(3, seleccion.getFederacion());
-            ps.setInt(4, seleccion.getAnioFundacion());
-            ps.setInt(5, seleccion.getRanking());
-            ps.setString(6, seleccion.getEntrenadorNombre());
-            ps.setObject(7, seleccion.getCapitanId(), java.sql.Types.INTEGER);
-
-            resultado = ps.executeUpdate();
-            ps.close();
-
-        } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
-        }
-
-        return resultado;
-    }
-
-    @Override
-    public int modificar(Seleccion seleccion) throws BBDDException {
-        int resultado = 0;
-        final String sql = "UPDATE seleccion SET nombre = ?, pais = ?, federacion = ?, anio_fundacion = ?, ranking = ?, entrenador_nombre = ?, capitan_id = ? WHERE id_seleccion = ?";
-
-        try {
-            PreparedStatement ps = conn.prepareStatement(sql);
-
-            ps.setString(1, seleccion.getNombre());
-            ps.setString(2, seleccion.getPais());
-            ps.setString(3, seleccion.getFederacion());
-            ps.setInt(4, seleccion.getAnioFundacion());
-            ps.setInt(5, seleccion.getRanking());
-            ps.setString(6, seleccion.getEntrenadorNombre());
-            ps.setObject(7, seleccion.getCapitanId(), java.sql.Types.INTEGER);
-            ps.setInt(8, seleccion.getIdSeleccion());
-
-            resultado = ps.executeUpdate();
-            ps.close();
-
-        } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
-        }
-
-        return resultado;
-    }
-
-    @Override
-    public int eliminarSeleccion(int idSeleccion) throws BBDDException {
-        int resultado = 0;
-        final String sql = "DELETE FROM seleccion WHERE id_seleccion = ?";
-
-        try {
-            PreparedStatement ps = conn.prepareStatement(sql);
-            ps.setInt(1, idSeleccion);
-
-            resultado = ps.executeUpdate();
-            ps.close();
-        } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
-        }
-
-        return resultado;
-    }
-
-    @Override
-    public List<Seleccion> listarSelecciones() throws BBDDException {
-        final String query = "SELECT * FROM vista_seleccion";
-        List<Seleccion> selecciones = new ArrayList<>();
-
-        try {
-            PreparedStatement ps = conn.prepareStatement(query);
-            ResultSet rs = ps.executeQuery();
-
-            while (rs.next()) {
-                int id = rs.getInt("id_seleccion");
-                String nombre = rs.getString("nombre");
-                String pais = rs.getString("pais");
-                String federacion = rs.getString("federacion");
-                int anioFundacion = rs.getInt("anio_fundacion");
-                int ranking = rs.getInt("ranking");
-                String entrenadorNombre = rs.getString("entrenador_nombre");
-                Integer capitanId = rs.getObject("capitan_id") != null ? rs.getInt("capitan_id") : null;
-
-                Seleccion seleccion = new Seleccion(id, nombre, pais, federacion,
-                        anioFundacion, ranking, entrenadorNombre, capitanId);
-
-                selecciones.add(seleccion);
-            }
-
-            rs.close();
-            ps.close();
-        } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
-        }
-
-        return selecciones;
-    }
-
-    @Override
-    public Seleccion visualizarSeleccion(int idSeleccion) throws BBDDException {
-        final String query = "SELECT * FROM vista_seleccion WHERE id_seleccion = ?";
-        Seleccion seleccion = null;
-
-        try {
-            PreparedStatement ps = conn.prepareStatement(query);
-            ps.setInt(1, idSeleccion);
-
-            ResultSet rs = ps.executeQuery();
-
-            if (rs.next()) {
-                int id = rs.getInt("id_seleccion");
-                String nombre = rs.getString("nombre");
-                String pais = rs.getString("pais");
-                String federacion = rs.getString("federacion");
-                int anioFundacion = rs.getInt("anio_fundacion");
-                int ranking = rs.getInt("ranking");
-                String entrenadorNombre = rs.getString("entrenador_nombre");
-                Integer capitanId = rs.getObject("capitan_id") != null ? rs.getInt("capitan_id") : null;
-
-                seleccion = new Seleccion(id, nombre, pais, federacion, anioFundacion, ranking, entrenadorNombre,
-                        capitanId);
-            }
-
-            rs.close();
-            ps.close();
-        } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
-        }
-
-        return seleccion; // null si no se encuentra
     }
 
     @Override
@@ -646,7 +506,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
             ps.setObject(1, ec.getEquipoId(), java.sql.Types.INTEGER);
             ps.setObject(2, ec.getCompeticionId(), java.sql.Types.INTEGER);
             ps.setObject(3, ec.getTemporadaId(), java.sql.Types.INTEGER);
-            ps.setInt(4, ec.getRango());
+            ps.setObject(4, ec.getRango(), java.sql.Types.INTEGER);
 
             resultado = ps.executeUpdate();
         } catch (Exception e) {
@@ -696,27 +556,30 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     @Override
     public List<EquipoCompeticion> listarEquiposCompeticion() throws BBDDException {
         List<EquipoCompeticion> lista = new ArrayList<>();
-        final String sql = "SELECT * FROM vista_equipo_competicion";
+        final String sql = "SELECT * FROM vista_equipo_competicion_temporada";
 
         try (PreparedStatement ps = conn.prepareStatement(sql);
                 ResultSet rs = ps.executeQuery()) {
 
             while (rs.next()) {
-                EquipoCompeticion ec = new EquipoCompeticion(
-                        rs.getInt("equipo_id"),
-                        rs.getInt("competicion_id"),
-                        rs.getInt("temporada_id"),
-                        rs.getInt("rango"));
-
+                EquipoCompeticion ec = new EquipoCompeticion();
+                ec.setEquipoId(rs.getInt("equipo_id"));
+                ec.setNombreEquipo(rs.getString("nombre_equipo"));
+                ec.setCompeticionId(rs.getInt("competicion_id"));
+                ec.setNombreCompeticion(rs.getString("nombre_competicion"));
+                ec.setTemporadaId(rs.getInt("temporada_id"));
+                ec.setNombreTemporada(rs.getString("nombre_temporada"));
+                ec.setRango(rs.getInt("rango"));
                 lista.add(ec);
             }
-
+    
         } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
+            throw new BBDDException("Error al obtener datos de la vista: " + e.getMessage());
         }
-
+    
         return lista;
     }
+    
 
     @Override
     public EquipoCompeticion visualizarEquipoCompeticion(int equipoId, int competicionId, int temporadaId)
@@ -821,7 +684,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     @Override
     public List<Contrato> listarContratos() throws BBDDException {
-        final String query = "SELECT * FROM vista_contrato";
+        final String query = "SELECT * FROM vista_contrato_jugador_equipo";
         List<Contrato> contratos = new ArrayList<>();
 
         try {
@@ -829,17 +692,18 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
             ResultSet rs = ps.executeQuery();
 
             while (rs.next()) {
-                int idContrato = rs.getInt("id_contrato");
-                int jugadorId = rs.getInt("jugador_id");
-                int equipoId = rs.getInt("equipo_id");
-                LocalDate fechaInicio = rs.getDate("fecha_inicio").toLocalDate();
-                LocalDate fechaFin = rs.getDate("fecha_fin").toLocalDate();
-                float salario = rs.getFloat("salario");
-                String tipoContrato = rs.getString("tipo_contrato");
+                Contrato c = new Contrato();
+            c.setIdContrato(rs.getInt("id_contrato"));
+            c.setJugadorId(rs.getInt("jugador_id"));
+            c.setNombreJugador(rs.getString("nombre_jugador"));
+            c.setEquipoId(rs.getInt("equipo_id"));
+            c.setNombreEquipo(rs.getString("nombre_equipo"));
+            c.setFechaInicio(rs.getDate("fecha_inicio").toLocalDate());
+            c.setFechaFin(rs.getDate("fecha_fin").toLocalDate());
+            c.setSalario(rs.getFloat("salario"));
+            c.setTipoContrato(rs.getString("tipo"));
 
-                Contrato contrato = new Contrato(idContrato, jugadorId, equipoId, fechaInicio, fechaFin, salario,
-                        tipoContrato);
-                contratos.add(contrato);
+            contratos.add(c);
             }
 
             rs.close();
@@ -961,36 +825,43 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     }
 
     @Override
-    public List<EstadisticasTemporada> listarEstadisticasTemporada() throws BBDDException {
-        final String query = "SELECT * FROM vista_estadisticas_temporada";
-        List<EstadisticasTemporada> lista = new ArrayList<>();
+public List<EstadisticasTemporada> listarEstadisticasTemporada() throws BBDDException {
+    final String query = "SELECT * FROM vista_estadisticas_temporada_jugador_equipo";
+    List<EstadisticasTemporada> lista = new ArrayList<>();
 
-        try {
-            PreparedStatement ps = conn.prepareStatement(query);
-            ResultSet rs = ps.executeQuery();
+    try {
+        PreparedStatement ps = conn.prepareStatement(query);
+        ResultSet rs = ps.executeQuery();
 
-            while (rs.next()) {
-                int jugadorId = rs.getInt("jugador_id");
-                int temporadaId = rs.getInt("temporada_id");
-                int competicionId = rs.getInt("competicion_id");
-                int equipoId = rs.getInt("equipo_id");
-                int partidos = rs.getInt("partidos_jugados");
-                int goles = rs.getInt("goles");
-                int asistencias = rs.getInt("asistencias");
+        while (rs.next()) {
+            EstadisticasTemporada est = new EstadisticasTemporada();
 
-                EstadisticasTemporada est = new EstadisticasTemporada(jugadorId, temporadaId, competicionId, equipoId,
-                        partidos, goles, asistencias);
-                lista.add(est);
-            }
+            est.setJugadorId(rs.getInt("jugador_id"));
+            est.setTemporadaId(rs.getInt("temporada_id"));
+            est.setCompeticionId(rs.getInt("competicion_id"));
+            est.setEquipoId(rs.getInt("equipo_id"));
 
-            rs.close();
-            ps.close();
-        } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
+            est.setPartidosJugados(rs.getInt("partidos_jugados"));
+            est.setGoles(rs.getInt("goles"));
+            est.setAsistencias(rs.getInt("asistencias"));
+
+            est.setNombreJugador(rs.getString("nombre_jugador"));
+            est.setNombreTemporada(rs.getString("nombre_temporada"));
+            est.setNombreCompeticion(rs.getString("nombre_competicion"));
+            est.setNombreEquipo(rs.getString("nombre_equipo"));
+
+            lista.add(est);
         }
 
-        return lista;
+        rs.close();
+        ps.close();
+    } catch (Exception e) {
+        throw new BBDDException(e.getMessage());
     }
+
+    return lista;
+}
+
 
     @Override
     public EstadisticasTemporada buscarEstadisticasTotalesPorJugador(int jugadorId) throws BBDDException {
@@ -1128,37 +999,43 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     @Override
     public List<Traspaso> listarTraspasos() throws BBDDException {
-        final String query = "SELECT * FROM vista_traspaso";
+        final String query = "SELECT * FROM vista_traspaso_equipo_jugador_temporada";
         List<Traspaso> lista = new ArrayList<>();
-
+    
         try {
             PreparedStatement ps = conn.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
-
+    
             while (rs.next()) {
-                int id = rs.getInt("id_traspaso");
-                int jugadorId = rs.getInt("jugador_id");
-                int equipoOrigenId = rs.getInt("equipo_origen_id");
-                int equipoDestinoId = rs.getInt("equipo_destino_id");
-                int temporadaId = rs.getInt("temporada_id");
-                LocalDate fechaTraspaso = rs.getDate("fecha_traspaso").toLocalDate();
-                float cantidad = rs.getFloat("cantidad");
-                String tipo = rs.getString("tipo");
-
-                Traspaso traspaso = new Traspaso(id, jugadorId, equipoOrigenId, equipoDestinoId, temporadaId,
-                        fechaTraspaso,
-                        cantidad, tipo);
-                lista.add(traspaso);
+                Traspaso t = new Traspaso();
+    
+                t.setIdTraspaso(rs.getInt("id_traspaso"));
+                t.setJugadorId(rs.getInt("jugador_id"));
+                t.setEquipoOrigenId(rs.getInt("equipo_origen_id"));
+                t.setEquipoDestinoId(rs.getInt("equipo_destino_id"));
+                t.setTemporadaId(rs.getInt("temporada_id"));
+                t.setFechaTraspaso(rs.getDate("fecha_traspaso").toLocalDate());
+                t.setCantidad(rs.getFloat("cantidad"));
+                t.setTipo(rs.getString("tipo"));
+    
+                // Campos de nombres
+                t.setNombreJugador(rs.getString("nombre_jugador"));
+                t.setNombreEquipoOrigen(rs.getString("nombre_equipo_origen"));
+                t.setNombreEquipoDestino(rs.getString("nombre_equipo_destino"));
+                t.setNombreTemporada(rs.getString("nombre_temporada"));
+    
+                lista.add(t);
             }
-
+    
             rs.close();
             ps.close();
         } catch (Exception e) {
             throw new BBDDException(e.getMessage());
         }
+    
         return lista;
     }
-
+    
     @Override
     public Traspaso visualizarTraspaso(int idTraspaso) throws BBDDException {
         final String query = "SELECT * FROM vista_traspaso WHERE id_traspaso = ?";
@@ -1261,33 +1138,35 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
     @Override
     public List<ValorMercadoHistorial> listarValorMercadoHistorial() throws BBDDException {
-        final String query = "SELECT * FROM vista_valor_mercado_historial";
+        final String query = "SELECT * FROM vista_valor_mercado_historial_jugador";
         List<ValorMercadoHistorial> lista = new ArrayList<>();
-
+    
         try {
             PreparedStatement ps = conn.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
-
+    
             while (rs.next()) {
-                int idHistorial = rs.getInt("id_historial");
-                int jugadorId = rs.getInt("jugador_id");
-                LocalDate fecha = rs.getDate("fecha").toLocalDate();
-                float valorMercado = rs.getFloat("valor_mercado");
-                String motivo = rs.getString("motivo");
-
-                ValorMercadoHistorial historial = new ValorMercadoHistorial(idHistorial, jugadorId, fecha, valorMercado,
-                        motivo);
-                lista.add(historial);
+                ValorMercadoHistorial vm = new ValorMercadoHistorial();
+    
+                vm.setIdHistorial(rs.getInt("id_historial"));
+                vm.setJugadorId(rs.getInt("jugador_id"));
+                vm.setNombreJugador(rs.getString("nombre_jugador")); // desde la vista
+                vm.setFecha(rs.getDate("fecha").toLocalDate());
+                vm.setValorMercado(rs.getFloat("valor_mercado"));
+                vm.setMotivo(rs.getString("motivo"));
+    
+                lista.add(vm);
             }
-
+    
             rs.close();
             ps.close();
         } catch (Exception e) {
-            throw new BBDDException(e.getMessage());
+            throw new BBDDException("Error al listar historial de valor de mercado: " + e.getMessage());
         }
-
+    
         return lista;
     }
+    
 
     @Override
     public ValorMercadoHistorial visualizarValorMercadoHistorial(int idHistorial) throws BBDDException {
@@ -1318,5 +1197,71 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
 
         return historial; // Devuelve null si no se encuentra
     }
+
+    public int obtenerIdPorNombreJugador(String nombre) throws BBDDException {
+        final String sql = "SELECT id_jugador FROM vista_jugador WHERE nombre = ?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, nombre);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt("id_jugador");
+                } else {
+                    throw new BBDDException("Jugador no encontrado: " + nombre);
+                }
+            }
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener ID del jugador: " + e.getMessage());
+        }
+    }
+
+    public int obtenerIdPorNombreEquipo(String nombre) throws BBDDException {
+        final String sql = "SELECT id_equipo FROM vista_equipo WHERE nombre = ?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, nombre);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt("id_equipo");
+                } else {
+                    throw new BBDDException("Equipo no encontrado: " + nombre);
+                }
+            }
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener ID del equipo: " + e.getMessage());
+        }
+    }
+
+    
+    public int obtenerIdPorNombreCompeticion(String nombre) throws BBDDException {
+        final String sql = "SELECT id_competicion FROM vista_competicion WHERE nombre = ?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, nombre);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt("id_competicion");
+                } else {
+                    throw new BBDDException("Competición no encontrada: " + nombre);
+                }
+            }
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener ID de la competición: " + e.getMessage());
+        }
+    }
+
+    public int obtenerIdPorNombreTemporada(String nombre) throws BBDDException {
+        final String sql = "SELECT id_temporada FROM vista_temporada WHERE nombre = ?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, nombre);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt("id_temporada");
+                } else {
+                    throw new BBDDException("Temporada no encontrada: " + nombre);
+                }
+            }
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener ID de la temporada: " + e.getMessage());
+        }
+    }
+    
 
 }

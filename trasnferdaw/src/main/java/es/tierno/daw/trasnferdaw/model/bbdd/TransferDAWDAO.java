@@ -8,7 +8,6 @@ import es.tierno.daw.trasnferdaw.model.entities.Equipo;
 import es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion;
 import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
-import es.tierno.daw.trasnferdaw.model.entities.Seleccion;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
 import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
@@ -34,18 +33,6 @@ public interface TransferDAWDAO {
     public List<Jugador> listarJugadores() throws BBDDException;
 
     public Jugador visualizarJugador(int idJugador) throws BBDDException;
-
-
-    // Selección
-    public int insertar(Seleccion seleccion) throws BBDDException;
-
-    public int modificar(Seleccion seleccion) throws BBDDException;
-
-    public int eliminarSeleccion(int idSeleccion) throws BBDDException;
-
-    public List<Seleccion> listarSelecciones() throws BBDDException;
-
-    public Seleccion visualizarSeleccion(int idSeleccion) throws BBDDException;
 
 
     // Equipo

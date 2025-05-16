@@ -2,9 +2,13 @@ package es.tierno.daw.trasnferdaw.model.entities;
 
 public class EstadisticasTemporada {
     private int jugadorId;
+    private String nombreJugador;
     private int temporadaId;
+    private String nombreTemporada;
     private int competicionId;
+    private String nombreCompeticion;
     private int equipoId;
+    private String nombreEquipo;
     private int partidosJugados;
     private int goles;
     private int asistencias;
@@ -77,6 +81,38 @@ public class EstadisticasTemporada {
 
     public void setPartidosJugados(int partidosJugados) {
         this.partidosJugados = partidosJugados;
+    }
+
+    public String getNombreJugador() {
+        return nombreJugador;
+    }
+
+    public void setNombreJugador(String nombreJugador) {
+        this.nombreJugador = nombreJugador;
+    }
+
+    public String getNombreTemporada() {
+        return nombreTemporada;
+    }
+
+    public void setNombreTemporada(String nombreTemporada) {
+        this.nombreTemporada = nombreTemporada;
+    }
+
+    public String getNombreCompeticion() {
+        return nombreCompeticion;
+    }
+
+    public void setNombreCompeticion(String nombreCompeticion) {
+        this.nombreCompeticion = nombreCompeticion;
+    }
+
+    public String getNombreEquipo() {
+        return nombreEquipo;
+    }
+
+    public void setNombreEquipo(String nombreEquipo) {
+        this.nombreEquipo = nombreEquipo;
     }
 
     @Override

@@ -2,9 +2,13 @@ package es.tierno.daw.trasnferdaw.model.entities;
 
 public class EquipoCompeticion {
     private int equipoId;
+    private String nombreEquipo;
     private int competicionId;
+    private String nombreCompeticion;
     private int temporadaId;
-    private int rango;
+    private String nombreTemporada;
+    private Integer rango;
+
 
     public EquipoCompeticion() {
     }
@@ -24,6 +28,14 @@ public class EquipoCompeticion {
         this.equipoId = equipoId;
     }
 
+    public String getNombreEquipo() {
+        return nombreEquipo;
+    }
+
+    public void setNombreEquipo(String nombreEquipo) {
+        this.nombreEquipo = nombreEquipo;
+    }
+
     public int getCompeticionId() {
         return competicionId;
     }
@@ -32,12 +44,28 @@ public class EquipoCompeticion {
         this.competicionId = competicionId;
     }
 
+    public String getNombreCompeticion() {
+        return nombreCompeticion;
+    }
+
+    public void setNombreCompeticion(String nombreCompeticion) {
+        this.nombreCompeticion = nombreCompeticion;
+    }
+
     public int getTemporadaId() {
         return temporadaId;
     }
 
     public void setTemporadaId(int temporadaId) {
         this.temporadaId = temporadaId;
+    }
+
+    public String getNombreTemporada() {
+        return nombreTemporada;
+    }
+
+    public void setNombreTemporada(String nombreTemporada) {
+        this.nombreTemporada = nombreTemporada;
     }
 
     public int getRango() {
@@ -57,4 +85,5 @@ public class EquipoCompeticion {
                 ", rango=" + rango +
                 '}';
     }
+
 }

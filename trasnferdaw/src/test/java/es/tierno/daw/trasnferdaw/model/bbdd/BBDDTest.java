@@ -18,7 +18,6 @@ import es.tierno.daw.trasnferdaw.model.entities.Equipo;
 import es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion;
 import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
-import es.tierno.daw.trasnferdaw.model.entities.Seleccion;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
 import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
@@ -76,7 +75,7 @@ public class BBDDTest {
     @Test
     public void insertarJugadorTest() throws Exception {
         Jugador jugador = new Jugador(0, "Isco", "Alarcon", LocalDate.of(1986, 3, 30), "España", 1.84f, 82f, "derecho",
-                10f, "mediocampista", "Prueba", 1);
+                10f, "mediocampista", "Prueba", "España");
 
         int real = dao.insertar(jugador);
         assertEquals(1, real);
@@ -115,7 +114,7 @@ public class BBDDTest {
     @Test
     public void listarJugadorTest() throws Exception {
         List<Jugador> jugadores = dao.listarJugadores();
-        assertEquals(4, jugadores.size());// o puedes comprobar exacto si conoces el número
+        assertEquals(5, jugadores.size());// o puedes comprobar exacto si conoces el número
     }
 
     /**
@@ -147,7 +146,7 @@ public class BBDDTest {
         assertEquals("delantero", jugador.getPosicion(), "El ID del representante del jugador debería ser 1");
         assertEquals("Gestifute", jugador.getRepresentanteNombre(),
                 "El ID del representante del jugador debería ser 1");
-        assertEquals(1, jugador.getSeleccionNombre(), "El ID de la selección del jugador debería ser 1");
+        assertEquals("España", jugador.getSeleccionNombre(), "El nombre de la selección del jugador debería ser España");
     }
 
     @Test
@@ -167,69 +166,6 @@ public class BBDDTest {
         assertEquals("Temporada 1969/1970", temporada.getNombre(), "Nombre incorrecto");
         assertEquals(LocalDate.of(1969, 8, 1), temporada.getFechaInicio(), "Fecha de inicio incorrecta");
         assertEquals(LocalDate.of(1970, 5, 31), temporada.getFechaFin(), "Fecha de fin incorrecta");
-    }
-
-    @Test
-    public void insertarSelecionTest() throws Exception {
-        Seleccion seleccion = new Seleccion(0, "pais_prueba", "españa_prueba", "federacion_prueba", 1986, 11, null,
-                null);
-
-        int real = dao.insertar(seleccion);
-        assertEquals(1, real);
-    }
-
-    @Test
-    public void actualizarSelecionTest() throws Exception {
-        // Recuperamos el jugador para actualizarlo
-        List<Seleccion> selecciones = dao.listarSelecciones();
-        for (Seleccion s : selecciones) {
-            if (s.getNombre().equals("pais_prueba")) {
-                s.setRanking(20);
-                ; // modificamos algo
-                int actualizados = dao.modificar(s);
-                assertEquals(1, actualizados);
-                break;
-            }
-        }
-    }
-
-    @Test
-    public void eliminarSelecionTest() throws Exception {
-        List<Seleccion> selecciones = dao.listarSelecciones();
-        int idEliminar = -1;
-        for (Seleccion s : selecciones) {
-            if (s.getNombre().equals("pais_prueba")) {
-                idEliminar = s.getIdSeleccion();
-                break;
-            }
-        }
-
-        int real = dao.eliminarSeleccion(idEliminar);
-        assertEquals(1, real);
-
-    }
-
-    @Test
-    public void listarSelecionTest() throws Exception {
-        List<Seleccion> selecciones = dao.listarSelecciones();
-        assertEquals(2, selecciones.size());
-    }
-
-    @Test
-    public void testVisualizarSeleccion() throws BBDDException {
-        int idSeleccion = 1;
-
-        Seleccion seleccion = dao.visualizarSeleccion(idSeleccion);
-
-        assertNotNull(seleccion, "La selección no debería ser nula");
-        assertEquals(idSeleccion, seleccion.getIdSeleccion(), "El ID de la selección debería ser 1");
-        assertEquals("España", seleccion.getNombre(), "El nombre debería ser 'España'");
-        assertEquals("España", seleccion.getPais(), "El país debería ser 'España'");
-        assertEquals("Federación Española de Fútbol", seleccion.getFederacion(), "Federación incorrecta");
-        assertEquals(1920, seleccion.getAnioFundacion(), "Año de fundación incorrecto");
-        assertEquals(2, seleccion.getRanking(), "Ranking incorrecto");
-        assertEquals("Luis de la fuente", seleccion.getEntrenadorNombre(), "Entrenador incorrecto");
-        assertEquals(1, seleccion.getCapitanId(), "ID del capitán incorrecto");
     }
 
     @Test

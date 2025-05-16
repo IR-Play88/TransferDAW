@@ -5,6 +5,7 @@ import java.time.LocalDate;
 public class ValorMercadoHistorial {
     private int idHistorial;
     private int jugadorId;
+    private String nombreJugador;
     private LocalDate fecha;
     private float valorMercado;
     private String motivo;
@@ -58,6 +59,14 @@ public class ValorMercadoHistorial {
 
     public void setMotivo(String motivo) {
         this.motivo = motivo;
+    }
+
+    public String getNombreJugador() {
+        return nombreJugador;
+    }
+
+    public void setNombreJugador(String nombreJugador) {
+        this.nombreJugador = nombreJugador;
     }
 
     @Override

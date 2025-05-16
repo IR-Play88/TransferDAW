@@ -14,14 +14,14 @@ public class Jugador {
     private float valorMercado;
     private String posicion;
     private String representanteNombre;
-    private Integer seleccionNombre;
+    private String seleccionNombre;
 
     public Jugador() {
     }
 
     public Jugador(int idJugador, String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad,
             float altura, float peso, String pieDominante, float valorMercado, String posicion,
-            String representanteNombre,  Integer seleccionNombre) {
+            String representanteNombre,  String seleccionNombre) {
         this.idJugador = idJugador;
         this.nombre = nombre;
         this.alias = alias;
@@ -124,11 +124,11 @@ public class Jugador {
         this.representanteNombre = representanteNombre;
     }
 
-    public Integer getSeleccionNombre() {
+    public String getSeleccionNombre() {
         return seleccionNombre;
     }
 
-    public void setSeleccionNombre(Integer seleccionNombre) {
+    public void setSeleccionNombre(String seleccionNombre) {
         this.seleccionNombre = seleccionNombre;
     }
 

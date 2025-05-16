@@ -8,7 +8,6 @@ import es.tierno.daw.trasnferdaw.model.entities.Equipo;
 import es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion;
 import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
-import es.tierno.daw.trasnferdaw.model.entities.Seleccion;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
 import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
@@ -50,36 +49,6 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     public Jugador visualizarJugador(int idJugador) throws BBDDException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'visualizarJugador'");
-    }
-
-    @Override
-    public int insertar(Seleccion seleccion) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'insertar'");
-    }
-
-    @Override
-    public int modificar(Seleccion seleccion) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'modificar'");
-    }
-
-    @Override
-    public int eliminarSeleccion(int idSeleccion) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminarSeleccion'");
-    }
-
-    @Override
-    public List<Seleccion> listarSelecciones() throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'listarSelecciones'");
-    }
-
-    @Override
-    public Seleccion visualizarSeleccion(int idSeleccion) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'visualizarSeleccion'");
     }
 
     @Override
