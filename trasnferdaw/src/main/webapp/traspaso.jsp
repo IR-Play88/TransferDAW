@@ -2,6 +2,14 @@
 <%@ page import="java.util.List" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.entities.Traspaso" %>
+<%
+    String rol = (String) session.getAttribute("rol");
+    boolean esAdmin = rol != null && rol.equals("admin");
+%>
+<%
+    String nombreUsuario = (String) session.getAttribute("usuario");
+%>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -44,12 +52,19 @@
         <div class="row">
             <aside class="col-md-3">
                 <div class="widget mb-3">
-                    <h3>Iniciar Sesión</h3>
-                    <form>
-                        <input class="form-control mb-2" type="text" name="usuario" placeholder="usuario" />
-                        <input class="form-control mb-2" type="password" name="password" placeholder="password" />
-                        <input class="btn btn-primary w-100" type="submit" value="Enviar" />
-                    </form>
+                    <% if (nombreUsuario == null) { %>
+                        <h3>Iniciar Sesión</h3>
+                        <form method="POST" action="LoginServlet">
+                            <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
+                            <input type="password" class="form-control mb-2" name="password" placeholder="password" />
+                            <input type="submit" class="btn btn-primary w-100" value="Enviar" />
+                        </form>
+                    <% } else { %>
+                        <h3>Bienvenido, <%= nombreUsuario %></h3>
+                        <form method="POST" action="LogoutServlet">
+                            <input type="submit" class="btn btn-danger w-100" value="Cerrar sesión" />
+                        </form>
+                    <% } %> 
                 </div>
 
                 <div class="widget mb-3">
@@ -76,16 +91,16 @@
 
                 <form method="GET" action="TraspasoController" class="row g-3 mb-4">
                     <div class="col-md-6">
-                        <input class="form-control" type="text" name="jugadorId" placeholder="Jugador (ID)" required />
+                        <input class="form-control" type="text" name="jugadorId" placeholder="Jugador" required />
                     </div>
                     <div class="col-md-6">
-                        <input class="form-control" type="text" name="equipoOrigenId" placeholder="Equipo Origen (ID)" />
+                        <input class="form-control" type="text" name="equipoOrigenId" placeholder="Equipo Origen" />
                     </div>
                     <div class="col-md-6">
-                        <input class="form-control" type="text" name="equipoDestinoId" placeholder="Equipo Destino (ID)" />
+                        <input class="form-control" type="text" name="equipoDestinoId" placeholder="Equipo Destino" />
                     </div>
                     <div class="col-md-6">
-                        <input class="form-control" type="text" name="temporadaId" placeholder="Temporada (ID)" />
+                        <input class="form-control" type="text" name="temporadaId" placeholder="Temporada" />
                     </div>
                     <div class="col-md-6">
                         <input class="form-control" type="date" name="fechaTraspaso" placeholder="Fecha Traspaso" required />
@@ -103,7 +118,9 @@
                     </div>
                     <div class="col-md-12 d-flex">
                         <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar jugador..." />
+                        <% if (esAdmin) { %>
                         <button type="submit" name="accion" value="añadir" class="btn btn-success">Añadir</button>
+                        <% } %>
                     </div>
                 </form>
 
@@ -117,7 +134,9 @@
                             <th>Fecha</th>
                             <th>Cantidad</th>
                             <th>Tipo</th>
+                            <% if (esAdmin) { %>
                             <th>Acción</th>
+                            <% } %>
                         </tr>
                     </thead>
                     <tbody>
@@ -134,6 +153,7 @@
                             <td><%= t.getCantidad() %></td>
                             <td><%= t.getTipo() %></td>
                             <td>
+                                <% if (esAdmin) { %>
                                 <form action="TraspasoController" method="GET" class="d-flex gap-1">
                                     <input type="hidden" name="id_traspaso" value="<%= t.getIdTraspaso() %>" />
                                     <input type="hidden" name="jugadorId" value="<%= t.getJugadorId() %>" />
@@ -141,7 +161,9 @@
                                     <input type="hidden" name="equipoOrigenId" value="<%= t.getEquipoOrigenId() %>" />
                                     <input type="hidden" name="equipoDestinoId" value="<%= t.getEquipoDestinoId() %>" />
                                     <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
+                                    <a href="TraspasoController?accion=modificar&id_traspaso=<%= t.getIdTraspaso() %>" class="btn btn-warning btn-sm">Modificar</a>
                                 </form>
+                                <% } %>
                             </td>
                         </tr>
                         <% } %>

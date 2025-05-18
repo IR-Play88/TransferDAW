@@ -69,6 +69,58 @@ public class EquipoController extends HttpServlet {
                 e.printStackTrace();
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al eliminar equipo");
             }
+        } else if ("modificar".equalsIgnoreCase(accion)) {
+            try {
+                int idEquipo = Integer.parseInt(request.getParameter("id_equipo"));
+                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+
+                Equipo equipo = dao.visualizarEquipo(idEquipo);
+
+                if (equipo != null) {
+                    request.setAttribute("equipo", equipo);
+                    request.getRequestDispatcher("editar_equipo.jsp").forward(request, response);
+                } else {
+                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Equipo no encontrado para modificar");
+                }
+
+            }  catch (Exception e) {
+                e.printStackTrace();
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error: " + e.getMessage());
+            }
+            
+
+        } else if ("actualizar".equalsIgnoreCase(accion)) {
+            try {
+                int idEquipo = Integer.parseInt(request.getParameter("id_equipo"));
+                String nombre = request.getParameter("nombre");
+                String ciudad = request.getParameter("ciudad");
+                String pais = request.getParameter("pais");
+                int anio = Integer.parseInt(request.getParameter("anio"));
+                float presupuesto = Float.parseFloat(request.getParameter("presupuesto"));
+                String propietario = request.getParameter("propietario");
+                String estadio = request.getParameter("estadio");
+                String entrenador = request.getParameter("entrenador");
+
+                Equipo equipo = new Equipo();
+                equipo.setIdEquipo(idEquipo);
+                equipo.setNombre(nombre);
+                equipo.setCiudad(ciudad);
+                equipo.setPais(pais);
+                equipo.setAnioFundacion(anio);
+                equipo.setPresupuesto(presupuesto);
+                equipo.setPropietario(propietario);
+                equipo.setEstadioNombre(estadio);
+                equipo.setEntrenadorNombre(entrenador);
+
+                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+                dao.modificar(equipo);
+
+            response.sendRedirect("equipo.jsp");
+            
+            }catch (Exception e) {
+                e.printStackTrace();
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error: " + e.getMessage());
+            }
         }
         
     }

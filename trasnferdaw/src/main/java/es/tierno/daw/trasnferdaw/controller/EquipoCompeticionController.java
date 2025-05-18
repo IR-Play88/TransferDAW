@@ -1,6 +1,8 @@
 package es.tierno.daw.trasnferdaw.controller;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -45,26 +47,23 @@ public class EquipoCompeticionController extends HttpServlet {
                 response.sendRedirect("equipo_competicion.jsp");
 
             } catch (Exception e) {
-                e.printStackTrace(); // Esto seguirá mostrando el error completo en consola/log
-            
-                // Mostrar el mensaje del error directamente en la respuesta al navegador
+                e.printStackTrace();
+
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,
                         "Error al añadir equipo en competición: " + e.getMessage());
             }
-            
+
         } else if ("eliminar".equalsIgnoreCase(accion)) {
             try {
                 // Recoger los IDs para eliminar
-                int equipoId = Integer.parseInt(request.getParameter("id_equipo"));
-                int competicionId = Integer.parseInt(request.getParameter("id_competicion"));
-                int temporadaId = Integer.parseInt(request.getParameter("id_temporada"));
-
+                int equipoId = Integer.parseInt(request.getParameter("equipoId"));
+                int competicionId = Integer.parseInt(request.getParameter("competicionId"));
+                int temporadaId = Integer.parseInt(request.getParameter("temporadaId"));
                 TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
-                
+
                 // Eliminar la relación equipo-competición-temporada
                 int eliminados = dao.eliminarEquipoCompeticion(equipoId, competicionId, temporadaId);
 
-                // Redirigir según si se eliminó correctamente
                 if (eliminados > 0) {
                     response.sendRedirect("equipo_competicion.jsp");
                 } else {
@@ -75,6 +74,51 @@ public class EquipoCompeticionController extends HttpServlet {
                 e.printStackTrace();
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,
                         "Error al eliminar equipo en competición");
+            }
+        } else if ("modificar".equalsIgnoreCase(accion)) {
+            try {
+                int equipoId = Integer.parseInt(request.getParameter("equipoId"));
+                int competicionId = Integer.parseInt(request.getParameter("competicionId"));
+                int temporadaId = Integer.parseInt(request.getParameter("temporadaId"));
+
+                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+                EquipoCompeticion ec = dao.visualizarEquipoCompeticion(equipoId, competicionId, temporadaId);
+
+                if (ec != null) {
+                    request.setAttribute("equipoCompeticion", ec);
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("editar_equipo_competicion.jsp");
+                    dispatcher.forward(request, response);
+                } else {
+                    response.sendError(HttpServletResponse.SC_NOT_FOUND,
+                            "Registro no encontrado para modificar");
+                }
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error: " + e.getMessage());
+            }
+
+        } else if ("actualizar".equalsIgnoreCase(accion)) {
+            try {
+                int equipoId = Integer.parseInt(request.getParameter("equipoId"));
+                int competicionId = Integer.parseInt(request.getParameter("competicionId"));
+                int temporadaId = Integer.parseInt(request.getParameter("temporadaId"));
+                int rango = Integer.parseInt(request.getParameter("rango"));
+
+                EquipoCompeticion ec = new EquipoCompeticion();
+                ec.setEquipoId(equipoId);
+                ec.setCompeticionId(competicionId);
+                ec.setTemporadaId(temporadaId);
+                ec.setRango(rango);
+
+                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+                dao.modificar(ec);
+
+                response.sendRedirect("equipo_competicion.jsp");
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error: " + e.getMessage());
             }
         }
     }

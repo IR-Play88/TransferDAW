@@ -1,4 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String nombreUsuario = (String) session.getAttribute("usuario");
+%>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -44,22 +48,29 @@
         <div class="row">
             <aside class="col-md-3">
                 <div class="widget mb-3">
-                    <h3>Iniciar Sesión</h3>
-                    <form>
-                        <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
-                        <input type="password" class="form-control mb-2" name="password" placeholder="password" />
-                        <input type="submit" class="btn btn-primary w-100" value="Enviar" />
-                    </form>
+                    <% if (nombreUsuario == null) { %>
+                        <h3>Iniciar Sesión</h3>
+                        <form method="POST" action="LoginServlet">
+                            <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
+                            <input type="password" class="form-control mb-2" name="password" placeholder="password" />
+                            <input type="submit" class="btn btn-primary w-100" value="Enviar" />
+                        </form>
+                    <% } else { %>
+                        <h3>Bienvenido, <%= nombreUsuario %></h3>
+                        <form method="POST" action="LogoutServlet">
+                            <input type="submit" class="btn btn-danger w-100" value="Cerrar sesión" />
+                        </form>
+                    <% } %>                    
                 </div>
 
                 <div class="widget mb-3">
                     <h3>Jugadores populares</h3>
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="#">Marco Asensio</a></li>
-                        <li class="list-group-item"><a href="#">Lucas Vázquez</a></li>
-                        <li class="list-group-item"><a href="#">Isco</a></li>
-                        <li class="list-group-item"><a href="#">Cristiano Ronaldo</a></li>
-                        <li class="list-group-item"><a href="#">Antony</a></li>
+                        <li class="list-group-item">Marco Asensio</li>
+                        <li class="list-group-item">Lucas Vázquez</li>
+                        <li class="list-group-item">Isco</li>
+                        <li class="list-group-item">Cistiano Ronaldo</li>
+                        <li class="list-group-item">Antony></li>
                     </ul>
                 </div>
 
@@ -154,14 +165,6 @@
                     <p>Consulta todas las temporadas.</p>
                     <a href="temporada.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
-
-                <ul class="pagination">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a>...</a></li>
-                    <li><a href="#">11</a></li>
-                </ul>
             </section>
         </div>
 

@@ -3,6 +3,15 @@
 <%@ page import="java.util.Iterator" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.entities.Jugador" %>
+<%
+    String rol = (String) session.getAttribute("rol");
+    boolean esAdmin = rol != null && rol.equals("admin");
+%>
+<%
+    String nombreUsuario = (String) session.getAttribute("usuario");
+%>
+
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -45,12 +54,19 @@
         <div class="row">
             <aside class="col-md-3">
                 <div class="widget mb-3">
-                    <h3>Iniciar Sesión</h3>
-                    <form>
-                        <input class="form-control mb-2" type="text" name="usuario" placeholder="usuario">
-                        <input class="form-control mb-2" type="password" name="password" placeholder="password">
-                        <input class="btn btn-primary w-100" type="submit" value="Enviar">
-                    </form>
+                    <% if (nombreUsuario == null) { %>
+                        <h3>Iniciar Sesión</h3>
+                        <form method="POST" action="LoginServlet">
+                            <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
+                            <input type="password" class="form-control mb-2" name="password" placeholder="password" />
+                            <input type="submit" class="btn btn-primary w-100" value="Enviar" />
+                        </form>
+                    <% } else { %>
+                        <h3>Bienvenido, <%= nombreUsuario %></h3>
+                        <form method="POST" action="LogoutServlet">
+                            <input type="submit" class="btn btn-danger w-100" value="Cerrar sesión" />
+                        </form>
+                    <% } %> 
                 </div>
 
                 <div class="widget mb-3">
@@ -101,7 +117,10 @@
                     <div class="col-md-6"><input class="form-control" type="text" name="seleccion" placeholder="Selección"></div>
                     <div class="col-md-6 d-flex">
                         <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar jugador...">
-                        <button type="submit" name="accion" value="añadir" class="btn btn-success">Añadir</button>
+                        <% if (esAdmin) { %>
+                            <button type="submit" name="accion" value="añadir" class="btn btn-success">Añadir</button>
+                        <% } %>
+                        
                     </div>
                 </form>
 
@@ -119,7 +138,9 @@
                             <th>Posición</th>
                             <th>Representante</th>
                             <th>Selección</th>
+                            <% if (esAdmin) { %>
                             <th>Acción</th>
+                            <% } %>
                         </tr>
                     </thead>
                     <tbody>
@@ -143,8 +164,11 @@
                                 <td>
                                     <form action="JugadorController" method="GET" class="d-flex gap-1">
                                         <input type="hidden" name="id_jugador" value="<%= jugador.getIdJugador() %>">
-                                        <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
-                                        <a href="JugadorController?accion=modificar&id_jugador=<%= jugador.getIdJugador() %>" class="btn btn-warning btn-sm">Modificar</a>
+                                        <% if (esAdmin) { %>
+                                            <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
+                                            <a href="JugadorController?accion=modificar&id_jugador=<%= jugador.getIdJugador() %>" class="btn btn-warning btn-sm">Modificar</a>
+                                        <% } %>
+                                        
 
                                     </form>
                                 </td>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest" time="1.033" errors="0" skipped="0">
+<testsuite tests="2" failures="0" name="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest" time="1.109" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="21.0.1+12-29"/>
@@ -57,6 +57,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest" name="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest.testEscribirJugadorEnFichero" time="0.151"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest" name="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest.testEscribirJugadorDesdeBBDDEnFichero" time="0.882"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest" name="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest.testEscribirJugadorEnFichero" time="0.196"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest" name="es.tierno.daw.trasnferdaw.model.util.FicheroBinarioTest.testEscribirJugadorDesdeBBDDEnFichero" time="0.913"/>
 </testsuite>

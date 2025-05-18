@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.sql.Date;
 import java.time.LocalDate;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -81,6 +82,57 @@ public class TraspasoController extends HttpServlet {
             } catch (Exception e) {
                 e.printStackTrace();
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al eliminar traspaso");
+            }
+        }else if ("modificar".equalsIgnoreCase(accion)) {
+            try {
+                int idTraspaso = Integer.parseInt(request.getParameter("id_traspaso"));
+
+                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+                Traspaso traspaso = dao.visualizarTraspaso(idTraspaso);
+
+                if (traspaso != null) {
+                    request.setAttribute("traspaso", traspaso);
+                    RequestDispatcher dispatcher = request.getRequestDispatcher("editar_traspaso.jsp");
+                    dispatcher.forward(request, response);
+                } else {
+                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Traspaso no encontrado");
+                }
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error: " + e.getMessage());
+            }
+
+        } else if ("actualizar".equalsIgnoreCase(accion)) {
+            try {
+                int idTraspaso = Integer.parseInt(request.getParameter("id_traspaso"));
+                int jugadorId = Integer.parseInt(request.getParameter("jugadorId"));
+                int equipoOrigenId = Integer.parseInt(request.getParameter("equipoOrigenId"));
+                int equipoDestinoId = Integer.parseInt(request.getParameter("equipoDestinoId"));
+                int temporadaId = Integer.parseInt(request.getParameter("temporadaId"));
+        
+                float cantidad = Float.parseFloat(request.getParameter("cantidad"));
+                String tipo = request.getParameter("tipo");
+                LocalDate fecha = LocalDate.parse(request.getParameter("fechaTraspaso"));
+        
+                Traspaso traspaso = new Traspaso();
+                traspaso.setIdTraspaso(idTraspaso);
+                traspaso.setJugadorId(jugadorId);
+                traspaso.setEquipoOrigenId(equipoOrigenId);
+                traspaso.setEquipoDestinoId(equipoDestinoId);
+                traspaso.setTemporadaId(temporadaId);
+                traspaso.setCantidad(cantidad);
+                traspaso.setTipo(tipo);
+                traspaso.setFechaTraspaso(fecha);
+        
+                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+                dao.modificar(traspaso);
+        
+                response.sendRedirect("traspaso.jsp");
+        
+            } catch (Exception e) {
+                e.printStackTrace();
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error: " + e.getMessage());
             }
         }
     }

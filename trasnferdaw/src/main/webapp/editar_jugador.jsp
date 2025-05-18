@@ -1,5 +1,16 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.entities.Jugador" %>
+<%
+    String rol = (String) session.getAttribute("rol");
+    if (rol == null || !rol.equals("admin")) {
+        response.sendRedirect("index.jsp");
+        return;
+    }
+
+    boolean esAdmin = true; // porque ya comprobaste que sí lo es
+    String nombreUsuario = (String) session.getAttribute("usuario");
+%>
+
 <jsp:useBean id="jugador" scope="request" class="es.tierno.daw.trasnferdaw.model.entities.Jugador" />
 <!DOCTYPE html>
 <html lang="es">
@@ -36,12 +47,19 @@
     <div class="row">
         <aside class="col-md-3">
             <div class="widget mb-3">
-                <h3>Iniciar Sesión</h3>
-                <form>
-                    <input class="form-control mb-2" type="text" name="usuario" placeholder="usuario">
-                    <input class="form-control mb-2" type="password" name="password" placeholder="password">
-                    <input class="btn btn-primary w-100" type="submit" value="Enviar">
-                </form>
+                <% if (nombreUsuario == null) { %>
+                    <h3>Iniciar Sesión</h3>
+                    <form method="POST" action="LoginServlet">
+                        <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
+                        <input type="password" class="form-control mb-2" name="password" placeholder="password" />
+                        <input type="submit" class="btn btn-primary w-100" value="Enviar" />
+                    </form>
+                <% } else { %>
+                    <h3>Bienvenido, <%= nombreUsuario %></h3>
+                    <form method="POST" action="LogoutServlet">
+                        <input type="submit" class="btn btn-danger w-100" value="Cerrar sesión" />
+                    </form>
+                <% } %> 
             </div>
 
             <div class="widget mb-3">

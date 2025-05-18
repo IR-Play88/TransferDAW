@@ -77,6 +77,57 @@ public class EstadisticasTemporadaController extends HttpServlet {
                 e.printStackTrace();
                 response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al eliminar estadística");
             }
+        }else if ("modificar".equalsIgnoreCase(accion)) {
+            try {
+                int jugadorId = Integer.parseInt(request.getParameter("jugadorId"));
+                int temporadaId = Integer.parseInt(request.getParameter("temporadaId"));
+                int competicionId = Integer.parseInt(request.getParameter("competicionId"));
+                int equipoId = Integer.parseInt(request.getParameter("equipoId"));
+
+                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+                EstadisticasTemporada est = dao.obtenerEstadisticaPorId(jugadorId, temporadaId, competicionId, equipoId);
+
+                if (est != null) {
+                    request.setAttribute("estadistica", est);
+                    request.getRequestDispatcher("editar_estadistica.jsp").forward(request, response);
+                } else {
+                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Estadística no encontrada para modificar");
+                }
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al cargar estadística");
+            }
+
+        } else if ("actualizar".equalsIgnoreCase(accion)) {
+            try {
+                int jugadorId = Integer.parseInt(request.getParameter("jugadorId"));
+                int temporadaId = Integer.parseInt(request.getParameter("temporadaId"));
+                int competicionId = Integer.parseInt(request.getParameter("competicionId"));
+                int equipoId = Integer.parseInt(request.getParameter("equipoId"));
+
+                int partidosJugados = Integer.parseInt(request.getParameter("partidosJugados"));
+                int goles = Integer.parseInt(request.getParameter("goles"));
+                int asistencias = Integer.parseInt(request.getParameter("asistencias"));
+
+                EstadisticasTemporada est = new EstadisticasTemporada();
+                est.setJugadorId(jugadorId);
+                est.setTemporadaId(temporadaId);
+                est.setCompeticionId(competicionId);
+                est.setEquipoId(equipoId);
+                est.setPartidosJugados(partidosJugados);
+                est.setGoles(goles);
+                est.setAsistencias(asistencias);
+
+                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+                dao.modificar(est);
+
+                response.sendRedirect("estadisticas.jsp");
+
+            } catch (Exception e) {
+                e.printStackTrace();
+                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al actualizar estadística");
+            }
         }
     }
 
