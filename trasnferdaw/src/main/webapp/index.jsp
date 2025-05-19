@@ -89,80 +89,88 @@
 
                 <article class="mb-4">
                     <h3>Jugadores</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta el perfil completo de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega jugadores de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                    <p>Como eres lector ¡Puedes ver los jugadores disponibles y buscar tu jugador favorito!</p>
+                    <% } else { %>
+                    <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un jugador en concreto o visualizados a todos!</p>
+                    <% } %> 
                     <a href="jugador.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Equipos</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta el perfil completo de cada equipo.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega equipos de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                    <p>Como eres lector ¡Puedes ver los equipos disponibles y buscar tu equipo favorito!</p>
+                    <% } else { %>
+                    <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un equipo en concreto o visualizados a todos!</p>
+                    <% } %> 
                     <a href="equipo.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Competiciones</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta los detalles completos de cada competición.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega competiciones de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                    <p>Como eres lector ¡Puedes ver las competiciones disponibles!</p>
+                    <% } else { %>
+                    <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una competición en concreto o visualizalas todas!</p>
+                    <% } %> 
                     <a href="competicion.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Equipo-Competición</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta qué equipos están en cada competición.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega equipos a competiciones de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver las  relaciones entre equipos y competiciones disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca en que competición esta tu equipo o visualizalo todos!</p>
+                    <% } %> 
                     <a href="equipo_competicion.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Contratos de los jugadores</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta los contratos completos de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega contratos para los jugadores de forma rápida y sencilla.</p>
+                    < <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver los contratos disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una contrato en concreto o visualizalos todos!</p>
+                    <% } %> 
                     <a href="contrato.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Valor de mercado de los jugadores</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta el valor de mercado de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega los valores de mercado de cada jugador de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver las competiciones disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un valor de mercado de un jugador en concreto 
+                            o visualizalos todos!</p>
+                    <% } %> 
                     <a href="valor_mercado.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Estadísticas de los Jugadores</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta las estadísticas completas de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega estadísticas para los jugadores de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver las estadisticas de los jugadores disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una estadistica en concreto o visualizalas todas!</p>
+                     <% } %> 
                     <a href="estadisticas.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Traspasos</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta los traspasos de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega traspasos de cada jugador de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver las competiciones disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un traspaso en concreto o visualizalos todos!</p>
+                    <% } %> 
                     <a href="traspaso.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Temporadas</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta todas las temporadas.</p>
+                        <p>¡Puedes ver las temporadas disponibles!</p>
                     <a href="temporada.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
             </section>
