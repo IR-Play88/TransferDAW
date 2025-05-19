@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 sec
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 sec

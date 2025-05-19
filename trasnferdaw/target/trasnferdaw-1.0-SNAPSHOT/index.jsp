@@ -84,7 +84,7 @@
                 <!-- Ejemplo de sección -->
                 <article class="mb-4">
                     <h3>Jugadores</h3>
-                    <% if (!esAdmin) { %>
+                    <% if (esAdmin) { %>
                         <p>Como eres lector ¡Puedes ver los jugadores disponibles y buscar tu jugador favorito!</p>
                     <% } else { %>
                         <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un jugador en concreto o visualízalos a todos!</p>
@@ -95,7 +95,7 @@
                 <!-- Copiar el mismo patrón para los demás -->
                 <article class="mb-4">
                     <h3>Equipos</h3>
-                    <% if (!esAdmin) { %>
+                    <% if (esAdmin) { %>
                         <p>Como eres lector ¡Puedes ver los equipos disponibles y buscar tu equipo favorito!</p>
                     <% } else { %>
                         <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un equipo en concreto o visualízalos todos!</p>
@@ -105,7 +105,7 @@
 
                 <article class="mb-4">
                     <h3>Competiciones</h3>
-                    <% if (!esAdmin) { %>
+                    <% if (esAdmin) { %>
                         <p>Como eres lector ¡Puedes ver las competiciones disponibles!</p>
                     <% } else { %>
                         <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una competición en concreto o visualízalas todas!</p>
@@ -115,7 +115,7 @@
 
                 <article class="mb-4">
                     <h3>Equipo-Competición</h3>
-                    <% if (!esAdmin) { %>
+                    <% if (esAdmin) { %>
                         <p>Como eres lector ¡Puedes ver las relaciones entre equipos y competiciones disponibles!</p>
                     <% } else { %>
                         <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca en qué competición está tu equipo o visualízalos todos!</p>
@@ -125,7 +125,7 @@
 
                 <article class="mb-4">
                     <h3>Contratos de los jugadores</h3>
-                    <% if (!esAdmin) { %>
+                    <% if (esAdmin) { %>
                         <p>Como eres lector ¡Puedes ver los contratos disponibles!</p>
                     <% } else { %>
                         <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un contrato en concreto o visualízalos todos!</p>
@@ -135,7 +135,7 @@
 
                 <article class="mb-4">
                     <h3>Valor de mercado de los jugadores</h3>
-                    <% if (!esAdmin) { %>
+                    <% if (esAdmin) { %>
                         <p>Como eres lector ¡Puedes ver el valor de mercado disponible!</p>
                     <% } else { %>
                         <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un valor de mercado de un jugador en concreto 
@@ -146,7 +146,7 @@
 
                 <article class="mb-4">
                     <h3>Estadísticas de los Jugadores</h3>
-                    <% if (!esAdmin) { %>
+                    <% if (esAdmin) { %>
                         <p>Como eres lector ¡Puedes ver las estadísticas de los jugadores disponibles!</p>
                     <% } else { %>
                         <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una estadística en concreto o visualízalas todas!</p>
@@ -156,7 +156,7 @@
 
                 <article class="mb-4">
                     <h3>Traspasos</h3>
-                    <% if (!esAdmin) { %>
+                    <% if (esAdmin) { %>
                         <p>Como eres lector ¡Puedes ver los traspasos disponibles!</p>
                     <% } else { %>
                         <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un traspaso en concreto o visualízalos todos!</p>
