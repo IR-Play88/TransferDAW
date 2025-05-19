@@ -163,6 +163,19 @@
                         <% } %>
                     </tbody>
                 </table>
+
+                <% if (esAdmin) { %>
+                <h2>Descargar las estadisticas de tu jugador favorito</h2>
+
+                <form action="EstadisticasTemporadaController" method="get">
+                    <input type="text" name="jugador" placeholder="Nombre del jugador">
+                    <input type="text" name="temporada" placeholder="Nombre de la temporada (opcional)">
+                    
+                    <button type="submit" name="accion" value="descargarTotales">Descargar totales</button>
+                    <button type="submit" name="accion" value="descargarTemporada">Descargar por temporada</button>
+                </form>
+                
+                <% } %>
             </section>
         </div>
 

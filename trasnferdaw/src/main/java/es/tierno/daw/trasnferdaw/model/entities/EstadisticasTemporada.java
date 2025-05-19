@@ -118,12 +118,13 @@ public class EstadisticasTemporada {
     @Override
     public String toString() {
         return "EstadisticasTemporada{" +
-                "jugadorId=" + jugadorId +
-                ", temporadaId=" + temporadaId +
-                ", competicionId=" + competicionId +
-                ", equipoId=" + equipoId +
-                ", goles=" + goles +
-                ", asistencias=" + asistencias
+                "  Jugador=" + nombreJugador +
+                ", Competicion=" + nombreCompeticion +
+                ", Temporada=" + nombreTemporada +
+                ", Equipo=" + nombreEquipo +
+                ", Partidos jugados=" + partidosJugados + 
+                ", Goles=" + goles +
+                ", Asistencias=" + asistencias
                 + '}';
     }
 

@@ -917,68 +917,80 @@ public List<EstadisticasTemporada> listarEstadisticasTemporada() throws BBDDExce
 }
 
 
-    @Override
-    public EstadisticasTemporada buscarEstadisticasTotalesPorJugador(int jugadorId) throws BBDDException {
-        final String query = "SELECT * FROM vista_estadisticas_por_jugador WHERE jugador_id = ?";
+@Override
+public EstadisticasTemporada buscarEstadisticasTotalesPorJugador(int jugadorId) throws BBDDException {
+    final String query = """
+        SELECT j.nombre AS nombre_jugador, 
+               SUM(e.partidos_jugados) AS partidos_jugados,
+               SUM(e.goles) AS goles,
+               SUM(e.asistencias) AS asistencias
+        FROM estadisticas_temporada e
+        JOIN jugador j ON e.jugador_id = j.id_jugador
+        WHERE e.jugador_id = ?
+        GROUP BY j.nombre
+    """;
 
-        try {
-            PreparedStatement ps = conn.prepareStatement(query);
-            ps.setInt(1, jugadorId);
-            ResultSet rs = ps.executeQuery();
-
+    try (PreparedStatement ps = conn.prepareStatement(query)) {
+        ps.setInt(1, jugadorId);
+        try (ResultSet rs = ps.executeQuery()) {
             if (rs.next()) {
                 int partidos = rs.getInt("partidos_jugados");
                 int goles = rs.getInt("goles");
                 int asistencias = rs.getInt("asistencias");
+                String nombreJugador = rs.getString("nombre_jugador");
 
-                EstadisticasTemporada est = new EstadisticasTemporada(
-                        jugadorId, 0, 0, 0, partidos, goles, asistencias);
+                EstadisticasTemporada est = new EstadisticasTemporada(jugadorId, 0, 0, 0, partidos, goles, asistencias);
+                est.setNombreJugador(nombreJugador);
 
-                rs.close();
-                ps.close();
                 return est;
             }
-
-            rs.close();
-            ps.close();
-        } catch (Exception e) {
-            throw new BBDDException("Error al obtener estadísticas totales del jugador: " + e.getMessage());
         }
-
-        return null;
+    } catch (Exception e) {
+        throw new BBDDException("Error al obtener estadísticas totales del jugador: " + e.getMessage());
     }
 
-    @Override
-    public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException {
-        final String query = "SELECT * FROM vista_estadisticas_de_jugador_temporada WHERE jugador_id = ? AND temporada_id = ?";
+    return null;
+}
 
-        try {
-            PreparedStatement ps = conn.prepareStatement(query);
-            ps.setInt(1, jugadorId);
-            ps.setInt(2, temporadaId);
-            ResultSet rs = ps.executeQuery();
+@Override
+public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException {
+    final String query = """
+        SELECT j.nombre AS nombre_jugador, t.nombre AS nombre_temporada,
+               SUM(e.partidos_jugados) AS partidos_jugados,
+               SUM(e.goles) AS goles,
+               SUM(e.asistencias) AS asistencias
+        FROM estadisticas_temporada e
+        JOIN jugador j ON e.jugador_id = j.id_jugador
+        JOIN temporada t ON e.temporada_id = t.id_temporada
+        WHERE e.jugador_id = ? AND e.temporada_id = ?
+        GROUP BY j.nombre, t.nombre
+    """;
 
+    try (PreparedStatement ps = conn.prepareStatement(query)) {
+        ps.setInt(1, jugadorId);
+        ps.setInt(2, temporadaId);
+        try (ResultSet rs = ps.executeQuery()) {
             if (rs.next()) {
                 int partidos = rs.getInt("partidos_jugados");
                 int goles = rs.getInt("goles");
                 int asistencias = rs.getInt("asistencias");
+                String nombreJugador = rs.getString("nombre_jugador");
+                String nombreTemporada = rs.getString("nombre_temporada");
 
-                EstadisticasTemporada est = new EstadisticasTemporada(
-                        jugadorId, temporadaId, 0, 0, partidos, goles, asistencias);
+                EstadisticasTemporada est = new EstadisticasTemporada(jugadorId, temporadaId, 0, 0, partidos, goles, asistencias);
+                est.setNombreJugador(nombreJugador);
+                est.setNombreTemporada(nombreTemporada);
 
-                rs.close();
-                ps.close();
                 return est;
             }
-
-            rs.close();
-            ps.close();
-        } catch (Exception e) {
-            throw new BBDDException("Error al obtener estadísticas por temporada: " + e.getMessage());
         }
-
-        return null;
+    } catch (Exception e) {
+        throw new BBDDException("Error al obtener estadísticas por temporada: " + e.getMessage());
     }
+
+    return null;
+}
+
 
     @Override
     public int insertar(Traspaso traspaso) throws BBDDException {
@@ -1351,4 +1363,25 @@ public Usuario buscarUsuarioPorNombreYPassword(String nombre, String contraseña
     return usuario;
 }
 
+public int insertar(Usuario usuario) throws BBDDException {
+    int filas = 0;
+    final String sql = "INSERT INTO usuario (nombre, email, contraseña, rol) VALUES (?, ?, ?, ?)";
+
+    try {
+        PreparedStatement ps = conn.prepareStatement(sql);
+        ps.setString(1, usuario.getNombre());
+        ps.setString(2, usuario.getEmail());
+        ps.setString(3, usuario.getContrasena());
+        ps.setString(4, usuario.getRol());
+
+        filas = ps.executeUpdate();
+        ps.close();
+    } catch (Exception e) {
+        throw new BBDDException(e.getMessage());
+    }
+
+    return filas;
 }
+
+}
+
