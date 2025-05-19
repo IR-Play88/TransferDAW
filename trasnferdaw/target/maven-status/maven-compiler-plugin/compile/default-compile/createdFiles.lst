@@ -13,6 +13,7 @@ es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDBFactory.class
 es/tierno/daw/trasnferdaw/model/util/input/FormatoFichero.class
 es/tierno/daw/trasnferdaw/model/entities/Contrato.class
 es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.class
+es/tierno/daw/trasnferdaw/controller/LogoutServlet.class
 es/tierno/daw/trasnferdaw/model/exception/FicheroException.class
 es/tierno/daw/trasnferdaw/model/util/input/FicheroFactory.class
 es/tierno/daw/trasnferdaw/model/bbdd/Database.class
@@ -25,6 +26,7 @@ es/tierno/daw/trasnferdaw/Main.class
 es/tierno/daw/trasnferdaw/controller/TraspasoController.class
 es/tierno/daw/trasnferdaw/controller/CompeticionController.class
 es/tierno/daw/trasnferdaw/model/util/input/FicheroMock.class
+es/tierno/daw/trasnferdaw/controller/LoginControlador.class
 es/tierno/daw/trasnferdaw/model/entities/Temporada.class
 es/tierno/daw/trasnferdaw/model/util/input/FicheroBinario.class
 es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.class

@@ -1,8 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List" %>
-<%@ page import="java.util.Iterator" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.entities.Contrato" %>
+<%
+    String rol = (String) session.getAttribute("rol");
+    boolean esAdmin = rol != null && rol.equals("admin");
+%>
+<%
+    String nombreUsuario = (String) session.getAttribute("usuario");
+%>
 <!DOCTYPE html>
 <html lang="es">
 
@@ -10,52 +16,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>TransferDAW</title>
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
-    <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        header {
-            background-color: #343a40;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-        }
-        header img {
-            height: 50px;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline-block;
-            margin-right: 1rem;
-        }
-        aside {
-            background-color: #e9ecef;
-            padding: 1rem;
-            border-radius: 0.5rem;
-        }
-        .widget h3 {
-            margin-top: 0;
-        }
-        table th,
-        table td {
-            vertical-align: middle;
-        }
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 1rem;
-            text-align: center;
-            margin-top: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
@@ -71,14 +33,7 @@
                     <a class="nav-link" href="index.jsp">Inicio</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a
-                        class="nav-link dropdown-toggle"
-                        data-bs-toggle="dropdown"
-                        href="#"
-                        role="button"
-                        aria-expanded="false"
-                        >Idiomas</a
-                    >
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Idiomas</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Español</a></li>
                         <li><a class="dropdown-item" href="#">Inglés</a></li>
@@ -96,22 +51,19 @@
         <div class="row">
             <aside class="col-md-3">
                 <div class="widget mb-3">
-                    <h3>Iniciar Sesión</h3>
-                    <form>
-                        <input
-                            class="form-control mb-2"
-                            type="text"
-                            name="usuario"
-                            placeholder="usuario"
-                        />
-                        <input
-                            class="form-control mb-2"
-                            type="password"
-                            name="password"
-                            placeholder="password"
-                        />
-                        <input class="btn btn-primary w-100" type="submit" value="Enviar" />
-                    </form>
+                    <% if (nombreUsuario == null) { %>
+                        <h3>Iniciar Sesión</h3>
+                        <form method="POST" action="LoginServlet">
+                            <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
+                            <input type="password" class="form-control mb-2" name="password" placeholder="password" />
+                            <input type="submit" class="btn btn-primary w-100" value="Enviar" />
+                        </form>
+                    <% } else { %>
+                        <h3>Bienvenido, <%= nombreUsuario %></h3>
+                        <form method="POST" action="LogoutServlet">
+                            <input type="submit" class="btn btn-danger w-100" value="Cerrar sesión" />
+                        </form>
+                    <% } %> 
                 </div>
 
                 <div class="widget mb-3">
@@ -138,44 +90,19 @@
 
                 <form method="GET" action="ContratoController" class="row g-3 mb-3">
                     <div class="col-md-6">
-                        <input
-                            class="form-control"
-                            type="text"
-                            name="jugador"
-                            placeholder="Jugador"
-                            required
-                        />
+                        <input class="form-control" type="text" name="jugadorId" placeholder="Jugador" required />
                     </div>
                     <div class="col-md-6">
-                        <input class="form-control" type="text" name="equipo" placeholder="Equipo" />
+                        <input class="form-control" type="text" name="equipoId" placeholder="Equipo" required />
                     </div>
                     <div class="col-md-6">
-                        <input
-                            class="form-control"
-                            type="date"
-                            name="fechaInicio"
-                            placeholder="Fecha Inicio"
-                            required
-                        />
+                        <input class="form-control" type="date" name="fechaInicio" required />
                     </div>
                     <div class="col-md-6">
-                        <input
-                            class="form-control"
-                            type="date"
-                            name="fechaFin"
-                            placeholder="Fecha Fin"
-                            required
-                        />
+                        <input class="form-control" type="date" name="fechaFin" required />
                     </div>
                     <div class="col-md-6">
-                        <input
-                            class="form-control"
-                            type="number"
-                            step="0.01"
-                            name="salario"
-                            placeholder="Salario"
-                            required
-                        />
+                        <input class="form-control" type="number" step="0.01" name="salario" placeholder="Salario" required />
                     </div>
                     <div class="col-md-6">
                         <select class="form-select" name="tipoContrato">
@@ -185,19 +112,14 @@
                         </select>
                     </div>
                     <div class="col-md-12 d-flex">
-                        <input
-                            type="text"
-                            id="buscador"
-                            class="form-control me-2"
-                            placeholder="Buscar contrato..."
-                        />
-                        <button type="submit" name="accion" value="añadir" class="btn btn-success">
-                            Añadir
-                        </button>
+                        <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar contrato..." />
+                        <% if (esAdmin) { %>
+                        <button type="submit" name="accion" value="añadir" class="btn btn-success">Añadir</button>
+                        <% } %>
                     </div>
                 </form>
 
-                <table class="table table-striped" id="datos">
+                <table class="table table-striped mt-4" id="datos">
                     <thead class="table-dark">
                         <tr>
                             <th>Jugador</th>
@@ -206,7 +128,9 @@
                             <th>Fecha Fin</th>
                             <th>Salario</th>
                             <th>Tipo</th>
+                            <% if (esAdmin) { %>
                             <th>Acción</th>
+                            <% } %>
                         </tr>
                     </thead>
                     <tbody>
@@ -223,17 +147,13 @@
                             <td><%= c.getSalario() %></td>
                             <td><%= c.getTipoContrato() %></td>
                             <td>
+                                <% if (esAdmin) { %>
                                 <form action="ContratoController" method="GET" class="d-flex gap-1">
                                     <input type="hidden" name="id_contrato" value="<%= c.getIdContrato() %>" />
-                                    <button
-                                        type="submit"
-                                        name="accion"
-                                        value="eliminar"
-                                        class="btn btn-danger btn-sm"
-                                    >
-                                        Eliminar
-                                    </button>
+                                    <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
+                                    <a href="ContratoController?accion=modificar&id_contrato=<%= c.getIdContrato() %>" class="btn btn-warning btn-sm">Modificar</a>
                                 </form>
+                                <% } %>
                             </td>
                         </tr>
                         <% } %>
@@ -247,8 +167,7 @@
                 <a href="#" class="text-white text-decoration-none">&copy; Iván Rafael Redondo</a>
             </div>
             <div>
-                Más información en
-                <a href="#" class="text-white">Nuestras redes sociales</a>
+                Más información en <a href="#" class="text-white">Nuestras redes sociales</a>
             </div>
         </footer>
     </div>

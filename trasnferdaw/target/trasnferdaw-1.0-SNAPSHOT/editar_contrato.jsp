@@ -1,8 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="es.tierno.daw.trasnferdaw.model.entities.Competicion" %>
-<%
-    Competicion competicion = (Competicion) request.getAttribute("competicion");
-%>
+<%@ page import="es.tierno.daw.trasnferdaw.model.entities.Contrato" %>
 <%
     String rol = (String) session.getAttribute("rol");
     if (rol == null || !rol.equals("admin")) {
@@ -13,21 +10,20 @@
     boolean esAdmin = true; // porque ya comprobaste que sí lo es
     String nombreUsuario = (String) session.getAttribute("usuario");
 %>
+<jsp:useBean id="contrato" scope="request" class="es.tierno.daw.trasnferdaw.model.entities.Contrato" />
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
-    <title>Editar Competición</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
+    <title>Editar Contrato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
-
 <body>
 <div class="container-fluid">
     <header class="mb-4">
-        <img src="../images/logo.png" alt="logo">
-        <h1 class="mt-2">Editando competición: <span class="text-warning"><%= competicion.getNombre() %></span></h1>
+        <img src="../images/logo.png" alt="logo" />
+        <h1 class="mt-2">Editando contrato de <span class="text-warning"><%= contrato.getNombreJugador() %></span></h1>
     </header>
 
     <nav class="mb-4">
@@ -77,50 +73,55 @@
             <div class="widget">
                 <h3>TransferDAW</h3>
                 <blockquote class="blockquote">
-                    Todo sobre las competiciones más importantes del mundo del fútbol. Edita, consulta y administra competiciones a tu gusto.
+                    Quieres ver todo lo relacionado con el mundo del fútbol, este es tu sitio. Si eres un apasionado, experto o quieres compartir tus conocimientos, inicia sesión. Podrás insertar, modificar, eliminar...
                 </blockquote>
             </div>
         </aside>
 
         <section class="col-md-9">
-            <h2>Editar Competición</h2>
+            <h2>Editar Contrato</h2>
 
-            <form method="GET" action="CompeticionController" class="row g-3">
-                <input type="hidden" name="id_competicion" value="<%= competicion.getIdCompeticion() %>">
+            <form action="ContratoController" method="GET" class="row g-3">
+                <input type="hidden" name="id_contrato" value="<%= contrato.getIdContrato() %>" />
 
                 <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre actual: <strong><%= competicion.getNombre() %></strong></label>
-                    <input type="text" name="nombre" id="nombre" class="form-control" value="<%= competicion.getNombre() %>" required>
+                    <label class="form-label">Jugador</label>
+                    <input type="text" class="form-control" value="<%= contrato.getNombreJugador() %>" readonly />
+                    <input type="hidden" name="jugadorId" value="<%= contrato.getJugadorId() %>" />
                 </div>
 
                 <div class="col-md-6">
-                    <label for="pais" class="form-label">País actual: <strong><%= competicion.getPais() %></strong></label>
-                    <input type="text" name="pais" id="pais" class="form-control" value="<%= competicion.getPais() %>" required>
+                    <label class="form-label">Equipo</label>
+                    <input type="text" class="form-control" value="<%= contrato.getNombreEquipo() != null ? contrato.getNombreEquipo() : "" %>" readonly />
+                    <input type="hidden" name="equipoId" value="<%= contrato.getEquipoId() != null ? contrato.getEquipoId() : "" %>" />
                 </div>
 
                 <div class="col-md-6">
-                    <label for="tipo" class="form-label">Tipo actual: <strong><%= competicion.getTipo() %></strong></label>
-                    <select name="tipo" id="tipo" class="form-select" required>
-                        <option value="Liga" <%= "Liga".equals(competicion.getTipo()) ? "selected" : "" %>>Liga</option>
-                        <option value="Copa" <%= "Copa".equals(competicion.getTipo()) ? "selected" : "" %>>Copa</option>
-                        <option value="Internacional" <%= "Internacional".equals(competicion.getTipo()) ? "selected" : "" %>>Internacional</option>
-                        <option value="Seleccion" <%= "Seleccion".equals(competicion.getTipo()) ? "selected" : "" %>>Selección</option>
-                        <option value="Amistoso" <%= "Amistoso".equals(competicion.getTipo()) ? "selected" : "" %>>Amistoso</option>
+                    <label for="fechaInicio" class="form-label">Fecha de inicio</label>
+                    <input type="date" class="form-control" id="fechaInicio" name="fechaInicio" value="<%= contrato.getFechaInicio() != null ? contrato.getFechaInicio().toString() : "" %>" required />
+                </div>
+
+                <div class="col-md-6">
+                    <label for="fechaFin" class="form-label">Fecha de finalización</label>
+                    <input type="date" class="form-control" id="fechaFin" name="fechaFin" value="<%= contrato.getFechaFin() != null ? contrato.getFechaFin().toString() : "" %>" required />
+                </div>
+
+                <div class="col-md-6">
+                    <label for="salario" class="form-label">Salario (€)</label>
+                    <input type="number" step="0.01" class="form-control" id="salario" name="salario" value="<%= contrato.getSalario() %>" required />
+                </div>
+
+                <div class="col-md-6">
+                    <label for="tipoContrato" class="form-label">Tipo de contrato</label>
+                    <select class="form-select" name="tipoContrato" id="tipoContrato">
+                        <option value="cesion" <%= "cesion".equals(contrato.getTipoContrato()) ? "selected" : "" %>>Cesión</option>
+                        <option value="nuevo" <%= "nuevo".equals(contrato.getTipoContrato()) ? "selected" : "" %>>Nuevo fichaje</option>
+                        <option value="libre" <%= "libre".equals(contrato.getTipoContrato()) ? "selected" : "" %>>Libre</option>
                     </select>
                 </div>
 
-                <div class="col-md-6">
-                    <label for="numeroEquipos" class="form-label">Número de equipos actual: <strong><%= competicion.getNumeroEquipos() %></strong></label>
-                    <input type="number" name="numeroEquipos" id="numeroEquipos" class="form-control" value="<%= competicion.getNumeroEquipos() %>" required>
-                </div>
-
-                <div class="col-md-6">
-                    <label for="anioCreacion" class="form-label">Año de creación actual: <strong><%= competicion.getAnioCreacion() %></strong></label>
-                    <input type="number" name="anioCreacion" id="anioCreacion" class="form-control" value="<%= competicion.getAnioCreacion() %>" required>
-                </div>
-
                 <div class="col-md-12 d-flex justify-content-between">
-                    <a href="competicion.jsp" class="btn btn-secondary">Cancelar</a>
+                    <a href="contrato.jsp" class="btn btn-secondary">Cancelar</a>
                     <button type="submit" name="accion" value="actualizar" class="btn btn-success">Guardar cambios</button>
                 </div>
             </form>

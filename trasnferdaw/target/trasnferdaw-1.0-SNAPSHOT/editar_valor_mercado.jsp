@@ -1,37 +1,46 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page import="java.util.List" %>
-<%@ page import="es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial" %>
+
+<%
+    ValorMercadoHistorial valorMercado = (ValorMercadoHistorial) request.getAttribute("valorMercado");
+    if (valorMercado == null) {
+        response.sendRedirect("valor_mercado.jsp");
+        return;
+    }
+%>
 <%
     String rol = (String) session.getAttribute("rol");
-    boolean esAdmin = rol != null && rol.equals("admin");
-%>
-<%
+    if (rol == null || !rol.equals("admin")) {
+        response.sendRedirect("index.jsp");
+        return;
+    }
+
+    boolean esAdmin = true; // porque ya comprobaste que sí lo es
     String nombreUsuario = (String) session.getAttribute("usuario");
 %>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TransferDAW - Historial Valor Mercado</title>
+    <title>Editar Valor de Mercado</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
     <div class="container-fluid">
         <header class="mb-4">
-            <img src="../images/logo.png" alt="logo" />
-            <h1 class="mt-2">Bienvenido <span class="text-warning">amante</span> del fútbol</h1>
+            <img src="../images/logo.png" alt="logo">
+            <h1 class="mt-2">Editar Valor de Mercado de <span class="text-warning"><%= valorMercado.getNombreJugador() %></span></h1>
         </header>
 
         <nav class="mb-4">
             <ul class="nav justify-content-center">
                 <li class="nav-item"><a class="nav-link" href="index.jsp">Inicio</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Idiomas</a>
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Idiomas</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Español</a></li>
                         <li><a class="dropdown-item" href="#">Inglés</a></li>
@@ -80,64 +89,38 @@
             </aside>
 
             <section class="col-md-9">
-                <h2>Historial Valor de Mercado</h2>
+                <h2>Editar Información de Valor de Mercado</h2>
 
-                <form method="GET" action="ValorMercadoController" class="row g-3 mb-4">
+                <form action="ValorMercadoController" method="GET" class="row g-3">
+                    <input type="hidden" name="id_historial" value="<%= valorMercado.getIdHistorial() %>" />
+
                     <div class="col-md-6">
-                        <input class="form-control" type="text" name="jugador" placeholder="Jugador" required />
+                        <label for="jugador" class="form-label">Jugador</label>
+                        <input type="text" class="form-control" id="jugador" name="jugador" value="<%= valorMercado.getNombreJugador() %>" required />
                     </div>
+
                     <div class="col-md-6">
-                        <input class="form-control" type="date" name="fecha" required />
+                        <label for="fecha" class="form-label">Fecha</label>
+                        <input type="date" class="form-control" id="fecha" name="fecha" 
+                            value="<%= valorMercado.getFecha() != null ? valorMercado.getFecha().toString() : "" %>" required />
                     </div>
+
                     <div class="col-md-6">
-                        <input class="form-control" type="number" step="0.01" name="valorMercado" placeholder="Valor (€)" required />
+                        <label for="valorMercado" class="form-label">Valor (€)</label>
+                        <input type="number" step="0.01" class="form-control" id="valorMercado" name="valorMercado" 
+                            value="<%= valorMercado.getValorMercado() %>" required />
                     </div>
-                    <div class="col-md-6">
-                        <textarea class="form-control" name="motivo" placeholder="Motivo (opcional)" rows="2"></textarea>
+
+                    <div class="col-md-12">
+                        <label for="motivo" class="form-label">Motivo (opcional)</label>
+                        <textarea class="form-control" id="motivo" name="motivo" rows="3"><%= valorMercado.getMotivo() != null ? valorMercado.getMotivo() : "" %></textarea>
                     </div>
-                    <div class="col-md-12 d-flex">
-                        <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar valor de mercado..." />
-                        <% if (esAdmin) { %>
-                        <button type="submit" name="accion" value="añadir" class="btn btn-success">Añadir</button>
-                        <% } %>
+
+                    <div class="col-md-12 d-flex justify-content-between">
+                        <a href="valor_mercado.jsp" class="btn btn-secondary">Cancelar</a>
+                        <button type="submit" name="accion" value="actualizar" class="btn btn-success">Guardar cambios</button>
                     </div>
                 </form>
-
-                <table class="table table-striped" id="datos">
-                    <thead class="table-dark">
-                        <tr>
-                            <th>Jugador</th>
-                            <th>Fecha</th>
-                            <th>Valor (€)</th>
-                            <th>Motivo</th>
-                            <% if (esAdmin) { %>
-                            <th>Acción</th>
-                            <% } %>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <%
-                            List<ValorMercadoHistorial> lista = new TransferDAOImpMariaDB().listarValorMercadoHistorial();
-                            for (ValorMercadoHistorial vm : lista) {
-                        %>
-                        <tr>
-                            <td><%= vm.getNombreJugador() %></td>
-                            <td><%= vm.getFecha() %></td>
-                            <td><%= vm.getValorMercado() %></td>
-                            <td><%= vm.getMotivo() != null ? vm.getMotivo() : "" %></td>
-                            <td>
-                                <% if (esAdmin) { %>
-                                <form action="ValorMercadoController" method="GET" class="d-flex gap-1">
-                                    <input type="hidden" name="id_historial" value="<%= vm.getIdHistorial() %>" />
-                                    <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
-                                    <a href="ValorMercadoController?accion=modificar&id_historial=<%= vm.getIdHistorial() %>" class="btn btn-warning btn-sm">Modificar</a>
-                                </form>
-                                <% } %>
-                            </td>
-                        </tr>
-                        <% } %>
-                    </tbody>
-                </table>
             </section>
         </div>
 
@@ -152,8 +135,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./js/buscador.js"></script>
 </body>
 
 </html>

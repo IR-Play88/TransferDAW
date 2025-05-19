@@ -1,4 +1,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%
+    String nombreUsuario = (String) session.getAttribute("usuario");
+%>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -44,22 +48,29 @@
         <div class="row">
             <aside class="col-md-3">
                 <div class="widget mb-3">
-                    <h3>Iniciar Sesión</h3>
-                    <form>
-                        <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
-                        <input type="password" class="form-control mb-2" name="password" placeholder="password" />
-                        <input type="submit" class="btn btn-primary w-100" value="Enviar" />
-                    </form>
+                    <% if (nombreUsuario == null) { %>
+                        <h3>Iniciar Sesión</h3>
+                        <form method="POST" action="LoginServlet">
+                            <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
+                            <input type="password" class="form-control mb-2" name="password" placeholder="password" />
+                            <input type="submit" class="btn btn-primary w-100" value="Enviar" />
+                        </form>
+                    <% } else { %>
+                        <h3>Bienvenido, <%= nombreUsuario %></h3>
+                        <form method="POST" action="LogoutServlet">
+                            <input type="submit" class="btn btn-danger w-100" value="Cerrar sesión" />
+                        </form>
+                    <% } %>                    
                 </div>
 
                 <div class="widget mb-3">
                     <h3>Jugadores populares</h3>
                     <ul class="list-group">
-                        <li class="list-group-item"><a href="#">Marco Asensio</a></li>
-                        <li class="list-group-item"><a href="#">Lucas Vázquez</a></li>
-                        <li class="list-group-item"><a href="#">Isco</a></li>
-                        <li class="list-group-item"><a href="#">Cristiano Ronaldo</a></li>
-                        <li class="list-group-item"><a href="#">Antony</a></li>
+                        <li class="list-group-item">Marco Asensio</li>
+                        <li class="list-group-item">Lucas Vázquez</li>
+                        <li class="list-group-item">Isco</li>
+                        <li class="list-group-item">Cistiano Ronaldo</li>
+                        <li class="list-group-item">Antony></li>
                     </ul>
                 </div>
 
@@ -78,90 +89,90 @@
 
                 <article class="mb-4">
                     <h3>Jugadores</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta el perfil completo de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega jugadores de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                    <p>Como eres lector ¡Puedes ver los jugadores disponibles y buscar tu jugador favorito!</p>
+                    <% } else { %>
+                    <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un jugador en concreto o visualizados a todos!</p>
+                    <% } %> 
                     <a href="jugador.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Equipos</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta el perfil completo de cada equipo.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega equipos de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                    <p>Como eres lector ¡Puedes ver los equipos disponibles y buscar tu equipo favorito!</p>
+                    <% } else { %>
+                    <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un equipo en concreto o visualizados a todos!</p>
+                    <% } %> 
                     <a href="equipo.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Competiciones</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta los detalles completos de cada competición.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega competiciones de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                    <p>Como eres lector ¡Puedes ver las competiciones disponibles!</p>
+                    <% } else { %>
+                    <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una competición en concreto o visualizalas todas!</p>
+                    <% } %> 
                     <a href="competicion.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Equipo-Competición</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta qué equipos están en cada competición.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega equipos a competiciones de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver las  relaciones entre equipos y competiciones disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca en que competición esta tu equipo o visualizalo todos!</p>
+                    <% } %> 
                     <a href="equipo_competicion.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Contratos de los jugadores</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta los contratos completos de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega contratos para los jugadores de forma rápida y sencilla.</p>
+                    < <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver los contratos disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una contrato en concreto o visualizalos todos!</p>
+                    <% } %> 
                     <a href="contrato.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Valor de mercado de los jugadores</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta el valor de mercado de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega los valores de mercado de cada jugador de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver las competiciones disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un valor de mercado de un jugador en concreto 
+                            o visualizalos todos!</p>
+                    <% } %> 
                     <a href="valor_mercado.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Estadísticas de los Jugadores</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta las estadísticas completas de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega estadísticas para los jugadores de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver las estadisticas de los jugadores disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una estadistica en concreto o visualizalas todas!</p>
+                     <% } %> 
                     <a href="estadisticas.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Traspasos</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta los traspasos de cada jugador.</p>
-                    <p>¿Eres administrador? ¡Tú tienes el control!</p>
-                    <p>Edita, elimina o agrega traspasos de cada jugador de forma rápida y sencilla.</p>
+                    <% if (esAdmin) { %>
+                        <p>Como eres lector ¡Puedes ver las competiciones disponibles!</p>
+                    <% } else { %>
+                        <p>Como eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un traspaso en concreto o visualizalos todos!</p>
+                    <% } %> 
                     <a href="traspaso.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">
                     <h3>Temporadas</h3>
-                    <p>¿Eres lector? ¡Explora todos los detalles!</p>
-                    <p>Consulta todas las temporadas.</p>
+                        <p>¡Puedes ver las temporadas disponibles!</p>
                     <a href="temporada.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
-
-                <ul class="pagination">
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a>...</a></li>
-                    <li><a href="#">11</a></li>
-                </ul>
             </section>
         </div>
 
