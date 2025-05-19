@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" time="0.269" errors="0" skipped="0">
+<testsuite tests="11" failures="0" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" time="0.266" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="21.0.1+12-29"/>
@@ -57,15 +57,15 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testConnection" time="0.019"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testViusalizarJugador" time="0.039"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarTemporada" time="0.042"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarEquipo" time="0.043"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarCompeticion" time="0.018"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarEquipoCompeticionPorIds" time="0.018"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testConnection" time="0.011"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testViusalizarJugador" time="0.049"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarTemporada" time="0.043"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarEquipo" time="0.036"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarCompeticion" time="0.019"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarEquipoCompeticionPorIds" time="0.017"/>
   <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarContrato" time="0.016"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testBuscarEstadisticasTotalesPorJugador" time="0.03"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testBuscarEstadisticasTotalesPorJugador" time="0.033"/>
   <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testBuscarEstadisticasPorTemporada" time="0.013"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarTraspaso" time="0.017"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarValorMercadoHistorial" time="0.014"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarTraspaso" time="0.018"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarValorMercadoHistorial" time="0.011"/>
 </testsuite>
