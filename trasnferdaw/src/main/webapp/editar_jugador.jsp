@@ -164,14 +164,7 @@
         </section>
     </div>
 
-    <footer class="mt-5">
-        <div>
-            <a href="#" class="text-white text-decoration-none">&copy; Iván Rafael Redondo</a>
-        </div>
-        <div>
-            Más información en <a href="#" class="text-white">Nuestras redes sociales</a>
-        </div>
-    </footer>
+    <%@ include file="footer.jsp" %>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

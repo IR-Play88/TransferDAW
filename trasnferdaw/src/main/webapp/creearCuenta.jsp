@@ -1,115 +1,30 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%
-    String nombreUsuario = (String) session.getAttribute("usuario");
-%>
+<%@ include file="cabezera.jsp" %>
 
-<!DOCTYPE html>
-<html lang="es">
+<section class="col-md-9" id="content">
+    <h2>Crea tu cuenta</h2>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>TransferDAW</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+    <form method="POST" action="CuentaServlet">
+        <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" required />
+        <input type="email" class="form-control mb-2" name="email" placeholder="email" required />
+        <input type="password" class="form-control mb-2" name="pass" placeholder="password" required />
+        <input type="submit" class="btn btn-primary w-100" value="enviar" />
+    </form>
 
-<body>
-    <div class="container-fluid">
-        <header class="mb-4">
-            <img src="../images/logo.png" alt="logo" />
-            <h1 class="mt-2">Bienvenido <span class="text-warning">amante</span> del fútbol</h1>
-        </header>
-
-        <nav class="mb-4">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.jsp">Inicio</a>
-                </li>
-                <li class="nav-item dropdown position-static">
-                    <a class="nav-link dropdown-toggle" href="#" id="idiomasDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Idiomas
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="idiomasDropdown">
-                        <li><a class="dropdown-item" href="#">Español</a></li>
-                        <li><a class="dropdown-item" href="#">Inglés</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Crear cuenta</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./html/contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="row">
-            <aside class="col-md-3">
-                <div class="widget mb-3">
-                    <% if (nombreUsuario == null) { %>
-                        <h3>Iniciar Sesión</h3>
-                        <form method="POST" action="LoginServlet">
-                            <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
-                            <input type="password" class="form-control mb-2" name="password" placeholder="password" />
-                            <input type="submit" class="btn btn-primary w-100" value="Enviar" />
-                        </form>
-                    <% } else { %>
-                        <h3>Bienvenido, <%= nombreUsuario %></h3>
-                        <form method="POST" action="LogoutServlet">
-                            <input type="submit" class="btn btn-danger w-100" value="Cerrar sesión" />
-                        </form>
-                    <% } %>                    
-                </div>
-
-                <div class="widget mb-3">
-                    <h3>Jugadores populares</h3>
-                    <ul class="list-group">
-                        <li class="list-group-item">Marco Asensio</li>
-                        <li class="list-group-item">Lucas Vázquez</li>
-                        <li class="list-group-item">Isco</li>
-                        <li class="list-group-item">Cistiano Ronaldo</li>
-                        <li class="list-group-item">Antony</li>
-                    </ul>
-                </div>
-
-                <div class="widget">
-                    <h3>TransferDAW</h3>
-                    <blockquote class="blockquote">
-                        Quieres ver todo lo relacionado con el mundo del fútbol, este es tu sitio, y si eres un apasionado, un
-                        experto o quieres compartir tus conocimientos, no dudes en iniciar sesión, así dejarás de ser un simple lector
-                        y pasarás a ser un administrador, donde podrás insertar, modificar, eliminar... No lo dudes.
-                    </blockquote>
-                </div>
-            </aside>
-
-            <section class="col-md-9" id="content">
-                <h2>Crea tu cuenta</h2>
-
-                <form method="POST" action="CuentaServlet">
-                    <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
-                    <input type="email" class="form-control mb-2" name="email" placeholder="email" />
-                    <input type="password" class="form-control mb-2" name="pass" placeholder="password" />
-                    <input type="text" class="form-control mb-2" name="rol" placeholder="rol" />
-                    <input type="submit" class="btn btn-primary w-100" value="Crear" />
-                </form>
-
-            </section>
+    <% 
+        String accion = request.getParameter("accion");
+        if ("enviar".equals(accion)) {
+    %>
+        <div class="alert alert-success mt-3" role="alert">
+            ¡Cuenta creada correctamente!
         </div>
+    <% 
+        }
+    %>
+</section>
 
-        <footer class="mt-5">
-            <div>
-                <a href="#" class="text-white text-decoration-none">&copy; Iván Rafael Redondo</a>
-            </div>
+<%@ include file="footer.jsp" %>
 
-            <div>
-                Más información en <a href="#" class="text-white">Nuestras redes sociales</a>
-            </div>
-        </footer>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>

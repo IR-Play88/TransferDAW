@@ -16,6 +16,7 @@ es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.class
 es/tierno/daw/trasnferdaw/controller/LogoutServlet.class
 es/tierno/daw/trasnferdaw/model/exception/FicheroException.class
 es/tierno/daw/trasnferdaw/model/util/input/FicheroFactory.class
+es/tierno/daw/trasnferdaw/controller/CuentaServlet.class
 es/tierno/daw/trasnferdaw/model/bbdd/Database.class
 es/tierno/daw/trasnferdaw/model/bbdd/TransferDAOImpMariaDB.class
 es/tierno/daw/trasnferdaw/model/entities/Traspaso.class
