@@ -5,9 +5,26 @@
 <%@ include file="cabezera.jsp" %>
 
             <section class="col-md-9">
+                <%
+                String error = (String) session.getAttribute("error");
+                if (error != null) {
+            %>
+                <div class="alert alert-danger"><%= error %></div>
+            <%
+                    session.removeAttribute("error");
+                }
+            
+                String mensaje = (String) session.getAttribute("mensaje");
+                if (mensaje != null) {
+            %>
+                <div class="alert alert-success"><%= mensaje %></div>
+            <%
+                    session.removeAttribute("mensaje");
+                }
+            %>
                 <h2>Estadísticas Temporada</h2>
 
-                <form method="GET" action="EstadisticasTemporadaController" class="row g-3 mb-4">
+                <form method="POST" action="EstadisticasTemporadaController" class="row g-3 mb-4">
                     <div class="col-md-6">
                         <input class="form-control" type="text" name="jugador" placeholder="Jugador" required />
                     </div>
@@ -32,7 +49,7 @@
                     <div class="col-md-12 d-flex">
                         <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar estadisticas..." />
                         <% if (esAdmin) { %>
-                        <button type="submit" name="accion" value="añadir" class="btn btn-success">Añadir</button>
+                            <input type="submit" class="btn btn-primary w-100" name="accion" value="insertar"/>
                         <% } %>
                     </div>
                 </form>
@@ -67,17 +84,23 @@
                             <td><%= est.getAsistencias() %></td>
                             <td>
                                 <% if (esAdmin) { %>
-                                <form action="EstadisticasTemporadaController" method="GET" class="d-flex gap-1">
-                                    <input type="hidden" name="jugadorId" value="<%= est.getJugadorId() %>" />
-                                    <input type="hidden" name="temporadaId" value="<%= est.getTemporadaId() %>" />
-                                    <input type="hidden" name="competicionId" value="<%= est.getCompeticionId() %>" />
-                                    <input type="hidden" name="equipoId" value="<%= est.getEquipoId() %>" />
-                                    <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
-                                    <a href="EstadisticasTemporadaController?accion=modificar&jugadorId=<%= est.getJugadorId() %>&temporadaId=<%= est.getTemporadaId() %>&competicionId=<%= est.getCompeticionId() %>&equipoId=<%= est.getEquipoId() %>" class="btn btn-warning btn-sm">Modificar</a>
-
-                                </form>
+                                <div class="d-flex flex-column align-items-center gap-1">
+                                    <form action="EstadisticasTemporadaController" method="POST" class="w-100">
+                                        <input type="hidden" name="jugadorId" value="<%= est.getJugadorId() %>" />
+                                        <input type="hidden" name="temporadaId" value="<%= est.getTemporadaId() %>" />
+                                        <input type="hidden" name="competicionId" value="<%= est.getCompeticionId() %>" />
+                                        <input type="hidden" name="equipoId" value="<%= est.getEquipoId() %>" />
+                                        <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm w-100" onclick="return confirm('¿Seguro que quieres eliminar esta estadística?');">
+                                            Eliminar
+                                        </button>
+                                    </form>
+                                    <a href="EstadisticasTemporadaController?accion=modificar&jugadorId=<%= est.getJugadorId() %>&temporadaId=<%= est.getTemporadaId() %>&competicionId=<%= est.getCompeticionId() %>&equipoId=<%= est.getEquipoId() %>" class="btn btn-warning btn-sm w-100" onclick="return confirm('¿Seguro que quieres modificar esta estadística?');">
+                                        Modificar
+                                    </a>
+                                </div>
                                 <% } %>
                             </td>
+                            
                         </tr>
                         <% } %>
                     </tbody>
@@ -101,6 +124,8 @@
                             <td>
                                 <button type="submit" name="accion" value="descargarTotales">Descargar totales</button>
                                 <button type="submit" name="accion" value="descargarTemporada">Descargar por temporada</button>
+                                <button type="submit" name="accion" value="verGrafico">Ver gráfico</button>
+
                             </td>
                         </tr>
                     </table>

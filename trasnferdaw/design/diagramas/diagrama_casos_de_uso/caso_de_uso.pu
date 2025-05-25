@@ -1,8 +1,9 @@
 @startuml Caso de uso
 left to right direction
 
-actor "Lector" as lector
 actor "Administrador" as administrador
+actor "Lector" as lector
+
 
 rectangle TransferDAW {
     usecase "Consultar datos" as ver
@@ -15,7 +16,7 @@ rectangle TransferDAW {
 lector <|-- administrador
 
 lector -- ver
-lector -- descargar
+administrador -- descargar
 administrador -- anadir
 administrador -- modificar
 administrador -- eliminar

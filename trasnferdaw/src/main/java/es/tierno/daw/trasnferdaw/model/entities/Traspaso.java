@@ -3,8 +3,8 @@ package es.tierno.daw.trasnferdaw.model.entities;
 import java.time.LocalDate;
 
 public class Traspaso {
-    private int idTraspaso;
-    private int jugadorId;
+    private Integer idTraspaso;
+    private Integer jugadorId;
     private String nombreJugador;
     private Integer equipoOrigenId;
     private String nombreEquipoOrigen;
@@ -13,14 +13,25 @@ public class Traspaso {
     private Integer temporadaId;
     private String nombreTemporada;
     private LocalDate fechaTraspaso;
-    private float cantidad;
+    private double cantidad;
     private String tipo;
 
     public Traspaso() {
     }
 
-    public Traspaso(int idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId,
-    LocalDate fechaTraspaso, float cantidad,String tipo) {
+    public Traspaso(Integer jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId,
+    LocalDate fechaTraspaso, double cantidad,String tipo) {
+        this.jugadorId = jugadorId;
+        this.equipoOrigenId = equipoOrigenId;
+        this.equipoDestinoId = equipoDestinoId;
+        this.temporadaId = temporadaId;
+        this.fechaTraspaso = fechaTraspaso;
+        this.cantidad = cantidad;
+        this.tipo = tipo;
+    }
+
+    public Traspaso(Integer idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId,
+    LocalDate fechaTraspaso, double cantidad,String tipo) {
         this.idTraspaso = idTraspaso;
         this.jugadorId = jugadorId;
         this.equipoOrigenId = equipoOrigenId;
@@ -31,68 +42,20 @@ public class Traspaso {
         this.tipo = tipo;
     }
 
-    public int getIdTraspaso() {
+    public Integer getIdTraspaso() {
         return idTraspaso;
     }
 
-    public void setIdTraspaso(int idTraspaso) {
+    public void setIdTraspaso(Integer idTraspaso) {
         this.idTraspaso = idTraspaso;
     }
 
-    public int getJugadorId() {
+    public Integer getJugadorId() {
         return jugadorId;
     }
 
-    public void setJugadorId(int jugadorId) {
+    public void setJugadorId(Integer jugadorId) {
         this.jugadorId = jugadorId;
-    }
-
-    public Integer getEquipoOrigenId() {
-        return equipoOrigenId;
-    }
-
-    public void setEquipoOrigenId(Integer equipoOrigenId) {
-        this.equipoOrigenId = equipoOrigenId;
-    }
-
-    public Integer getEquipoDestinoId() {
-        return equipoDestinoId;
-    }
-
-    public void setEquipoDestinoId(Integer equipoDestinoId) {
-        this.equipoDestinoId = equipoDestinoId;
-    }
-
-    public Integer getTemporadaId() {
-        return temporadaId;
-    }
-
-    public void setTemporadaId(Integer temporadaId) {
-        this.temporadaId = temporadaId;
-    }
-
-    public LocalDate getFechaTraspaso() {
-        return fechaTraspaso;
-    }
-
-    public void setFechaTraspaso(LocalDate fechaTraspaso) {
-        this.fechaTraspaso = fechaTraspaso;
-    }
-
-    public float getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(float cantidad) {
-        this.cantidad = cantidad;
-    }
-
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
     }
 
     public String getNombreJugador() {
@@ -103,12 +66,28 @@ public class Traspaso {
         this.nombreJugador = nombreJugador;
     }
 
+    public Integer getEquipoOrigenId() {
+        return equipoOrigenId;
+    }
+
+    public void setEquipoOrigenId(Integer equipoOrigenId) {
+        this.equipoOrigenId = equipoOrigenId;
+    }
+
     public String getNombreEquipoOrigen() {
         return nombreEquipoOrigen;
     }
 
     public void setNombreEquipoOrigen(String nombreEquipoOrigen) {
         this.nombreEquipoOrigen = nombreEquipoOrigen;
+    }
+
+    public Integer getEquipoDestinoId() {
+        return equipoDestinoId;
+    }
+
+    public void setEquipoDestinoId(Integer equipoDestinoId) {
+        this.equipoDestinoId = equipoDestinoId;
     }
 
     public String getNombreEquipoDestino() {
@@ -119,12 +98,44 @@ public class Traspaso {
         this.nombreEquipoDestino = nombreEquipoDestino;
     }
 
+    public Integer getTemporadaId() {
+        return temporadaId;
+    }
+
+    public void setTemporadaId(Integer temporadaId) {
+        this.temporadaId = temporadaId;
+    }
+
     public String getNombreTemporada() {
         return nombreTemporada;
     }
 
     public void setNombreTemporada(String nombreTemporada) {
         this.nombreTemporada = nombreTemporada;
+    }
+
+    public LocalDate getFechaTraspaso() {
+        return fechaTraspaso;
+    }
+
+    public void setFechaTraspaso(LocalDate fechaTraspaso) {
+        this.fechaTraspaso = fechaTraspaso;
+    }
+
+    public double getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(double cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
 
     @Override

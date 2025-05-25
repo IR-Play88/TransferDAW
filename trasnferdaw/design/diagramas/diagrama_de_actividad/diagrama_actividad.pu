@@ -3,17 +3,23 @@
 start
 
 :Acceder a TransferDAW;
+:Seleccionar la categoría jugador;
 :Consultar lista de jugadores;
-:Seleccionar un jugador;
 
-|Sistema|
-:Generar ficha del jugador seleccionado;
+if (¿Es administrador?) then (No)
+    :No dispone de esa opción;
+    stop
+else (Si)
+:Selecciona un jugador;
+    |Sistema|
+    :Generar ficha del jugador seleccionado;
+    |Usuario|
+    :Descargar ficha;
+    stop
+endif
 
-|Usuario|
-:Descargar ficha;
-
-stop
 @enduml
+
 
 @startuml Ver datos
 |Usuario|
@@ -21,7 +27,6 @@ start
 
 :Acceder a TransferDAW;
 :Seleccionar categoría a consultar;
-:Seleccionar el elemento concreto a visualizar;
 
 |Sistema|
 :Mostrar datos de la categoría seleccionada;
@@ -33,17 +38,19 @@ stop
 @enduml
 
 @startuml Añadir información
-|Administrador|
+|Usuario|
 start
 
 :Acceder a TransferDAW;
-:Seleccionar opción "Añadir datos";
-:Elegir tipo de datos a añadir;
-:Seleccionar el elemento concreto a añadir;
+:Seleccionar una categoria;
+:Rellenar formulario;
 
-:Introducir la información requerida;
-
-|Sistema|
+if (¿Es administrador?) then (No)
+    :No dispone de opción "Añadir";
+    stop
+else (Si)
+:Seleccionar opción "Añadir";
+    |Sistema|
 :Validar datos introducidos;
 
 if (¿Datos válidos?) then (Sí)
@@ -52,53 +59,51 @@ if (¿Datos válidos?) then (Sí)
 else (No)
     :Mostrar errores;
 endif
-
 stop
 @enduml
 
 @startuml Modificar información
-|Administrador|
+|Usuario|
 start
 
 :Acceder a TransferDAW;
-:Seleccionar opción "Modificar datos";
-:Elegir tipo de datos a modificar;
-:Seleccionar el elemento concreto a modificar;
+:Seleccionar una categoria;
 
-:Editar la información necesaria;
-
-|Sistema|
-:Validar los nuevos datos;
+if (¿Es administrador?) then (No)
+    :No dispone de opción "Modificar";
+    stop
+else (Si)
+:Seleccionar opción "Modificar";
+:Modifica los datos;
+    |Sistema|
+:Validar datos introducidos;
 
 if (¿Datos válidos?) then (Sí)
-    :Actualizar información en la base de datos;
+    :Guardar en base de datos;
     :Mostrar mensaje de éxito;
 else (No)
     :Mostrar errores;
 endif
-
 stop
 @enduml
 
 @startuml Eliminar información
-|Administrador|
+|Usuario|
 start
 
 :Acceder a TransferDAW;
-:Seleccionar opción "Eliminar datos";
-:Elegir tipo de datos a eliminar;
-:Seleccionar el elemento concreto a eliminar;
+:Seleccionar una categoria;
 
-|Sistema|
-:Confirmar si realmente desea eliminar;
+if (¿Es administrador?) then (No)
+    :No dispone de opción "Eliminar";
+    stop
+else (Si)
+:Seleccionar opción "Eliminar";
+    |Sistema|
+:Elimina el registro seleccionado;
 
-if (¿Confirmar eliminación?) then (Sí)
-    :Eliminar de la base de datos;
-    :Mostrar mensaje de éxito;
-else (No)
-    :Cancelar operación;
-endif
-
+|Usuario|
+:Visualiza como se elimina el registo;
 stop
 @enduml
 

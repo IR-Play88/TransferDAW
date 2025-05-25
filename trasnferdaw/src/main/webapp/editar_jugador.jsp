@@ -82,9 +82,26 @@
         </aside>
 
         <section class="col-md-9">
+            <%
+            String error = (String) session.getAttribute("error");
+            if (error != null) {
+        %>
+            <div class="alert alert-danger"><%= error %></div>
+        <%
+                session.removeAttribute("error");
+            }
+        
+            String mensaje = (String) session.getAttribute("mensaje");
+            if (mensaje != null) {
+        %>
+            <div class="alert alert-success"><%= mensaje %></div>
+        <%
+                session.removeAttribute("mensaje");
+            }
+        %>
             <h2>Editar Jugador</h2>
 
-            <form action="JugadorController" method="GET" class="row g-3">
+            <form action="JugadorController" method="POST" class="row g-3">
                 <input type="hidden" name="id_jugador" value="<%= jugador.getIdJugador() %>">
                 
                 <label for="nombre" class="form-label">Editando a: <strong><%= jugador.getNombre() %></strong></label>

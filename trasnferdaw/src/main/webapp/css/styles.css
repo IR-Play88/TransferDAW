@@ -53,3 +53,21 @@ footer {
 }
 
 
+.btn-sm {
+    width: 100px; /* Tamaño fijo opcional */
+    font-weight: bold;
+    border-radius: 6px; /* Esquinas redondeadas */
+    text-align: center;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: black;
+    border: none;
+}

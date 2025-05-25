@@ -2,27 +2,23 @@
 <%@ page import="es.tierno.daw.trasnferdaw.model.entities.Competicion" %>
 <%
     Competicion competicion = (Competicion) request.getAttribute("competicion");
-%>
-<%
     String rol = (String) session.getAttribute("rol");
     if (rol == null || !rol.equals("admin")) {
         response.sendRedirect("index.jsp");
         return;
     }
 
-    boolean esAdmin = true; // porque ya comprobaste que sí lo es
+    boolean esAdmin = true;
     String nombreUsuario = (String) session.getAttribute("usuario");
 %>
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <title>Editar Competición</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
 <body>
 <div class="container-fluid">
     <header class="mb-4">
@@ -83,23 +79,41 @@
         </aside>
 
         <section class="col-md-9">
+            <%
+                String error = (String) session.getAttribute("error");
+                if (error != null) {
+            %>
+            <div class="alert alert-danger"><%= error %></div>
+            <%
+                    session.removeAttribute("error");
+                }
+
+                String mensaje = (String) session.getAttribute("mensaje");
+                if (mensaje != null) {
+            %>
+            <div class="alert alert-success"><%= mensaje %></div>
+            <%
+                    session.removeAttribute("mensaje");
+                }
+            %>
+
             <h2>Editar Competición</h2>
 
-            <form method="GET" action="CompeticionController" class="row g-3">
+            <form method="POST" action="CompeticionController" class="row g-3">
                 <input type="hidden" name="id_competicion" value="<%= competicion.getIdCompeticion() %>">
 
                 <div class="col-md-6">
-                    <label for="nombre" class="form-label">Nombre actual: <strong><%= competicion.getNombre() %></strong></label>
+                    <label for="nombre" class="form-label">Nombre: <strong><%= competicion.getNombre() %></strong></label>
                     <input type="text" name="nombre" id="nombre" class="form-control" value="<%= competicion.getNombre() %>" required>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="pais" class="form-label">País actual: <strong><%= competicion.getPais() %></strong></label>
+                    <label for="pais" class="form-label">País: <strong><%= competicion.getPais() %></strong></label>
                     <input type="text" name="pais" id="pais" class="form-control" value="<%= competicion.getPais() %>" required>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="tipo" class="form-label">Tipo actual: <strong><%= competicion.getTipo() %></strong></label>
+                    <label for="tipo" class="form-label">Tipo: <strong><%= competicion.getTipo() %></strong></label>
                     <select name="tipo" id="tipo" class="form-select" required>
                         <option value="Liga" <%= "Liga".equals(competicion.getTipo()) ? "selected" : "" %>>Liga</option>
                         <option value="Copa" <%= "Copa".equals(competicion.getTipo()) ? "selected" : "" %>>Copa</option>
@@ -110,12 +124,12 @@
                 </div>
 
                 <div class="col-md-6">
-                    <label for="numeroEquipos" class="form-label">Número de equipos actual: <strong><%= competicion.getNumeroEquipos() %></strong></label>
+                    <label for="numeroEquipos" class="form-label">Número de equipos: <strong><%= competicion.getNumeroEquipos() %></strong></label>
                     <input type="number" name="numeroEquipos" id="numeroEquipos" class="form-control" value="<%= competicion.getNumeroEquipos() %>" required>
                 </div>
 
                 <div class="col-md-6">
-                    <label for="anioCreacion" class="form-label">Año de creación actual: <strong><%= competicion.getAnioCreacion() %></strong></label>
+                    <label for="anioCreacion" class="form-label">Año de creación: <strong><%= competicion.getAnioCreacion() %></strong></label>
                     <input type="number" name="anioCreacion" id="anioCreacion" class="form-control" value="<%= competicion.getAnioCreacion() %>" required>
                 </div>
 
@@ -129,7 +143,6 @@
 
     <%@ include file="footer.jsp" %>
 </div>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

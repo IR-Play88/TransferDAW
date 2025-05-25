@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB;
+import es.tierno.daw.trasnferdaw.model.bbdd.Database;
+import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO;
+import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDBFactory;
 import es.tierno.daw.trasnferdaw.model.entities.Usuario;
 
 
@@ -20,7 +22,7 @@ public class LoginControlador extends HttpServlet {
         String password = request.getParameter("password");
 
         try{
-        TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+       TransferDAWDAO dao = TransferDAWDBFactory.obtener(Database.MARIADB);
         Usuario user = dao.buscarUsuarioPorNombreYPassword(usuario, password);
 
         if (user != null) {
@@ -29,8 +31,9 @@ public class LoginControlador extends HttpServlet {
             session.setAttribute("rol", user.getRol());
             response.sendRedirect("index.jsp");
         } else {
-            request.setAttribute("error", "Credenciales incorrectas");
-            request.getRequestDispatcher("login.jsp").forward(request, response);
+            request.getSession().setAttribute("error", "Credenciales incorrectas");
+            response.sendRedirect("index.jsp");
+
         }
     }catch (Exception e) {
         e.printStackTrace();

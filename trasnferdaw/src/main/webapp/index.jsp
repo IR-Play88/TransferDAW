@@ -3,6 +3,23 @@
 <%@ include file="cabezera.jsp" %>
 
             <section class="col-md-9" id="content">
+                <%
+                String error = (String) session.getAttribute("error");
+                if (error != null) {
+            %>
+                <div class="alert alert-danger"><%= error %></div>
+            <%
+                    session.removeAttribute("error");
+                }
+            
+                String mensaje = (String) session.getAttribute("mensaje");
+                if (mensaje != null) {
+            %>
+                <div class="alert alert-success"><%= mensaje %></div>
+            <%
+                    session.removeAttribute("mensaje");
+                }
+            %>
                 <h2>Todas nuestras opciones</h2>
 
                 <article class="mb-4">
@@ -46,16 +63,6 @@
                 </article>
 
                 <article class="mb-4">
-                    <h3>Contratos de los jugadores</h3>
-                    <% if (nombreUsuario == null) { %>
-                        <p>Como eres lector ¡Puedes ver los contratos disponibles!</p>
-                    <% } else { %>
-                        <p><%= nombreUsuario %> eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una contrato en concreto o visualizalos todos!</p>
-                    <% } %> 
-                    <a href="contrato.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
-                </article>
-
-                <article class="mb-4">
                     <h3>Valor de mercado de los jugadores</h3>
                     <% if (nombreUsuario == null) { %>
                         <p>Como eres lector ¡Puedes ver las competiciones disponibles!</p>
@@ -74,16 +81,6 @@
                         <p><%= nombreUsuario %> eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca una estadistica en concreto o visualizalas todas!</p>
                      <% } %> 
                     <a href="estadisticas.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
-                </article>
-
-                <article class="mb-4">
-                    <h3>Traspasos</h3>
-                    <% if (nombreUsuario == null) { %>
-                        <p>Como eres lector ¡Puedes ver las competiciones disponibles!</p>
-                    <% } else { %>
-                        <p><%= nombreUsuario %> eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un traspaso en concreto o visualizalos todos!</p>
-                    <% } %> 
-                    <a href="traspaso.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
                 </article>
 
                 <article class="mb-4">

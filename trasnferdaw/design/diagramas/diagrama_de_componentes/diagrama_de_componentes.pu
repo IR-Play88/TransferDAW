@@ -21,19 +21,12 @@ package "model"{
 
         interface TranferDAWDAO {
             +listar(): List<Temporada>
-            +visualiarTemporada(int idTemporada);
 
             +insertar(jugador: Jugador): void
             +modificar(jugador: Jugador): void
             +eliminar(idJugador: int): void
             +listar(): List<Jugador>
             +visualiarJugador(int idJugador);
-
-            +insertar(seleccion: Seleccion): void
-            +modificar(seleccion: Seleccion): void
-            +eliminar(idSeleccion: int): void
-            +listar(): List<Seleccion>
-            +visualiarSeleccion(int idSeleccion);
 
             +insertar(equipo: Equipo): void
             +modificar(equipo: Equipo): void
@@ -78,6 +71,16 @@ package "model"{
             +eliminar(idHistorial: int): void
             +listar(): List<ValorMercadoHistorial>
             +viusalizarValorMercadoHistorial(int idValorMercadoHistorial);
+
+            +insertar(usuario: Usuario): int 
+
+            +obtenerIdPorNombreJugador(nombre: String): int
+            +obtenerIdPorNombreEquipo(nombre: String): int
+            +obtenerIdPorNombreCompeticion(nombre: String): int
+            +obtenerIdPorNombreTemporada(nombre: String): int
+            +buscarUsuario(nombre: String, contraseña: String): Usuario
+            +obtenerEstadisticas(jugadorId: int, temporadaId: int, competicionId: int, equipoId: int): EstadisticasTemporada
+           
         }
 
 
@@ -87,19 +90,6 @@ package "model"{
 
 }
 
-package util{
-
-    package input{
-        component Input <<java>>
-        interface Fichero {
-            + leer(): byte[]
-            + escribir(byte[])
-        }
-    }
-
-    Fichero <|.. Input
-
-}
 
 
 
@@ -113,7 +103,6 @@ package entity{
 }
 
 TransferDAWServlet ..> TransferDAW : use
-TransferDAWServlet ..> Fichero : use
 TransferDAWServlet ..> TranferDAWDAO : use
 
 

@@ -7,7 +7,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB;
+import es.tierno.daw.trasnferdaw.model.bbdd.Database;
+import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO;
+import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDBFactory;
 import es.tierno.daw.trasnferdaw.model.entities.Competicion;
 
 @WebServlet("/CompeticionController")
@@ -17,98 +19,133 @@ public class CompeticionController extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String accion = request.getParameter("accion");
 
-        if ("añadir".equalsIgnoreCase(accion)) {
-            try {
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+        try {
+            TransferDAWDAO dao = TransferDAWDBFactory.obtener(Database.MARIADB);
 
-                String nombre = request.getParameter("nombre");
-                String pais = request.getParameter("pais");
-                String tipo = request.getParameter("tipo");
-                int numeroEquipos = Integer.parseInt(request.getParameter("numeroEquipos"));
-                int anioCreacion = Integer.parseInt(request.getParameter("anioCreacion"));
-
-                Competicion competicion = new Competicion();
-                competicion.setNombre(nombre);
-                competicion.setPais(pais);
-                competicion.setTipo(tipo);
-                competicion.setNumeroEquipos(numeroEquipos);
-                competicion.setAnioCreacion(anioCreacion);
-
-                dao.insertar(competicion); // Asegúrate de tener este método en tu DAO
-
-                response.sendRedirect("competicion.jsp");
-
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al insertar competición");
-            }
-
-        } else if ("eliminar".equalsIgnoreCase(accion)) {
-            try {
-                int idCompeticion = Integer.parseInt(request.getParameter("id_competicion"));
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
-
-                int registrosEliminados = dao.eliminarCompeticion(idCompeticion); // Asegúrate de tener este método
-
-                if (registrosEliminados > 0) {
+            if ("modificar".equalsIgnoreCase(accion)) {
+                String idStr = request.getParameter("id_competicion");
+                if (idStr == null || idStr.trim().isEmpty()) {
+                    request.getSession().setAttribute("error", "No se ha seleccionado una competición para modificar");
                     response.sendRedirect("competicion.jsp");
-                } else {
-                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Competición no encontrada");
+                    return;
                 }
 
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al eliminar competición");
-            }
-        } else if ("modificar".equalsIgnoreCase(accion)) {
-            try {
-                int idCompeticion = Integer.parseInt(request.getParameter("id_competicion"));
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+                int idCompeticion = Integer.parseInt(idStr);
                 Competicion competicion = dao.visualizarCompeticion(idCompeticion);
 
                 if (competicion != null) {
                     request.setAttribute("competicion", competicion);
                     request.getRequestDispatcher("editar_competicion.jsp").forward(request, response);
                 } else {
-                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Competición no encontrada para modificar");
+                    request.getSession().setAttribute("error", "No se encontró una competición para modificar");
+                    response.sendRedirect("competicion.jsp");
                 }
-
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al cargar competición para modificar");
             }
-
-        } else if ("actualizar".equalsIgnoreCase(accion)) {
-            try {
-                int id = Integer.parseInt(request.getParameter("id_competicion"));
-                String nombre = request.getParameter("nombre");
-                String pais = request.getParameter("pais");
-                String tipo = request.getParameter("tipo");
-                int numeroEquipos = Integer.parseInt(request.getParameter("numeroEquipos"));
-                int anioCreacion = Integer.parseInt(request.getParameter("anioCreacion"));
-
-                Competicion c = new Competicion();
-                c.setIdCompeticion(id);
-                c.setNombre(nombre);
-                c.setPais(pais);
-                c.setTipo(tipo);
-                c.setNumeroEquipos(numeroEquipos);
-                c.setAnioCreacion(anioCreacion);
-
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
-                dao.modificar(c);
-
-                response.sendRedirect("competicion.jsp");
-
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al actualizar competición");
-            }
+        } catch (Exception e) {
+            e.printStackTrace();
+            request.getSession().setAttribute("error", "Error interno del servidor");
+            response.sendRedirect("competicion.jsp");
         }
     }
 
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-        // Puedes implementar aquí la lógica para modificar en POST si lo necesitas
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String accion = request.getParameter("accion");
+
+        try {
+            TransferDAWDAO dao = TransferDAWDBFactory.obtener(Database.MARIADB);
+
+            if ("insertar".equalsIgnoreCase(accion)) {
+                String nombre = request.getParameter("nombre");
+                String pais = request.getParameter("pais");
+                String tipo = request.getParameter("tipo");
+
+                int numeroEquipos, anioCreacion;
+                try {
+                    numeroEquipos = Integer.parseInt(request.getParameter("numeroEquipos"));
+                    anioCreacion = Integer.parseInt(request.getParameter("anioCreacion"));
+                } catch (NumberFormatException e) {
+                    request.getSession().setAttribute("error", "Número de equipos o año de creación inválidos");
+                    response.sendRedirect("competicion.jsp");
+                    return;
+                }
+
+                if (numeroEquipos <= 0) {
+                    request.getSession().setAttribute("error", "El numero de equipos debe ser mínimo 0");
+                    response.sendRedirect("competicion.jsp");
+                    return;
+                }
+
+                if (anioCreacion <= 1800) {
+                    request.getSession().setAttribute("error", "El año de creación debe ser mayor a 1800");
+                    response.sendRedirect("competicion.jsp");
+                    return;
+                }
+
+                Competicion competicion = new Competicion(nombre, pais, tipo, numeroEquipos, anioCreacion);
+                dao.insertar(competicion);
+
+                request.getSession().setAttribute("mensaje", "Competición insertada correctamente");
+                response.sendRedirect("competicion.jsp");
+
+            } else if ("eliminar".equalsIgnoreCase(accion)) {
+                int idCompeticion = Integer.parseInt(request.getParameter("id_competicion"));
+                int registrosEliminados = dao.eliminarCompeticion(idCompeticion);
+
+                if (registrosEliminados > 0) {
+                    request.getSession().setAttribute("mensaje", "Competición eliminada correctamente");
+                } else {
+                    request.getSession().setAttribute("error", "Competición no encontrada");
+                }
+                response.sendRedirect("competicion.jsp");
+
+            } else if ("actualizar".equalsIgnoreCase(accion)) {
+                int idCompeticion = Integer.parseInt(request.getParameter("id_competicion"));
+                String nombre = request.getParameter("nombre");
+                String pais = request.getParameter("pais");
+                String tipo = request.getParameter("tipo");
+
+                int numeroEquipos, anioCreacion;
+                try {
+                    numeroEquipos = Integer.parseInt(request.getParameter("numeroEquipos"));
+                    anioCreacion = Integer.parseInt(request.getParameter("anioCreacion"));
+                } catch (NumberFormatException e) {
+                    request.getSession().setAttribute("error", "Número de equipos o año de creación inválidos");
+                    Competicion competicion = dao.visualizarCompeticion(idCompeticion);
+                    request.setAttribute("competicion", competicion);
+                    request.getRequestDispatcher("editar_competicion.jsp").forward(request, response);
+                    return;
+                }
+
+                if (numeroEquipos <= 0) {
+                    request.getSession().setAttribute("error", "El numero de equipos debe ser mínimo 0");
+                    Competicion competicion = dao.visualizarCompeticion(idCompeticion);
+                    request.setAttribute("competicion", competicion);
+                    request.getRequestDispatcher("editar_competicion.jsp").forward(request, response);
+                    return;
+                }
+
+                if (anioCreacion <= 1800) {
+                    request.getSession().setAttribute("error", "El año de creación debe ser mayor a 1800");
+                    Competicion competicion = dao.visualizarCompeticion(idCompeticion);
+                    request.setAttribute("competicion", competicion);
+                    request.getRequestDispatcher("editar_competicion.jsp").forward(request, response);
+                    return;
+                }
+
+                Competicion competicion = new Competicion(idCompeticion, nombre, pais, tipo, numeroEquipos, anioCreacion);
+                dao.modificar(competicion);
+
+                request.getSession().setAttribute("mensaje", "Competición actualizada correctamente");
+                response.sendRedirect("competicion.jsp");
+
+            } else {
+                response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Acción no reconocida");
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error interno del servidor");
+        }
     }
 }

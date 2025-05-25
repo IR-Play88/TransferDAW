@@ -3,20 +3,30 @@ package es.tierno.daw.trasnferdaw.model.entities;
 import java.time.LocalDate;
 
 public class Contrato {
-    private int idContrato;
-    private int jugadorId;
+    private Integer idContrato;
+    private Integer jugadorId;
     private String nombreJugador;
     private Integer equipoId;
     private String nombreEquipo;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
-    private float salario;
+    private double salario;
     private String tipoContrato;
 
     public Contrato() {
     }
 
-    public Contrato(int idContrato, int jugadorId, Integer equipoId, LocalDate fechaInicio, LocalDate fechaFin, float salario, String tipoContrato) {
+    public Contrato(Integer jugadorId, Integer equipoId, LocalDate fechaInicio, LocalDate fechaFin, double salario, String tipoContrato) {
+        this.jugadorId = jugadorId;
+        this.equipoId = equipoId;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.salario = salario;
+        this.tipoContrato = tipoContrato;
+    }
+    
+
+    public Contrato(Integer idContrato, Integer jugadorId, Integer equipoId, LocalDate fechaInicio, LocalDate fechaFin, double salario, String tipoContrato) {
         this.idContrato = idContrato;
         this.jugadorId = jugadorId;
         this.equipoId = equipoId;
@@ -26,20 +36,28 @@ public class Contrato {
         this.tipoContrato = tipoContrato;
     }
 
-    public int getIdContrato() {
+    public Integer getIdContrato() {
         return idContrato;
     }
 
-    public void setIdContrato(int idContrato) {
+    public void setIdContrato(Integer idContrato) {
         this.idContrato = idContrato;
     }
 
-    public int getJugadorId() {
+    public Integer getJugadorId() {
         return jugadorId;
     }
 
-    public void setJugadorId(int jugadorId) {
+    public void setJugadorId(Integer jugadorId) {
         this.jugadorId = jugadorId;
+    }
+
+    public String getNombreJugador() {
+        return nombreJugador;
+    }
+
+    public void setNombreJugador(String nombreJugador) {
+        this.nombreJugador = nombreJugador;
     }
 
     public Integer getEquipoId() {
@@ -48,6 +66,14 @@ public class Contrato {
 
     public void setEquipoId(Integer equipoId) {
         this.equipoId = equipoId;
+    }
+
+    public String getNombreEquipo() {
+        return nombreEquipo;
+    }
+
+    public void setNombreEquipo(String nombreEquipo) {
+        this.nombreEquipo = nombreEquipo;
     }
 
     public LocalDate getFechaInicio() {
@@ -66,11 +92,11 @@ public class Contrato {
         this.fechaFin = fechaFin;
     }
 
-    public float getSalario() {
+    public double getSalario() {
         return salario;
     }
 
-    public void setSalario(float salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
@@ -82,31 +108,11 @@ public class Contrato {
         this.tipoContrato = tipoContrato;
     }
 
-    public String getNombreJugador() {
-        return nombreJugador;
-    }
-
-    public void setNombreJugador(String nombreJugador) {
-        this.nombreJugador = nombreJugador;
-    }
-
-    public String getNombreEquipo() {
-        return nombreEquipo;
-    }
-
-    public void setNombreEquipo(String nombreEquipo) {
-        this.nombreEquipo = nombreEquipo;
-    }
-    
-
-    @Override
     public String toString() {
         return "Contrato{" +
                 "idContrato=" + idContrato +
                 ", tipoContrato='" + tipoContrato + '\'' +
                 '}';
     }
-
-    
 
 }

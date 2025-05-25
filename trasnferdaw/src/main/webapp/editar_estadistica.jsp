@@ -81,9 +81,26 @@
         </aside>
 
         <section class="col-md-9">
+            <%
+            String error = (String) session.getAttribute("error");
+            if (error != null) {
+        %>
+            <div class="alert alert-danger"><%= error %></div>
+        <%
+                session.removeAttribute("error");
+            }
+        
+            String mensaje = (String) session.getAttribute("mensaje");
+            if (mensaje != null) {
+        %>
+            <div class="alert alert-success"><%= mensaje %></div>
+        <%
+                session.removeAttribute("mensaje");
+            }
+        %>
             <h2>Editar Estadísticas del Jugador</h2>
 
-            <form method="GET" action="EstadisticasTemporadaController" class="row g-3">
+            <form method="POST" action="EstadisticasTemporadaController" class="row g-3">
                 <input type="hidden" name="accion" value="actualizar" />
                 <input type="hidden" name="jugadorId" value="<%= est.getJugadorId() %>" />
                 <input type="hidden" name="temporadaId" value="<%= est.getTemporadaId() %>" />
@@ -92,19 +109,19 @@
 
                 <div class="col-md-6">
                     <label class="form-label">Jugador</label>
-                    <input type="text" class="form-control" value="<%= est.getNombreJugador() %>" readonly />
+                    <input type="text" class="form-control" value="<%= est.getNombreJugador() %>" readonly disabled/>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Temporada</label>
-                    <input type="text" class="form-control" value="<%= est.getNombreTemporada() %>" readonly />
+                    <input type="text" class="form-control" value="<%= est.getNombreTemporada() %>" readonly disabled/>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Competición</label>
-                    <input type="text" class="form-control" value="<%= est.getNombreCompeticion() %>" readonly />
+                    <input type="text" class="form-control" value="<%= est.getNombreCompeticion() %>" readonly disabled/>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label">Equipo</label>
-                    <input type="text" class="form-control" value="<%= est.getNombreEquipo() %>" readonly />
+                    <input type="text" class="form-control" value="<%= est.getNombreEquipo() %>" readonly disabled/>
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">Partidos Jugados</label>

@@ -10,6 +10,7 @@ import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
+import es.tierno.daw.trasnferdaw.model.entities.Usuario;
 import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
 import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
 
@@ -96,8 +97,6 @@ public interface TransferDAWDAO {
 
     public EstadisticasTemporada buscarEstadisticasPorTemporada(int jugadorId, int temporadaId) throws BBDDException;
 
-    public Temporada visualizarTemporada(int idTemporada) throws BBDDException;
-
 
     // Traspaso
     public int insertar(Traspaso traspaso) throws BBDDException;
@@ -120,5 +119,20 @@ public interface TransferDAWDAO {
     public List<ValorMercadoHistorial> listarValorMercadoHistorial() throws BBDDException;
 
     public ValorMercadoHistorial visualizarValorMercadoHistorial(int idHistorial) throws BBDDException;
+
+    //Usuario
+    public int insertar(Usuario usuario) throws BBDDException;
+
+    //Obtener
+    public int obtenerIdPorNombreJugador(String nombre) throws BBDDException;
+    public int obtenerIdPorNombreEquipo(String nombre) throws BBDDException;
+    public int obtenerIdPorNombreCompeticion(String nombre) throws BBDDException;
+    public int obtenerIdPorNombreTemporada(String nombre) throws BBDDException;
+    public Usuario buscarUsuarioPorNombreYPassword(String nombre, String contraseña) throws BBDDException;
+    public EstadisticasTemporada obtenerEstadisticaPorId(int jugadorId, int temporadaId, int competicionId, int equipoId) throws BBDDException;
+
+    //UUsario y email
+    public Usuario buscarUsuarioPorNombre(String nombre) throws BBDDException;
+    public Usuario buscarUsuarioPorEmail(String email) throws BBDDException;
 
 }

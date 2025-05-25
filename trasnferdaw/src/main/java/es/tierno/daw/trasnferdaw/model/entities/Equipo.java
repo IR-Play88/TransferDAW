@@ -1,20 +1,33 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
 public class Equipo {
-    private int idEquipo;
+    private Integer idEquipo;
     private String nombre;
     private String ciudad;
     private String pais;
     private int anioFundacion;
-    private float presupuesto;
+    private double presupuesto;
     private String propietario;
     private String estadioNombre;
     private String entrenadorNombre;
 
     public Equipo() {
+
     }
 
-    public Equipo(int idEquipo, String nombre, String ciudad, String pais, int anioFundacion, float presupuesto,
+    public Equipo(String nombre, String ciudad, String pais, int anioFundacion, double presupuesto, String propietario,
+            String estadioNombre, String entrenadorNombre) {
+        this.nombre = nombre;
+        this.ciudad = ciudad;
+        this.pais = pais;
+        this.anioFundacion = anioFundacion;
+        this.presupuesto = presupuesto;
+        this.propietario = propietario;
+        this.estadioNombre = estadioNombre;
+        this.entrenadorNombre = entrenadorNombre;
+    }
+
+    public Equipo(Integer idEquipo, String nombre, String ciudad, String pais, int anioFundacion, double presupuesto,
             String propietario, String estadioNombre, String entrenadorNombre) {
         this.idEquipo = idEquipo;
         this.nombre = nombre;
@@ -27,11 +40,11 @@ public class Equipo {
         this.entrenadorNombre = entrenadorNombre;
     }
 
-    public int getIdEquipo() {
+    public Integer getIdEquipo() {
         return idEquipo;
     }
 
-    public void setIdEquipo(int idEquipo) {
+    public void setIdEquipo(Integer idEquipo) {
         this.idEquipo = idEquipo;
     }
 
@@ -67,11 +80,11 @@ public class Equipo {
         this.anioFundacion = anioFundacion;
     }
 
-    public float getPresupuesto() {
+    public double getPresupuesto() {
         return presupuesto;
     }
 
-    public void setPresupuesto(float presupuesto) {
+    public void setPresupuesto(double presupuesto) {
         this.presupuesto = presupuesto;
     }
 

@@ -89,19 +89,36 @@
             </aside>
 
             <section class="col-md-9">
+                <%
+    String error = (String) session.getAttribute("error");
+    if (error != null) {
+    %>
+    <div class="alert alert-danger"><%= error %></div>
+    <%
+        session.removeAttribute("error");
+    }
+
+    String mensaje = (String) session.getAttribute("mensaje");
+    if (mensaje != null) {
+    %>
+    <div class="alert alert-success"><%= mensaje %></div>
+    <%
+        session.removeAttribute("mensaje");
+    }
+    %>
                 <h2>Editar Información de Valor de Mercado</h2>
 
-                <form action="ValorMercadoController" method="GET" class="row g-3">
+                <form action="ValorMercadoController" method="POST" class="row g-3">
                     <input type="hidden" name="id_historial" value="<%= valorMercado.getIdHistorial() %>" />
 
                     <div class="col-md-6">
                         <label for="jugador" class="form-label">Jugador</label>
-                        <input type="text" class="form-control" id="jugador" name="jugador" value="<%= valorMercado.getNombreJugador() %>" required />
+                        <input type="text" class="form-control" id="jugador" name="jugador" value="<%= valorMercado.getNombreJugador() %>" required/>
                     </div>
 
                     <div class="col-md-6">
                         <label for="fecha" class="form-label">Fecha</label>
-                        <input type="date" class="form-control" id="fecha" name="fecha" 
+                        <input type="date" class="form-control" id="fecha" name="fecha" max="<%= java.time.LocalDate.now() %>"
                             value="<%= valorMercado.getFecha() != null ? valorMercado.getFecha().toString() : "" %>" required />
                     </div>
 

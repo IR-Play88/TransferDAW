@@ -1,13 +1,13 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
 public class EstadisticasTemporada {
-    private int jugadorId;
+    private Integer jugadorId;
     private String nombreJugador;
-    private int temporadaId;
+    private Integer temporadaId;
     private String nombreTemporada;
-    private int competicionId;
+    private Integer competicionId;
     private String nombreCompeticion;
-    private int equipoId;
+    private Integer equipoId;
     private String nombreEquipo;
     private int partidosJugados;
     private int goles;
@@ -16,7 +16,7 @@ public class EstadisticasTemporada {
     public EstadisticasTemporada() {
     }
 
-    public EstadisticasTemporada(int jugadorId, int temporadaId, int competicionId, int equipoId, int partidosJugados,
+    public EstadisticasTemporada(Integer jugadorId, Integer temporadaId, Integer competicionId, Integer equipoId, int partidosJugados,
             int goles, int asistencias) {
         this.jugadorId = jugadorId;
         this.temporadaId = temporadaId;
@@ -27,36 +27,76 @@ public class EstadisticasTemporada {
         this.asistencias = asistencias;
     }
 
-    public int getJugadorId() {
+    public Integer getJugadorId() {
         return jugadorId;
     }
 
-    public void setJugadorId(int jugadorId) {
+    public void setJugadorId(Integer jugadorId) {
         this.jugadorId = jugadorId;
     }
 
-    public int getTemporadaId() {
+    public String getNombreJugador() {
+        return nombreJugador;
+    }
+
+    public void setNombreJugador(String nombreJugador) {
+        this.nombreJugador = nombreJugador;
+    }
+
+    public Integer getTemporadaId() {
         return temporadaId;
     }
 
-    public void setTemporadaId(int temporadaId) {
+    public void setTemporadaId(Integer temporadaId) {
         this.temporadaId = temporadaId;
     }
 
-    public int getCompeticionId() {
+    public String getNombreTemporada() {
+        return nombreTemporada;
+    }
+
+    public void setNombreTemporada(String nombreTemporada) {
+        this.nombreTemporada = nombreTemporada;
+    }
+
+    public Integer getCompeticionId() {
         return competicionId;
     }
 
-    public void setCompeticionId(int competicionId) {
+    public void setCompeticionId(Integer competicionId) {
         this.competicionId = competicionId;
     }
 
-    public int getEquipoId() {
+    public String getNombreCompeticion() {
+        return nombreCompeticion;
+    }
+
+    public void setNombreCompeticion(String nombreCompeticion) {
+        this.nombreCompeticion = nombreCompeticion;
+    }
+
+    public Integer getEquipoId() {
         return equipoId;
     }
 
-    public void setEquipoId(int equipoId) {
+    public void setEquipoId(Integer equipoId) {
         this.equipoId = equipoId;
+    }
+
+    public String getNombreEquipo() {
+        return nombreEquipo;
+    }
+
+    public void setNombreEquipo(String nombreEquipo) {
+        this.nombreEquipo = nombreEquipo;
+    }
+
+    public int getPartidosJugados() {
+        return partidosJugados;
+    }
+
+    public void setPartidosJugados(int partidosJugados) {
+        this.partidosJugados = partidosJugados;
     }
 
     public int getGoles() {
@@ -75,46 +115,6 @@ public class EstadisticasTemporada {
         this.asistencias = asistencias;
     }
 
-    public int getPartidosJugados() {
-        return partidosJugados;
-    }
-
-    public void setPartidosJugados(int partidosJugados) {
-        this.partidosJugados = partidosJugados;
-    }
-
-    public String getNombreJugador() {
-        return nombreJugador;
-    }
-
-    public void setNombreJugador(String nombreJugador) {
-        this.nombreJugador = nombreJugador;
-    }
-
-    public String getNombreTemporada() {
-        return nombreTemporada;
-    }
-
-    public void setNombreTemporada(String nombreTemporada) {
-        this.nombreTemporada = nombreTemporada;
-    }
-
-    public String getNombreCompeticion() {
-        return nombreCompeticion;
-    }
-
-    public void setNombreCompeticion(String nombreCompeticion) {
-        this.nombreCompeticion = nombreCompeticion;
-    }
-
-    public String getNombreEquipo() {
-        return nombreEquipo;
-    }
-
-    public void setNombreEquipo(String nombreEquipo) {
-        this.nombreEquipo = nombreEquipo;
-    }
-
     @Override
     public String toString() {
         return "EstadisticasTemporada{" +
@@ -122,10 +122,9 @@ public class EstadisticasTemporada {
                 ", Competicion=" + nombreCompeticion +
                 ", Temporada=" + nombreTemporada +
                 ", Equipo=" + nombreEquipo +
-                ", Partidos jugados=" + partidosJugados + 
+                ", Partidos jugados=" + partidosJugados +
                 ", Goles=" + goles +
                 ", Asistencias=" + asistencias
                 + '}';
     }
-
 }

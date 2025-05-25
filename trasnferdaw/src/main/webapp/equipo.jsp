@@ -5,9 +5,26 @@
 <%@ include file="cabezera.jsp" %>
 
             <section class="col-md-9">
+                <%
+                String error = (String) session.getAttribute("error");
+                if (error != null) {
+            %>
+                <div class="alert alert-danger"><%= error %></div>
+            <%
+                    session.removeAttribute("error");
+                }
+            
+                String mensaje = (String) session.getAttribute("mensaje");
+                if (mensaje != null) {
+            %>
+                <div class="alert alert-success"><%= mensaje %></div>
+            <%
+                    session.removeAttribute("mensaje");
+                }
+            %>
                 <h2>Equipos</h2>
 
-                <form method="GET" action="EquipoController" class="row g-3 mb-4">
+                <form method="POST" action="EquipoController" class="row g-3 mb-4">
                     <div class="col-md-6"><input class="form-control" type="text" name="nombre" placeholder="Nombre" required></div>
                     <div class="col-md-6"><input class="form-control" type="text" name="ciudad" placeholder="Ciudad"></div>
                     <div class="col-md-6"><input class="form-control" type="text" name="pais" placeholder="País"></div>
@@ -19,7 +36,7 @@
                     <div class="col-md-12 d-flex">
                         <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar equipo...">
                         <% if (esAdmin) { %>
-                        <button type="submit" name="accion" value="añadir" class="btn btn-success">Añadir</button>
+                            <input type="submit" class="btn btn-primary w-100" name="accion" value="insertar"/>
                         <% } %>
                     </div>
                 </form>
@@ -57,13 +74,19 @@
                                 <td><%= equipo.getEntrenadorNombre() %></td>
                                 <td>
                                     <% if (esAdmin) { %>
-                                    <form action="EquipoController" method="GET" class="d-flex gap-1">
-                                        <input type="hidden" name="id_equipo" value="<%= equipo.getIdEquipo() %>">
-                                        <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
-                                        <a href="EquipoController?accion=modificar&id_equipo=<%= equipo.getIdEquipo() %>" class="btn btn-warning btn-sm">Modificar</a>
-                                    </form>
+                                    <div class="d-flex flex-column align-items-center gap-1">
+                                        <form action="EquipoController" method="POST" class="w-100">
+                                            <input type="hidden" name="id_equipo" value="<%= equipo.getIdEquipo() %>">
+                                            <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm w-100"
+                                                onclick="return confirm('¿Seguro que quieres eliminar este equipo?');">Eliminar</button>
+                                        </form>
+                                        <a href="EquipoController?accion=modificar&id_equipo=<%= equipo.getIdEquipo() %>"
+                                            class="btn btn-warning btn-sm w-100"
+                                            onclick="return confirm('¿Seguro que quieres modificar este equipo?');">Modificar</a>
+                                    </div>
                                     <% } %>
                                 </td>
+                                
                             </tr>
                         <% } %>
                     </tbody>

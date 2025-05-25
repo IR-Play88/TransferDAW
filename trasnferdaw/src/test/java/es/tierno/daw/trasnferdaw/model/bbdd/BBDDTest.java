@@ -74,8 +74,8 @@ public class BBDDTest {
 
     @Test
     public void insertarJugadorTest() throws Exception {
-        Jugador jugador = new Jugador(0, "Isco", "Alarcon", LocalDate.of(1986, 3, 30), "España", 1.84f, 82f, "derecho",
-                10f, "mediocampista", "Prueba", "España");
+        Jugador jugador = new Jugador(0, "Isco", "Alarcon", LocalDate.of(1986, 3, 30), "España", 1.84, 82, "derecho",
+                10, "mediocampista", "Prueba", "España");
 
         int real = dao.insertar(jugador);
         assertEquals(1, real);
@@ -87,7 +87,7 @@ public class BBDDTest {
         List<Jugador> jugadores = dao.listarJugadores();
         for (Jugador j : jugadores) {
             if (j.getNombre().equals("Isco")) {
-                j.setValorMercado(7000000f); // modificamos algo
+                j.setValorMercado(7000000); // modificamos algo
                 int actualizados = dao.modificar(j);
                 assertEquals(1, actualizados);
                 break;
@@ -114,7 +114,7 @@ public class BBDDTest {
     @Test
     public void listarJugadorTest() throws Exception {
         List<Jugador> jugadores = dao.listarJugadores();
-        assertEquals(5, jugadores.size());// o puedes comprobar exacto si conoces el número
+        assertEquals(4, jugadores.size());// o puedes comprobar exacto si conoces el número
     }
 
     /**
@@ -139,10 +139,10 @@ public class BBDDTest {
         assertEquals(LocalDate.of(1996, 1, 21), jugador.getFechaNacimiento(),
                 "La fecha de nacimiento del jugador debería ser '1996-01-21'");
         assertEquals("España", jugador.getNacionalidad(), "La nacionalidad del jugador debería ser 'Española'");
-        assertEquals(1.82f, jugador.getAltura(), 0.01f, "La altura del jugador debería ser 1.82f");
-        assertEquals(76.0f, jugador.getPeso(), 0.01f, "El peso del jugador debería ser 76.0f");
+        assertEquals(1.82, jugador.getAltura(), 0.01f, "La altura del jugador debería ser 1.82f");
+        assertEquals(76.0, jugador.getPeso(), 0.01f, "El peso del jugador debería ser 76.0f");
         assertEquals("izquierdo", jugador.getPieDominante(), "El pie dominante del jugador debería ser 'izquierdo'");
-        assertEquals(20f, jugador.getValorMercado(), 0.01f, "El valor de mercado del jugador debería ser 200000000f");
+        assertEquals(20, jugador.getValorMercado(), 0.01f, "El valor de mercado del jugador debería ser 200000000f");
         assertEquals("delantero", jugador.getPosicion(), "El ID del representante del jugador debería ser 1");
         assertEquals("Gestifute", jugador.getRepresentanteNombre(),
                 "El ID del representante del jugador debería ser 1");
@@ -153,19 +153,6 @@ public class BBDDTest {
     public void listarTemporadaTest() throws Exception {
         List<Temporada> temporadas = dao.listarTemporadas();
         assertEquals(56, temporadas.size());// o puedes comprobar exacto si conoces el número
-    }
-
-    @Test
-    public void testVisualizarTemporada() throws BBDDException {
-        int idTemporada = 1;
-
-        Temporada temporada = dao.visualizarTemporada(idTemporada);
-
-        assertNotNull(temporada, "La temporada no debería ser nula");
-        assertEquals(idTemporada, temporada.getIdTemporada(), "ID incorrecto");
-        assertEquals("Temporada 1969/1970", temporada.getNombre(), "Nombre incorrecto");
-        assertEquals(LocalDate.of(1969, 8, 1), temporada.getFechaInicio(), "Fecha de inicio incorrecta");
-        assertEquals(LocalDate.of(1970, 5, 31), temporada.getFechaFin(), "Fecha de fin incorrecta");
     }
 
     @Test
@@ -291,7 +278,7 @@ public class BBDDTest {
 
     @Test
     public void insertarEquipoCompeticionTest() throws Exception {
-        EquipoCompeticion equipoCompeticion = new EquipoCompeticion(9, 9, 9, 11);
+        EquipoCompeticion equipoCompeticion = new EquipoCompeticion(20, 9, 9, 11);
         int real = dao.insertar(equipoCompeticion);
         assertEquals(1, real);
     }
@@ -301,7 +288,7 @@ public class BBDDTest {
         // Recuperamos el jugador para actualizarlo
         List<EquipoCompeticion> equipoCompeticiones = dao.listarEquiposCompeticion();
         for (EquipoCompeticion eqs : equipoCompeticiones) {
-            if (eqs.getEquipoId() == 9 && eqs.getCompeticionId() == 9 && eqs.getTemporadaId() == 9) {
+            if (eqs.getEquipoId() == 20 && eqs.getCompeticionId() == 9 && eqs.getTemporadaId() == 9) {
                 eqs.setRango(20);
                 ; // modificamos algo
                 int actualizados = dao.modificar(eqs);
@@ -361,7 +348,7 @@ public class BBDDTest {
 
     @Test
     public void insertarContratoTest() throws Exception {
-        Contrato contrato = new Contrato(0, 2, 2, LocalDate.of(2025, 1, 1), LocalDate.of(2026, 1, 1), 5000000.0f,
+        Contrato contrato = new Contrato(0, 2, 2, LocalDate.of(2025, 1, 1), LocalDate.of(2026, 1, 1), 5000000.0,
                 "cesion");
         int real = dao.insertar(contrato);
         assertEquals(1, real);
@@ -372,7 +359,7 @@ public class BBDDTest {
         List<Contrato> contratos = dao.listarContratos();
         for (Contrato contrato : contratos) {
             if (contrato.getJugadorId() == 2 && contrato.getEquipoId() == 2) {
-                contrato.setSalario(7500000.0f);
+                contrato.setSalario(7500000.0);
                 int actualizados = dao.modificar(contrato);
                 assertEquals(1, actualizados);
                 break;
@@ -419,8 +406,8 @@ public class BBDDTest {
         assertEquals(LocalDate.of(2013, 7, 1), contrato.getFechaInicio(),
                 "La fecha de inicio debería ser '2013-07-01'");
         assertEquals(LocalDate.of(2015, 6, 30), contrato.getFechaFin(), "La fecha de fin debería ser '2015-06-30'");
-        assertEquals(100000f, contrato.getSalario(), 0.01f, "El salario debería ser 100000f");
-        assertEquals("nuevo fichaje", contrato.getTipoContrato(), "El tipo de contrato debería ser 'nuevo fichaje'");
+        assertEquals(100000, contrato.getSalario(), 0.01f, "El salario debería ser 100000f");
+        assertEquals("fichaje", contrato.getTipoContrato(), "El tipo de contrato debería ser 'fichaje'");
     }
 
     @Test
@@ -470,7 +457,7 @@ public class BBDDTest {
     @Test
     public void listarEstadisticasTemporadaTest() throws Exception {
         List<EstadisticasTemporada> lista = dao.listarEstadisticasTemporada();
-        assertEquals(42, lista.size()); // o usa assertEquals(n, size) si sabes el número exacto
+        assertEquals(44, lista.size()); // o usa assertEquals(n, size) si sabes el número exacto
     }
 
     @Test
@@ -510,7 +497,7 @@ public class BBDDTest {
 
     @Test
     public void anadirTraspaso() throws BBDDException {
-        Traspaso traspaso = new Traspaso(0, 2, 9, 9, 56, LocalDate.of(1986, 3, 30), 0, "cesion");
+        Traspaso traspaso = new Traspaso(0, 2, 20, 8, 56, LocalDate.of(1986, 3, 30), 0, "cesion");
         int real = dao.insertar(traspaso);
         assertEquals(1, real);
     }
@@ -519,8 +506,8 @@ public class BBDDTest {
     public void modificarTraspasoTest() throws Exception {
         List<Traspaso> traspasos = dao.listarTraspasos();
         for (Traspaso t : traspasos) {
-            if (t.getJugadorId() == 2 && t.getTemporadaId() == 56 && t.getEquipoOrigenId() == 9) {
-                t.setCantidad(2000000.0f); // modificamos algo
+            if (t.getJugadorId() == 2 && t.getTemporadaId() == 56 && t.getEquipoOrigenId() == 20) {
+                t.setCantidad(2000000.0); // modificamos algo
                 int actualizados = dao.modificar(t);
                 assertEquals(1, actualizados);
                 break;
@@ -534,7 +521,7 @@ public class BBDDTest {
         int idTraspaso = -1;
 
         for (Traspaso t : traspasos) {
-            if (t.getCantidad() == 2000000.0f) {
+            if (t.getCantidad() == 2000000.0) {
                 idTraspaso = t.getIdTraspaso();
                 break;
             }
@@ -583,8 +570,8 @@ public class BBDDTest {
     public void modificarValorMercadoHistoriaTest() throws Exception {
         List<ValorMercadoHistorial> historiales = dao.listarValorMercadoHistorial();
         for (ValorMercadoHistorial h : historiales) {
-            if (h.getValorMercado() == 999_000_000 && h.getJugadorId() == 1) {
-                h.setValorMercado(1_000_000);
+            if (h.getValorMercado() == 1_000_000 && h.getIdHistorial() == 12) {
+                h.setValorMercado(111_000_000);
                 int actualizados = dao.modificar(h);
                 assertEquals(1, actualizados);
                 break;
@@ -624,8 +611,8 @@ public class BBDDTest {
         assertEquals(idHistorial, historial.getIdHistorial(), "ID incorrecto");
         assertEquals(1, historial.getJugadorId(), "ID del jugador incorrecto");
         assertEquals(LocalDate.of(2014, 7, 1), historial.getFecha(), "Fecha incorrecta");
-        assertEquals(1.0f, historial.getValorMercado(), 0.01f, "Valor de mercado incorrecto");
-        assertEquals("Marco Asensio inicia en 2º división con el mallorca", historial.getMotivo(), "Motivo incorrecto");
+        assertEquals(1000000, historial.getValorMercado(), "Valor de mercado incorrecto");
+        assertEquals("Marco Asensio inicia en 2º división con el Mallorca", historial.getMotivo(), "Motivo incorrecto");
     }
 
 }

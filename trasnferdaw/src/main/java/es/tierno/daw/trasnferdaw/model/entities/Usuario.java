@@ -1,7 +1,7 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
 public class Usuario {
-    private int idUsuario;
+    private Integer idUsuario;
     private String nombre;
     private String email;
     private String contrasena;
@@ -10,7 +10,14 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(int idUsuario, String nombre, String email, String contrasena, String rol) {
+    public Usuario(String nombre, String email, String contrasena, String rol) {
+        this.nombre = nombre;
+        this.email = email;
+        this.contrasena = contrasena;
+        this.rol = rol;
+    }
+
+    public Usuario(Integer idUsuario, String nombre, String email, String contrasena, String rol) {
         this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.email = email;
@@ -18,11 +25,11 @@ public class Usuario {
         this.rol = rol;
     }
 
-    public int getIdUsuario() {
+    public Integer getIdUsuario() {
         return idUsuario;
     }
 
-    public void setIdUsuario(int idUsuario) {
+    public void setIdUsuario(Integer idUsuario) {
         this.idUsuario = idUsuario;
     }
 
@@ -65,5 +72,4 @@ public class Usuario {
                 ", nombre='" + nombre + '\'' +
                 '}';
     }
-
 }

@@ -2,6 +2,23 @@
 <%@ include file="cabezera.jsp" %>
 
 <section class="col-md-9" id="content">
+    <%
+    String error = (String) session.getAttribute("error");
+    if (error != null) {
+%>
+    <div class="alert alert-danger"><%= error %></div>
+<%
+        session.removeAttribute("error");
+    }
+
+    String mensaje = (String) session.getAttribute("mensaje");
+    if (mensaje != null) {
+%>
+    <div class="alert alert-success"><%= mensaje %></div>
+<%
+        session.removeAttribute("mensaje");
+    }
+%>
     <h2>Crea tu cuenta</h2>
 
     <form method="POST" action="CuentaServlet">
@@ -10,17 +27,6 @@
         <input type="password" class="form-control mb-2" name="pass" placeholder="password" required />
         <input type="submit" class="btn btn-primary w-100" value="enviar" />
     </form>
-
-    <% 
-        String accion = request.getParameter("accion");
-        if ("enviar".equals(accion)) {
-    %>
-        <div class="alert alert-success mt-3" role="alert">
-            ¡Cuenta creada correctamente!
-        </div>
-    <% 
-        }
-    %>
 </section>
 
 <%@ include file="footer.jsp" %>

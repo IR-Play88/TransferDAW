@@ -81,6 +81,23 @@
         </aside>
 
         <section class="col-md-9">
+            <%
+            String error = (String) session.getAttribute("error");
+            if (error != null) {
+        %>
+            <div class="alert alert-danger"><%= error %></div>
+        <%
+                session.removeAttribute("error");
+            }
+        
+            String mensaje = (String) session.getAttribute("mensaje");
+            if (mensaje != null) {
+        %>
+            <div class="alert alert-success"><%= mensaje %></div>
+        <%
+                session.removeAttribute("mensaje");
+            }
+        %>
             <h2>Editar Equipo en Competición</h2>
 
             <%
@@ -92,7 +109,7 @@
                 } else {
             %>
 
-            <form method="GET" action="EquipoCompeticionController" class="row g-3">
+            <form method="POST" action="EquipoCompeticionController" class="row g-3">
                 <input type="hidden" name="accion" value="actualizar" />
                 <input type="hidden" name="equipoId" value="<%= ec.getEquipoId() %>" />
                 <input type="hidden" name="competicionId" value="<%= ec.getCompeticionId() %>" />
@@ -101,19 +118,19 @@
                 <div class="col-md-6">
                     <label for="nombreEquipo" class="form-label">Nombre del Equipo</label>
                     <input type="text" class="form-control" id="nombreEquipo" name="nombreEquipo"
-                           value="<%= ec.getNombreEquipo() %>" required />
+                           value="<%= ec.getNombreEquipo() %>" required disabled/>
                 </div>
 
                 <div class="col-md-6">
                     <label for="nombreCompeticion" class="form-label">Nombre de la Competición</label>
                     <input type="text" class="form-control" id="nombreCompeticion" name="nombreCompeticion"
-                           value="<%= ec.getNombreCompeticion() %>" required />
+                           value="<%= ec.getNombreCompeticion() %>" required disabled/>
                 </div>
 
                 <div class="col-md-6">
                     <label for="nombreTemporada" class="form-label">Temporada</label>
                     <input type="text" class="form-control" id="nombreTemporada" name="nombreTemporada"
-                           value="<%= ec.getNombreTemporada() %>" required />
+                           value="<%= ec.getNombreTemporada() %>" required disabled/>
                 </div>
 
                 <div class="col-md-6">

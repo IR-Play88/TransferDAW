@@ -1,7 +1,7 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
 public class Competicion {
-    private int idCompeticion;
+    private Integer idCompeticion;
     private String nombre;
     private String pais;
     private String tipo;
@@ -11,7 +11,15 @@ public class Competicion {
     public Competicion() {
     }
 
-    public Competicion(int idCompeticion, String nombre, String pais, String tipo, int numeroEquipos,
+    public Competicion(String nombre, String pais, String tipo, int numeroEquipos, int anioCreacion) {
+        this.nombre = nombre;
+        this.pais = pais;
+        this.tipo = tipo;
+        this.numeroEquipos = numeroEquipos;
+        this.anioCreacion = anioCreacion;
+    }
+
+    public Competicion(Integer idCompeticion, String nombre, String pais, String tipo, int numeroEquipos,
             int anioCreacion) {
         this.idCompeticion = idCompeticion;
         this.nombre = nombre;
@@ -21,11 +29,11 @@ public class Competicion {
         this.anioCreacion = anioCreacion;
     }
 
-    public int getIdCompeticion() {
+    public Integer getIdCompeticion() {
         return idCompeticion;
     }
 
-    public void setIdCompeticion(int idCompeticion) {
+    public void setIdCompeticion(Integer idCompeticion) {
         this.idCompeticion = idCompeticion;
     }
 

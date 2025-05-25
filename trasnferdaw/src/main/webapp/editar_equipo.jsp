@@ -1,9 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.entities.Equipo" %>
 <%
-    Equipo equipo = (Equipo) request.getAttribute("equipo");
-%>
-<%
     String rol = (String) session.getAttribute("rol");
     if (rol == null || !rol.equals("admin")) {
         response.sendRedirect("index.jsp");
@@ -13,7 +10,9 @@
     boolean esAdmin = true; // porque ya comprobaste que sí lo es
     String nombreUsuario = (String) session.getAttribute("usuario");
 %>
-%>
+
+<jsp:useBean id="equipo" scope="request" class="es.tierno.daw.trasnferdaw.model.entities.Equipo" />
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -84,57 +83,75 @@
         </aside>
 
         <section class="col-md-9">
+            <%
+            String error = (String) session.getAttribute("error");
+            if (error != null) {
+            %>
+            <div class="alert alert-danger"><%= error %></div>
+            <%
+                session.removeAttribute("error");
+            }
+            
+            String mensaje = (String) session.getAttribute("mensaje");
+            if (mensaje != null) {
+            %>
+            <div class="alert alert-success"><%= mensaje %></div>
+            <%
+                session.removeAttribute("mensaje");
+            }
+            %>
+
             <h2>Editar Equipo</h2>
 
-            <form method="GET" action="EquipoController" class="row g-3">
+            <form method="POST" action="EquipoController" class="row g-3">
                 <input type="hidden" name="id_equipo" value="<%= equipo.getIdEquipo() %>">
-            
+
                 <div class="col-md-6">
                     <label for="nombre" class="form-label">Nombre actual: <strong><%= equipo.getNombre() %></strong></label>
-                    <input type="text" name="nombre" id="nombre" class="form-control" value="<%= equipo.getNombre() %>" required>
+                    <input type="text" name="nombre" id="nombre" class="form-control" value="<%= equipo.getNombre() %>" required placeholder="Nombre">
                 </div>
-            
+
                 <div class="col-md-6">
                     <label for="ciudad" class="form-label">Ciudad actual: <strong><%= equipo.getCiudad() %></strong></label>
-                    <input type="text" name="ciudad" id="ciudad" class="form-control" value="<%= equipo.getCiudad() %>" required>
+                    <input type="text" name="ciudad" id="ciudad" class="form-control" value="<%= equipo.getCiudad() %>" required placeholder="Ciudad">
                 </div>
-            
+
                 <div class="col-md-6">
                     <label for="pais" class="form-label">País actual: <strong><%= equipo.getPais() %></strong></label>
-                    <input type="text" name="pais" id="pais" class="form-control" value="<%= equipo.getPais() %>" required>
+                    <input type="text" name="pais" id="pais" class="form-control" value="<%= equipo.getPais() %>" required placeholder="País">
                 </div>
-            
+
                 <div class="col-md-6">
                     <label for="anio" class="form-label">Año de fundación: <strong><%= equipo.getAnioFundacion() %></strong></label>
-                    <input type="number" name="anio" id="anio" class="form-control" value="<%= equipo.getAnioFundacion() %>" required>
+                    <input type="number" name="anio" id="anio" class="form-control" value="<%= equipo.getAnioFundacion() %>" required placeholder="Año fundación">
                 </div>
-            
+
                 <div class="col-md-6">
                     <label for="presupuesto" class="form-label">Presupuesto actual: <strong><%= equipo.getPresupuesto() %></strong></label>
-                    <input type="number" step="0.01" name="presupuesto" id="presupuesto" class="form-control" value="<%= equipo.getPresupuesto() %>" required>
+                    <input type="number" step="0.01" name="presupuesto" id="presupuesto" class="form-control" value="<%= equipo.getPresupuesto() %>" required placeholder="Presupuesto">
                 </div>
-            
+
                 <div class="col-md-6">
                     <label for="propietario" class="form-label">Propietario actual: <strong><%= equipo.getPropietario() %></strong></label>
-                    <input type="text" name="propietario" id="propietario" class="form-control" value="<%= equipo.getPropietario() %>" required>
+                    <input type="text" name="propietario" id="propietario" class="form-control" value="<%= equipo.getPropietario() %>" required placeholder="Propietario">
                 </div>
-            
+
                 <div class="col-md-6">
                     <label for="estadio" class="form-label">Estadio actual: <strong><%= equipo.getEstadioNombre() %></strong></label>
-                    <input type="text" name="estadio" id="estadio" class="form-control" value="<%= equipo.getEstadioNombre() %>" required>
+                    <input type="text" name="estadio" id="estadio" class="form-control" value="<%= equipo.getEstadioNombre() %>" required placeholder="Estadio">
                 </div>
-            
+
                 <div class="col-md-6">
                     <label for="entrenador" class="form-label">Entrenador actual: <strong><%= equipo.getEntrenadorNombre() %></strong></label>
-                    <input type="text" name="entrenador" id="entrenador" class="form-control" value="<%= equipo.getEntrenadorNombre() %>" required>
+                    <input type="text" name="entrenador" id="entrenador" class="form-control" value="<%= equipo.getEntrenadorNombre() %>" required placeholder="Entrenador">
                 </div>
-            
+
                 <div class="col-md-12 d-flex justify-content-between">
                     <a href="equipo.jsp" class="btn btn-secondary">Cancelar</a>
                     <button type="submit" name="accion" value="actualizar" class="btn btn-success">Guardar cambios</button>
                 </div>
             </form>
-            
+
         </section>
     </div>
 

@@ -8,143 +8,203 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB;
+import es.tierno.daw.trasnferdaw.model.bbdd.Database;
+import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO;
+import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDBFactory;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 
 @WebServlet("/JugadorController")
 public class JugadorController extends HttpServlet {
-    int id;
-
-    String lista = "jugador.jsp";
-    String edita = "jugador.jsp";
-    Jugador jugador = new Jugador();
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String accion = request.getParameter("accion");
 
-        if ("añadir".equalsIgnoreCase(accion)) {
-            try {
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB(); // ✔️ Se instancia dentro de try-catch
+        try {
+            TransferDAWDAO dao = TransferDAWDBFactory.obtener(Database.MARIADB);
 
-                String nombre = request.getParameter("nombre");
-                String alias = request.getParameter("alias");
-                String fechaNacimientoStr = request.getParameter("fecha_nacimiento");
-                String nacionalidad = request.getParameter("nacionalidad");
-                float altura = Float.parseFloat(request.getParameter("altura"));
-                float peso = Float.parseFloat(request.getParameter("peso"));
-                String pieDominante = request.getParameter("pie_dominante");
-                float valorMercado = Float.parseFloat(request.getParameter("valor_mercado"));
-                String posicion = request.getParameter("posicion");
-                String representante = request.getParameter("representante");
-                String seleccion = request.getParameter("seleccion");
-
-                Jugador jugador = new Jugador();
-                jugador.setNombre(nombre);
-                jugador.setAlias(alias);
-                jugador.setFechaNacimiento(LocalDate.parse(fechaNacimientoStr));
-                jugador.setNacionalidad(nacionalidad);
-                jugador.setAltura(altura);
-                jugador.setPeso(peso);
-                jugador.setPieDominante(pieDominante);
-                jugador.setValorMercado(valorMercado);
-                jugador.setPosicion(posicion);
-                jugador.setRepresentanteNombre(representante);
-                jugador.setSeleccionNombre(seleccion);
-
-                dao.insertar(jugador);
-                response.sendRedirect("jugador.jsp");
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al insertar jugador");
-            }
-        } else if ("eliminar".equalsIgnoreCase(accion)) {
-            try {
-                int idJugador = Integer.parseInt(request.getParameter("id_jugador"));
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
-        
-                // Llamada al método eliminarJugador del DAO
-                int registrosEliminados = dao.eliminarJugador(idJugador);
-        
-                if (registrosEliminados > 0) {
-                    response.sendRedirect("jugador.jsp"); // Redirige a la lista de jugadores después de la eliminación
-                } else {
-                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Jugador no encontrado");
+            if ("modificar".equalsIgnoreCase(accion)) {
+                String idStr = request.getParameter("id_jugador");
+                if (idStr == null || idStr.trim().isEmpty()) {
+                    request.getSession().setAttribute("error", "No se ha seleccionado un jugador para modificar");
+                    response.sendRedirect("jugador.jsp");
+                    return;
                 }
-        
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al eliminar jugador");
-            }
-        }else if ("modificar".equalsIgnoreCase(accion)) {
-            try {
-                int idJugador = Integer.parseInt(request.getParameter("id_jugador"));
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+
+                int idJugador = Integer.parseInt(idStr);
                 Jugador jugador = dao.visualizarJugador(idJugador);
-        
+
                 if (jugador != null) {
                     request.setAttribute("jugador", jugador);
                     request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
                 } else {
-                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Jugador no encontrado para modificar");
+                    request.getSession().setAttribute("error", "No se encontró un jugador para modificar");
+                    response.sendRedirect("jugador.jsp");
                 }
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al cargar jugador para modificar");
+
             }
-        }else  if ("actualizar".equals(accion)) {
-            try {
+        } catch (Exception e) {
+            e.printStackTrace();
+            request.getSession().setAttribute("error", "Error interno del servidor");
+            response.sendRedirect("jugador.jsp");
+        }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String accion = request.getParameter("accion");
+    
+        try {
+            TransferDAWDAO dao = TransferDAWDBFactory.obtener(Database.MARIADB);
+    
+            if ("insertar".equalsIgnoreCase(accion)) {
+                // Extraer parámetros comunes
+                String nombre = request.getParameter("nombre");
+                String alias = request.getParameter("alias");
+                String fechaNacimientoStr = request.getParameter("fecha_nacimiento");
+                String nacionalidad = request.getParameter("nacionalidad");
+                String pieDominante = request.getParameter("pie_dominante");
+                String posicion = request.getParameter("posicion");
+                String representante = request.getParameter("representante");
+                String seleccion = request.getParameter("seleccion");
+    
+                float altura, peso, valorMercado;
+                try {
+                    altura = Float.parseFloat(request.getParameter("altura"));
+                    peso = Float.parseFloat(request.getParameter("peso"));
+                    valorMercado = Float.parseFloat(request.getParameter("valor_mercado"));
+                } catch (NumberFormatException e) {
+                    request.getSession().setAttribute("error", "Valor numérico inválido en peso, altura o mercado");
+                    response.sendRedirect("jugador.jsp");
+                    return;
+                }
+    
+                if (altura <= 0 || peso <= 0 || valorMercado <= 0) {
+                    request.getSession().setAttribute("error", "Altura, peso y valor de mercado deben ser mayores a 0");
+                    response.sendRedirect("jugador.jsp");
+                    return;
+                }
+    
+                LocalDate fechaNacimiento;
+                try {
+                    fechaNacimiento = LocalDate.parse(fechaNacimientoStr);
+                    if (fechaNacimiento.isAfter(LocalDate.now())) {
+                        request.getSession().setAttribute("error", "La fecha de nacimiento no puede ser futura");
+                        response.sendRedirect("jugador.jsp");
+                        return;
+                    }
+                } catch (Exception e) {
+                    request.getSession().setAttribute("error", "Fecha de nacimiento inválida");
+                    response.sendRedirect("jugador.jsp");
+                    return;
+                }
+    
+                if (posicion == null || !(posicion.equalsIgnoreCase("delantero")
+                        || posicion.equalsIgnoreCase("mediocampista")
+                        || posicion.equalsIgnoreCase("defensa")
+                        || posicion.equalsIgnoreCase("portero"))) {
+                    request.getSession().setAttribute("error",
+                            "Posición inválida. Solo puede ser delantero, mediocampista, defensa o portero.");
+                    response.sendRedirect("jugador.jsp");
+                    return;
+                }
+    
+                Jugador jugador = new Jugador(nombre, alias, fechaNacimiento, nacionalidad, altura, peso, pieDominante,
+                        valorMercado, posicion, representante, seleccion);
+                dao.insertar(jugador);
+    
+                request.getSession().setAttribute("mensaje", "Jugador insertado correctamente");
+                response.sendRedirect("jugador.jsp");
+    
+            } else if ("eliminar".equalsIgnoreCase(accion)) {
+                int idJugador = Integer.parseInt(request.getParameter("id_jugador"));
+                int registrosEliminados = dao.eliminarJugador(idJugador);
+    
+                if (registrosEliminados > 0) {
+                    request.getSession().setAttribute("mensaje", "Jugador eliminado correctamente");
+                } else {
+                    request.getSession().setAttribute("error", "Jugador no encontrado");
+                }
+                response.sendRedirect("jugador.jsp");
+    
+            } else if ("actualizar".equalsIgnoreCase(accion)) {
                 int idJugador = Integer.parseInt(request.getParameter("id_jugador"));
                 String nombre = request.getParameter("nombre");
                 String alias = request.getParameter("alias");
                 String fechaNacimientoStr = request.getParameter("fecha_nacimiento");
                 String nacionalidad = request.getParameter("nacionalidad");
-                float altura = Float.parseFloat(request.getParameter("altura"));
-                float peso = Float.parseFloat(request.getParameter("peso"));
+                float altura, peso, valorMercado;
+                try {
+                    altura = Float.parseFloat(request.getParameter("altura"));
+                    peso = Float.parseFloat(request.getParameter("peso"));
+                    valorMercado = Float.parseFloat(request.getParameter("valor_mercado"));
+                } catch (NumberFormatException e) {
+                    request.getSession().setAttribute("error", "Valor numérico inválido");
+                    Jugador jugador = dao.visualizarJugador(idJugador);
+                    request.setAttribute("jugador", jugador);
+                    request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
+                    return;
+                }
+    
                 String pieDominante = request.getParameter("pie_dominante");
-                float valorMercado = Float.parseFloat(request.getParameter("valor_mercado"));
                 String posicion = request.getParameter("posicion");
                 String representante = request.getParameter("representante");
                 String seleccion = request.getParameter("seleccion");
-
-                LocalDate fechaNacimiento = LocalDate.parse(fechaNacimientoStr);
-
-                Jugador jugador = new Jugador();
-                jugador.setIdJugador(idJugador);
-                jugador.setNombre(nombre);
-                jugador.setAlias(alias);
-                jugador.setFechaNacimiento(fechaNacimiento);
-                jugador.setNacionalidad(nacionalidad);
-                jugador.setAltura(altura);
-                jugador.setPeso(peso);
-                jugador.setPieDominante(pieDominante);
-                jugador.setValorMercado(valorMercado);
-                jugador.setPosicion(posicion);
-                jugador.setRepresentanteNombre(representante);
-                jugador.setSeleccionNombre(seleccion);
-
-                // Actualizar en base de datos
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB(); 
+    
+                if (altura <= 0 || peso <= 0 || valorMercado <= 0) {
+                    request.getSession().setAttribute("error", "Altura, peso y valor de mercado deben ser mayores a 0");
+                    Jugador jugador = dao.visualizarJugador(idJugador);
+                    request.setAttribute("jugador", jugador);
+                    request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
+                    return;
+                }
+    
+                LocalDate fechaNacimiento;
+                try {
+                    fechaNacimiento = LocalDate.parse(fechaNacimientoStr);
+                    if (fechaNacimiento.isAfter(LocalDate.now())) {
+                        request.getSession().setAttribute("error", "La fecha de nacimiento no puede ser futura");
+                        Jugador jugador = dao.visualizarJugador(idJugador);
+                        request.setAttribute("jugador", jugador);
+                        request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
+                        return;
+                    }
+                } catch (Exception e) {
+                    request.getSession().setAttribute("error", "Fecha de nacimiento inválida");
+                    Jugador jugador = dao.visualizarJugador(idJugador);
+                    request.setAttribute("jugador", jugador);
+                    request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
+                    return;
+                }
+    
+                if (posicion == null || !(posicion.equalsIgnoreCase("delantero")
+                        || posicion.equalsIgnoreCase("mediocampista")
+                        || posicion.equalsIgnoreCase("defensa")
+                        || posicion.equalsIgnoreCase("portero"))) {
+                    request.getSession().setAttribute("error",
+                            "Posición inválida. Solo puede ser delantero, mediocampista, defensa o portero.");
+                    Jugador jugador = dao.visualizarJugador(idJugador);
+                    request.setAttribute("jugador", jugador);
+                    request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
+                    return;
+                }
+    
+                Jugador jugador = new Jugador(idJugador, nombre, alias, fechaNacimiento, nacionalidad, altura, peso,
+                        pieDominante, valorMercado, posicion, representante, seleccion);
+    
                 dao.modificar(jugador);
-
-                // Redirigir a la página de lista o detalle
+    
+                request.getSession().setAttribute("mensaje", "Jugador actualizado correctamente");
                 response.sendRedirect("jugador.jsp");
-
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al actualizar el jugador");
+    
+            } else {
+                response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Acción no reconocida");
             }
-        } else {
-            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Acción no reconocida");
+    
+        } catch (Exception e) {
+            e.printStackTrace();
+            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,
+                    "Error interno del servidor: " + e.getMessage());
         }
-        
-
-        
     }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-
-    }
-
+    
 }

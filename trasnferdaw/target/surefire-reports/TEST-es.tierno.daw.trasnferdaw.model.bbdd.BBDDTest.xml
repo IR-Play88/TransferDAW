@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="11" failures="0" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" time="0.225" errors="0" skipped="0">
+<testsuite tests="11" failures="2" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" time="0.293" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="21.0.1+12-29"/>
@@ -57,15 +57,33 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
   </properties>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testConnection" time="0"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testViusalizarJugador" time="0.04"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarTemporada" time="0.036"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarEquipo" time="0.042"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarCompeticion" time="0.022"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarEquipoCompeticionPorIds" time="0.017"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarContrato" time="0.019"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testBuscarEstadisticasTotalesPorJugador" time="0.021"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testBuscarEstadisticasPorTemporada" time="0.01"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testConnection" time="0.014"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testViusalizarJugador" time="0.043"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarTemporada" time="0.045"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarEquipo" time="0.038"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarCompeticion" time="0.023"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarEquipoCompeticionPorIds" time="0.018"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarContrato" time="0.027">
+    <failure message="El tipo de contrato debería ser &apos;nuevo fichaje&apos; ==&gt; expected: &lt;nuevo fichaje&gt; but was: &lt;fichaje&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: El tipo de contrato debería ser &apos;nuevo fichaje&apos; ==&gt; expected: &lt;nuevo fichaje&gt; but was: &lt;fichaje&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarContrato(BBDDTest.java:423)
+</failure>
+  </testcase>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testBuscarEstadisticasTotalesPorJugador" time="0.034"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testBuscarEstadisticasPorTemporada" time="0.022"/>
   <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarTraspaso" time="0.011"/>
-  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarValorMercadoHistorial" time="0.007"/>
+  <testcase classname="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest" name="es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarValorMercadoHistorial" time="0.018">
+    <failure message="Valor de mercado incorrecto ==&gt; expected: &lt;1.0&gt; but was: &lt;1000000.0&gt;" type="org.opentest4j.AssertionFailedError">org.opentest4j.AssertionFailedError: Valor de mercado incorrecto ==&gt; expected: &lt;1.0&gt; but was: &lt;1000000.0&gt;
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:870)
+	at es.tierno.daw.trasnferdaw.model.bbdd.BBDDTest.testVisualizarValorMercadoHistorial(BBDDTest.java:627)
+</failure>
+  </testcase>
 </testsuite>

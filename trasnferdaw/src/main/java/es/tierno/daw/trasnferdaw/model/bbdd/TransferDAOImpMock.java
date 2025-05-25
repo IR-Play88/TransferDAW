@@ -10,6 +10,7 @@ import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
 import es.tierno.daw.trasnferdaw.model.entities.Jugador;
 import es.tierno.daw.trasnferdaw.model.entities.Temporada;
 import es.tierno.daw.trasnferdaw.model.entities.Traspaso;
+import es.tierno.daw.trasnferdaw.model.entities.Usuario;
 import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
 import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
 
@@ -210,12 +211,6 @@ public class TransferDAOImpMock implements TransferDAWDAO {
     }
 
     @Override
-    public Temporada visualizarTemporada(int idTemporada) throws BBDDException {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'visualizarTemporada'");
-    }
-
-    @Override
     public int insertar(Traspaso traspaso) throws BBDDException {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'insertar'");
@@ -275,6 +270,62 @@ public class TransferDAOImpMock implements TransferDAWDAO {
         throw new UnsupportedOperationException("Unimplemented method 'visualizarValorMercadoHistorial'");
     }
 
+    @Override
+    public int insertar(Usuario usuario) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'insertar'");
+    }
+
+    @Override
+    public int obtenerIdPorNombreJugador(String nombre) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'obtenerIdPorNombreJugador'");
+    }
+
+    @Override
+    public int obtenerIdPorNombreEquipo(String nombre) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'obtenerIdPorNombreEquipo'");
+    }
+
+    @Override
+    public int obtenerIdPorNombreCompeticion(String nombre) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'obtenerIdPorNombreCompeticion'");
+    }
+
+    @Override
+    public int obtenerIdPorNombreTemporada(String nombre) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'obtenerIdPorNombreTemporada'");
+    }
+
+    @Override
+    public Usuario buscarUsuarioPorNombreYPassword(String nombre, String contraseña) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buscarUsuarioPorNombreYPassword'");
+    }
+
+    @Override
+    public EstadisticasTemporada obtenerEstadisticaPorId(int jugadorId, int temporadaId, int competicionId,
+            int equipoId) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'obtenerEstadisticaPorId'");
+    }
+
+    @Override
+    public Usuario buscarUsuarioPorNombre(String nombre) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buscarUsuarioPorNombre'");
+    }
+
+    @Override
+    public Usuario buscarUsuarioPorEmail(String email) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'buscarUsuarioPorEmail'");
+    }
+
+   
    
    
 }

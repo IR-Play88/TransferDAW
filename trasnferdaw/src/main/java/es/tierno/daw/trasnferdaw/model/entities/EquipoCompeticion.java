@@ -1,30 +1,29 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
 public class EquipoCompeticion {
-    private int equipoId;
+    private Integer equipoId;
     private String nombreEquipo;
-    private int competicionId;
+    private Integer competicionId;
     private String nombreCompeticion;
-    private int temporadaId;
+    private Integer temporadaId;
     private String nombreTemporada;
-    private Integer rango;
-
+    private int rango;
 
     public EquipoCompeticion() {
     }
 
-    public EquipoCompeticion(int equipoId, int competicionId, int temporadaId, int rango) {
+    public EquipoCompeticion(Integer equipoId, Integer competicionId, Integer temporadaId, int rango) {
         this.equipoId = equipoId;
         this.competicionId = competicionId;
         this.temporadaId = temporadaId;
         this.rango = rango;
     }
 
-    public int getEquipoId() {
+    public Integer getEquipoId() {
         return equipoId;
     }
 
-    public void setEquipoId(int equipoId) {
+    public void setEquipoId(Integer equipoId) {
         this.equipoId = equipoId;
     }
 
@@ -36,11 +35,11 @@ public class EquipoCompeticion {
         this.nombreEquipo = nombreEquipo;
     }
 
-    public int getCompeticionId() {
+    public Integer getCompeticionId() {
         return competicionId;
     }
 
-    public void setCompeticionId(int competicionId) {
+    public void setCompeticionId(Integer competicionId) {
         this.competicionId = competicionId;
     }
 
@@ -52,11 +51,11 @@ public class EquipoCompeticion {
         this.nombreCompeticion = nombreCompeticion;
     }
 
-    public int getTemporadaId() {
+    public Integer getTemporadaId() {
         return temporadaId;
     }
 
-    public void setTemporadaId(int temporadaId) {
+    public void setTemporadaId(Integer temporadaId) {
         this.temporadaId = temporadaId;
     }
 

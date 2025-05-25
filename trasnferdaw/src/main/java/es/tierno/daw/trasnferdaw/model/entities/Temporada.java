@@ -3,7 +3,7 @@ package es.tierno.daw.trasnferdaw.model.entities;
 import java.time.LocalDate;
 
 public class Temporada {
-    private int idTemporada;
+    private Integer idTemporada;
     private String nombre;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
@@ -11,22 +11,24 @@ public class Temporada {
     public Temporada() {
     }
 
-    
+    public Temporada(String nombre, LocalDate fechaInicio, LocalDate fechaFin) {
+        this.nombre = nombre;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+    }
 
-    public Temporada(int idTemporada, String nombre, LocalDate fechaInicio, LocalDate fechaFin) {
+    public Temporada(Integer idTemporada, String nombre, LocalDate fechaInicio, LocalDate fechaFin) {
         this.idTemporada = idTemporada;
         this.nombre = nombre;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
     }
 
-
-
-    public int getIdTemporada() {
+    public Integer getIdTemporada() {
         return idTemporada;
     }
 
-    public void setIdTemporada(int idTemporada) {
+    public void setIdTemporada(Integer idTemporada) {
         this.idTemporada = idTemporada;
     }
 
@@ -63,6 +65,5 @@ public class Temporada {
                 ", fecha_fin=" + fechaFin +
                 '}';
     }
-   
 
 }

@@ -5,8 +5,25 @@
 <%@ include file="cabezera.jsp" %>
 
         <section class="col-md-9">
+            <%
+            String error = (String) session.getAttribute("error");
+            if (error != null) {
+        %>
+            <div class="alert alert-danger"><%= error %></div>
+        <%
+                session.removeAttribute("error");
+            }
+        
+            String mensaje = (String) session.getAttribute("mensaje");
+            if (mensaje != null) {
+        %>
+            <div class="alert alert-success"><%= mensaje %></div>
+        <%
+                session.removeAttribute("mensaje");
+            }
+        %>
             <h2>Equipos en Competiciones</h2>
-            <form method="GET" action="EquipoCompeticionController" class="row g-3">
+            <form method="POST" action="EquipoCompeticionController" class="row g-3">
                 <div class="col-md-6">
                     <input class="form-control" type="text" name="nombreEquipo" placeholder="Nombre del Equipo" required />
                 </div>
@@ -22,7 +39,7 @@
                 <div class="col-md-12 d-flex">
                     <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar..." />
                     <% if (esAdmin) { %>
-                    <button type="submit" name="accion" value="añadir" class="btn btn-success">Añadir</button>
+                        <input type="submit" class="btn btn-primary w-100" name="accion" value="insertar"/>
                     <% } %>
                 </div>
             </form>
@@ -52,14 +69,21 @@
                     <td><%= ec.getRango() %></td>
                     <td>
                         <% if (esAdmin) { %>
-                        <form method="GET" action="EquipoCompeticionController" class="d-flex gap-1">
-                            <input type="hidden" name="equipoId" value="<%= ec.getEquipoId() %>" />
-                            <input type="hidden" name="competicionId" value="<%= ec.getCompeticionId() %>" />
-                            <input type="hidden" name="temporadaId" value="<%= ec.getTemporadaId() %>" />
-                            <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm">Eliminar</button>
-                            <a href="EquipoCompeticionController?accion=modificar&equipoId=<%= ec.getEquipoId() %>&competicionId=<%= ec.getCompeticionId() %>&temporadaId=<%= ec.getTemporadaId() %>" class="btn btn-warning btn-sm">Modificar</a>
-                        </form>
+                            <div class="d-flex flex-column gap-1">
+                                <form method="POST" action="EquipoCompeticionController" class="w-100">
+                                    <input type="hidden" name="equipoId" value="<%= ec.getEquipoId() %>" />
+                                    <input type="hidden" name="competicionId" value="<%= ec.getCompeticionId() %>" />
+                                    <input type="hidden" name="temporadaId" value="<%= ec.getTemporadaId() %>" />
+                                    <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm w-100" onclick="return confirm('¿Seguro que quieres eliminar esta competición para el equipo?');">
+                                        Eliminar
+                                    </button>
+                                </form>
+                                <a href="EquipoCompeticionController?accion=modificar&equipoId=<%= ec.getEquipoId() %>&competicionId=<%= ec.getCompeticionId() %>&temporadaId=<%= ec.getTemporadaId() %>" class="btn btn-warning btn-sm w-100" onclick="return confirm('¿Seguro que quieres modificar esta competición para el equipo?');">
+                                    Modificar
+                                </a>
+                            </div>
                         <% } %>
+                        
                     </td>
                 </tr>
                 <% } %>

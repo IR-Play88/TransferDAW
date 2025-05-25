@@ -7,128 +7,168 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB;
+import es.tierno.daw.trasnferdaw.model.bbdd.Database;
+import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO;
+import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDBFactory;
 import es.tierno.daw.trasnferdaw.model.entities.Equipo;
 
 @WebServlet("/EquipoController")
 public class EquipoController extends HttpServlet {
-    int id;
-
-    String lista = "equipo.jsp";
-    String edita = "equipo.jsp";
-    Equipo equipo = new Equipo();
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String accion = request.getParameter("accion");
 
-        if ("añadir".equalsIgnoreCase(accion)) {
-            try {
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB(); // ✔️ Se instancia dentro de try-catch
+        try {
+            TransferDAWDAO dao = TransferDAWDBFactory.obtener(Database.MARIADB);
 
-                String nombre = request.getParameter("nombre");
-                String ciudad = request.getParameter("ciudad");
-                String pais = request.getParameter("pais");
-                int anio = Integer.parseInt(request.getParameter("anio"));
-                float presupuesto = Float.parseFloat(request.getParameter("presupuesto"));
-                String propietario = request.getParameter("propietario");
-                String estadio = request.getParameter("estadio");
-                String entrenador = request.getParameter("entrenador");
-
-                Equipo equipo = new Equipo();
-                equipo.setNombre(nombre);
-                equipo.setCiudad(ciudad);
-                equipo.setPais(pais);
-                equipo.setAnioFundacion(anio);
-                equipo.setPresupuesto(presupuesto);
-                equipo.setPropietario(propietario);
-                equipo.setEstadioNombre(estadio);
-                equipo.setEntrenadorNombre(entrenador);
-
-                dao.insertar(equipo);
-                response.sendRedirect("equipo.jsp");
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al insertar jugador");
-            }
-        } else if ("eliminar".equalsIgnoreCase(accion)) {
-            try {
-                int idEquipo = Integer.parseInt(request.getParameter("id_equipo"));
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
-        
-                // Llamada al método eliminarJugador del DAO
-                int registrosEliminados = dao.eliminarEquipo(idEquipo);
-        
-                if (registrosEliminados > 0) {
-                    response.sendRedirect("equipo.jsp"); // Redirige a la lista de jugadores después de la eliminación
-                } else {
-                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Equipo no encontrado");
+            if ("modificar".equalsIgnoreCase(accion)) {
+                String idStr = request.getParameter("id_equipo");
+                if (idStr == null || idStr.trim().isEmpty()) {
+                    request.getSession().setAttribute("error", "No se ha seleccionado un equipo para modificar");
+                    response.sendRedirect("equipo.jsp");
+                    return;
                 }
-        
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al eliminar equipo");
-            }
-        } else if ("modificar".equalsIgnoreCase(accion)) {
-            try {
-                int idEquipo = Integer.parseInt(request.getParameter("id_equipo"));
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
 
+                int idEquipo = Integer.parseInt(idStr);
                 Equipo equipo = dao.visualizarEquipo(idEquipo);
 
                 if (equipo != null) {
                     request.setAttribute("equipo", equipo);
                     request.getRequestDispatcher("editar_equipo.jsp").forward(request, response);
                 } else {
-                    response.sendError(HttpServletResponse.SC_NOT_FOUND, "Equipo no encontrado para modificar");
+                    request.getSession().setAttribute("error", "No se encontró el equipo");
+                    response.sendRedirect("equipo.jsp");
                 }
-
-            }  catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error: " + e.getMessage());
+            } else {
+                response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Acción no reconocida");
             }
-            
 
-        } else if ("actualizar".equalsIgnoreCase(accion)) {
-            try {
-                int idEquipo = Integer.parseInt(request.getParameter("id_equipo"));
+        } catch (Exception e) {
+            e.printStackTrace();
+            request.getSession().setAttribute("error", "Error interno del servidor");
+            response.sendRedirect("equipo.jsp");
+        }
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String accion = request.getParameter("accion");
+
+        try {
+            TransferDAWDAO dao = TransferDAWDBFactory.obtener(Database.MARIADB);
+
+            if ("insertar".equalsIgnoreCase(accion)) {
+
                 String nombre = request.getParameter("nombre");
                 String ciudad = request.getParameter("ciudad");
                 String pais = request.getParameter("pais");
-                int anio = Integer.parseInt(request.getParameter("anio"));
-                float presupuesto = Float.parseFloat(request.getParameter("presupuesto"));
                 String propietario = request.getParameter("propietario");
                 String estadio = request.getParameter("estadio");
                 String entrenador = request.getParameter("entrenador");
 
-                Equipo equipo = new Equipo();
-                equipo.setIdEquipo(idEquipo);
-                equipo.setNombre(nombre);
-                equipo.setCiudad(ciudad);
-                equipo.setPais(pais);
-                equipo.setAnioFundacion(anio);
-                equipo.setPresupuesto(presupuesto);
-                equipo.setPropietario(propietario);
-                equipo.setEstadioNombre(estadio);
-                equipo.setEntrenadorNombre(entrenador);
+                int anio;
+                float presupuesto;
 
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
+                try {
+                    anio = Integer.parseInt(request.getParameter("anio"));
+                    presupuesto = Float.parseFloat(request.getParameter("presupuesto"));
+                } catch (NumberFormatException e) {
+                    request.getSession().setAttribute("error", "Formato inválido en año o presupuesto");
+                    response.sendRedirect("equipo.jsp");
+                    return;
+                }
+
+                if (anio <= 1800) {
+                    request.getSession().setAttribute("error", "El año de fundación debe ser mayor a 1800");
+                    response.sendRedirect("equipo.jsp");
+                    return;
+                }
+
+                if (presupuesto <= 0) {
+                    request.getSession().setAttribute("error", "El presupuesto debe ser mayor a 0");
+                    response.sendRedirect("equipo.jsp");
+                    return;
+                }
+
+                Equipo equipo = new Equipo(nombre, ciudad, pais, anio, presupuesto, propietario, estadio, entrenador);
+                dao.insertar(equipo);
+
+                request.getSession().setAttribute("mensaje", "Equipo insertado correctamente");
+                response.sendRedirect("equipo.jsp");
+
+            } else if ("eliminar".equalsIgnoreCase(accion)) {
+
+                int idEquipo = Integer.parseInt(request.getParameter("id_equipo"));
+                int filas = dao.eliminarEquipo(idEquipo);
+
+                if (filas > 0) {
+                    request.getSession().setAttribute("mensaje", "Equipo eliminado correctamente");
+                } else {
+                    request.getSession().setAttribute("error", "Equipo no encontrado");
+                }
+
+                response.sendRedirect("equipo.jsp");
+
+            } else if ("actualizar".equalsIgnoreCase(accion)) {
+
+                int idEquipo = Integer.parseInt(request.getParameter("id_equipo"));
+                Equipo equipo = dao.visualizarEquipo(idEquipo);
+
+                if (equipo == null) {
+                    request.getSession().setAttribute("error", "Equipo no encontrado");
+                    response.sendRedirect("equipo.jsp");
+                    return;
+                }
+
+                String nombre = request.getParameter("nombre");
+                String ciudad = request.getParameter("ciudad");
+                String pais = request.getParameter("pais");
+                String propietario = request.getParameter("propietario");
+                String estadio = request.getParameter("estadio");
+                String entrenador = request.getParameter("entrenador");
+
+                int anio;
+                float presupuesto;
+
+                try {
+                    anio = Integer.parseInt(request.getParameter("anio"));
+                    presupuesto = Float.parseFloat(request.getParameter("presupuesto"));
+                } catch (NumberFormatException e) {
+                    request.getSession().setAttribute("error", "Formato inválido en año o presupuesto");
+                    request.setAttribute("equipo", equipo);
+                    request.getRequestDispatcher("editar_equipo.jsp").forward(request, response);
+                    return;
+                }
+
+                if (anio <= 1800) {
+                    request.getSession().setAttribute("error", "El año de fundación debe ser mayor a 1800");
+                    request.setAttribute("equipo", equipo);
+                    request.getRequestDispatcher("editar_equipo.jsp").forward(request, response);
+                    return;
+                }
+
+                if (presupuesto <= 0) {
+                    request.getSession().setAttribute("error", "El presupuesto debe ser mayor a 0");
+                    request.setAttribute("equipo", equipo);
+                    request.getRequestDispatcher("editar_equipo.jsp").forward(request, response);
+                    return;
+                }
+
+                equipo = new Equipo(idEquipo, nombre, ciudad, pais, anio, presupuesto, propietario, estadio, entrenador);
                 dao.modificar(equipo);
 
-            response.sendRedirect("equipo.jsp");
-            
-            }catch (Exception e) {
-                e.printStackTrace();
-                response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error: " + e.getMessage());
+                request.getSession().setAttribute("mensaje", "Equipo actualizado correctamente");
+                response.sendRedirect("equipo.jsp");
+
+            } else {
+                response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Acción no reconocida");
             }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+            request.getSession().setAttribute("error", "Error interno al procesar la solicitud");
+            response.sendRedirect("equipo.jsp");
         }
-        
     }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-
-    }
-
 }
-

@@ -3,17 +3,24 @@ package es.tierno.daw.trasnferdaw.model.entities;
 import java.time.LocalDate;
 
 public class ValorMercadoHistorial {
-    private int idHistorial;
-    private int jugadorId;
+    private Integer idHistorial;
+    private Integer jugadorId;
     private String nombreJugador;
     private LocalDate fecha;
-    private float valorMercado;
+    private double valorMercado;
     private String motivo;
 
     public ValorMercadoHistorial() {
     }
 
-    public ValorMercadoHistorial(int idHistorial, int jugadorId, LocalDate fecha, float valorMercado, String motivo) {
+    public ValorMercadoHistorial(Integer jugadorId, LocalDate fecha, double valorMercado, String motivo) {
+        this.jugadorId = jugadorId;
+        this.fecha = fecha;
+        this.valorMercado = valorMercado;
+        this.motivo = motivo;
+    }
+
+    public ValorMercadoHistorial(Integer idHistorial, Integer jugadorId, LocalDate fecha, double valorMercado, String motivo) {
         this.idHistorial = idHistorial;
         this.jugadorId = jugadorId;
         this.fecha = fecha;
@@ -21,20 +28,28 @@ public class ValorMercadoHistorial {
         this.motivo = motivo;
     }
 
-    public int getIdHistorial() {
+    public Integer getIdHistorial() {
         return idHistorial;
     }
 
-    public void setIdHistorial(int idHistorial) {
+    public void setIdHistorial(Integer idHistorial) {
         this.idHistorial = idHistorial;
     }
 
-    public int getJugadorId() {
+    public Integer getJugadorId() {
         return jugadorId;
     }
 
-    public void setJugadorId(int jugadorId) {
+    public void setJugadorId(Integer jugadorId) {
         this.jugadorId = jugadorId;
+    }
+
+    public String getNombreJugador() {
+        return nombreJugador;
+    }
+
+    public void setNombreJugador(String nombreJugador) {
+        this.nombreJugador = nombreJugador;
     }
 
     public LocalDate getFecha() {
@@ -45,11 +60,11 @@ public class ValorMercadoHistorial {
         this.fecha = fecha;
     }
 
-    public float getValorMercado() {
+    public double getValorMercado() {
         return valorMercado;
     }
 
-    public void setValorMercado(float valorMercado) {
+    public void setValorMercado(double valorMercado) {
         this.valorMercado = valorMercado;
     }
 
@@ -59,14 +74,6 @@ public class ValorMercadoHistorial {
 
     public void setMotivo(String motivo) {
         this.motivo = motivo;
-    }
-
-    public String getNombreJugador() {
-        return nombreJugador;
-    }
-
-    public void setNombreJugador(String nombreJugador) {
-        this.nombreJugador = nombreJugador;
     }
 
     @Override

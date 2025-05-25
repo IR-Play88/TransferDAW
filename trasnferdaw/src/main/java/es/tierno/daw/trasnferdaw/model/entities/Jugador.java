@@ -3,15 +3,15 @@ package es.tierno.daw.trasnferdaw.model.entities;
 import java.time.LocalDate;
 
 public class Jugador {
-    private int idJugador;
+    private Integer idJugador;
     private String nombre;
     private String alias;
     private LocalDate fechaNacimiento;
     private String nacionalidad;
-    private float altura;
-    private float peso;
+    private double altura;
+    private double peso;
     private String pieDominante;
-    private float valorMercado;
+    private double valorMercado;
     private String posicion;
     private String representanteNombre;
     private String seleccionNombre;
@@ -19,9 +19,25 @@ public class Jugador {
     public Jugador() {
     }
 
-    public Jugador(int idJugador, String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad,
-            float altura, float peso, String pieDominante, float valorMercado, String posicion,
-            String representanteNombre,  String seleccionNombre) {
+    public Jugador(String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura,
+            double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre,
+            String seleccionNombre) {
+        this.nombre = nombre;
+        this.alias = alias;
+        this.fechaNacimiento = fechaNacimiento;
+        this.nacionalidad = nacionalidad;
+        this.altura = altura;
+        this.peso = peso;
+        this.pieDominante = pieDominante;
+        this.valorMercado = valorMercado;
+        this.posicion = posicion;
+        this.representanteNombre = representanteNombre;
+        this.seleccionNombre = seleccionNombre;
+    }
+
+    public Jugador(Integer idJugador, String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad,
+            double altura, double peso, String pieDominante, double valorMercado, String posicion,
+            String representanteNombre, String seleccionNombre) {
         this.idJugador = idJugador;
         this.nombre = nombre;
         this.alias = alias;
@@ -36,11 +52,11 @@ public class Jugador {
         this.seleccionNombre = seleccionNombre;
     }
 
-    public int getIdJugador() {
+    public Integer getIdJugador() {
         return idJugador;
     }
 
-    public void setIdJugador(int idJugador) {
+    public void setIdJugador(Integer idJugador) {
         this.idJugador = idJugador;
     }
 
@@ -76,19 +92,19 @@ public class Jugador {
         this.nacionalidad = nacionalidad;
     }
 
-    public float getAltura() {
+    public double getAltura() {
         return altura;
     }
 
-    public void setAltura(float altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
 
-    public float getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public void setPeso(float peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
@@ -100,11 +116,11 @@ public class Jugador {
         this.pieDominante = pieDominante;
     }
 
-    public float getValorMercado() {
+    public double getValorMercado() {
         return valorMercado;
     }
 
-    public void setValorMercado(float valorMercado) {
+    public void setValorMercado(double valorMercado) {
         this.valorMercado = valorMercado;
     }
 
@@ -135,7 +151,6 @@ public class Jugador {
     @Override
     public String toString() {
         return "Ficha del Jugador:\n" +
-                "ID: " + idJugador + "\n" +
                 "Nombre: " + nombre + "\n" +
                 "Alias: " + alias + "\n" +
                 "Fecha de Nacimiento: " + fechaNacimiento + "\n" +
@@ -144,7 +159,7 @@ public class Jugador {
                 "Peso: " + peso + " kg\n" +
                 "Pie Dominante: " + pieDominante + "\n" +
                 "Valor de Mercado: " + valorMercado + " €\n" +
-                "Posicion: " + posicion  + "\n" +
+                "Posicion: " + posicion + "\n" +
                 "ID Representante: " + representanteNombre + "\n" +
                 "ID Selección: " + seleccionNombre + "\n";
     }
