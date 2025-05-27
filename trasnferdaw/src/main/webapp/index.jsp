@@ -84,6 +84,16 @@
                 </article>
 
                 <article class="mb-4">
+                    <h3>Traspaso de los Jugadores</h3>
+                    <% if (nombreUsuario == null) { %>
+                        <p>Como eres lector ¡Puedes ver los traspasos de los jugadores disponibles!</p>
+                    <% } else { %>
+                        <p><%= nombreUsuario %> eres administrador ¡Tú tienes el control, inserta, modifica, elimina, busca un traspasoconcreto o visualizalas todas!</p>
+                     <% } %> 
+                    <a href="traspaso.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>
+                </article>
+
+                <article class="mb-4">
                     <h3>Temporadas</h3>
                         <p>¡Puedes ver las temporadas disponibles!</p>
                     <a href="temporada.jsp" class="btn btn-outline-primary btn-sm">Ver más >></a>

@@ -110,10 +110,12 @@
 
                 <form action="ValorMercadoController" method="POST" class="row g-3">
                     <input type="hidden" name="id_historial" value="<%= valorMercado.getIdHistorial() %>" />
+                    <input type="hidden" name="jugador" value="<%= valorMercado.getNombreJugador() %>" />
 
                     <div class="col-md-6">
                         <label for="jugador" class="form-label">Jugador</label>
-                        <input type="text" class="form-control" id="jugador" name="jugador" value="<%= valorMercado.getNombreJugador() %>" required/>
+                        <input type="text" class="form-control" id="jugador" name="jugador" value="<%= valorMercado.getNombreJugador() %>" required disabled/>
+                        
                     </div>
 
                     <div class="col-md-6">

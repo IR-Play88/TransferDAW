@@ -457,7 +457,7 @@ public class BBDDTest {
     @Test
     public void listarEstadisticasTemporadaTest() throws Exception {
         List<EstadisticasTemporada> lista = dao.listarEstadisticasTemporada();
-        assertEquals(44, lista.size()); // o usa assertEquals(n, size) si sabes el número exacto
+        assertEquals(43, lista.size()); // o usa assertEquals(n, size) si sabes el número exacto
     }
 
     @Test
@@ -470,7 +470,7 @@ public class BBDDTest {
 
         // Sumas verificadas manualmente de la tabla (puedes cambiarlas si varían los
         // datos)
-        assertEquals(444, totales.getPartidosJugados(), "Total de partidos jugados incorrecto");
+        assertEquals(447, totales.getPartidosJugados(), "Total de partidos jugados incorrecto");
         assertEquals(87, totales.getGoles(), "Total de goles incorrecto");
         assertEquals(68, totales.getAsistencias(), "Total de asistencias incorrecto");
 

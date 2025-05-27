@@ -7,20 +7,20 @@ public class ValorMercadoHistorial {
     private Integer jugadorId;
     private String nombreJugador;
     private LocalDate fecha;
-    private double valorMercado;
+    private long valorMercado;
     private String motivo;
 
     public ValorMercadoHistorial() {
     }
 
-    public ValorMercadoHistorial(Integer jugadorId, LocalDate fecha, double valorMercado, String motivo) {
+    public ValorMercadoHistorial(Integer jugadorId, LocalDate fecha, long valorMercado, String motivo) {
         this.jugadorId = jugadorId;
         this.fecha = fecha;
         this.valorMercado = valorMercado;
         this.motivo = motivo;
     }
 
-    public ValorMercadoHistorial(Integer idHistorial, Integer jugadorId, LocalDate fecha, double valorMercado, String motivo) {
+    public ValorMercadoHistorial(Integer idHistorial, Integer jugadorId, LocalDate fecha, long valorMercado, String motivo) {
         this.idHistorial = idHistorial;
         this.jugadorId = jugadorId;
         this.fecha = fecha;
@@ -60,11 +60,11 @@ public class ValorMercadoHistorial {
         this.fecha = fecha;
     }
 
-    public double getValorMercado() {
+    public long  getValorMercado() {
         return valorMercado;
     }
 
-    public void setValorMercado(double valorMercado) {
+    public void setValorMercado(long  valorMercado) {
         this.valorMercado = valorMercado;
     }
 

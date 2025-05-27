@@ -217,7 +217,66 @@ public class EstadisticasTemporadaController extends HttpServlet {
                 request.getSession().setAttribute("mensaje", "Estadística actualizada correctamente");
                 response.sendRedirect("estadisticas.jsp");
 
-            } else {
+            } else if ("descargarTotales".equalsIgnoreCase(accion)) {
+                try {
+                    int jugadorId = dao.obtenerIdPorNombreJugador(request.getParameter("jugador"));
+            
+                    EstadisticasTemporada est = dao.buscarEstadisticasTotalesPorJugador(jugadorId);
+            
+                    if (est != null) {
+                        response.setContentType("text/csv");
+                        response.setHeader("Content-Disposition", "attachment; filename=\"estadisticas_totales.csv\"");
+            
+                        StringBuilder texto = new StringBuilder();
+                        texto.append("Jugador -> ").append(est.getNombreJugador()).append("\n");
+                        texto.append("Partidos -> ").append(est.getPartidosJugados()).append("\n");
+                        texto.append("Goles -> ").append(est.getGoles()).append("\n");
+                        texto.append("Asistencias -> ").append(est.getAsistencias()).append("\n");
+                        
+                        response.setContentType("text/plain");
+                        response.setHeader("Content-Disposition", "attachment; filename=\"estadisticas.txt\"");
+                        
+                        response.getWriter().write(texto.toString());
+                        
+                    } else {
+                        response.sendError(HttpServletResponse.SC_NOT_FOUND, "Estadísticas no encontradas.");
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al generar archivo");
+                }
+            }
+            else if ("descargarTemporada".equalsIgnoreCase(accion)) {
+                try {
+                    int jugadorId = dao.obtenerIdPorNombreJugador(request.getParameter("jugador"));
+                    int temporadaId = dao.obtenerIdPorNombreTemporada(request.getParameter("temporada"));
+            
+                    EstadisticasTemporada est = dao.buscarEstadisticasPorTemporada(jugadorId, temporadaId);
+            
+                    if (est != null) {
+                        response.setContentType("text/csv");
+                        response.setHeader("Content-Disposition", "attachment; filename=\"estadisticas_temporada.csv\"");
+            
+                        StringBuilder texto = new StringBuilder();
+                        texto.append("Jugador -> ").append(est.getNombreJugador()).append("\n");
+                        texto.append("Temporada -> ").append(est.getNombreTemporada()).append("\n");
+                        texto.append("Partidos -> ").append(est.getPartidosJugados()).append("\n");
+                        texto.append("Goles -> ").append(est.getGoles()).append("\n");
+                        texto.append("Asistencias -> ").append(est.getAsistencias()).append("\n");
+                        
+                        response.setContentType("text/plain");
+                        response.setHeader("Content-Disposition", "attachment; filename=\"estadisticas.txt\"");
+                        
+                        response.getWriter().write(texto.toString());
+                        
+                    } else {
+                        response.sendError(HttpServletResponse.SC_NOT_FOUND, "Estadísticas no encontradas.");
+                    }
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, "Error al generar archivo");
+                }
+            }else {
                 response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Acción no reconocida");
             }
 

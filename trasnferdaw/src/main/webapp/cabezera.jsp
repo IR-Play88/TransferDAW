@@ -55,6 +55,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contacto.jsp">Contacto</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="eliminar_cuenta.jsp">Eliminar cuenta</a>
+                </li>
             </ul>
         </nav>
 

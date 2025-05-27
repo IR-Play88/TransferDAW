@@ -41,6 +41,8 @@ public class JugadorController extends HttpServlet {
                     response.sendRedirect("jugador.jsp");
                 }
 
+            }else {
+                response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Acción no reconocida");
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -78,8 +80,20 @@ public class JugadorController extends HttpServlet {
                     return;
                 }
     
-                if (altura <= 0 || peso <= 0 || valorMercado <= 0) {
-                    request.getSession().setAttribute("error", "Altura, peso y valor de mercado deben ser mayores a 0");
+                if (altura <= 0) {
+                    request.getSession().setAttribute("error", "Altura debe ser mayor a 0");
+                    response.sendRedirect("jugador.jsp");
+                    return;
+                }
+
+                if (peso <= 0) {
+                    request.getSession().setAttribute("error", "Peso debe ser mayor a 0");
+                    response.sendRedirect("jugador.jsp");
+                    return;
+                }
+
+                if (valorMercado <= 0) {
+                    request.getSession().setAttribute("error", "Valor de mercado debe ser mayor a 0");
                     response.sendRedirect("jugador.jsp");
                     return;
                 }
@@ -94,6 +108,14 @@ public class JugadorController extends HttpServlet {
                     }
                 } catch (Exception e) {
                     request.getSession().setAttribute("error", "Fecha de nacimiento inválida");
+                    response.sendRedirect("jugador.jsp");
+                    return;
+                }
+                if (pieDominante == null || !(pieDominante.equalsIgnoreCase("derecho")
+                        || pieDominante.equalsIgnoreCase("izquierdo")
+                        || pieDominante.equalsIgnoreCase("ambidiestro"))) {
+                    request.getSession().setAttribute("error",
+                            "Pie invádilo. Solo puede ser derecho, izquierdo o ambidiestro.");
                     response.sendRedirect("jugador.jsp");
                     return;
                 }
@@ -128,6 +150,7 @@ public class JugadorController extends HttpServlet {
     
             } else if ("actualizar".equalsIgnoreCase(accion)) {
                 int idJugador = Integer.parseInt(request.getParameter("id_jugador"));
+                Jugador jugador = dao.visualizarJugador(idJugador);
                 String nombre = request.getParameter("nombre");
                 String alias = request.getParameter("alias");
                 String fechaNacimientoStr = request.getParameter("fecha_nacimiento");
@@ -139,7 +162,6 @@ public class JugadorController extends HttpServlet {
                     valorMercado = Float.parseFloat(request.getParameter("valor_mercado"));
                 } catch (NumberFormatException e) {
                     request.getSession().setAttribute("error", "Valor numérico inválido");
-                    Jugador jugador = dao.visualizarJugador(idJugador);
                     request.setAttribute("jugador", jugador);
                     request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
                     return;
@@ -150,9 +172,22 @@ public class JugadorController extends HttpServlet {
                 String representante = request.getParameter("representante");
                 String seleccion = request.getParameter("seleccion");
     
-                if (altura <= 0 || peso <= 0 || valorMercado <= 0) {
-                    request.getSession().setAttribute("error", "Altura, peso y valor de mercado deben ser mayores a 0");
-                    Jugador jugador = dao.visualizarJugador(idJugador);
+                if (altura <= 0) {
+                    request.getSession().setAttribute("error", "Altura debe ser mayor a 0");
+                    request.setAttribute("jugador", jugador);
+                    request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
+                    return;
+                }
+
+                if (peso <= 0) {
+                    request.getSession().setAttribute("error", "Peso debe ser mayor a 0");
+                    request.setAttribute("jugador", jugador);
+                    request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
+                    return;
+                }
+
+                if (valorMercado <= 0) {
+                    request.getSession().setAttribute("error", "Valor de mercado debe ser mayor a 0");
                     request.setAttribute("jugador", jugador);
                     request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
                     return;
@@ -163,16 +198,24 @@ public class JugadorController extends HttpServlet {
                     fechaNacimiento = LocalDate.parse(fechaNacimientoStr);
                     if (fechaNacimiento.isAfter(LocalDate.now())) {
                         request.getSession().setAttribute("error", "La fecha de nacimiento no puede ser futura");
-                        Jugador jugador = dao.visualizarJugador(idJugador);
                         request.setAttribute("jugador", jugador);
                         request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
                         return;
                     }
                 } catch (Exception e) {
                     request.getSession().setAttribute("error", "Fecha de nacimiento inválida");
-                    Jugador jugador = dao.visualizarJugador(idJugador);
                     request.setAttribute("jugador", jugador);
                     request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
+                    return;
+                }
+
+                if (pieDominante == null || !(pieDominante.equalsIgnoreCase("derecho")
+                        || pieDominante.equalsIgnoreCase("izquierdo")
+                        || pieDominante.equalsIgnoreCase("ambidiestro"))) {
+                    request.getSession().setAttribute("error",
+                            "Pie invádilo. Solo puede ser derecho, izquierdo o ambidiestro.");
+                            request.setAttribute("jugador", jugador);
+                            request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
                     return;
                 }
     
@@ -182,13 +225,12 @@ public class JugadorController extends HttpServlet {
                         || posicion.equalsIgnoreCase("portero"))) {
                     request.getSession().setAttribute("error",
                             "Posición inválida. Solo puede ser delantero, mediocampista, defensa o portero.");
-                    Jugador jugador = dao.visualizarJugador(idJugador);
                     request.setAttribute("jugador", jugador);
                     request.getRequestDispatcher("editar_jugador.jsp").forward(request, response);
                     return;
                 }
     
-                Jugador jugador = new Jugador(idJugador, nombre, alias, fechaNacimiento, nacionalidad, altura, peso,
+                jugador = new Jugador(idJugador, nombre, alias, fechaNacimiento, nacionalidad, altura, peso,
                         pieDominante, valorMercado, posicion, representante, seleccion);
     
                 dao.modificar(jugador);

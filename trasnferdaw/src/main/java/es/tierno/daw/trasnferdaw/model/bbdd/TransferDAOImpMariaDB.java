@@ -81,7 +81,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     public static final String FECHA_FIN_CONTRATO = "fecha_fin";
     public static final String SALARIO_CONTRATO = "salario";
     public static final String TIPO_CONTRATO = "tipo_contrato";
-    public static final String TIPO_CONTRATO_GENERAL = "tipo"; 
+    public static final String TIPO_CONTRATO_GENERAL = "tipo";
     public static final String NOMBRE_JUGADOR_CONTRATO = "nombre_jugador";
     public static final String NOMBRE_EQUIPO_CONTRATO = "nombre_equipo";
 
@@ -144,8 +144,10 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     public int insertar(Jugador jugador) throws BBDDException {
         int numRegistrosActualizados = 0;
 
-        final String sql = "INSERT INTO jugador (" + NOMBRE_JUGADOR + ", " + ALIAS_JUGADOR + ", " + FECHA_NACIMIENTO_JUGADOR + ", "
-                + NACIONALIDAD_JUGADOR + ", " + ALTURA_JUGADOR + ", " + PESO_JUGADOR + ", " + PIE_JUGADOR + ", " + VALOR_JUGADOR + ", " + POSICION_JUGADOR + ", "
+        final String sql = "INSERT INTO jugador (" + NOMBRE_JUGADOR + ", " + ALIAS_JUGADOR + ", "
+                + FECHA_NACIMIENTO_JUGADOR + ", "
+                + NACIONALIDAD_JUGADOR + ", " + ALTURA_JUGADOR + ", " + PESO_JUGADOR + ", " + PIE_JUGADOR + ", "
+                + VALOR_JUGADOR + ", " + POSICION_JUGADOR + ", "
                 + REPRESENTANTE_NOMBRE_JUGADOR
                 + ", " + SELECCION_NOMBRE_JUGADOR + ") " + "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
         try {
@@ -175,10 +177,13 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     public int modificar(Jugador jugador) throws BBDDException {
         int numRegistrosActualizados = 0;
 
-        final String sql = "UPDATE jugador SET " + NOMBRE_JUGADOR + " = ?, " + ALIAS_JUGADOR + " = ?, " + FECHA_NACIMIENTO_JUGADOR
-                + " = ?, " + NACIONALIDAD_JUGADOR + " = ?, " + ALTURA_JUGADOR + " = ?, " + PESO_JUGADOR + " = ?, " + PIE_JUGADOR + " = ?, " + VALOR_JUGADOR
+        final String sql = "UPDATE jugador SET " + NOMBRE_JUGADOR + " = ?, " + ALIAS_JUGADOR + " = ?, "
+                + FECHA_NACIMIENTO_JUGADOR
+                + " = ?, " + NACIONALIDAD_JUGADOR + " = ?, " + ALTURA_JUGADOR + " = ?, " + PESO_JUGADOR + " = ?, "
+                + PIE_JUGADOR + " = ?, " + VALOR_JUGADOR
                 + " = ?, "
-                + POSICION_JUGADOR + " = ?, " + REPRESENTANTE_NOMBRE_JUGADOR + " = ?, " + SELECCION_NOMBRE_JUGADOR + " = ? WHERE " + ID_JUGADOR
+                + POSICION_JUGADOR + " = ?, " + REPRESENTANTE_NOMBRE_JUGADOR + " = ?, " + SELECCION_NOMBRE_JUGADOR
+                + " = ? WHERE " + ID_JUGADOR
                 + " = ?";
 
         try {
@@ -478,7 +483,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 NOMBRE_COMPETICION + ", " +
                 PAIS_COMPETICION + ", " +
                 TIPO_COMPETICION + ", " +
-                NUM_EQUIPOS_COMPETICION+ ", " +
+                NUM_EQUIPOS_COMPETICION + ", " +
                 ANIO_CREACION_COMPETICION + ") VALUES (?, ?, ?, ?, ?)";
 
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -756,7 +761,8 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         int numRegistrosActualizados = 0;
 
         final String sql = "UPDATE contrato SET " + JUGADOR_ID_CONTRATO + " = ?, " + EQUIPO_ID_CONTRATO + " = ?, "
-                + FECHA_INICIO_CONTRATO + " = ?, " + FECHA_FIN_CONTRATO + " = ?, " + SALARIO_CONTRATO + " = ?, " + TIPO_CONTRATO + " = ? "
+                + FECHA_INICIO_CONTRATO + " = ?, " + FECHA_FIN_CONTRATO + " = ?, " + SALARIO_CONTRATO + " = ?, "
+                + TIPO_CONTRATO + " = ? "
                 + "WHERE " + ID_CONTRATO + " = ?";
 
         try (PreparedStatement ps = conn.prepareStatement(sql)) {
@@ -807,7 +813,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 c.setFechaInicio(rs.getDate(FECHA_INICIO_CONTRATO).toLocalDate());
                 c.setFechaFin(rs.getDate(FECHA_FIN_CONTRATO).toLocalDate());
                 c.setSalario(rs.getDouble(SALARIO_CONTRATO));
-                c.setTipoContrato(rs.getString(TIPO_CONTRATO_GENERAL)); 
+                c.setTipoContrato(rs.getString(TIPO_CONTRATO_GENERAL));
 
                 contratos.add(c);
             }
@@ -887,7 +893,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         final String sql = "UPDATE estadisticas_temporada SET " +
                 PARTIDOS_JUGADOS_ESTADISTICAS + " = ?, " +
                 GOLES_ESTADISTICAS + " = ?, " +
-                ASISTENCIAS_ESTADISTICAS+ " = ? WHERE " +
+                ASISTENCIAS_ESTADISTICAS + " = ? WHERE " +
                 JUGADOR_ID_ESTADISTICAS + " = ? AND " +
                 TEMPORADA_ID_ESTADISTICAS + " = ? AND " +
                 COMPETICION_ID_ESTADISTICAS + " = ? AND " +
@@ -1211,7 +1217,8 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
         int numRegistrosActualizados = 0;
 
         final String sql = "INSERT INTO valor_mercado_historial (" +
-                JUGADOR_ID_HISTORIAL + ", " + FECHA_HISTORIAL + ", " + VALOR_MERCADO_HISTORIAL + ", " + MOTIVO_HISTORIAL + ") VALUES (?, ?, ?, ?)";
+                JUGADOR_ID_HISTORIAL + ", " + FECHA_HISTORIAL + ", " + VALOR_MERCADO_HISTORIAL + ", " + MOTIVO_HISTORIAL
+                + ") VALUES (?, ?, ?, ?)";
 
         try {
             PreparedStatement ps = conn.prepareStatement(sql);
@@ -1291,7 +1298,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 vm.setJugadorId(rs.getInt(JUGADOR_ID_HISTORIAL));
                 vm.setNombreJugador(rs.getString(NOMBRE_JUGADOR_HISTORIAL));
                 vm.setFecha(rs.getDate(FECHA_HISTORIAL).toLocalDate());
-                vm.setValorMercado(rs.getDouble(VALOR_MERCADO_HISTORIAL));
+                vm.setValorMercado(rs.getLong(VALOR_MERCADO_HISTORIAL));
                 vm.setMotivo(rs.getString(MOTIVO_HISTORIAL));
 
                 lista.add(vm);
@@ -1321,7 +1328,7 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
                 int id = rs.getInt(ID_HISTORIAL);
                 int jugadorId = rs.getInt(JUGADOR_ID_HISTORIAL);
                 LocalDate fecha = rs.getDate(FECHA_HISTORIAL).toLocalDate();
-                double valor = rs.getDouble(VALOR_MERCADO_HISTORIAL);
+                long valor = rs.getLong(VALOR_MERCADO_HISTORIAL);
                 String motivo = rs.getString(MOTIVO_HISTORIAL);
                 String nombreJugador = rs.getString(NOMBRE_JUGADOR_HISTORIAL);
 
@@ -1365,187 +1372,204 @@ public class TransferDAOImpMariaDB extends TransferDAWDAOImp {
     }
 
     @Override
-public int obtenerIdPorNombreJugador(String nombre) throws BBDDException {
-    final String sql = "SELECT " + ID_JUGADOR + " FROM vista_jugador WHERE " + NOMBRE_JUGADOR + " = ?";
-    try (PreparedStatement ps = conn.prepareStatement(sql)) {
-        ps.setString(1, nombre);
-        try (ResultSet rs = ps.executeQuery()) {
-            if (rs.next()) {
-                return rs.getInt(ID_JUGADOR);
-            } else {
-                throw new BBDDException("Jugador no encontrado: " + nombre);
-            }
+    public int eliminar(Usuario usuario) throws BBDDException {
+        int filas = 0;
+
+        final String sql = "DELETE FROM usuario WHERE " + NOMBRE_USUARIO + " = ?";
+
+        try {
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, usuario.getNombre());
+
+            filas = ps.executeUpdate();
+            ps.close();
+        } catch (Exception e) {
+            throw new BBDDException(e.getMessage());
         }
-    } catch (Exception e) {
-        throw new BBDDException("Error al obtener ID del jugador: " + e.getMessage());
-    }
-}
 
-@Override
-public int obtenerIdPorNombreEquipo(String nombre) throws BBDDException {
-    final String sql = "SELECT " + ID_EQUIPO + " FROM vista_equipo WHERE " + NOMBRE_EQUIPO + " = ?";
-    try (PreparedStatement ps = conn.prepareStatement(sql)) {
-        ps.setString(1, nombre);
-        try (ResultSet rs = ps.executeQuery()) {
-            if (rs.next()) {
-                return rs.getInt(ID_EQUIPO);
-            } else {
-                throw new BBDDException("Equipo no encontrado: " + nombre);
-            }
-        }
-    } catch (Exception e) {
-        throw new BBDDException("Error al obtener ID del equipo: " + e.getMessage());
-    }
-}
-
-@Override
-public int obtenerIdPorNombreCompeticion(String nombre) throws BBDDException {
-    final String sql = "SELECT " + ID_COMPETICION + " FROM vista_competicion WHERE " + NOMBRE_COMPETICION + " = ?";
-    try (PreparedStatement ps = conn.prepareStatement(sql)) {
-        ps.setString(1, nombre);
-        try (ResultSet rs = ps.executeQuery()) {
-            if (rs.next()) {
-                return rs.getInt(ID_COMPETICION);
-            } else {
-                throw new BBDDException("Competición no encontrada: " + nombre);
-            }
-        }
-    } catch (Exception e) {
-        throw new BBDDException("Error al obtener ID de la competición: " + e.getMessage());
-    }
-}
-
-@Override
-public int obtenerIdPorNombreTemporada(String nombre) throws BBDDException {
-    final String sql = "SELECT " + ID_TEMPORADA + " FROM vista_temporada WHERE " + NOMBRE_TEMPORADA + " = ?";
-    try (PreparedStatement ps = conn.prepareStatement(sql)) {
-        ps.setString(1, nombre);
-        try (ResultSet rs = ps.executeQuery()) {
-            if (rs.next()) {
-                return rs.getInt(ID_TEMPORADA);
-            } else {
-                throw new BBDDException("Temporada no encontrada: " + nombre);
-            }
-        }
-    } catch (Exception e) {
-        throw new BBDDException("Error al obtener ID de la temporada: " + e.getMessage());
-    }
-}
-
-@Override
-public Usuario buscarUsuarioPorNombreYPassword(String nombre, String contraseña) {
-    Usuario usuario = null;
-    String sql = "SELECT * FROM vista_usuario WHERE " + NOMBRE_USUARIO + " = ? AND " + CONTRASENA_USUARIO + " = ?";
-
-    try (PreparedStatement ps = conn.prepareStatement(sql)) {
-        ps.setString(1, nombre);
-        ps.setString(2, contraseña);
-
-        try (ResultSet rs = ps.executeQuery()) {
-            if (rs.next()) {
-                usuario = new Usuario();
-                usuario.setIdUsuario(rs.getInt(ID_USUARIO));
-                usuario.setNombre(rs.getString(NOMBRE_USUARIO));
-                usuario.setEmail(rs.getString(EMAIL_USUARIO));
-                usuario.setContrasena(rs.getString(CONTRASENA_USUARIO));
-                usuario.setRol(rs.getString(ROL_USUARIO));
-            }
-        }
-    } catch (SQLException e) {
-        e.printStackTrace();
+        return filas;
     }
 
-    return usuario;
-}
-
-@Override
-public EstadisticasTemporada obtenerEstadisticaPorId(int jugadorId, int temporadaId, int competicionId, int equipoId) throws BBDDException {
-    final String query = "SELECT * FROM vista_estadisticas_temporada_jugador_equipo WHERE "
-            + JUGADOR_ID_ESTADISTICAS + " = ? AND "
-            + TEMPORADA_ID_ESTADISTICAS + " = ? AND "
-            + COMPETICION_ID_ESTADISTICAS + " = ? AND "
-            + EQUIPO_ID_ESTADISTICAS + " = ?";
-
-    try (PreparedStatement ps = conn.prepareStatement(query)) {
-        ps.setInt(1, jugadorId);
-        ps.setInt(2, temporadaId);
-        ps.setInt(3, competicionId);
-        ps.setInt(4, equipoId);
-        try (ResultSet rs = ps.executeQuery()) {
-            if (rs.next()) {
-                EstadisticasTemporada est = new EstadisticasTemporada();
-
-                est.setJugadorId(jugadorId);
-                est.setTemporadaId(temporadaId);
-                est.setCompeticionId(competicionId);
-                est.setEquipoId(equipoId);
-
-                est.setPartidosJugados(rs.getInt(PARTIDOS_JUGADOS_ESTADISTICAS));
-                est.setGoles(rs.getInt(GOLES_ESTADISTICAS));
-                est.setAsistencias(rs.getInt(ASISTENCIAS_ESTADISTICAS));
-
-                est.setNombreJugador(rs.getString(NOMBRE_JUGADOR_ESTADISTICAS));
-                est.setNombreTemporada(rs.getString(NOMBRE_TEMPORADA_ESTADISTICAS));
-                est.setNombreCompeticion(rs.getString(NOMBRE_COMPETICION_ESTADISTICAS));
-                est.setNombreEquipo(rs.getString(NOMBRE_EQUIPO_ESTADISTICAS));
-
-                return est;
+    @Override
+    public int obtenerIdPorNombreJugador(String nombre) throws BBDDException {
+        final String sql = "SELECT " + ID_JUGADOR + " FROM vista_jugador WHERE " + NOMBRE_JUGADOR + " = ?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, nombre);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt(ID_JUGADOR);
+                } else {
+                    throw new BBDDException("Jugador no encontrado: " + nombre);
+                }
             }
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener ID del jugador: " + e.getMessage());
         }
-    } catch (Exception e) {
-        throw new BBDDException("Error al obtener estadística por ID compuesto: " + e.getMessage());
     }
 
-    return null;
-}
-
-
-@Override
-public Usuario buscarUsuarioPorNombre(String nombre) throws BBDDException {
-    final String query = "SELECT * FROM usuario WHERE nombre = ?";
-    
-    try (PreparedStatement ps = conn.prepareStatement(query)) {
-        ps.setString(1, nombre);
-        try (ResultSet rs = ps.executeQuery()) {
-            if (rs.next()) {
-                Usuario user = new Usuario();
-                user.setIdUsuario(rs.getInt("id_usuario"));
-                user.setNombre(rs.getString("nombre"));
-                user.setEmail(rs.getString("email"));
-                user.setContrasena(rs.getString("contraseña"));
-                user.setRol(rs.getString("rol"));
-                return user;
+    @Override
+    public int obtenerIdPorNombreEquipo(String nombre) throws BBDDException {
+        final String sql = "SELECT " + ID_EQUIPO + " FROM vista_equipo WHERE " + NOMBRE_EQUIPO + " = ?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, nombre);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt(ID_EQUIPO);
+                } else {
+                    throw new BBDDException("Equipo no encontrado: " + nombre);
+                }
             }
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener ID del equipo: " + e.getMessage());
         }
-    } catch (Exception e) {
-        throw new BBDDException("Error al buscar usuario por nombre: " + e.getMessage());
     }
-    return null;
-}
 
-
-@Override
-public Usuario buscarUsuarioPorEmail(String email) throws BBDDException {
-    final String query = "SELECT * FROM usuario WHERE email = ?";
-    
-    try (PreparedStatement ps = conn.prepareStatement(query)) {
-        ps.setString(1, email);
-        try (ResultSet rs = ps.executeQuery()) {
-            if (rs.next()) {
-                Usuario user = new Usuario();
-                user.setIdUsuario(rs.getInt("id_usuario"));
-                user.setNombre(rs.getString("nombre"));
-                user.setEmail(rs.getString("email"));
-                user.setContrasena(rs.getString("contraseña"));
-                user.setRol(rs.getString("rol"));
-                return user;
+    @Override
+    public int obtenerIdPorNombreCompeticion(String nombre) throws BBDDException {
+        final String sql = "SELECT " + ID_COMPETICION + " FROM vista_competicion WHERE " + NOMBRE_COMPETICION + " = ?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, nombre);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt(ID_COMPETICION);
+                } else {
+                    throw new BBDDException("Competición no encontrada: " + nombre);
+                }
             }
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener ID de la competición: " + e.getMessage());
         }
-    } catch (Exception e) {
-        throw new BBDDException("Error al buscar usuario por email: " + e.getMessage());
     }
-    return null;
-}
 
+    @Override
+    public int obtenerIdPorNombreTemporada(String nombre) throws BBDDException {
+        final String sql = "SELECT " + ID_TEMPORADA + " FROM vista_temporada WHERE " + NOMBRE_TEMPORADA + " = ?";
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, nombre);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    return rs.getInt(ID_TEMPORADA);
+                } else {
+                    throw new BBDDException("Temporada no encontrada: " + nombre);
+                }
+            }
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener ID de la temporada: " + e.getMessage());
+        }
+    }
+
+    @Override
+    public Usuario buscarUsuarioPorNombreYPassword(String nombre, String contraseña) {
+        Usuario usuario = null;
+        String sql = "SELECT * FROM vista_usuario WHERE " + NOMBRE_USUARIO + " = ? AND " + CONTRASENA_USUARIO + " = ?";
+
+        try (PreparedStatement ps = conn.prepareStatement(sql)) {
+            ps.setString(1, nombre);
+            ps.setString(2, contraseña);
+
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    usuario = new Usuario();
+                    usuario.setIdUsuario(rs.getInt(ID_USUARIO));
+                    usuario.setNombre(rs.getString(NOMBRE_USUARIO));
+                    usuario.setEmail(rs.getString(EMAIL_USUARIO));
+                    usuario.setContrasena(rs.getString(CONTRASENA_USUARIO));
+                    usuario.setRol(rs.getString(ROL_USUARIO));
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return usuario;
+    }
+
+    @Override
+    public EstadisticasTemporada obtenerEstadisticaPorId(int jugadorId, int temporadaId, int competicionId,
+            int equipoId) throws BBDDException {
+        final String query = "SELECT * FROM vista_estadisticas_temporada_jugador_equipo WHERE "
+                + JUGADOR_ID_ESTADISTICAS + " = ? AND "
+                + TEMPORADA_ID_ESTADISTICAS + " = ? AND "
+                + COMPETICION_ID_ESTADISTICAS + " = ? AND "
+                + EQUIPO_ID_ESTADISTICAS + " = ?";
+
+        try (PreparedStatement ps = conn.prepareStatement(query)) {
+            ps.setInt(1, jugadorId);
+            ps.setInt(2, temporadaId);
+            ps.setInt(3, competicionId);
+            ps.setInt(4, equipoId);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    EstadisticasTemporada est = new EstadisticasTemporada();
+
+                    est.setJugadorId(jugadorId);
+                    est.setTemporadaId(temporadaId);
+                    est.setCompeticionId(competicionId);
+                    est.setEquipoId(equipoId);
+
+                    est.setPartidosJugados(rs.getInt(PARTIDOS_JUGADOS_ESTADISTICAS));
+                    est.setGoles(rs.getInt(GOLES_ESTADISTICAS));
+                    est.setAsistencias(rs.getInt(ASISTENCIAS_ESTADISTICAS));
+
+                    est.setNombreJugador(rs.getString(NOMBRE_JUGADOR_ESTADISTICAS));
+                    est.setNombreTemporada(rs.getString(NOMBRE_TEMPORADA_ESTADISTICAS));
+                    est.setNombreCompeticion(rs.getString(NOMBRE_COMPETICION_ESTADISTICAS));
+                    est.setNombreEquipo(rs.getString(NOMBRE_EQUIPO_ESTADISTICAS));
+
+                    return est;
+                }
+            }
+        } catch (Exception e) {
+            throw new BBDDException("Error al obtener estadística por ID compuesto: " + e.getMessage());
+        }
+
+        return null;
+    }
+
+    @Override
+    public Usuario buscarUsuarioPorNombre(String nombre) throws BBDDException {
+        final String query = "SELECT * FROM usuario WHERE nombre = ?";
+
+        try (PreparedStatement ps = conn.prepareStatement(query)) {
+            ps.setString(1, nombre);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    Usuario user = new Usuario();
+                    user.setIdUsuario(rs.getInt("id_usuario"));
+                    user.setNombre(rs.getString("nombre"));
+                    user.setEmail(rs.getString("email"));
+                    user.setContrasena(rs.getString("contraseña"));
+                    user.setRol(rs.getString("rol"));
+                    return user;
+                }
+            }
+        } catch (Exception e) {
+            throw new BBDDException("Error al buscar usuario por nombre: " + e.getMessage());
+        }
+        return null;
+    }
+
+    @Override
+    public Usuario buscarUsuarioPorEmail(String email) throws BBDDException {
+        final String query = "SELECT * FROM usuario WHERE email = ?";
+
+        try (PreparedStatement ps = conn.prepareStatement(query)) {
+            ps.setString(1, email);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    Usuario user = new Usuario();
+                    user.setIdUsuario(rs.getInt("id_usuario"));
+                    user.setNombre(rs.getString("nombre"));
+                    user.setEmail(rs.getString("email"));
+                    user.setContrasena(rs.getString("contraseña"));
+                    user.setRol(rs.getString("rol"));
+                    return user;
+                }
+            }
+        } catch (Exception e) {
+            throw new BBDDException("Error al buscar usuario por email: " + e.getMessage());
+        }
+        return null;
+    }
 
 }

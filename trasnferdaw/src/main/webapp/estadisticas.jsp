@@ -109,7 +109,7 @@
                <% if (esAdmin) { %>
                 <h2>Descargar las estadisticas de tu jugador favorito</h2>
 
-                <form action="EstadisticasTemporadaController" method="get">
+                <form action="EstadisticasTemporadaController" method="POST">
                     <table class="table table-striped">
                         <thead class="table-dark">
                         <tr>
@@ -124,8 +124,6 @@
                             <td>
                                 <button type="submit" name="accion" value="descargarTotales">Descargar totales</button>
                                 <button type="submit" name="accion" value="descargarTemporada">Descargar por temporada</button>
-                                <button type="submit" name="accion" value="verGrafico">Ver gráfico</button>
-
                             </td>
                         </tr>
                     </table>

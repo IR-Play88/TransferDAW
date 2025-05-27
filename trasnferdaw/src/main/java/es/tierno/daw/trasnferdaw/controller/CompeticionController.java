@@ -82,6 +82,17 @@ public class CompeticionController extends HttpServlet {
                     return;
                 }
 
+                if (tipo == null || !(tipo.equalsIgnoreCase("liga")
+                        || tipo.equalsIgnoreCase("copa")
+                        || tipo.equalsIgnoreCase("internacional")
+                        || tipo.equalsIgnoreCase("seleccion")
+                        || tipo.equalsIgnoreCase("amistoso"))) {
+                    request.getSession().setAttribute("error",
+                            "Tipo invádilo. Solo puede ser liga, copa, internacional, seleccion o amistoso.");
+                    response.sendRedirect("competicion.jsp");
+                    return;
+                }
+
                 Competicion competicion = new Competicion(nombre, pais, tipo, numeroEquipos, anioCreacion);
                 dao.insertar(competicion);
 
@@ -125,6 +136,17 @@ public class CompeticionController extends HttpServlet {
                     return;
                 }
 
+                if (tipo == null || !(tipo.equalsIgnoreCase("liga")
+                        || tipo.equalsIgnoreCase("copa")
+                        || tipo.equalsIgnoreCase("internacional")
+                        || tipo.equalsIgnoreCase("seleccion")
+                        || tipo.equalsIgnoreCase("amistoso"))) {
+                    request.getSession().setAttribute("error",
+                            "Tipo invádilo. Solo puede ser liga, copa, internacional, seleccion o amistoso.");
+                    response.sendRedirect("editar_competicion.jsp");
+                    return;
+                }
+
                 if (anioCreacion <= 1800) {
                     request.getSession().setAttribute("error", "El año de creación debe ser mayor a 1800");
                     Competicion competicion = dao.visualizarCompeticion(idCompeticion);
@@ -133,7 +155,8 @@ public class CompeticionController extends HttpServlet {
                     return;
                 }
 
-                Competicion competicion = new Competicion(idCompeticion, nombre, pais, tipo, numeroEquipos, anioCreacion);
+                Competicion competicion = new Competicion(idCompeticion, nombre, pais, tipo, numeroEquipos,
+                        anioCreacion);
                 dao.modificar(competicion);
 
                 request.getSession().setAttribute("mensaje", "Competición actualizada correctamente");

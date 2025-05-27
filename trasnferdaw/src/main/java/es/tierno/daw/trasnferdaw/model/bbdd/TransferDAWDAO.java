@@ -122,6 +122,7 @@ public interface TransferDAWDAO {
 
     //Usuario
     public int insertar(Usuario usuario) throws BBDDException;
+    public int eliminar(Usuario usuario) throws BBDDException;
 
     //Obtener
     public int obtenerIdPorNombreJugador(String nombre) throws BBDDException;

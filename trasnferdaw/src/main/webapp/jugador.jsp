@@ -41,10 +41,10 @@
             <input class="form-control" type="text" name="nacionalidad" placeholder="Nacionalidad">
         </div>
         <div class="col-md-6">
-            <input class="form-control" type="number" step="0.01" min="0" name="altura" placeholder="Altura (m)" required>
+            <input class="form-control" type="number" step="0.01"  name="altura" placeholder="Altura (m)" required>
         </div>
         <div class="col-md-6">
-            <input class="form-control" type="number" step="0.01" min="0" name="peso" placeholder="Peso (kg)" required>
+            <input class="form-control" type="number" step="0.01"  name="peso" placeholder="Peso (kg)" required>
         </div>
         <div class="col-md-6">
             <select class="form-select" name="pie_dominante" required>

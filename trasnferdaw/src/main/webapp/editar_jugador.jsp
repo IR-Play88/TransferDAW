@@ -120,7 +120,7 @@
             
                 <div class="col-md-6">
                     <label for="fecha_nacimiento" class="form-label">Fecha de nacimiento: <strong><%= jugador.getFechaNacimiento() %></strong></label>
-                    <input class="form-control" type="date" name="fecha_nacimiento" id="fecha_nacimiento" value="<%= jugador.getFechaNacimiento() %>">
+                    <input class="form-control" type="date" name="fecha_nacimiento" id="fecha_nacimiento" max="<%= java.time.LocalDate.now() %>" value="<%= jugador.getFechaNacimiento() %>">
                 </div>
             
                 <div class="col-md-6">

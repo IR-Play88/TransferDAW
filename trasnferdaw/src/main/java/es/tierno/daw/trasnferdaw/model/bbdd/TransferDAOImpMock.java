@@ -325,6 +325,12 @@ public class TransferDAOImpMock implements TransferDAWDAO {
         throw new UnsupportedOperationException("Unimplemented method 'buscarUsuarioPorEmail'");
     }
 
+    @Override
+    public int eliminar(Usuario usuario) throws BBDDException {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'eliminar'");
+    }
+
    
    
    
