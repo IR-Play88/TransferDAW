@@ -9,17 +9,15 @@ import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpSession;
 
-import org.mindrot.jbcrypt.BCrypt;
-
 import es.tierno.daw.trasnferdaw.model.bbdd.Database;
 import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO;
 import es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDBFactory;
 import es.tierno.daw.trasnferdaw.model.entities.Usuario;
 
-@WebServlet("/EliminarController")
-public class EliminarController extends HttpServlet {
-    private static final String ELIMINAR = "eliminar";
-    private static final String ELIMINAR_CUENTA_JSP = "/cuenta/eliminar_cuenta.jsp";
+@WebServlet("/CuentaController")
+public class CuentaController extends HttpServlet {
+    private static final String CREAR = "crear";
+    private static final String CREAR_CUENTA_JSP = "/cuenta/crear_cuenta.jsp";
     private static final String ERROR_ACCION = "Acción no reconocida";
     private static final String ACCION = "Acción";
     private static final String USUARIO = "usuario";
@@ -27,24 +25,25 @@ public class EliminarController extends HttpServlet {
     private static final String PASS = "pass";
     private static final String ERROR = "error";
     private static final String ERROR_PASS = "La contraseña debe tener al menos 8 caracteres.";
-    private static final String ELIMINAR_CUENTA = "EliminarController";
-    private static final String ERROR_USUARIO = "El nombre de usuario no existe.";
-    private static final String ERROR_CORREO = "El correo electrónico no existe.";
-    private static final String INDEX = "index.jsp";
+    private static final String CREAR_CUENTA = "CuentaController";
+    private static final String ERROR_USUARIO = "El nombre de usuario ya está registrado.";
+    private static final String ERROR_CORREO = "El correo electrónico ya está registrado.";
+    private static final String ADMIN = "admin";
     private static final String MSG = "mensaje";
-    private static final String MSG_CUENTA = "Cuenta eliminada correctamente.";
-    private static final String ERROR_CUENTA = "Error al eliminar cuenta";
+    private static final String MSG_CUENTA = "Cuenta creada correctamente.";
+    private static final String ERROR_CUENTA = "Error al crear cuenta";
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String accion = request.getParameter(ACCION);
 
-        if (accion == null || ELIMINAR.equals(accion)) {
-            request.getRequestDispatcher(ELIMINAR_CUENTA_JSP).forward(request, response);
+        if (accion == null || CREAR.equals(accion)) {
+            request.getRequestDispatcher(CREAR_CUENTA_JSP).forward(request, response);
         } else {
             response.sendError(HttpServletResponse.SC_NOT_FOUND, ERROR_ACCION);
         }
+
     }
 
     @Override
@@ -61,48 +60,39 @@ public class EliminarController extends HttpServlet {
             // Validación de longitud de contraseña
             if (pass == null || pass.length() < 8) {
                 session.setAttribute(ERROR, ERROR_PASS);
-                response.sendRedirect(ELIMINAR_CUENTA);
+                response.sendRedirect(CREAR_CUENTA);
                 return;
             }
 
-            // Validar si NO existe el nombre de usuario
-            Usuario usuarioExistente = dao.buscarUsuarioPorNombre(nombre);
-            if (usuarioExistente == null) {
+            // Validar si ya existe el nombre de usuario
+            if (dao.buscarUsuarioPorNombre(nombre) != null) {
                 session.setAttribute(ERROR, ERROR_USUARIO);
-                response.sendRedirect(ELIMINAR_CUENTA);
+                response.sendRedirect(CREAR_CUENTA);
                 return;
             }
 
-            // Validar si NO existe el correo
-            if (!usuarioExistente.getEmail().equals(email)) {
+            // Validar si ya existe el correo
+            if (dao.buscarUsuarioPorEmail(email) != null) {
                 session.setAttribute(ERROR, ERROR_CORREO);
-                response.sendRedirect(ELIMINAR_CUENTA);
+                response.sendRedirect(CREAR_CUENTA);
                 return;
             }
 
-            // Validar contraseña usando bcrypt
-            if (!BCrypt.checkpw(pass, usuarioExistente.getContrasena())) {
-                session.setAttribute(ERROR, ERROR_PASS);
-                response.sendRedirect(ELIMINAR_CUENTA);
-                return;
-            }
+            // Crear nuevo usuario
+            Usuario usuario = new Usuario();
+            usuario.setNombre(nombre);
+            usuario.setEmail(email);
+            usuario.setContrasena(pass); 
+            usuario.setRol(ADMIN);
 
-            // Eliminar usuario
-            dao.eliminar(usuarioExistente);
-            // Cerrar sesión solo si el usuario que se elimina es el mismo que está logueado
-            String usuarioActual = (String) session.getAttribute(USUARIO);
-            if (usuarioActual != null && usuarioActual.equals(nombre)) {
-                session.invalidate();
-                response.sendRedirect(INDEX);
-            } else {
-                session.setAttribute(MSG, MSG_CUENTA);
-                response.sendRedirect(ELIMINAR_CUENTA);
-            }
+            dao.insertar(usuario);
+
+            session.setAttribute(MSG, MSG_CUENTA);
+            response.sendRedirect(CREAR_CUENTA);
 
         } catch (Exception e) {
             e.printStackTrace();
-            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR,
-                    ERROR_CUENTA + e.getMessage());
+            response.sendError(HttpServletResponse.SC_INTERNAL_SERVER_ERROR, ERROR_CUENTA + e.getMessage());
         }
     }
 }

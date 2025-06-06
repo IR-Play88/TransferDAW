@@ -2,6 +2,13 @@ package es.tierno.daw.trasnferdaw.model.entities;
 
 import java.time.LocalDate;
 
+import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
+
+/**
+ * La clase ValorMercadpHistorial representa el valor de mercado de los
+ * jugadores de TransferDAW.
+ * \author Iván Rafael Redondo.
+ */
 public class ValorMercadoHistorial {
     private Integer idHistorial;
     private Integer jugadorId;
@@ -10,17 +17,46 @@ public class ValorMercadoHistorial {
     private long valorMercado;
     private String motivo;
 
-    public ValorMercadoHistorial() {
+    /**
+     * Constructor por defecto de la clase ValorMercadoHistorial.
+     * Inicializa una nueva instancia sin establecer valores para sus atributos.
+     * 
+     * @throws BBDDException
+     */
+    public ValorMercadoHistorial() throws BBDDException {
     }
 
-    public ValorMercadoHistorial(Integer jugadorId, LocalDate fecha, long valorMercado, String motivo) {
+    /**
+     * Constructor que inicializa un historial de valor de mercado para un jugador,
+     * sin especificar el ID.
+     * 
+     * @param jugadorId    ID del jugador
+     * @param fecha        Fecha en la que se registra el valor de mercado
+     * @param valorMercado Valor de mercado del jugador en la fecha indicada
+     * @param motivo       Motivo o descripción del cambio en el valor de mercado
+     * @throws BBDDException
+     */
+    public ValorMercadoHistorial(Integer jugadorId, LocalDate fecha, long valorMercado, String motivo)
+            throws BBDDException {
         this.jugadorId = jugadorId;
         this.fecha = fecha;
         this.valorMercado = valorMercado;
         this.motivo = motivo;
     }
 
-    public ValorMercadoHistorial(Integer idHistorial, Integer jugadorId, LocalDate fecha, long valorMercado, String motivo) {
+    /**
+     * Constructor que inicializa un historial de valor de mercado para un jugador,
+     * incluyendo su identificador único.
+     * 
+     * @param idHistorial  ID único del historial de valor de mercado
+     * @param jugadorId    ID del jugador
+     * @param fecha        Fecha en la que se registra el valor de mercado
+     * @param valorMercado Valor de mercado del jugador en la fecha indicada
+     * @param motivo       Motivo o descripción del cambio en el valor de mercado
+     * @throws BBDDException
+     */
+    public ValorMercadoHistorial(Integer idHistorial, Integer jugadorId, LocalDate fecha, long valorMercado,
+            String motivo) throws BBDDException {
         this.idHistorial = idHistorial;
         this.jugadorId = jugadorId;
         this.fecha = fecha;
@@ -60,11 +96,11 @@ public class ValorMercadoHistorial {
         this.fecha = fecha;
     }
 
-    public long  getValorMercado() {
+    public long getValorMercado() {
         return valorMercado;
     }
 
-    public void setValorMercado(long  valorMercado) {
+    public void setValorMercado(long valorMercado) {
         this.valorMercado = valorMercado;
     }
 

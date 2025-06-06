@@ -2,6 +2,12 @@ package es.tierno.daw.trasnferdaw.model.entities;
 
 import java.time.LocalDate;
 
+import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
+
+/**
+ * La clase Jugador representa un jugador de TransferDAW.
+ * \author Iván Rafael Redondo.
+ */
 public class Jugador {
     private Integer idJugador;
     private String nombre;
@@ -16,12 +22,59 @@ public class Jugador {
     private String representanteNombre;
     private String seleccionNombre;
 
-    public Jugador() {
+    /**
+     * Constructor por defecto de la clase Jugador.
+     * Inicializa una nueva instancia sin establecer valores para sus atributos.
+     * 
+     * @throws BBDDException
+     */
+    public Jugador() throws BBDDException {
     }
 
+    /**
+     * Constructor que inicializa un jugador con sus datos básicos, sin especificar
+     * el ID.
+     * 
+     * @param nombre              Nombre completo del jugador
+     * @param alias               Apodo o nombre deportivo del jugador
+     * @param fechaNacimiento     Fecha de nacimiento del jugador
+     * @param nacionalidad        Nacionalidad del jugador
+     * @param altura              Altura del jugador en metros
+     * @param peso                Peso del jugador en kilogramos
+     * @param pieDominante        Pie dominante del jugador (izquierdo, derecho,
+     *                            ambos)
+     * @param valorMercado        Valor de mercado estimado del jugador
+     * @param posicion            Posición en la que juega el jugador (por ejemplo,
+     *                            delantero, defensa, etc.)
+     * @param representanteNombre Nombre del representante del jugador
+     * @param seleccionNombre     Nombre de la selección nacional con la que está
+     *                            asociado el jugador (si aplica)
+     * @throws BBDDException
+     */
+
+    /**
+     * Constructor que inicializa un jugador incluyendo su identificador único.
+     * 
+     * @param idJugador           ID único del jugador
+     * @param nombre              Nombre completo del jugador
+     * @param alias               Apodo o nombre deportivo del jugador
+     * @param fechaNacimiento     Fecha de nacimiento del jugador
+     * @param nacionalidad        Nacionalidad del jugador
+     * @param altura              Altura del jugador en metros
+     * @param peso                Peso del jugador en kilogramos
+     * @param pieDominante        Pie dominante del jugador (izquierdo, derecho,
+     *                            ambos)
+     * @param valorMercado        Valor de mercado estimado del jugador
+     * @param posicion            Posición en la que juega el jugador (por ejemplo,
+     *                            delantero, defensa, etc.)
+     * @param representanteNombre Nombre del representante del jugador
+     * @param seleccionNombre     Nombre de la selección nacional con la que está
+     *                            asociado el jugador (si aplica)
+     * @throws BBDDException
+     */
     public Jugador(String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura,
             double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre,
-            String seleccionNombre) {
+            String seleccionNombre) throws BBDDException {
         this.nombre = nombre;
         this.alias = alias;
         this.fechaNacimiento = fechaNacimiento;
@@ -37,7 +90,7 @@ public class Jugador {
 
     public Jugador(Integer idJugador, String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad,
             double altura, double peso, String pieDominante, double valorMercado, String posicion,
-            String representanteNombre, String seleccionNombre) {
+            String representanteNombre, String seleccionNombre) throws BBDDException {
         this.idJugador = idJugador;
         this.nombre = nombre;
         this.alias = alias;

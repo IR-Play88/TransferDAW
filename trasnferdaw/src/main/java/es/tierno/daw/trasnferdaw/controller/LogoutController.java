@@ -8,11 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/LogoutServlet")
-public class LogoutServlet extends HttpServlet {
+@WebServlet("/LogoutController")
+public class LogoutController extends HttpServlet {
+    private static final String INDEX= "index.jsp";
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getSession().invalidate(); // Destruye la sesión
-        response.sendRedirect("index.jsp"); // Redirige al inicio
+        request.getSession().invalidate(); 
+        response.sendRedirect(INDEX);
     }
 }
 

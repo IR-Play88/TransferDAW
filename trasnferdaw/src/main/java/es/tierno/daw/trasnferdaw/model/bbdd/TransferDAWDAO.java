@@ -3,7 +3,6 @@ package es.tierno.daw.trasnferdaw.model.bbdd;
 import java.util.List;
 
 import es.tierno.daw.trasnferdaw.model.entities.Competicion;
-import es.tierno.daw.trasnferdaw.model.entities.Contrato;
 import es.tierno.daw.trasnferdaw.model.entities.Equipo;
 import es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion;
 import es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada;
@@ -15,9 +14,8 @@ import es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial;
 import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
 
 /**
- * Esta interface nos permite Visualizar, añadir, modificar, eliminar por cada
- * entidad.
- * \author: Iván Rafael Redondo
+ * La interfaz TransferDAWDAO expone los metodos de acceso a la base de datos.
+ * \Iván Rafael Redondo.
  */
 public interface TransferDAWDAO {
     // Temporada
@@ -72,18 +70,6 @@ public interface TransferDAWDAO {
     public EquipoCompeticion visualizarEquipoCompeticion(int equipoId, int competicionId, int temporadaId) throws BBDDException;
 
 
-    // Contrato
-    public int insertar(Contrato contrato) throws BBDDException;
-
-    public int modificar(Contrato contrato) throws BBDDException;
-
-    public int eliminarContrato(int idContrato) throws BBDDException;
-
-    public List<Contrato> listarContratos() throws BBDDException;
-
-    public Contrato visualizarContrato(int idContrato) throws BBDDException;
-
-
     // EstadisticasTemporada
     public int insertar(EstadisticasTemporada estadisticasTemporada) throws BBDDException;
 
@@ -129,7 +115,6 @@ public interface TransferDAWDAO {
     public int obtenerIdPorNombreEquipo(String nombre) throws BBDDException;
     public int obtenerIdPorNombreCompeticion(String nombre) throws BBDDException;
     public int obtenerIdPorNombreTemporada(String nombre) throws BBDDException;
-    public Usuario buscarUsuarioPorNombreYPassword(String nombre, String contraseña) throws BBDDException;
     public EstadisticasTemporada obtenerEstadisticaPorId(int jugadorId, int temporadaId, int competicionId, int equipoId) throws BBDDException;
 
     //UUsario y email

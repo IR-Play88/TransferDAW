@@ -1,5 +1,12 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
+import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
+
+/**
+ * La clase EstadisticasTemporada representa las estadisticas de un jugador de
+ * TransferDAW.
+ * \author Iván Rafael Redondo.
+ */
 public class EstadisticasTemporada {
     private Integer jugadorId;
     private String nombreJugador;
@@ -13,11 +20,32 @@ public class EstadisticasTemporada {
     private int goles;
     private int asistencias;
 
-    public EstadisticasTemporada() {
+    /**
+     * Constructor por defecto de la clase EstadisticasTemporada.
+     * Inicializa una nueva instancia sin establecer valores para sus atributos.
+     * 
+     * @throws BBDDException
+     */
+    public EstadisticasTemporada() throws BBDDException {
     }
 
-    public EstadisticasTemporada(Integer jugadorId, Integer temporadaId, Integer competicionId, Integer equipoId, int partidosJugados,
-            int goles, int asistencias) {
+    /**
+     * Constructor que inicializa las estadísticas de un jugador en una temporada
+     * concreta, dentro de una competición y equipo.
+     * 
+     * @param jugadorId       ID del jugador
+     * @param temporadaId     ID de la temporada
+     * @param competicionId   ID de la competición
+     * @param equipoId        ID del equipo en el que jugó el jugador durante la
+     *                        temporada
+     * @param partidosJugados Número de partidos que disputó el jugador
+     * @param goles           Número de goles marcados por el jugador
+     * @param asistencias     Número de asistencias realizadas por el jugador
+     * @throws BBDDException
+     */
+    public EstadisticasTemporada(Integer jugadorId, Integer temporadaId, Integer competicionId, Integer equipoId,
+            int partidosJugados,
+            int goles, int asistencias) throws BBDDException {
         this.jugadorId = jugadorId;
         this.temporadaId = temporadaId;
         this.competicionId = competicionId;
@@ -27,7 +55,7 @@ public class EstadisticasTemporada {
         this.asistencias = asistencias;
     }
 
-    public Integer getJugadorId() {
+    public Integer getJugadorId() throws BBDDException {
         return jugadorId;
     }
 

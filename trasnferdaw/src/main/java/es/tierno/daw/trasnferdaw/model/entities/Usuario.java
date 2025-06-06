@@ -1,5 +1,13 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
+import org.mindrot.jbcrypt.BCrypt;
+
+import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
+
+/**
+ * La clase Usuario representa un usuario de TransferDAW.
+ * \author Iván Rafael Redondo.
+ */
 public class Usuario {
     private Integer idUsuario;
     private String nombre;
@@ -7,17 +15,44 @@ public class Usuario {
     private String contrasena;
     private String rol;
 
-    public Usuario() {
+    /**
+     * Constructor por defecto de la clase Usuario.
+     * Inicializa una nueva instancia sin establecer valores para sus atributos.
+     * 
+     * @throws BBDDException
+     */
+    public Usuario() throws BBDDException {
     }
 
-    public Usuario(String nombre, String email, String contrasena, String rol) {
+    /**
+     * Constructor que inicializa un usuario con sus datos básicos, sin especificar
+     * el ID.
+     * 
+     * @param nombre     Nombre del usuario
+     * @param email      Correo electrónico del usuario
+     * @param contrasena Contraseña del usuario
+     * @param rol        Rol asignado al usuario (por ejemplo, "admin", "usuario")
+     * @throws BBDDException
+     */
+    public Usuario(String nombre, String email, String contrasena, String rol) throws BBDDException {
         this.nombre = nombre;
         this.email = email;
         this.contrasena = contrasena;
         this.rol = rol;
     }
 
-    public Usuario(Integer idUsuario, String nombre, String email, String contrasena, String rol) {
+    /**
+     * Constructor que inicializa un usuario incluyendo su identificador único.
+     * 
+     * @param idUsuario  ID único del usuario
+     * @param nombre     Nombre del usuario
+     * @param email      Correo electrónico del usuario
+     * @param contrasena Contraseña del usuario
+     * @param rol        Rol asignado al usuario (por ejemplo, "admin", "usuario")
+     * @throws BBDDException
+     */
+
+    public Usuario(Integer idUsuario, String nombre, String email, String contrasena, String rol) throws BBDDException {
         this.idUsuario = idUsuario;
         this.nombre = nombre;
         this.email = email;
@@ -49,20 +84,24 @@ public class Usuario {
         this.email = email;
     }
 
-    public String getContrasena() {
-        return contrasena;
-    }
-
-    public void setContrasena(String contrasena) {
-        this.contrasena = contrasena;
-    }
-
     public String getRol() {
         return rol;
     }
 
     public void setRol(String rol) {
         this.rol = rol;
+    }
+
+    public String getContrasena() {
+        return contrasena;
+    }
+
+    public void setContrasena(String contrasena) {
+        this.contrasena = BCrypt.hashpw(contrasena, BCrypt.gensalt());
+    }
+
+    public void setContrasenaHash(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     @Override

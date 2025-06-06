@@ -2,22 +2,53 @@ package es.tierno.daw.trasnferdaw.model.entities;
 
 import java.time.LocalDate;
 
+import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
+
+/**
+ * La clase Temporada representa una temporada de TransferDAW.
+ * \author Iván Rafael Redondo.
+ */
 public class Temporada {
     private Integer idTemporada;
     private String nombre;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
 
-    public Temporada() {
+    /**
+     * Constructor por defecto de la clase Temporada.
+     * Inicializa una nueva instancia sin establecer valores para sus atributos.
+     * 
+     * @throws BBDDException
+     */
+    public Temporada() throws BBDDException {
     }
 
-    public Temporada(String nombre, LocalDate fechaInicio, LocalDate fechaFin) {
+    /**
+     * Constructor que inicializa una temporada con sus datos básicos, sin
+     * especificar el ID.
+     * 
+     * @param nombre      Nombre de la temporada (por ejemplo, "2024/2025")
+     * @param fechaInicio Fecha de inicio de la temporada
+     * @param fechaFin    Fecha de finalización de la temporada
+     * @throws BBDDException
+     */
+    public Temporada(String nombre, LocalDate fechaInicio, LocalDate fechaFin) throws BBDDException {
         this.nombre = nombre;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
     }
 
-    public Temporada(Integer idTemporada, String nombre, LocalDate fechaInicio, LocalDate fechaFin) {
+    /**
+     * Constructor que inicializa una temporada incluyendo su identificador único.
+     * 
+     * @param idTemporada ID único de la temporada
+     * @param nombre      Nombre de la temporada (por ejemplo, "2024/2025")
+     * @param fechaInicio Fecha de inicio de la temporada
+     * @param fechaFin    Fecha de finalización de la temporada
+     * @throws BBDDException
+     */
+    public Temporada(Integer idTemporada, String nombre, LocalDate fechaInicio, LocalDate fechaFin)
+            throws BBDDException {
         this.idTemporada = idTemporada;
         this.nombre = nombre;
         this.fechaInicio = fechaInicio;

@@ -2,6 +2,12 @@ package es.tierno.daw.trasnferdaw.model.entities;
 
 import java.time.LocalDate;
 
+import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
+
+/**
+ * La clase Traspaso representa un traspaso de TransferDAW.
+ * \author Iván Rafael Redondo.
+ */
 public class Traspaso {
     private Integer idTraspaso;
     private Integer jugadorId;
@@ -16,11 +22,31 @@ public class Traspaso {
     private double cantidad;
     private String tipo;
 
-    public Traspaso() {
+    /**
+     * Constructor por defecto de la clase Traspaso.
+     * Inicializa una nueva instancia sin establecer valores para sus atributos.
+     * 
+     * @throws BBDDException
+     */
+    public Traspaso() throws BBDDException {
     }
 
+    /**
+     * Constructor que inicializa un traspaso con sus datos básicos, sin especificar
+     * el ID.
+     * 
+     * @param jugadorId       ID del jugador que es traspasado
+     * @param equipoOrigenId  ID del equipo de origen
+     * @param equipoDestinoId ID del equipo de destino
+     * @param temporadaId     ID de la temporada en la que se realiza el traspaso
+     * @param fechaTraspaso   Fecha en la que se realiza el traspaso
+     * @param cantidad        Cantidad económica del traspaso
+     * @param tipo            Tipo de traspaso (por ejemplo, "compra", "cesión",
+     *                        "libre")
+     * @throws BBDDException
+     */
     public Traspaso(Integer jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId,
-    LocalDate fechaTraspaso, double cantidad,String tipo) {
+            LocalDate fechaTraspaso, double cantidad, String tipo) throws BBDDException {
         this.jugadorId = jugadorId;
         this.equipoOrigenId = equipoOrigenId;
         this.equipoDestinoId = equipoDestinoId;
@@ -30,8 +56,23 @@ public class Traspaso {
         this.tipo = tipo;
     }
 
-    public Traspaso(Integer idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId,
-    LocalDate fechaTraspaso, double cantidad,String tipo) {
+    /**
+     * Constructor que inicializa un traspaso incluyendo su identificador único.
+     * 
+     * @param idTraspaso      ID único del traspaso
+     * @param jugadorId       ID del jugador que es traspasado
+     * @param equipoOrigenId  ID del equipo de origen
+     * @param equipoDestinoId ID del equipo de destino
+     * @param temporadaId     ID de la temporada en la que se realiza el traspaso
+     * @param fechaTraspaso   Fecha en la que se realiza el traspaso
+     * @param cantidad        Cantidad económica del traspaso
+     * @param tipo            Tipo de traspaso (por ejemplo, "compra", "cesión",
+     *                        "libre")
+     * @throws BBDDException
+     */
+    public Traspaso(Integer idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId,
+            Integer temporadaId,
+            LocalDate fechaTraspaso, double cantidad, String tipo) throws BBDDException {
         this.idTraspaso = idTraspaso;
         this.jugadorId = jugadorId;
         this.equipoOrigenId = equipoOrigenId;

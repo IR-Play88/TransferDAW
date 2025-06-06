@@ -1,5 +1,11 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
+import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
+
+/**
+ * La clase Competicion representa una competición de TransferDAW.
+ * \author Iván Rafael Redondo.
+ */
 public class Competicion {
     private Integer idCompeticion;
     private String nombre;
@@ -8,10 +14,29 @@ public class Competicion {
     private int numeroEquipos;
     private int anioCreacion;
 
-    public Competicion() {
+    /**
+     * Constructor por defecto de la clase Competicion.
+     * Inicializa una nueva instancia sin establecer valores para sus atributos.
+     * 
+     * @throws BBDDException
+     */
+    public Competicion() throws BBDDException {
     }
 
-    public Competicion(String nombre, String pais, String tipo, int numeroEquipos, int anioCreacion) {
+    /**
+     * Constructor que inicializa una competición con sus datos básicos, sin
+     * especificar el ID.
+     * 
+     * @param nombre        Nombre de la competición
+     * @param pais          País donde se celebra la competición
+     * @param tipo          Tipo de competición (por ejemplo, liga, copa, etc.)
+     * @param numeroEquipos Número de equipos que participan en la competición
+     * @param anioCreacion  Año en el que se creó la competición
+     * @throws BBDDException
+     */
+
+    public Competicion(String nombre, String pais, String tipo, int numeroEquipos, int anioCreacion)
+            throws BBDDException {
         this.nombre = nombre;
         this.pais = pais;
         this.tipo = tipo;
@@ -19,8 +44,19 @@ public class Competicion {
         this.anioCreacion = anioCreacion;
     }
 
+    /**
+     * Constructor que inicializa una competición incluyendo su identificador único.
+     * 
+     * @param idCompeticion ID único de la competición
+     * @param nombre        Nombre de la competición
+     * @param pais          País donde se celebra la competición
+     * @param tipo          Tipo de competición (por ejemplo, liga, copa, etc.)
+     * @param numeroEquipos Número de equipos que participan en la competición
+     * @param anioCreacion  Año en el que se creó la competición
+     * @throws BBDDException
+     */
     public Competicion(Integer idCompeticion, String nombre, String pais, String tipo, int numeroEquipos,
-            int anioCreacion) {
+            int anioCreacion) throws BBDDException {
         this.idCompeticion = idCompeticion;
         this.nombre = nombre;
         this.pais = pais;

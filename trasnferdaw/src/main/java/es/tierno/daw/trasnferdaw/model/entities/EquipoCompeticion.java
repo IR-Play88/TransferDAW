@@ -1,5 +1,12 @@
 package es.tierno.daw.trasnferdaw.model.entities;
 
+import es.tierno.daw.trasnferdaw.model.exception.BBDDException;
+
+/**
+ * La clase EquipoCompeticion representa un equipo en una competición de
+ * TransferDAW.
+ * \author Iván Rafael Redondo.
+ */
 public class EquipoCompeticion {
     private Integer equipoId;
     private String nombreEquipo;
@@ -7,16 +14,34 @@ public class EquipoCompeticion {
     private String nombreCompeticion;
     private Integer temporadaId;
     private String nombreTemporada;
-    private int rango;
+    private String posicion;
 
-    public EquipoCompeticion() {
+    /**
+     * Constructor por defecto de la clase EquipoCompeticion.
+     * Inicializa una nueva instancia sin establecer valores para sus atributos.
+     * 
+     * @throws BBDDException
+     */
+    public EquipoCompeticion() throws BBDDException {
     }
 
-    public EquipoCompeticion(Integer equipoId, Integer competicionId, Integer temporadaId, int rango) {
+    /**
+     * Constructor que inicializa la relación entre un equipo, una competición y una
+     * temporada.
+     * 
+     * @param equipoId      ID del equipo
+     * @param competicionId ID de la competición
+     * @param temporadaId   ID de la temporada
+     * @param posicion      Posición del equipo en esa competición durante la
+     *                      temporada
+     * @throws BBDDException
+     */
+    public EquipoCompeticion(Integer equipoId, Integer competicionId, Integer temporadaId, String posicion)
+            throws BBDDException {
         this.equipoId = equipoId;
         this.competicionId = competicionId;
         this.temporadaId = temporadaId;
-        this.rango = rango;
+        this.posicion = posicion;
     }
 
     public Integer getEquipoId() {
@@ -67,12 +92,12 @@ public class EquipoCompeticion {
         this.nombreTemporada = nombreTemporada;
     }
 
-    public int getRango() {
-        return rango;
+    public String getPosicion() {
+        return posicion;
     }
 
-    public void setRango(int rango) {
-        this.rango = rango;
+    public void setPosicion(String posicion) {
+        this.posicion = posicion;
     }
 
     @Override
@@ -81,7 +106,7 @@ public class EquipoCompeticion {
                 "equipoId=" + equipoId +
                 ", competicionId=" + competicionId +
                 ", temporadaId=" + temporadaId +
-                ", rango=" + rango +
+                ", posicion=" + posicion +
                 '}';
     }
 
