@@ -10,6 +10,13 @@
         <maven.compiler.release>17</maven.compiler.release>
     </properties>
     <dependencies>
+
+        <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency>
+
         <!-- Dependencia del Servlet API -->
         <dependency>
             <groupId>javax.servlet</groupId>
