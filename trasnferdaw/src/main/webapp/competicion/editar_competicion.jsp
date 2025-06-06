@@ -1,16 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.entities.Competicion" %>
-<%
-    Competicion competicion = (Competicion) request.getAttribute("competicion");
-    String rol = (String) session.getAttribute("rol");
-    if (rol == null || !rol.equals("admin")) {
-        response.sendRedirect("index.jsp");
-        return;
-    }
-
-    boolean esAdmin = true;
-    String nombreUsuario = (String) session.getAttribute("usuario");
-%>
+<%Competicion competicion = (Competicion) request.getAttribute("competicion");%>
+<%@ include file="../importar/conf_editar.jsp" %>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -46,14 +37,14 @@
             <div class="widget mb-3">
                 <% if (nombreUsuario == null) { %>
                     <h3>Iniciar Sesión</h3>
-                    <form method="POST" action="LoginServlet">
+                    <form method="POST" action="LoginController">
                         <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
                         <input type="password" class="form-control mb-2" name="password" placeholder="password" />
                         <input type="submit" class="btn btn-primary w-100" value="Enviar" />
                     </form>
                 <% } else { %>
                     <h3>Bienvenido, <%= nombreUsuario %></h3>
-                    <form method="POST" action="LogoutServlet">
+                    <form method="POST" action="LogoutController">
                         <input type="submit" class="btn btn-danger w-100" value="Cerrar sesión" />
                     </form>
                 <% } %> 
@@ -79,23 +70,7 @@
         </aside>
 
         <section class="col-md-9">
-            <%
-                String error = (String) session.getAttribute("error");
-                if (error != null) {
-            %>
-            <div class="alert alert-danger"><%= error %></div>
-            <%
-                    session.removeAttribute("error");
-                }
-
-                String mensaje = (String) session.getAttribute("mensaje");
-                if (mensaje != null) {
-            %>
-            <div class="alert alert-success"><%= mensaje %></div>
-            <%
-                    session.removeAttribute("mensaje");
-                }
-            %>
+            <%@ include file="../importar/mensaje.jsp" %>
 
             <h2>Editar Competición</h2>
 
@@ -118,7 +93,7 @@
                         <option value="Liga" <%= "Liga".equals(competicion.getTipo()) ? "selected" : "" %>>Liga</option>
                         <option value="Copa" <%= "Copa".equals(competicion.getTipo()) ? "selected" : "" %>>Copa</option>
                         <option value="Internacional" <%= "Internacional".equals(competicion.getTipo()) ? "selected" : "" %>>Internacional</option>
-                        <option value="Seleccion" <%= "Seleccion".equals(competicion.getTipo()) ? "selected" : "" %>>Selección</option>
+                        <option value="selecciones" <%= "Seleccion".equals(competicion.getTipo()) ? "selected" : "" %>>Selección</option>
                         <option value="Amistoso" <%= "Amistoso".equals(competicion.getTipo()) ? "selected" : "" %>>Amistoso</option>
                     </select>
                 </div>
@@ -134,14 +109,19 @@
                 </div>
 
                 <div class="col-md-12 d-flex justify-content-between">
-                    <a href="competicion.jsp" class="btn btn-secondary">Cancelar</a>
-                    <button type="submit" name="accion" value="actualizar" class="btn btn-success">Guardar cambios</button>
+                    <a href="CompeticionController">
+                        <img src="images/atras.png" alt="Cancelar">
+                      </a>                      
+                    <button type="submit" name="accion" value="actualizar"
+                        class="btn btn-primary btn-sm">
+                        <img src="images/guardar.png" alt="Guardar cambios">
+                      </button>
                 </div>
             </form>
         </section>
     </div>
 
-    <%@ include file="footer.jsp" %>
+    <%@ include file="../importar/footer.jsp" %>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

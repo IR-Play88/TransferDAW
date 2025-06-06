@@ -9,7 +9,9 @@ header {
     text-align: center;
 }
 img {
-    height: 50px;
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
 }
 nav ul {
     list-style: none;

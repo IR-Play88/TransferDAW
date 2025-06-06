@@ -8,20 +8,10 @@
         return;
     }
 %>
-<%
-    String rol = (String) session.getAttribute("rol");
-    if (rol == null || !rol.equals("admin")) {
-        response.sendRedirect("index.jsp");
-        return;
-    }
-
-    boolean esAdmin = true; // porque ya comprobaste que sí lo es
-    String nombreUsuario = (String) session.getAttribute("usuario");
-%>
+<%@ include file="../importar/conf_editar.jsp" %>
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8" />
     <title>Editar Valor de Mercado</title>
@@ -38,16 +28,18 @@
 
         <nav class="mb-4">
             <ul class="nav justify-content-center">
-                <li class="nav-item"><a class="nav-link" href="index.jsp">Inicio</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#">Idiomas</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Español</a></li>
-                        <li><a class="dropdown-item" href="#">Inglés</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.jsp">Inicio</a>
                 </li>
-                <li class="nav-item"><a class="nav-link" href="#">Crear cuenta</a></li>
-                <li class="nav-item"><a class="nav-link" href="./html/contacto.html">Contacto</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="CuentaController">Crear cuenta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ContactoController">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="EliminarController">Eliminar cuenta</a>
+                </li>
             </ul>
         </nav>
 
@@ -56,17 +48,17 @@
                 <div class="widget mb-3">
                     <% if (nombreUsuario == null) { %>
                         <h3>Iniciar Sesión</h3>
-                        <form method="POST" action="LoginServlet">
+                        <form method="POST" action="LoginController">
                             <input type="text" class="form-control mb-2" name="usuario" placeholder="usuario" />
                             <input type="password" class="form-control mb-2" name="password" placeholder="password" />
                             <input type="submit" class="btn btn-primary w-100" value="Enviar" />
                         </form>
                     <% } else { %>
                         <h3>Bienvenido, <%= nombreUsuario %></h3>
-                        <form method="POST" action="LogoutServlet">
+                        <form method="POST" action="LogoutController">
                             <input type="submit" class="btn btn-danger w-100" value="Cerrar sesión" />
                         </form>
-                    <% } %> 
+                    <% } %>
                 </div>
 
                 <div class="widget mb-3">
@@ -89,23 +81,7 @@
             </aside>
 
             <section class="col-md-9">
-                <%
-    String error = (String) session.getAttribute("error");
-    if (error != null) {
-    %>
-    <div class="alert alert-danger"><%= error %></div>
-    <%
-        session.removeAttribute("error");
-    }
-
-    String mensaje = (String) session.getAttribute("mensaje");
-    if (mensaje != null) {
-    %>
-    <div class="alert alert-success"><%= mensaje %></div>
-    <%
-        session.removeAttribute("mensaje");
-    }
-    %>
+                <%@ include file="../importar/mensaje.jsp" %>
                 <h2>Editar Información de Valor de Mercado</h2>
 
                 <form action="ValorMercadoController" method="POST" class="row g-3">
@@ -114,20 +90,21 @@
 
                     <div class="col-md-6">
                         <label for="jugador" class="form-label">Jugador</label>
-                        <input type="text" class="form-control" id="jugador" name="jugador" value="<%= valorMercado.getNombreJugador() %>" required disabled/>
-                        
+                        <input type="text" class="form-control" id="jugador" name="jugador"
+                               value="<%= valorMercado.getNombreJugador() %>" required disabled />
                     </div>
 
                     <div class="col-md-6">
                         <label for="fecha" class="form-label">Fecha</label>
-                        <input type="date" class="form-control" id="fecha" name="fecha" max="<%= java.time.LocalDate.now() %>"
-                            value="<%= valorMercado.getFecha() != null ? valorMercado.getFecha().toString() : "" %>" required />
+                        <input type="date" class="form-control" id="fecha" name="fecha"
+                               max="<%= java.time.LocalDate.now() %>"
+                               value="<%= valorMercado.getFecha() != null ? valorMercado.getFecha().toString() : "" %>" required />
                     </div>
 
                     <div class="col-md-6">
                         <label for="valorMercado" class="form-label">Valor (€)</label>
-                        <input type="number" step="0.01" class="form-control" id="valorMercado" name="valorMercado" 
-                            value="<%= valorMercado.getValorMercado() %>" required />
+                        <input type="number" step="0.01" class="form-control" id="valorMercado" name="valorMercado"
+                               value="<%= valorMercado.getValorMercado() %>" required />
                     </div>
 
                     <div class="col-md-12">
@@ -136,14 +113,18 @@
                     </div>
 
                     <div class="col-md-12 d-flex justify-content-between">
-                        <a href="valor_mercado.jsp" class="btn btn-secondary">Cancelar</a>
-                        <button type="submit" name="accion" value="actualizar" class="btn btn-success">Guardar cambios</button>
+                        <a href="ValorMercadoController">
+                            <img src="images/atras.png" alt="Cancelar">
+                        </a>
+                        <button type="submit" name="accion" value="actualizar" class="btn btn-primary btn-sm">
+                            <img src="images/guardar.png" alt="Guardar cambios">
+                        </button>
                     </div>
                 </form>
             </section>
         </div>
 
-        <%@ include file="footer.jsp" %>
+        <%@ include file="../importar/footer.jsp" %>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

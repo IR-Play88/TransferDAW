@@ -1,28 +1,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page import="java.util.List" %>
-<%@ page import="es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB" %>
 <%@ page import="es.tierno.daw.trasnferdaw.model.entities.Competicion" %>
 
-<%@ include file="cabezera.jsp" %>
+<%@ include file="../importar/conf.jsp" %>
+<!DOCTYPE html>
+<html lang="es">
+    <%@ include file="../importar/encabezado.jsp" %>
 
 <section class="col-md-9">
-    <%
-    String error = (String) session.getAttribute("error");
-    if (error != null) {
-    %>
-        <div class="alert alert-danger"><%= error %></div>
-    <%
-        session.removeAttribute("error");
-    }
-
-    String mensaje = (String) session.getAttribute("mensaje");
-    if (mensaje != null) {
-    %>
-        <div class="alert alert-success"><%= mensaje %></div>
-    <%
-        session.removeAttribute("mensaje");
-    }
-    %>
+    <%@ include file="../importar/mensaje.jsp" %>
 
     <h2>Competiciones</h2>
 
@@ -38,7 +24,7 @@
                 <option value="Liga">Liga</option>
                 <option value="Copa">Copa</option>
                 <option value="Internacional">Internacional</option>
-                <option value="Seleccion">Selección</option>
+                <option value="selecciones">Selección</option>
                 <option value="Amistoso">Amistoso</option>
             </select>
         </div>
@@ -48,10 +34,14 @@
         <div class="col-md-6">
             <input type="number" name="anioCreacion" class="form-control" placeholder="Año de Creación" required />
         </div>
-        <div class="col-md-6 d-flex align-items-center gap-2">
-            <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar competición..." />
+        <div class="col-md-6">
+            <input type="text" id="buscador" class="form-control me-2" placeholder="Buscar competición...">
+        </div>
+        <div class="col-md-6">
             <% if (esAdmin) { %>
-                <input type="submit" class="btn btn-primary w-100" name="accion" value="insertar"/>
+                <button type="submit" name="accion" value="insertar" class="btn btn-success">
+                    <img src="../images/insertar.png" alt="Insertar">
+                </button>
             <% } %>
         </div>
     </form>
@@ -71,17 +61,16 @@
         </thead>
         <tbody>
             <%
-                TransferDAOImpMariaDB dao = new TransferDAOImpMariaDB();
-                List<Competicion> list = dao.listarCompeticiones();
-                if (list == null || list.isEmpty()) {
-            %>
-                <tr>
-                    <td colspan="<%= esAdmin ? 6 : 5 %>" class="text-center">No hay competiciones registradas.</td>
-                </tr>
-            <%
-                } else {
-                    for (Competicion competicion : list) {
-            %>
+            List<Competicion> list = (List<Competicion>) request.getAttribute("listaCompeticiones");
+            if (list == null || list.isEmpty()) {
+        %>
+            <tr>
+                <td colspan="<%= esAdmin ? 12 : 11 %>" class="text-center">No hay competiciones registrados.</td>
+            </tr>
+        <%
+            } else {
+                for (Competicion competicion : list) {
+        %>
                 <tr>
                     <td><%= competicion.getNombre() %></td>
                     <td><%= competicion.getPais() %></td>
@@ -93,9 +82,17 @@
                         <div class="d-flex flex-column align-items-center gap-1">
                             <form action="CompeticionController" method="POST" class="w-100">
                                 <input type="hidden" name="id_competicion" value="<%= competicion.getIdCompeticion() %>" />
-                                <button type="submit" name="accion" value="eliminar" class="btn btn-danger btn-sm w-100" onclick="return confirm('¿Seguro que quieres eliminar esta competición?');">Eliminar</button>
+                                <button type="submit" name="accion" value="eliminar" 
+                                class="btn btn-danger btn-sm w-100" 
+                                onclick="return confirm('¿Seguro que quieres eliminar esta competición?');">
+                                <img src="images/eliminar.png" alt="Eliminar">
+                            </button>
                             </form>
-                            <a href="CompeticionController?accion=modificar&id_competicion=<%= competicion.getIdCompeticion() %>" class="btn btn-warning btn-sm w-100" onclick="return confirm('¿Modificar esta competición?');">Modificar</a>
+                            <a href="CompeticionController?accion=modificar&id_competicion=<%= competicion.getIdCompeticion() %>" 
+                                class="btn btn-warning btn-sm w-100" 
+                                onclick="return confirm('¿Modificar esta competición?');">
+                                <img src="images/editar.png" alt="Modificar">
+                            </a>
                         </div>
                     </td>
                     <% } %>
@@ -150,9 +147,6 @@
         </div>
     </div>
 </footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="./js/buscador.js"></script>
+<%@ include file="../importar/script.jsp" %>
 </body>
 </html>
