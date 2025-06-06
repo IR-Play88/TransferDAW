@@ -1,0 +1,5 @@
+Jugador ->Marco Asensio Willemsen
+Temporada ->Temporada 2024/2025
+Partidos ->37
+goles ->10
+asistencias ->5
