@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.entities.Competicion Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Competicion</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a446f3f405efc719a564351eb39ced6b6">Competicion</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1ad72062e3330dfbb4b16ce1928ec39e78">Competicion</link> (String nombre, String pais, String tipo, int numeroEquipos, int anioCreacion)  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1ac0859d1a5201f449581fc1ce5f403eea">Competicion</link> (Integer idCompeticion, String nombre, String pais, String tipo, int numeroEquipos, int anioCreacion)  throws BBDDException </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1ad7daf3b9131cde56496406fcd1dbf4a7"/>Integer <emphasis role="strong">getIdCompeticion</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1ad004200cb06ca468f09f49f98711b208"/>void <emphasis role="strong">setIdCompeticion</emphasis> (Integer idCompeticion)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a6115937dda41acbb78c16d5d6eb795e2"/>String <emphasis role="strong">getNombre</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1af467dcbe90c65ddc5238beecac699740"/>void <emphasis role="strong">setNombre</emphasis> (String nombre)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a7c32a627ed2c029251c38b63d358e674"/>String <emphasis role="strong">getPais</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a44a591a180a2d7d850f4045610c662d4"/>void <emphasis role="strong">setPais</emphasis> (String pais)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a68e486269f506704ff05c14efd9a2f9d"/>String <emphasis role="strong">getTipo</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a7b493361a5ebd458531079bbda4ca0d4"/>void <emphasis role="strong">setTipo</emphasis> (String tipo)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a5950d5d4919b0fb02d9efa5f99c34faa"/>int <emphasis role="strong">getNumeroEquipos</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a3676bea966aba15e9d9c15984ae806f5"/>void <emphasis role="strong">setNumeroEquipos</emphasis> (int numeroEquipos)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a00235a7d72c9c9323bb12cdbfd6c149b"/>int <emphasis role="strong">getAnioCreacion</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a381c34a162dd9672d2ea9da780204ebd"/>void <emphasis role="strong">setAnioCreacion</emphasis> (int anioCreacion)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a05eb0c42917241febdf220d4c8090ba7"/>String <emphasis role="strong">toString</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> representa una competición de TransferDAW. <formalpara><title>Author</title>
+
+<para>Iván Rafael Redondo. </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1a446f3f405efc719a564351eb39ced6b6"/><section>
+    <title>Competicion()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>Competicion</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Competicion</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Competicion</primary><secondary>Competicion</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Competicion.Competicion ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor por defecto de la clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1ad72062e3330dfbb4b16ce1928ec39e78"/><section>
+    <title>Competicion()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>Competicion</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Competicion</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Competicion</primary><secondary>Competicion</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Competicion.Competicion (String nombre, String pais, String tipo, int numeroEquipos, int anioCreacion) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa una competición con sus datos básicos, sin especificar el ID.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>nombre</entry><entry>
+<para>Nombre de la competición </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pais</entry><entry>
+<para>País donde se celebra la competición </para>
+</entry>
+                            </row>
+                            <row>
+<entry>tipo</entry><entry>
+<para>Tipo de competición (por ejemplo, liga, copa, etc.) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>numeroEquipos</entry><entry>
+<para>Número de equipos que participan en la competición </para>
+</entry>
+                            </row>
+                            <row>
+<entry>anioCreacion</entry><entry>
+<para>Año en el que se creó la competición </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion_1ac0859d1a5201f449581fc1ce5f403eea"/><section>
+    <title>Competicion()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>Competicion</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Competicion</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Competicion</primary><secondary>Competicion</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Competicion.Competicion (Integer idCompeticion, String nombre, String pais, String tipo, int numeroEquipos, int anioCreacion) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa una competición incluyendo su identificador único.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>idCompeticion</entry><entry>
+<para>ID único de la competición </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nombre</entry><entry>
+<para>Nombre de la competición </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pais</entry><entry>
+<para>País donde se celebra la competición </para>
+</entry>
+                            </row>
+                            <row>
+<entry>tipo</entry><entry>
+<para>Tipo de competición (por ejemplo, liga, copa, etc.) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>numeroEquipos</entry><entry>
+<para>Número de equipos que participan en la competición </para>
+</entry>
+                            </row>
+                            <row>
+<entry>anioCreacion</entry><entry>
+<para>Año en el que se creó la competición </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Competicion.java</section>
+</section>

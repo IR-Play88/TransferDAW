@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary></indexterm>
+<para>Inheritance diagram for es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ac96da6f2d88d63b2c873835dc5abae4b">insertar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> jugador)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a45c2905e462dee9c3883cceca8f1238d">modificar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> jugador)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8548e5ea32988685d9bb03547eae2673">eliminarJugador</link> (int idJugador)  throws BBDDException </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> &gt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8f78ec697b426535c703afbd88020e89">listarJugadores</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a443df638ce47250aca0d5a4c0fbd480d">visualizarJugador</link> (int idJugador)  throws BBDDException </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada">Temporada</link> &gt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a96fbdef934a1ff9d1ad32c0eec199443">listarTemporadas</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7e5c174055b38230b052878204f12ac5">insertar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> equipo)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a03a4327a428580a9b474c0b501a60353">modificar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> equipo)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4fb293ee23fd830ee340e33533b687dd">eliminarEquipo</link> (int idEquipo)  throws BBDDException </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> &gt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1afb9524f6796d6068daea79ef5c7d2d6f">listarEquipos</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2520d2f66b44c7427c9e8dd43b820e69">visualizarEquipo</link> (int idEquipo)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa7416e115ee2f8eaa44ccc8928b7b756">insertar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> competicion)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1abbe49af6bc9464c9ea5b7767fd213f19">modificar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> competicion)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a14cd47aeb71e676f4b9aa6bdcd67845b">eliminarCompeticion</link> (int idCompeticion)  throws BBDDException </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> &gt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8ad8eb5e28c1248ef564644d1ad3adc2">listarCompeticiones</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1add09fb442df845d9ef6e6153bb295d69">visualizarCompeticion</link> (int idCompeticion)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a319600cb6e0f303a383a0a3e5a9914cb">insertar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> ec)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7da46cb2d9ba52fd2f1a6915f1700d54">modificar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> ec)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a17138025127959e029db7330327d346b">eliminarEquipoCompeticion</link> (int equipoId, int competicionId, int temporadaId)  throws BBDDException </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> &gt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9234bf871ff054294a812ed7cdbe6f20">listarEquiposCompeticion</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a393fefc9c043e0d646cf8e0991a0c3c4">visualizarEquipoCompeticion</link> (int equipoId, int competicionId, int temporadaId)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a76d5935b0cc35d85479d7211a09c2863">insertar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> est)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a80d6f250da6afd6e67013018c0bc94a7">modificar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> est)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a159b838333f34b8a65d5bc4e5e4cc1bf">eliminarEstadisticasTemporada</link> (int jugadorId, int temporadaId, int competicionId, int equipoId)  throws BBDDException </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> &gt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a67faee2621ce1d91db15e19a0215900e">listarEstadisticasTemporada</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a3fd668d7a2c689c5ea83b6f08dd70c1a">buscarEstadisticasTotalesPorJugador</link> (int jugadorId)  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aafb6b81336980c8ff115957df661b9ea">buscarEstadisticasPorTemporada</link> (int jugadorId, int temporadaId)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1abd4cbf0293ce78abf2c6fe7d5beee926">insertar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> traspaso)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa6424c590701da26bbe9f60af7d6529c">modificar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> traspaso)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2502a5d55eae74f591a28a2559379285">eliminarTraspaso</link> (int idTraspaso)  throws BBDDException </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> &gt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a5c6e13e2656290ebf4ba9ec0269ce7bd">listarTraspasos</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1adc34701f5eb1f3430c8f6f65db3b9ff4">visualizarTraspaso</link> (int idTraspaso)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7b6ad361ef45971159f2e788f2ce4000">insertar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> historial)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a1b42fa3336da041fd81c0fb005d7bedd">modificar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> historial)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a6371aefe5989e49af7eda79e95b22aae">eliminarValorMercadoHistorial</link> (int idHistorial)  throws BBDDException </para>
+</listitem>
+            <listitem><para>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> &gt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a78e78952186a373e4e78c1565d5be996">listarValorMercadoHistorial</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a280c83e711ccf6fe8ae53069e63d3b15">visualizarValorMercadoHistorial</link> (int idHistorial)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aedbfc379984b613b58dece0e2accf040">insertar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> usuario)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a5ec92c20ceee033c197b2dce16c4f439">eliminar</link> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> usuario)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab60722b930671070684e2dfdbfb02647">obtenerIdPorNombreJugador</link> (String nombre)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9944093a4cd9fe500cae086ef3605796">obtenerIdPorNombreEquipo</link> (String nombre)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a15705b50d3d5cbcc23084528f73be4eb">obtenerIdPorNombreCompeticion</link> (String nombre)  throws BBDDException </para>
+</listitem>
+            <listitem><para>int <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af2bcb44d17b1bebcc9b4b11738c79063">obtenerIdPorNombreTemporada</link> (String nombre)  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a40a52e3ff1927e6327654f5348242d54">obtenerEstadisticaPorId</link> (int jugadorId, int temporadaId, int competicionId, int equipoId)  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a3dcda9ea44ceb0bef6a6c327d30df4c6">buscarUsuarioPorNombre</link> (String nombre)  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4668ede07f1ce15f2482ce8a5f5600a9">buscarUsuarioPorEmail</link> (String email)  throws BBDDException </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Static Public Attributes    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af66df71ec4a3a0221bef71ebedab4bbd"/>static final String <emphasis role="strong">ID_JUGADOR</emphasis> = &quot;id_jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa33c2ed65ebd2ae7818d8ca26af248a0"/>static final String <emphasis role="strong">NOMBRE_JUGADOR</emphasis> = &quot;nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa1c0428da5998a3fcc1f936bef4717ff"/>static final String <emphasis role="strong">ALIAS_JUGADOR</emphasis> = &quot;alias&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a82f29ddbe2ddc115c8c48465ce545f29"/>static final String <emphasis role="strong">FECHA_NACIMIENTO_JUGADOR</emphasis> = &quot;fecha_nacimiento&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a38082e7688eeed6eb15bd06e90944c58"/>static final String <emphasis role="strong">NACIONALIDAD_JUGADOR</emphasis> = &quot;nacionalidad&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a218d775856d6b4560b7e41c094d731b2"/>static final String <emphasis role="strong">ALTURA_JUGADOR</emphasis> = &quot;altura&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a0787f6f5d2928c8f9df82082cfc0523a"/>static final String <emphasis role="strong">PESO_JUGADOR</emphasis> = &quot;peso&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aca41fd4785a8089fd9e66fe0b1579a7a"/>static final String <emphasis role="strong">PIE_JUGADOR</emphasis> = &quot;pie_dominante&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af905b676680edac29c003a3af3a31446"/>static final String <emphasis role="strong">VALOR_JUGADOR</emphasis> = &quot;valor_mercado&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab411d9f0ffa685ba1081bec5f3f6293b"/>static final String <emphasis role="strong">POSICION_JUGADOR</emphasis> = &quot;posicion&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aaae51c0bc2f03d5c30305d2217fc86cd"/>static final String <emphasis role="strong">REPRESENTANTE_NOMBRE_JUGADOR</emphasis> = &quot;representante_nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aac0282268ef3426a6f3766afae0a69e6"/>static final String <emphasis role="strong">SELECCION_NOMBRE_JUGADOR</emphasis> = &quot;seleccion_nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a0408f2898e9cfa3a6ed35c3cbfe368ff"/>static final String <emphasis role="strong">ID_TEMPORADA</emphasis> = &quot;id_temporada&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a26667b472c1f7c4e24d44f85754f17d7"/>static final String <emphasis role="strong">NOMBRE_TEMPORADA</emphasis> = &quot;nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4a9e0e2aa9871f34f3df8a76953e7cb2"/>static final String <emphasis role="strong">FECHA_INICIO_TEMPORADA</emphasis> = &quot;fecha_inicio&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ae0c9ebe1fdbc1d7c18bb28f401d220f8"/>static final String <emphasis role="strong">FECHA_FIN_TEMPORADA</emphasis> = &quot;fecha_fin&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4df1a23e6c606100ae08eeafdf0eff87"/>static final String <emphasis role="strong">ID_EQUIPO</emphasis> = &quot;id_equipo&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ae9e33b67697bf9c14f9210da24f9d603"/>static final String <emphasis role="strong">NOMBRE_EQUIPO</emphasis> = &quot;nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ae45c24b54c56fbf13c4f5ab28baed7f6"/>static final String <emphasis role="strong">CIUDAD_EQUIPO</emphasis> = &quot;ciudad&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a716c93dd3c9403dbf08ec16ec5086078"/>static final String <emphasis role="strong">PAIS_EQUIPO</emphasis> = &quot;pais&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a614e8b5810158b211e3cd2c40882f53e"/>static final String <emphasis role="strong">ANIO_FUNDACION_EQUIPO</emphasis> = &quot;anio_fundacion&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2f8f8740b589bf14381317ec31285833"/>static final String <emphasis role="strong">PRESUPUESTO_EQUIPO</emphasis> = &quot;presupuesto&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2c38d8666d139e48f70970eceee1936c"/>static final String <emphasis role="strong">PROPIETARIO_EQUIPO</emphasis> = &quot;propietario&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a1385bea6493b049c7b2da105eda2181c"/>static final String <emphasis role="strong">ESTADIO_NOMBRE_EQUIPO</emphasis> = &quot;estadio_nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2be749d7f47393cbcb64ac786098797b"/>static final String <emphasis role="strong">ENTRENADOR_NOMBRE_EQUIPO</emphasis> = &quot;entrenador_nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab6807a5b1edcab6f1a8df69b4e320e9e"/>static final String <emphasis role="strong">ID_COMPETICION</emphasis> = &quot;id_competicion&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a5b4ddaa44bdea7b49e7e7374dbbf4b7d"/>static final String <emphasis role="strong">NOMBRE_COMPETICION</emphasis> = &quot;nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a105ac5881d6094627062bcf23711907f"/>static final String <emphasis role="strong">PAIS_COMPETICION</emphasis> = &quot;pais&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a6bef3aa4e3996dea8f54ae890d9f5f1d"/>static final String <emphasis role="strong">TIPO_COMPETICION</emphasis> = &quot;tipo&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a268a649e2aa3866a6c8b5aa9234c1039"/>static final String <emphasis role="strong">NUM_EQUIPOS_COMPETICION</emphasis> = &quot;numero_equipos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9741f0a48762b21f19346344ac408ff4"/>static final String <emphasis role="strong">ANIO_CREACION_COMPETICION</emphasis> = &quot;anio_creacion&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1abd2752972b3c94435a77ab9a1d55e302"/>static final String <emphasis role="strong">EQUIPO_ID_EQUIPO_COMPETICION</emphasis> = &quot;equipo_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1afdef55f8724f4d5538bf4d6498393879"/>static final String <emphasis role="strong">COMPETICION_ID_EQUIPO_COMPETICION</emphasis> = &quot;competicion_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a33b6d4b4c867f9aa4075d1a82e10ab70"/>static final String <emphasis role="strong">TEMPORADA_ID_EQUIPO_COMPETICION</emphasis> = &quot;temporada_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a66c63ad1aa9b200f156069d8d80fb896"/>static final String <emphasis role="strong">POSICION_EQUIPO_COMPETICION</emphasis> = &quot;posicion&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7cc8bfe50cb8e7e3b8e30e8b9ef6a8ea"/>static final String <emphasis role="strong">NOMBRE_EQUIPO_COMPETICION</emphasis> = &quot;nombre_equipo&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4a3a99fcd919f4d2ab226f0baa7320d8"/>static final String <emphasis role="strong">NOMBRE_COMPETICION_EQUIPO_COMPETICION</emphasis> = &quot;nombre_competicion&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a59d818f8508d744dbfbf9acc9e852e40"/>static final String <emphasis role="strong">NOMBRE_TEMPORADA_EQUIPO_COMPETICION</emphasis> = &quot;nombre_temporada&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a6c1065bfbd5fd06d85155849b3e52d9d"/>static final String <emphasis role="strong">JUGADOR_ID_ESTADISTICAS</emphasis> = &quot;jugador_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ae03b8b811f370f8876cb62f4cdb03244"/>static final String <emphasis role="strong">TEMPORADA_ID_ESTADISTICAS</emphasis> = &quot;temporada_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a255bdfc1588e6e6d0f5e2da930026459"/>static final String <emphasis role="strong">COMPETICION_ID_ESTADISTICAS</emphasis> = &quot;competicion_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a37b44eef53c52dd378e0437a0055a83c"/>static final String <emphasis role="strong">EQUIPO_ID_ESTADISTICAS</emphasis> = &quot;equipo_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a03995f0dabbc8339d5a9c0c0b89230a3"/>static final String <emphasis role="strong">PARTIDOS_JUGADOS_ESTADISTICAS</emphasis> = &quot;partidos_jugados&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ac281a4e350c36d4adb23c2ef20033a21"/>static final String <emphasis role="strong">GOLES_ESTADISTICAS</emphasis> = &quot;goles&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a64575e22080b367edd950712408fd067"/>static final String <emphasis role="strong">ASISTENCIAS_ESTADISTICAS</emphasis> = &quot;asistencias&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a37f494c304c18e80b4b9e095bf829b74"/>static final String <emphasis role="strong">NOMBRE_JUGADOR_ESTADISTICAS</emphasis> = &quot;nombre_jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1acc3ee49954d6e6e995250400f5c086dc"/>static final String <emphasis role="strong">NOMBRE_TEMPORADA_ESTADISTICAS</emphasis> = &quot;nombre_temporada&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a29100354f765baf8efdb9e9e58838208"/>static final String <emphasis role="strong">NOMBRE_COMPETICION_ESTADISTICAS</emphasis> = &quot;nombre_competicion&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a033391ec530b693df28d56b01dee6116"/>static final String <emphasis role="strong">NOMBRE_EQUIPO_ESTADISTICAS</emphasis> = &quot;nombre_equipo&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1addb9febda948c4d6d9bb027a16f9d6b3"/>static final String <emphasis role="strong">ID_TRASPASO</emphasis> = &quot;id_traspaso&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a180896fd3da3b769274aa31cdeb662df"/>static final String <emphasis role="strong">JUGADOR_ID_TRASPASO</emphasis> = &quot;jugador_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab13f0de383ca21ebb4c9439f5d5ebe9b"/>static final String <emphasis role="strong">EQUIPO_ORIGEN_ID_TRASPASO</emphasis> = &quot;equipo_origen_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a89e14a78850caf38c88c31be0fabccde"/>static final String <emphasis role="strong">EQUIPO_DESTINO_ID_TRASPASO</emphasis> = &quot;equipo_destino_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a21597bb225420f494f6dea5168475fc1"/>static final String <emphasis role="strong">TEMPORADA_ID_TRASPASO</emphasis> = &quot;temporada_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab1a7e1d0807764fd2e5b5432095eae44"/>static final String <emphasis role="strong">FECHA_TRASPASO</emphasis> = &quot;fecha_traspaso&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a126ed47668b0a950716dbc0c02a1b246"/>static final String <emphasis role="strong">CANTIDAD_TRASPASO</emphasis> = &quot;cantidad&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8563c99640e9a84429f21844354a9c1d"/>static final String <emphasis role="strong">TIPO_TRASPASO</emphasis> = &quot;tipo&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9e8c67eb4d096d52e358e98d642d4b02"/>static final String <emphasis role="strong">NOMBRE_EQUIPO_ORIGEN_TRASPASO</emphasis> = &quot;nombre_equipo_origen&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aabecb6341fb15b6a4b8b2e6fcfbfea66"/>static final String <emphasis role="strong">NOMBRE_EQUIPO_DESTINO_TRASPASO</emphasis> = &quot;nombre_equipo_destino&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ac502e95adec76d1e9662b66e97c98834"/>static final String <emphasis role="strong">NOMBRE_JUGADOR_TRASPASO</emphasis> = &quot;nombre_jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7b758b4d60cced3e0c38a098ec2900ba"/>static final String <emphasis role="strong">EQUIPO_ORIGEN_TRASPASO</emphasis> = &quot;equipo_origen&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa4e34f05ec2832460dc275c2fd33ab8c"/>static final String <emphasis role="strong">EQUIPO_DESTINO_TRASPASO</emphasis> = &quot;equipo_destino&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a1bfb9c7ce8678ace08fe97596f2c0b16"/>static final String <emphasis role="strong">NOMBRE_TEMPORADA_TRASPASO</emphasis> = &quot;nombre_temporada&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a638fd24ae023ef746aa0723339163ae2"/>static final String <emphasis role="strong">ID_HISTORIAL</emphasis> = &quot;id_historial&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1adc0aa9b75842049fabeb704040c1ea58"/>static final String <emphasis role="strong">JUGADOR_ID_HISTORIAL</emphasis> = &quot;jugador_id&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1acdb4920d53aae52424d762b461b7656c"/>static final String <emphasis role="strong">FECHA_HISTORIAL</emphasis> = &quot;fecha&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a12f0e13c0f69e1e2df5094511997cbbf"/>static final String <emphasis role="strong">VALOR_MERCADO_HISTORIAL</emphasis> = &quot;valor_mercado&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1adaa5018510ab623680d79493994fb826"/>static final String <emphasis role="strong">MOTIVO_HISTORIAL</emphasis> = &quot;motivo&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a073eeda657a3a46668b0b4db04d50cd0"/>static final String <emphasis role="strong">NOMBRE_JUGADOR_HISTORIAL</emphasis> = &quot;nombre_jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab68be51aea315bd7b29f9cdec329ebe8"/>static final String <emphasis role="strong">ID_USUARIO</emphasis> = &quot;id_usuario&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4008e2ad3fdf6a7777ba514df86d735d"/>static final String <emphasis role="strong">NOMBRE_USUARIO</emphasis> = &quot;nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af692ddddb907223e70697ca9b8aec355"/>static final String <emphasis role="strong">EMAIL_USUARIO</emphasis> = &quot;email&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a3755bc309fe3a8370324c17176e94ae7"/>static final String <emphasis role="strong">CONTRASENA_USUARIO</emphasis> = &quot;contraseña&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7947808dfab92418ef3d1f7cdce548bb"/>static final String <emphasis role="strong">ROL_USUARIO</emphasis> = &quot;rol&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7b68855638b03fe33fd916d0ef98fc75"/>static final String <emphasis role="strong">ERROR_INSERTAR_JUGADOR</emphasis> = &quot;Error al insertar jugador en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa3e8c2d78159ff1e0d0d3e2895eb9617"/>static final String <emphasis role="strong">ERROR_MODIFICAR_JUGADOR</emphasis> = &quot;Error al modificar jugador en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7c4565279f71dc631f6e38d6471fcfba"/>static final String <emphasis role="strong">ERROR_ELIMINAR_JUGADOR</emphasis> = &quot;Error al eliminar jugador en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1acf44a43593216f7852873823bbc65442"/>static final String <emphasis role="strong">ERROR_LISTAR_JUGADOR</emphasis> = &quot;Error al listar jugadores en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aea4ecd63026ccd384500b5f047c283a7"/>static final String <emphasis role="strong">ERROR_BUSCAR_JUGADOR</emphasis> = &quot;Error al buscar jugador en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a61a07eb5c66e2eb25b8ab1fb1ae44961"/>static final String <emphasis role="strong">ERROR_INSERTAR_EQUIPO</emphasis> = &quot;Error al insertar equipo en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aad210951372f5bb3bb11ca2c94b8d799"/>static final String <emphasis role="strong">ERROR_MODIFICAR_EQUIPO</emphasis> = &quot;Error al modificar equipo en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9bce6d0a6dcc6d59420fef0b8e6270a5"/>static final String <emphasis role="strong">ERROR_ELIMINAR_EQUIPO</emphasis> = &quot;Error al eliminar equipo en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab90b5b15f172b6607c40b999c2d4bafe"/>static final String <emphasis role="strong">ERROR_LISTAR_EQUIPO</emphasis> = &quot;Error al listar equipos en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a32776bce0e0344425a58d60ae474cbc3"/>static final String <emphasis role="strong">ERROR_BUSCAR_EQUIPO</emphasis> = &quot;Error al buscar equipo en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a84270a3f2cddefbf58beedd8892447c6"/>static final String <emphasis role="strong">ERROR_LISTAR_TEMPORADA</emphasis> = &quot;Error al listar temporadas en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aea0670de11200aeac8b4c8acce05e60e"/>static final String <emphasis role="strong">ERROR_INSERTAR_COMPETICION</emphasis> = &quot;Error al insertar competicion en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4e955dc964f51ffa5ef38b2d60f1df51"/>static final String <emphasis role="strong">ERROR_MODIFICAR_COMPETICION</emphasis> = &quot;Error al modificar competicion en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ae53b7ae321426a66505025dddccad46a"/>static final String <emphasis role="strong">ERROR_ELIMINAR_COMPETICION</emphasis> = &quot;Error al eliminar competicion en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a78fd4ec7ee4c40e0e6791b8be7483e1e"/>static final String <emphasis role="strong">ERROR_LISTAR_COMPETICION</emphasis> = &quot;Error al listar competiciones en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a5355e90e1ecab755ffea9cded5d59043"/>static final String <emphasis role="strong">ERROR_BUSCAR_COMPETICION</emphasis> = &quot;Error al buscar competicion en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1abd1c607e00099c1ff22cfec757c295f8"/>static final String <emphasis role="strong">ERROR_INSERTAR_EQUIPO_COMPETICION</emphasis> = &quot;Error al insertar un equipo en una competicion en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a727d2b9cbaf6d4d5c9a464cbef3b4a2e"/>static final String <emphasis role="strong">ERROR_MODIFICAR_EQUIPO_COMPETICION</emphasis> = &quot;Error al modificar un equipo en una competicion en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2635879f92386c693e614e31177a8275"/>static final String <emphasis role="strong">ERROR_ELIMINAR_EQUIPO_COMPETICION</emphasis> = &quot;Error al eliminarr un equipo en una competicion en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af74d80194f52ea557559340e1b2cf552"/>static final String <emphasis role="strong">ERROR_LISTAR_EQUIPO_COMPETICION</emphasis> = &quot;Error al listar equipos en competiciones en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a33ddf18f546d85a9d27fdadc98ddaed2"/>static final String <emphasis role="strong">ERROR_BUSCAR_EQUIPO_COMPETICION</emphasis> = &quot;Error al buscar un equipo en una competicion en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a61707939266fe98dc6303673e44c1662"/>static final String <emphasis role="strong">ERROR_INSERTAR_ESTADISTICA</emphasis> = &quot;Error al insertar estadística del jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af70769fdf6eada1472e5f73be8ee2abd"/>static final String <emphasis role="strong">ERROR_MODIFICAR_ESTADISTICA</emphasis> = &quot;Error al modificar estadística del jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a94895558c2917db8a4470217442648f8"/>static final String <emphasis role="strong">ERROR_ELIMINAR_ESTADISTICA</emphasis> = &quot;Error al eliminar estadística del jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a50d419eb76eafcfe06e72f838a73f003"/>static final String <emphasis role="strong">ERROR_LISTAR_ESTADISTICA</emphasis> = &quot;Error al listar estadísticas del jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2503300dadfa95e129eaa61afa1a742c"/>static final String <emphasis role="strong">ERROR_BUSCAR_ESTADISTICA_TOTAL</emphasis> = &quot;Error al buscar estadísticas totales del jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7a83de9c9d3938b9470298d59f817556"/>static final String <emphasis role="strong">ERROR_BUSCAR_ESTADISTICA_TEMPORADA</emphasis> = &quot;Error al buscar estadística del jugador en una temporada&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af2ba62967dd2e10bea5c03c962559adb"/>static final String <emphasis role="strong">ERROR_INSERTAR_TRASPASO</emphasis> = &quot;Error al insertar traspaso en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a30099b43217045d61eb2d152afcbaaf4"/>static final String <emphasis role="strong">ERROR_MODIFICAR_TRASPASO</emphasis> = &quot;Error al modificar traspaso en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8890cef511d06e95094e8b5cf6bbbee9"/>static final String <emphasis role="strong">ERROR_ELIMINAR_TRASPASO</emphasis> = &quot;Error al eliminar traspaso en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ae031d9eb98b28687aadc6f8e2e1b21ff"/>static final String <emphasis role="strong">ERROR_LISTAR_TRASPASO</emphasis> = &quot;Error al listar traspasos en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a6606c04dfb5252e7ea84d03e2e54738b"/>static final String <emphasis role="strong">ERROR_BUSCAR_TRASPASO</emphasis> = &quot;Error al buscar traspaso en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ac0ef4411c3db902376840666517f03d1"/>static final String <emphasis role="strong">ERROR_INSERTAR_HISTORIAL</emphasis> = &quot;Error al insertar valor de mercado en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ae8ebc2a8f4b572f5d040e185caffc132"/>static final String <emphasis role="strong">ERROR_MODIFICAR_HISTORIAL</emphasis> = &quot;Error al modificar valor de mercado en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a406d0b576ce3f111c593bf191980cd3f"/>static final String <emphasis role="strong">ERROR_ELIMINAR_HISTORIAL</emphasis> = &quot;Error al eliminar valor de mercado en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4fee4275bbb92be97794289227e05d38"/>static final String <emphasis role="strong">ERROR_LISTAR_HISTORIAL</emphasis> = &quot;Error al listar valores de mercado en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a1ac677b144804640e5100e81bbe2d376"/>static final String <emphasis role="strong">ERROR_BUSCAR_HISTORIAL</emphasis> = &quot;Error al buscar valor de mercado en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ae47d516b4e310ba221f8d6025d87322c"/>static final String <emphasis role="strong">ERROR_INSERTAR_USUARIO</emphasis> = &quot;Error al insertar usuario en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1afe33604d77d36d84fbc3d58d1ccf3274"/>static final String <emphasis role="strong">ERROR_ELIMINAR_USUARIO</emphasis> = &quot;Error al eliminar usuario en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9729019b80597919b3f9d5727c9df2fc"/>static final String <emphasis role="strong">ERROR_JUGADOR</emphasis> = &quot;Jugador no encontrado en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a692000a26e011fefcecf55f37fcabefe"/>static final String <emphasis role="strong">ERROR_EQUIPO</emphasis> = &quot;Equipo no encontrado en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ac26451dd2bedb213a7e1db1004e9aa2a"/>static final String <emphasis role="strong">ERROR_COMPETICION</emphasis> = &quot;Competicion no encontrada en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af7aa6f60dcc7637ba5f826fe151ed4e5"/>static final String <emphasis role="strong">ERROR_TEMPORADA</emphasis> = &quot;Temporada no encontrada en la base de datos&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a6a144ac325ed20eccd4f24a852135211"/>static final String <emphasis role="strong">ERROR_OBTENER_ID_JUGADOR</emphasis> = &quot;Error al obtener ID del jugador&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ad5996cfc11b944f9f247b3b544a3f78d"/>static final String <emphasis role="strong">ERROR_OBTENER_ID_EQUIPO</emphasis> = &quot;Error al obtener ID del equipo&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4dd22cba4e652b209dd2fc039939731f"/>static final String <emphasis role="strong">ERROR_OBTENER_ID_TEMPORADA</emphasis> = &quot;Error al obtener ID de la temporada&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a609b195402996c1ada4924ec88597845"/>static final String <emphasis role="strong">ERROR_OBTENER_ID_COMPETICION</emphasis> = &quot;Error al obtener ID de la competicion&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ac7306894ddc43159a7316aa980b65bb0"/>static final String <emphasis role="strong">ERROR_OBTENER_ID_ESTADISTICA</emphasis> = &quot;Error al obtener ID de la estadistica&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a94001e9c0846f9e127f9df83adac8276"/>static final String <emphasis role="strong">ERROR_BUSCAR_USUARIO_NOMBRE</emphasis> = &quot;Error al buscar usuario por nombre&quot;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab04a1daac726b1287c486a048cab4d97"/>static final String <emphasis role="strong">ERROR_BUSCAR_USUARIO_EMAIL</emphasis> = &quot;Error al buscar usuario por email&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Additional Inherited Members    </title>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b">TransferDAOImpMariaDB</link> implementa el comportamiento con la base de datos. <formalpara><title>Author</title>
+
+<para>Iván Rafael Redondo. </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aafb6b81336980c8ff115957df661b9ea"/><section>
+    <title>buscarEstadisticasPorTemporada()</title>
+<indexterm><primary>buscarEstadisticasPorTemporada</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>buscarEstadisticasPorTemporada</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.buscarEstadisticasPorTemporada (int jugadorId, int temporadaId) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a3fd668d7a2c689c5ea83b6f08dd70c1a"/><section>
+    <title>buscarEstadisticasTotalesPorJugador()</title>
+<indexterm><primary>buscarEstadisticasTotalesPorJugador</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>buscarEstadisticasTotalesPorJugador</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.buscarEstadisticasTotalesPorJugador (int jugadorId) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4668ede07f1ce15f2482ce8a5f5600a9"/><section>
+    <title>buscarUsuarioPorEmail()</title>
+<indexterm><primary>buscarUsuarioPorEmail</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>buscarUsuarioPorEmail</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.buscarUsuarioPorEmail (String email) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a3dcda9ea44ceb0bef6a6c327d30df4c6"/><section>
+    <title>buscarUsuarioPorNombre()</title>
+<indexterm><primary>buscarUsuarioPorNombre</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>buscarUsuarioPorNombre</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.buscarUsuarioPorNombre (String nombre) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a5ec92c20ceee033c197b2dce16c4f439"/><section>
+    <title>eliminar()</title>
+<indexterm><primary>eliminar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>eliminar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.eliminar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> usuario) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a14cd47aeb71e676f4b9aa6bdcd67845b"/><section>
+    <title>eliminarCompeticion()</title>
+<indexterm><primary>eliminarCompeticion</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>eliminarCompeticion</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.eliminarCompeticion (int idCompeticion) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4fb293ee23fd830ee340e33533b687dd"/><section>
+    <title>eliminarEquipo()</title>
+<indexterm><primary>eliminarEquipo</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>eliminarEquipo</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.eliminarEquipo (int idEquipo) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a17138025127959e029db7330327d346b"/><section>
+    <title>eliminarEquipoCompeticion()</title>
+<indexterm><primary>eliminarEquipoCompeticion</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>eliminarEquipoCompeticion</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.eliminarEquipoCompeticion (int equipoId, int competicionId, int temporadaId) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a159b838333f34b8a65d5bc4e5e4cc1bf"/><section>
+    <title>eliminarEstadisticasTemporada()</title>
+<indexterm><primary>eliminarEstadisticasTemporada</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>eliminarEstadisticasTemporada</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.eliminarEstadisticasTemporada (int jugadorId, int temporadaId, int competicionId, int equipoId) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8548e5ea32988685d9bb03547eae2673"/><section>
+    <title>eliminarJugador()</title>
+<indexterm><primary>eliminarJugador</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>eliminarJugador</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.eliminarJugador (int idJugador) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2502a5d55eae74f591a28a2559379285"/><section>
+    <title>eliminarTraspaso()</title>
+<indexterm><primary>eliminarTraspaso</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>eliminarTraspaso</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.eliminarTraspaso (int idTraspaso) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a6371aefe5989e49af7eda79e95b22aae"/><section>
+    <title>eliminarValorMercadoHistorial()</title>
+<indexterm><primary>eliminarValorMercadoHistorial</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>eliminarValorMercadoHistorial</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.eliminarValorMercadoHistorial (int idHistorial) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa7416e115ee2f8eaa44ccc8928b7b756"/><section>
+    <title>insertar()<computeroutput>[1/8]</computeroutput></title>
+<indexterm><primary>insertar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>insertar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.insertar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> competicion) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7e5c174055b38230b052878204f12ac5"/><section>
+    <title>insertar()<computeroutput>[2/8]</computeroutput></title>
+<indexterm><primary>insertar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>insertar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.insertar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> equipo) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a319600cb6e0f303a383a0a3e5a9914cb"/><section>
+    <title>insertar()<computeroutput>[3/8]</computeroutput></title>
+<indexterm><primary>insertar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>insertar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.insertar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> ec) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a76d5935b0cc35d85479d7211a09c2863"/><section>
+    <title>insertar()<computeroutput>[4/8]</computeroutput></title>
+<indexterm><primary>insertar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>insertar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.insertar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> est) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ac96da6f2d88d63b2c873835dc5abae4b"/><section>
+    <title>insertar()<computeroutput>[5/8]</computeroutput></title>
+<indexterm><primary>insertar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>insertar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.insertar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> jugador) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1abd4cbf0293ce78abf2c6fe7d5beee926"/><section>
+    <title>insertar()<computeroutput>[6/8]</computeroutput></title>
+<indexterm><primary>insertar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>insertar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.insertar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> traspaso) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aedbfc379984b613b58dece0e2accf040"/><section>
+    <title>insertar()<computeroutput>[7/8]</computeroutput></title>
+<indexterm><primary>insertar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>insertar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.insertar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> usuario) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7b6ad361ef45971159f2e788f2ce4000"/><section>
+    <title>insertar()<computeroutput>[8/8]</computeroutput></title>
+<indexterm><primary>insertar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>insertar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.insertar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> historial) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8ad8eb5e28c1248ef564644d1ad3adc2"/><section>
+    <title>listarCompeticiones()</title>
+<indexterm><primary>listarCompeticiones</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>listarCompeticiones</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.listarCompeticiones ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1afb9524f6796d6068daea79ef5c7d2d6f"/><section>
+    <title>listarEquipos()</title>
+<indexterm><primary>listarEquipos</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>listarEquipos</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.listarEquipos ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9234bf871ff054294a812ed7cdbe6f20"/><section>
+    <title>listarEquiposCompeticion()</title>
+<indexterm><primary>listarEquiposCompeticion</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>listarEquiposCompeticion</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.listarEquiposCompeticion ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a67faee2621ce1d91db15e19a0215900e"/><section>
+    <title>listarEstadisticasTemporada()</title>
+<indexterm><primary>listarEstadisticasTemporada</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>listarEstadisticasTemporada</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.listarEstadisticasTemporada ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8f78ec697b426535c703afbd88020e89"/><section>
+    <title>listarJugadores()</title>
+<indexterm><primary>listarJugadores</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>listarJugadores</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.listarJugadores ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a96fbdef934a1ff9d1ad32c0eec199443"/><section>
+    <title>listarTemporadas()</title>
+<indexterm><primary>listarTemporadas</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>listarTemporadas</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada">Temporada</link> &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.listarTemporadas ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a5c6e13e2656290ebf4ba9ec0269ce7bd"/><section>
+    <title>listarTraspasos()</title>
+<indexterm><primary>listarTraspasos</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>listarTraspasos</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.listarTraspasos ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a78e78952186a373e4e78c1565d5be996"/><section>
+    <title>listarValorMercadoHistorial()</title>
+<indexterm><primary>listarValorMercadoHistorial</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>listarValorMercadoHistorial</secondary></indexterm>
+<para><computeroutput>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.listarValorMercadoHistorial ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1abbe49af6bc9464c9ea5b7767fd213f19"/><section>
+    <title>modificar()<computeroutput>[1/7]</computeroutput></title>
+<indexterm><primary>modificar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>modificar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.modificar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> competicion) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a03a4327a428580a9b474c0b501a60353"/><section>
+    <title>modificar()<computeroutput>[2/7]</computeroutput></title>
+<indexterm><primary>modificar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>modificar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.modificar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> equipo) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7da46cb2d9ba52fd2f1a6915f1700d54"/><section>
+    <title>modificar()<computeroutput>[3/7]</computeroutput></title>
+<indexterm><primary>modificar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>modificar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.modificar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> ec) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a80d6f250da6afd6e67013018c0bc94a7"/><section>
+    <title>modificar()<computeroutput>[4/7]</computeroutput></title>
+<indexterm><primary>modificar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>modificar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.modificar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> est) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a45c2905e462dee9c3883cceca8f1238d"/><section>
+    <title>modificar()<computeroutput>[5/7]</computeroutput></title>
+<indexterm><primary>modificar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>modificar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.modificar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> jugador) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa6424c590701da26bbe9f60af7d6529c"/><section>
+    <title>modificar()<computeroutput>[6/7]</computeroutput></title>
+<indexterm><primary>modificar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>modificar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.modificar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> traspaso) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a1b42fa3336da041fd81c0fb005d7bedd"/><section>
+    <title>modificar()<computeroutput>[7/7]</computeroutput></title>
+<indexterm><primary>modificar</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>modificar</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.modificar (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> historial) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a40a52e3ff1927e6327654f5348242d54"/><section>
+    <title>obtenerEstadisticaPorId()</title>
+<indexterm><primary>obtenerEstadisticaPorId</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>obtenerEstadisticaPorId</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.obtenerEstadisticaPorId (int jugadorId, int temporadaId, int competicionId, int equipoId) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a15705b50d3d5cbcc23084528f73be4eb"/><section>
+    <title>obtenerIdPorNombreCompeticion()</title>
+<indexterm><primary>obtenerIdPorNombreCompeticion</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>obtenerIdPorNombreCompeticion</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.obtenerIdPorNombreCompeticion (String nombre) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9944093a4cd9fe500cae086ef3605796"/><section>
+    <title>obtenerIdPorNombreEquipo()</title>
+<indexterm><primary>obtenerIdPorNombreEquipo</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>obtenerIdPorNombreEquipo</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.obtenerIdPorNombreEquipo (String nombre) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab60722b930671070684e2dfdbfb02647"/><section>
+    <title>obtenerIdPorNombreJugador()</title>
+<indexterm><primary>obtenerIdPorNombreJugador</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>obtenerIdPorNombreJugador</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.obtenerIdPorNombreJugador (String nombre) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af2bcb44d17b1bebcc9b4b11738c79063"/><section>
+    <title>obtenerIdPorNombreTemporada()</title>
+<indexterm><primary>obtenerIdPorNombreTemporada</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>obtenerIdPorNombreTemporada</secondary></indexterm>
+<para><computeroutput>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.obtenerIdPorNombreTemporada (String nombre) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1add09fb442df845d9ef6e6153bb295d69"/><section>
+    <title>visualizarCompeticion()</title>
+<indexterm><primary>visualizarCompeticion</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>visualizarCompeticion</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.visualizarCompeticion (int idCompeticion) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2520d2f66b44c7427c9e8dd43b820e69"/><section>
+    <title>visualizarEquipo()</title>
+<indexterm><primary>visualizarEquipo</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>visualizarEquipo</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.visualizarEquipo (int idEquipo) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a393fefc9c043e0d646cf8e0991a0c3c4"/><section>
+    <title>visualizarEquipoCompeticion()</title>
+<indexterm><primary>visualizarEquipoCompeticion</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>visualizarEquipoCompeticion</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.visualizarEquipoCompeticion (int equipoId, int competicionId, int temporadaId) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a443df638ce47250aca0d5a4c0fbd480d"/><section>
+    <title>visualizarJugador()</title>
+<indexterm><primary>visualizarJugador</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>visualizarJugador</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.visualizarJugador (int idJugador) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1adc34701f5eb1f3430c8f6f65db3b9ff4"/><section>
+    <title>visualizarTraspaso()</title>
+<indexterm><primary>visualizarTraspaso</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>visualizarTraspaso</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.visualizarTraspaso (int idTraspaso) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a280c83e711ccf6fe8ae53069e63d3b15"/><section>
+    <title>visualizarValorMercadoHistorial()</title>
+<indexterm><primary>visualizarValorMercadoHistorial</primary><secondary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</primary><secondary>visualizarValorMercadoHistorial</secondary></indexterm>
+<para><computeroutput><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB.visualizarValorMercadoHistorial (int idHistorial) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para><para>
+Implements <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</link>.</para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAOImpMariaDB.java</section>
+</section>

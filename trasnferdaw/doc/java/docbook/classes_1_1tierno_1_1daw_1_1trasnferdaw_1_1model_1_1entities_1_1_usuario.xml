@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.entities.Usuario Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Usuario</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1af696014476adeb64c4fc6d588d693c2f">Usuario</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a5c231f9ad23a2ca4275674a5bde9770f">Usuario</link> (String nombre, String email, String contrasena, String rol)  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a584d8c54a2d0223ad71bc1e5103b85fa">Usuario</link> (Integer idUsuario, String nombre, String email, String contrasena, String rol)  throws BBDDException </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1acb322ccc9e38eaaa13d55daa1067de0c"/>Integer <emphasis role="strong">getIdUsuario</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a7e0c52bdc6aff3018214b700726728ca"/>void <emphasis role="strong">setIdUsuario</emphasis> (Integer idUsuario)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a1c3a4d878b9ccd9e594e586e0f1f8868"/>String <emphasis role="strong">getNombre</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a9813bb6963491a2c5a1f88dda133f3c4"/>void <emphasis role="strong">setNombre</emphasis> (String nombre)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a16735569b90096a2730a4c18dba6b385"/>String <emphasis role="strong">getEmail</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1aabc10dbab6d248153397b396f677c5c4"/>void <emphasis role="strong">setEmail</emphasis> (String email)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a3c11cfeae26f8d9c5134f3b71b87c322"/>String <emphasis role="strong">getRol</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1ac84e994f603c8ad76aa718d2035cd6e5"/>void <emphasis role="strong">setRol</emphasis> (String rol)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a5a6d8baf98249fdde4c1c10449bd86f8"/>String <emphasis role="strong">getContrasena</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1abf865002c4e9207bf6a601c5dcb0b310"/>void <emphasis role="strong">setContrasena</emphasis> (String contrasena)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1aafe29174861da16bc74e7d2a6cfae854"/>void <emphasis role="strong">setContrasenaHash</emphasis> (String contrasena)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1ae5df756b3e9cc7f966dd522a698f22e3"/>String <emphasis role="strong">toString</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> representa un usuario de TransferDAW. <formalpara><title>Author</title>
+
+<para>Iván Rafael Redondo. </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1af696014476adeb64c4fc6d588d693c2f"/><section>
+    <title>Usuario()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>Usuario</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Usuario</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Usuario</primary><secondary>Usuario</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Usuario.Usuario ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor por defecto de la clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a5c231f9ad23a2ca4275674a5bde9770f"/><section>
+    <title>Usuario()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>Usuario</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Usuario</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Usuario</primary><secondary>Usuario</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Usuario.Usuario (String nombre, String email, String contrasena, String rol) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa un usuario con sus datos básicos, sin especificar el ID.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>nombre</entry><entry>
+<para>Nombre del usuario </para>
+</entry>
+                            </row>
+                            <row>
+<entry>email</entry><entry>
+<para>Correo electrónico del usuario </para>
+</entry>
+                            </row>
+                            <row>
+<entry>contrasena</entry><entry>
+<para>Contraseña del usuario </para>
+</entry>
+                            </row>
+                            <row>
+<entry>rol</entry><entry>
+<para>Rol asignado al usuario (por ejemplo, &quot;admin&quot;, &quot;usuario&quot;) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a584d8c54a2d0223ad71bc1e5103b85fa"/><section>
+    <title>Usuario()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>Usuario</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Usuario</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Usuario</primary><secondary>Usuario</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Usuario.Usuario (Integer idUsuario, String nombre, String email, String contrasena, String rol) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa un usuario incluyendo su identificador único.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>idUsuario</entry><entry>
+<para>ID único del usuario </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nombre</entry><entry>
+<para>Nombre del usuario </para>
+</entry>
+                            </row>
+                            <row>
+<entry>email</entry><entry>
+<para>Correo electrónico del usuario </para>
+</entry>
+                            </row>
+                            <row>
+<entry>contrasena</entry><entry>
+<para>Contraseña del usuario </para>
+</entry>
+                            </row>
+                            <row>
+<entry>rol</entry><entry>
+<para>Rol asignado al usuario (por ejemplo, &quot;admin&quot;, &quot;usuario&quot;) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java</section>
+</section>

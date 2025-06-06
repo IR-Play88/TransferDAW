@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_transfer_d_a_w_d_a_o_imp_8java" kind="file" language="Java">
+    <compoundname>TransferDAWDAOImp.java</compoundname>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp" prot="public">es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</innerclass>
+    <innernamespace refid="namespacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd">es::tierno::daw::trasnferdaw::model::bbdd</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">es.tierno.daw.trasnferdaw.model.bbdd;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">import</highlight><highlight class="normal"><sp/>java.sql.Connection;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">abstract</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp" kindref="compound">TransferDAWDAOImp</ref><sp/></highlight><highlight class="keyword">implements</highlight><highlight class="normal"><sp/><ref refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o" kindref="compound">TransferDAWDAO</ref><sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/>Connection<sp/>conn;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAOImp.java"/>
+  </compounddef>
+</doxygen>

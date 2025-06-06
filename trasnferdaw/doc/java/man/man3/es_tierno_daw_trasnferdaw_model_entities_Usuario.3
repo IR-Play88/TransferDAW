@@ -1,0 +1,124 @@
+.TH "es.tierno.daw.trasnferdaw.model.entities.Usuario" 3 "Wed Jun 4 2025" "Version 1.0" "TransferDAW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+es.tierno.daw.trasnferdaw.model.entities.Usuario
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBUsuario\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBUsuario\fP (String nombre, String email, String contrasena, String rol)  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBUsuario\fP (Integer idUsuario, String nombre, String email, String contrasena, String rol)  throws BBDDException "
+.br
+.ti -1c
+.RI "Integer \fBgetIdUsuario\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetIdUsuario\fP (Integer idUsuario)"
+.br
+.ti -1c
+.RI "String \fBgetNombre\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombre\fP (String nombre)"
+.br
+.ti -1c
+.RI "String \fBgetEmail\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetEmail\fP (String email)"
+.br
+.ti -1c
+.RI "String \fBgetRol\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRol\fP (String rol)"
+.br
+.ti -1c
+.RI "String \fBgetContrasena\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetContrasena\fP (String contrasena)"
+.br
+.ti -1c
+.RI "void \fBsetContrasenaHash\fP (String contrasena)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La clase \fBUsuario\fP representa un usuario de TransferDAW\&. 
+.PP
+\fBAuthor\fP
+.RS 4
+Iván Rafael Redondo\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Usuario\&.Usuario () throws \fBBBDDException\fP"
+Constructor por defecto de la clase \fBUsuario\fP\&. Inicializa una nueva instancia sin establecer valores para sus atributos\&.
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Usuario\&.Usuario (String nombre, String email, String contrasena, String rol) throws \fBBBDDException\fP"
+Constructor que inicializa un usuario con sus datos básicos, sin especificar el ID\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fInombre\fP Nombre del usuario 
+.br
+\fIemail\fP Correo electrónico del usuario 
+.br
+\fIcontrasena\fP Contraseña del usuario 
+.br
+\fIrol\fP Rol asignado al usuario (por ejemplo, 'admin', 'usuario') 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Usuario\&.Usuario (Integer idUsuario, String nombre, String email, String contrasena, String rol) throws \fBBBDDException\fP"
+Constructor que inicializa un usuario incluyendo su identificador único\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIidUsuario\fP ID único del usuario 
+.br
+\fInombre\fP Nombre del usuario 
+.br
+\fIemail\fP Correo electrónico del usuario 
+.br
+\fIcontrasena\fP Contraseña del usuario 
+.br
+\fIrol\fP Rol asignado al usuario (por ejemplo, 'admin', 'usuario') 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TransferDAW from the source code\&.

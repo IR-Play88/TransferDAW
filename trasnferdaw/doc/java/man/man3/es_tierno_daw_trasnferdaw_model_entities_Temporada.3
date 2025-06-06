@@ -1,0 +1,111 @@
+.TH "es.tierno.daw.trasnferdaw.model.entities.Temporada" 3 "Wed Jun 4 2025" "Version 1.0" "TransferDAW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+es.tierno.daw.trasnferdaw.model.entities.Temporada
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTemporada\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBTemporada\fP (String nombre, LocalDate fechaInicio, LocalDate fechaFin)  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBTemporada\fP (Integer idTemporada, String nombre, LocalDate fechaInicio, LocalDate fechaFin)  throws BBDDException "
+.br
+.ti -1c
+.RI "Integer \fBgetIdTemporada\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetIdTemporada\fP (Integer idTemporada)"
+.br
+.ti -1c
+.RI "String \fBgetNombre\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombre\fP (String nombre)"
+.br
+.ti -1c
+.RI "LocalDate \fBgetFechaInicio\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFechaInicio\fP (LocalDate fechaInicio)"
+.br
+.ti -1c
+.RI "LocalDate \fBgetFechaFin\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFechaFin\fP (LocalDate fechaFin)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La clase \fBTemporada\fP representa una temporada de TransferDAW\&. 
+.PP
+\fBAuthor\fP
+.RS 4
+Iván Rafael Redondo\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Temporada\&.Temporada () throws \fBBBDDException\fP"
+Constructor por defecto de la clase \fBTemporada\fP\&. Inicializa una nueva instancia sin establecer valores para sus atributos\&.
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Temporada\&.Temporada (String nombre, LocalDate fechaInicio, LocalDate fechaFin) throws \fBBBDDException\fP"
+Constructor que inicializa una temporada con sus datos básicos, sin especificar el ID\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fInombre\fP Nombre de la temporada (por ejemplo, '2024/2025') 
+.br
+\fIfechaInicio\fP Fecha de inicio de la temporada 
+.br
+\fIfechaFin\fP Fecha de finalización de la temporada 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Temporada\&.Temporada (Integer idTemporada, String nombre, LocalDate fechaInicio, LocalDate fechaFin) throws \fBBBDDException\fP"
+Constructor que inicializa una temporada incluyendo su identificador único\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIidTemporada\fP ID único de la temporada 
+.br
+\fInombre\fP Nombre de la temporada (por ejemplo, '2024/2025') 
+.br
+\fIfechaInicio\fP Fecha de inicio de la temporada 
+.br
+\fIfechaFin\fP Fecha de finalización de la temporada 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TransferDAW from the source code\&.

@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.entities.Traspaso Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Traspaso</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ab0e7fb34d60cb2a7bf8f8a72dd30df37">Traspaso</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a8c219c10dfb4698f56e20852600f33d9">Traspaso</link> (Integer jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo)  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1abcbb21a5f4d72353c2b0c0cb021d14e8">Traspaso</link> (Integer idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo)  throws BBDDException </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a42d6760b93cec3ef537a6ba853bae38b"/>Integer <emphasis role="strong">getIdTraspaso</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ac4be1f6ebf7cdb932c47af8acfa8f7bc"/>void <emphasis role="strong">setIdTraspaso</emphasis> (Integer idTraspaso)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1aea4c32f8a55e8b8fe6f2dfcc5a772eb8"/>Integer <emphasis role="strong">getJugadorId</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1abd03487552cf8817b88b3f63c9bb7c16"/>void <emphasis role="strong">setJugadorId</emphasis> (Integer jugadorId)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a5a28bb900b7df99746eaaf360fd06be6"/>String <emphasis role="strong">getNombreJugador</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1aff757ae4f8d0ca85b2b0563652ce1b68"/>void <emphasis role="strong">setNombreJugador</emphasis> (String nombreJugador)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a39f7dcfefb320216ac3af21acef8022c"/>Integer <emphasis role="strong">getEquipoOrigenId</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a53e857bfe9e0ab91237987ac674b8839"/>void <emphasis role="strong">setEquipoOrigenId</emphasis> (Integer equipoOrigenId)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a9c3abae5aa12d297966384de259aaf6b"/>String <emphasis role="strong">getNombreEquipoOrigen</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a23c77307158ff8ecdbe1bcede3fabf7f"/>void <emphasis role="strong">setNombreEquipoOrigen</emphasis> (String nombreEquipoOrigen)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a68316c74d81e8efa2e248e22f4e8576f"/>Integer <emphasis role="strong">getEquipoDestinoId</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ad5abfa6c6d7361b1e217b5593e5de7df"/>void <emphasis role="strong">setEquipoDestinoId</emphasis> (Integer equipoDestinoId)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1adcbcc6ad5cb1ce0085860422da70ad2c"/>String <emphasis role="strong">getNombreEquipoDestino</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a8b977ede53842f7cd07da6bf7e08a5af"/>void <emphasis role="strong">setNombreEquipoDestino</emphasis> (String nombreEquipoDestino)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a3cf5f6acb9863f643a91a0170d96153d"/>Integer <emphasis role="strong">getTemporadaId</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a78cbe474150ae54918009c01b4c287b0"/>void <emphasis role="strong">setTemporadaId</emphasis> (Integer temporadaId)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a3511e6a5b263c8c8ad90d1cd761bb546"/>String <emphasis role="strong">getNombreTemporada</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a490c1231b5fc20a6dc3541da2179631b"/>void <emphasis role="strong">setNombreTemporada</emphasis> (String nombreTemporada)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1afd5b5cc792b50b5960020f686b7b3462"/>LocalDate <emphasis role="strong">getFechaTraspaso</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1afb9010960b85ee65165bbfdac85c1b4d"/>void <emphasis role="strong">setFechaTraspaso</emphasis> (LocalDate fechaTraspaso)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a135d1e4a02fef7fd15cc1a9e301e3d54"/>double <emphasis role="strong">getCantidad</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a824e5c1d5478b5a7008914742dc4573c"/>void <emphasis role="strong">setCantidad</emphasis> (double cantidad)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a6d51e22209143cf512515b6015fb543f"/>String <emphasis role="strong">getTipo</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ad1bd0b98fdd05ad9515ee1bc0b13ef5b"/>void <emphasis role="strong">setTipo</emphasis> (String tipo)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a4763fbd4b0f74261449e6280d7563c9b"/>String <emphasis role="strong">toString</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> representa un traspaso de TransferDAW. <formalpara><title>Author</title>
+
+<para>Iván Rafael Redondo. </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ab0e7fb34d60cb2a7bf8f8a72dd30df37"/><section>
+    <title>Traspaso()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>Traspaso</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Traspaso</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Traspaso</primary><secondary>Traspaso</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Traspaso.Traspaso ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor por defecto de la clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a8c219c10dfb4698f56e20852600f33d9"/><section>
+    <title>Traspaso()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>Traspaso</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Traspaso</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Traspaso</primary><secondary>Traspaso</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Traspaso.Traspaso (Integer jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa un traspaso con sus datos básicos, sin especificar el ID.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>jugadorId</entry><entry>
+<para>ID del jugador que es traspasado </para>
+</entry>
+                            </row>
+                            <row>
+<entry>equipoOrigenId</entry><entry>
+<para>ID del equipo de origen </para>
+</entry>
+                            </row>
+                            <row>
+<entry>equipoDestinoId</entry><entry>
+<para>ID del equipo de destino </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temporadaId</entry><entry>
+<para>ID de la temporada en la que se realiza el traspaso </para>
+</entry>
+                            </row>
+                            <row>
+<entry>fechaTraspaso</entry><entry>
+<para>Fecha en la que se realiza el traspaso </para>
+</entry>
+                            </row>
+                            <row>
+<entry>cantidad</entry><entry>
+<para>Cantidad económica del traspaso </para>
+</entry>
+                            </row>
+                            <row>
+<entry>tipo</entry><entry>
+<para>Tipo de traspaso (por ejemplo, &quot;compra&quot;, &quot;cesión&quot;, &quot;libre&quot;) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1abcbb21a5f4d72353c2b0c0cb021d14e8"/><section>
+    <title>Traspaso()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>Traspaso</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Traspaso</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Traspaso</primary><secondary>Traspaso</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Traspaso.Traspaso (Integer idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa un traspaso incluyendo su identificador único.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>idTraspaso</entry><entry>
+<para>ID único del traspaso </para>
+</entry>
+                            </row>
+                            <row>
+<entry>jugadorId</entry><entry>
+<para>ID del jugador que es traspasado </para>
+</entry>
+                            </row>
+                            <row>
+<entry>equipoOrigenId</entry><entry>
+<para>ID del equipo de origen </para>
+</entry>
+                            </row>
+                            <row>
+<entry>equipoDestinoId</entry><entry>
+<para>ID del equipo de destino </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temporadaId</entry><entry>
+<para>ID de la temporada en la que se realiza el traspaso </para>
+</entry>
+                            </row>
+                            <row>
+<entry>fechaTraspaso</entry><entry>
+<para>Fecha en la que se realiza el traspaso </para>
+</entry>
+                            </row>
+                            <row>
+<entry>cantidad</entry><entry>
+<para>Cantidad económica del traspaso </para>
+</entry>
+                            </row>
+                            <row>
+<entry>tipo</entry><entry>
+<para>Tipo de traspaso (por ejemplo, &quot;compra&quot;, &quot;cesión&quot;, &quot;libre&quot;) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java</section>
+</section>

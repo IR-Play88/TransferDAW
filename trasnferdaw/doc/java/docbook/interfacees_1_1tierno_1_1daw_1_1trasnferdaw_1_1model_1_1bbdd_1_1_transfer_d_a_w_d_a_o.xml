@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO Interface Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</primary></indexterm>
+<para>Inheritance diagram for es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1af2c367977a333e732676e83371ef329e"/>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada">Temporada</link> &gt; <emphasis role="strong">listarTemporadas</emphasis> ()  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a93d67c31ae1f930a8979dfa5c050cd6e"/>int <emphasis role="strong">insertar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> jugador)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ad3a64b2a1557941bae3eec1703946d3e"/>int <emphasis role="strong">modificar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> jugador)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a37a178b1300bbc9ea094c7a00c78d647"/>int <emphasis role="strong">eliminarJugador</emphasis> (int idJugador)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a487aba6c5f490e9e31b400d968e1f752"/>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> &gt; <emphasis role="strong">listarJugadores</emphasis> ()  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aa296a57181d316a9791ff7ec0c85ca83"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> <emphasis role="strong">visualizarJugador</emphasis> (int idJugador)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a953c10acadf01f9adddc065342469ee1"/>int <emphasis role="strong">insertar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> equipo)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1abe545e58db4d5835932b6bff8d149e8a"/>int <emphasis role="strong">modificar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> equipo)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4380715b756ccdf578e4dcd53f950779"/>int <emphasis role="strong">eliminarEquipo</emphasis> (int idEquipo)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9861ad4669cda1e9d25ba27b62aacd2e"/>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> &gt; <emphasis role="strong">listarEquipos</emphasis> ()  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a32a9c9829813df700f626ef5157f850a"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> <emphasis role="strong">visualizarEquipo</emphasis> (int idEquipo)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1abf72861492fe1e425e72369c592edbd8"/>int <emphasis role="strong">insertar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> competicion)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1adfca654a5555cc0a1c546fe7d3be6b9f"/>int <emphasis role="strong">modificar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> competicion)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a91f3b4b86e4f705505613f9e3279d48f"/>int <emphasis role="strong">eliminarCompeticion</emphasis> (int idCompeticion)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a091d2d83165f7067f55a97709078537f"/>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> &gt; <emphasis role="strong">listarCompeticiones</emphasis> ()  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac7149b999a129ab59163fb67b8b643e6"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion">Competicion</link> <emphasis role="strong">visualizarCompeticion</emphasis> (int idCompeticion)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac5bbb18b82efdd5276d8180c83d5e72e"/>int <emphasis role="strong">insertar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> equipoCompeticion)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a90e6bfda283f9c210554ed354c847358"/>int <emphasis role="strong">modificar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> equipoCompeticion)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4d4ca983fb79ecbd348a50d92465cfc6"/>int <emphasis role="strong">eliminarEquipoCompeticion</emphasis> (int equipoId, int competicionId, int temporadaId)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ae1b33a04f93467e1d768378e91ae2879"/>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> &gt; <emphasis role="strong">listarEquiposCompeticion</emphasis> ()  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a07e05dcd669677135e4dd5c7823fda80"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> <emphasis role="strong">visualizarEquipoCompeticion</emphasis> (int equipoId, int competicionId, int temporadaId)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a8ff7e26c01863315c78c4158248affd3"/>int <emphasis role="strong">insertar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> estadisticasTemporada)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1af04ee3bddc5e1e90e6dcde16dca0fdfe"/>int <emphasis role="strong">modificar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> estadisticasTemporada)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac478ca1d76a8d20ceb3e71abf376f75e"/>int <emphasis role="strong">eliminarEstadisticasTemporada</emphasis> (int jugadorId, int temporadaId, int competicionId, int equipoId)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9cfb4bcfa8ee100c3c4c24477ae52c09"/>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> &gt; <emphasis role="strong">listarEstadisticasTemporada</emphasis> ()  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a248c8bac999b932c96607359e41d58cb"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> <emphasis role="strong">buscarEstadisticasTotalesPorJugador</emphasis> (int jugadorId)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a83bb6afb0623e3b1d2889733bb7f61ed"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> <emphasis role="strong">buscarEstadisticasPorTemporada</emphasis> (int jugadorId, int temporadaId)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a93d3250dda47ed201f86908c3a8bed3e"/>int <emphasis role="strong">insertar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> traspaso)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ae6e739d615e691f2bb05e09246faeeb0"/>int <emphasis role="strong">modificar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> traspaso)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a5245f49101cd99f9296d637fc710da81"/>int <emphasis role="strong">eliminarTraspaso</emphasis> (int idTraspaso)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9982bbc854eed57564328e2f8db58497"/>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> &gt; <emphasis role="strong">listarTraspasos</emphasis> ()  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a042353cc0d40a0ecbf8f5fc47d38ed04"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso">Traspaso</link> <emphasis role="strong">visualizarTraspaso</emphasis> (int idTraspaso)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a50da2b38cd3f130a7199d583032ea972"/>int <emphasis role="strong">insertar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> valorMercadoHistorial)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a8ed64f37cd9d3e7ca54f5dabf421edcf"/>int <emphasis role="strong">modificar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> valorMercadoHistorial)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4c30d507fee838e9e9c7bae86e1c3189"/>int <emphasis role="strong">eliminarValorMercadoHistorial</emphasis> (int idHistorial)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aaf3a4670afda315487c149db6d3b4a5b"/>List&lt; <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> &gt; <emphasis role="strong">listarValorMercadoHistorial</emphasis> ()  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a7e68bab2356537d2d0a7b4d3d93c5c78"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial">ValorMercadoHistorial</link> <emphasis role="strong">visualizarValorMercadoHistorial</emphasis> (int idHistorial)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ad5212d4785b991385ea8ec2d54fa8af0"/>int <emphasis role="strong">insertar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> usuario)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9f934012a13908976bb0393722bb6e3c"/>int <emphasis role="strong">eliminar</emphasis> (<link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> usuario)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aaa5a2d01aec758f6756dfc63737c3324"/>int <emphasis role="strong">obtenerIdPorNombreJugador</emphasis> (String nombre)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a40a9ff10b69a8faec9c5c7defc7be445"/>int <emphasis role="strong">obtenerIdPorNombreEquipo</emphasis> (String nombre)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9f1b1fe778f087ae1fbd4bd6d8ee9c40"/>int <emphasis role="strong">obtenerIdPorNombreCompeticion</emphasis> (String nombre)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a661692b750eeebfa2e3649392ec43afe"/>int <emphasis role="strong">obtenerIdPorNombreTemporada</emphasis> (String nombre)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a66d1cba744cdf596eb3f09334caa5fda"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada">EstadisticasTemporada</link> <emphasis role="strong">obtenerEstadisticaPorId</emphasis> (int jugadorId, int temporadaId, int competicionId, int equipoId)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aec63960b55b0c55b6c578bf33e771cb6"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> <emphasis role="strong">buscarUsuarioPorNombre</emphasis> (String nombre)  throws BBDDException</para>
+</listitem>
+            <listitem><para><anchor xml:id="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aebf7a317f252a2480797f9557047788f"/><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario">Usuario</link> <emphasis role="strong">buscarUsuarioPorEmail</emphasis> (String email)  throws BBDDException</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La interfaz <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">TransferDAWDAO</link> expone los metodos de acceso a la base de datos. \Iván Rafael Redondo. </para>
+<para>
+The documentation for this interface was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java</section>
+</section>

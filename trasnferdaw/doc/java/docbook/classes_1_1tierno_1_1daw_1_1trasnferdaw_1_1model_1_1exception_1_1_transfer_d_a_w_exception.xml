@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.exception.TransferDAWException Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.exception.TransferDAWException</primary></indexterm>
+<para>Inheritance diagram for es.tierno.daw.trasnferdaw.model.exception.TransferDAWException:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception_1a86b6e102a56a6c8fab3959a0c011a165"/><emphasis role="strong">TransferDAWException</emphasis> (String message, Throwable cause)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/exception/TransferDAWException.java</section>

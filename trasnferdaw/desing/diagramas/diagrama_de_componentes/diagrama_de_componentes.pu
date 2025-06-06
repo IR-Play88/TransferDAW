@@ -1,0 +1,107 @@
+@startuml Diagrama de componente
+allow_mixing
+top to bottom direction
+package "webapp" {
+    component HTML <<html>>
+    component CSS <<css>>
+    component JS <<javascript>>
+}
+
+package "controller" {
+    component Controller <<servlet>>
+}
+
+HTML ..> Controller : solicita datos
+JS ..> Controller : hace solicitudes dinámicas
+
+package "model"{
+
+    package bbdd{
+        component Database <<java>>
+
+     interface TransferDAWDAO {
+            +listarTemporadas(): List<Temporada>
+
+            +insertar(jugador: Jugador): void
+            +modificar(jugador: Jugador): void
+            +eliminarJugador(idJugador: int): void
+            +listarJugadores(): List<Jugador>
+            +visualiarJugador(int idJugador);
+
+            +insertar(equipo: Equipo): void
+            +modificar(equipo: Equipo): void
+            +eliminarEquipo(idEquipo: int): void
+            +listarEquipos(): List<Equipo>
+            +viusalizarEquipo(int idEquipo);
+
+            +insertar(competicion: Competicion): void
+            +modificar(competicion: Competicion): void
+            +eliminarCompeticion(idCompeticion: int): void
+            +listarCompeticiones(): List<Competicion>
+            +viusalizarCompeticion(int idCompeticion);
+
+            +insertar(equipoCompeticion: EquipoCompeticion): void
+            +modificar(equipoCompeticion: EquipoCompeticion): void
+            +eliminarEquipoCompeticion(equipoId: int, competicionId: int, temporadaId: int): void
+            +listarEquiposCompeticion(): List<EquipoCompeticion>
+            +viusalizarEquipoCompeticion(int equipoId, int temporadaId, int competicionId);
+
+            +insertar(estadisticasTemporada: EstadisticasTemporada): void
+            +modificar(estadisticasTemporada: EstadisticasTemporada): void
+            +eliminarEstadisticasTemporada(jugadorId: int, temporadaId: int, competicionId: int, equipoId: int): void
+            +listarEstadisticasTemporada(): List<EstadisticasTemporada>
+            +buscarEstadisticasTotalesPorJugador(jugadorId: int): List<EstadisticasTemporada>
+            +buscarEstadisticasPorTemporada(jugadorId: int, temporadaId: int): List<EstadisticasTemporada>
+
+
+            +insertar(traspaso: Traspaso): void
+            +modificar(traspaso: Traspaso): void
+            +eliminarTraspaso(idTraspaso: int): void
+            +listarTraspasos(): List<Traspaso>
+            +viusalizarTraspaso(int idTraspaso);
+
+            +insertar(valorMercadoHistorial: ValorMercadoHistorial): void
+            +modificar(valorMercadoHistorial: ValorMercadoHistorial): void
+            +eliminarValorMercadoHistorial(idHistorial: int): void
+            +listarValorMercadoHistorial(): List<ValorMercadoHistorial>
+            +viusalizarValorMercadoHistorial(int idHistorial);
+
+            +insertar(usuario: Usuario): int 
+            +eliminar(usuario: Usuario): int 
+
+            +obtenerIdPorNombreJugador(nombre: String): int
+            +obtenerIdPorNombreEquipo(nombre: String): int
+            +obtenerIdPorNombreCompeticion(nombre: String): int
+            +obtenerIdPorNombreTemporada(nombre: String): int
+            +obtenerEstadisticasPorId(jugadorId: int, temporadaId: int, competicionId: int, equipoId: int): EstadisticasTemporada
+           
+            +buscarUsuarioPorNombre(nombre String) : Usuario
+            +buscarUsuarioPorEmail(email String) : Usuario
+        }
+
+    }
+
+    TransferDAWDAO <|.. Database
+
+}
+
+
+
+
+package exception{
+    component Exception <<java>>
+}
+
+package entity{
+
+    component TransferDAW <<java>>
+}
+
+Controller ..> TransferDAW : use
+Controller ..> TransferDAWDAO : use
+
+
+Controller ..> Exception : use
+@enduml
+
+

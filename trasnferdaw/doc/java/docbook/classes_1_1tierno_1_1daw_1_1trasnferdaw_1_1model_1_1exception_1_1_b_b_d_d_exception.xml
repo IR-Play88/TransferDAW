@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.exception.BBDDException Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.exception.BBDDException</primary></indexterm>
+<para>Inheritance diagram for es.tierno.daw.trasnferdaw.model.exception.BBDDException:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception_1aee7e448c54d01284ae1188cad283543f"/><emphasis role="strong">BBDDException</emphasis> (String message, Throwable cause)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception_1adaa94efb4f68d62d04299d4efc3d87d7"/><emphasis role="strong">BBDDException</emphasis> (String message)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/exception/BBDDException.java</section>

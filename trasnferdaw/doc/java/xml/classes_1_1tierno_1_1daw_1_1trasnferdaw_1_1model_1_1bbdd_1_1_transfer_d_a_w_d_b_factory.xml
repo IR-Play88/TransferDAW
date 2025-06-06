@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_b_factory" kind="class" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDBFactory</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_b_factory_1a68bc37583c9ffb0d898e7a5423331579" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o" kindref="compound">TransferDAWDAO</ref></type>
+        <definition>static TransferDAWDAO es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDBFactory.obtener</definition>
+        <argsstring>(Database tipo)</argsstring>
+        <name>obtener</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDBFactory.obtener</qualifiedname>
+        <param>
+          <type><ref refid="enumes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_database" kindref="compound">Database</ref></type>
+          <declname>tipo</declname>
+        </param>
+        <exceptions> throws Exception </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDBFactory.java" line="8" column="34" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDBFactory.java" bodystart="8" bodyend="10"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_b_factory" kindref="compound">TransferDAWDBFactory</ref> crea las posibles BD disponibles. <simplesect kind="author"><para>Iván Rafael Redondo. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDBFactory.java" line="7" column="7" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDBFactory.java" bodystart="7" bodyend="11"/>
+    <listofallmembers>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_b_factory_1a68bc37583c9ffb0d898e7a5423331579" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDBFactory</scope><name>obtener</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

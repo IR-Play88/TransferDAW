@@ -1,0 +1,714 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" kind="class" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a709ecd202af09604e134b02de0731139" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.jugadorId</definition>
+        <argsstring></argsstring>
+        <name>jugadorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.jugadorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="11" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad36516605ce2ba848fc0b160727ad718" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.nombreJugador</definition>
+        <argsstring></argsstring>
+        <name>nombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.nombreJugador</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="12" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a22a9044704873d0b778abb76548afd97" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.temporadaId</definition>
+        <argsstring></argsstring>
+        <name>temporadaId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.temporadaId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="13" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a82822b06c14719bf664f3b43fde6dfe3" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.nombreTemporada</definition>
+        <argsstring></argsstring>
+        <name>nombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.nombreTemporada</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="14" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a03d8bd44f9c013682f069089f1c7c012" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.competicionId</definition>
+        <argsstring></argsstring>
+        <name>competicionId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.competicionId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="15" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ae734dd16b57e25b3ea45ddefd476374e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.nombreCompeticion</definition>
+        <argsstring></argsstring>
+        <name>nombreCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.nombreCompeticion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="16" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a43056b18890f70c62679d5f2fd6e12d5" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.equipoId</definition>
+        <argsstring></argsstring>
+        <name>equipoId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.equipoId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="17" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ae7eb3391dafed8eb2294440b85bba5c5" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.nombreEquipo</definition>
+        <argsstring></argsstring>
+        <name>nombreEquipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.nombreEquipo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="18" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a8d686b50a42e0d148f341be6f1c7f8f5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.partidosJugados</definition>
+        <argsstring></argsstring>
+        <name>partidosJugados</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.partidosJugados</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="19" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad12075042c486336e2f1330ba2dec0ed" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.goles</definition>
+        <argsstring></argsstring>
+        <name>goles</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.goles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="20" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1af9dc7fe50663cc2deb70425c48a68516" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.asistencias</definition>
+        <argsstring></argsstring>
+        <name>asistencias</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.asistencias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="21" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad880b12ec16818510cc1f65aab1de566" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.EstadisticasTemporada</definition>
+        <argsstring>()</argsstring>
+        <name>EstadisticasTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.EstadisticasTemporada</qualifiedname>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" kindref="compound">EstadisticasTemporada</ref>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="29" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="29" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1acedac5f0101065a9577b5220bcf82fbb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.EstadisticasTemporada</definition>
+        <argsstring>(Integer jugadorId, Integer temporadaId, Integer competicionId, Integer equipoId, int partidosJugados, int goles, int asistencias)</argsstring>
+        <name>EstadisticasTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.EstadisticasTemporada</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>jugadorId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>temporadaId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>competicionId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>equipoId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>partidosJugados</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>goles</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>asistencias</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa las estadísticas de un jugador en una temporada concreta, dentro de una competición y equipo.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugadorId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temporadaId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID de la temporada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>competicionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID de la competición </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>equipoId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del equipo en el que jugó el jugador durante la temporada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>partidosJugados</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de partidos que disputó el jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>goles</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de goles marcados por el jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>asistencias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Número de asistencias realizadas por el jugador </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="46" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="46" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ac2eea0995a7698af539d126ff0ab7113" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getJugadorId</definition>
+        <argsstring>()</argsstring>
+        <name>getJugadorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getJugadorId</qualifiedname>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="58" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a7830b7e0997588ef2b1a175d1d5de5d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setJugadorId</definition>
+        <argsstring>(Integer jugadorId)</argsstring>
+        <name>setJugadorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setJugadorId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>jugadorId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="62" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1abe8e8bd0fa28a98e59b015d3e02fb88e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getNombreJugador</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getNombreJugador</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="66" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ac47ed2c9413e460bbaea7ef08780d1d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setNombreJugador</definition>
+        <argsstring>(String nombreJugador)</argsstring>
+        <name>setNombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setNombreJugador</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreJugador</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="70" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a69821bb88e2506ddd63a7d3b9c5a17e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getTemporadaId</definition>
+        <argsstring>()</argsstring>
+        <name>getTemporadaId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getTemporadaId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="74" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a8e854437b1c9166da3065aebbc463754" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setTemporadaId</definition>
+        <argsstring>(Integer temporadaId)</argsstring>
+        <name>setTemporadaId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setTemporadaId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>temporadaId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="78" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a2da326d7942541b5488c690e6c4aaf9e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getNombreTemporada</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getNombreTemporada</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="82" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a42de7c07e2be72722e204080ec5cc54c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setNombreTemporada</definition>
+        <argsstring>(String nombreTemporada)</argsstring>
+        <name>setNombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setNombreTemporada</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreTemporada</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="86" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ab66dd1afd215d11dc32e74bf2c40d7a0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getCompeticionId</definition>
+        <argsstring>()</argsstring>
+        <name>getCompeticionId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getCompeticionId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="90" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a338fb53c2b2cb6455a1f11be320225ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setCompeticionId</definition>
+        <argsstring>(Integer competicionId)</argsstring>
+        <name>setCompeticionId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setCompeticionId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>competicionId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="94" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a88373eccd2b31c3c0d8d8450efc34029" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getNombreCompeticion</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getNombreCompeticion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="98" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1aae96500cfe61b09c0843771f67711d97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setNombreCompeticion</definition>
+        <argsstring>(String nombreCompeticion)</argsstring>
+        <name>setNombreCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setNombreCompeticion</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreCompeticion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="102" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a67e05f99c539db9b2a209ec80b45a28a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getEquipoId</definition>
+        <argsstring>()</argsstring>
+        <name>getEquipoId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getEquipoId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="106" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a88e47aa6d2276317768676e59021eb41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setEquipoId</definition>
+        <argsstring>(Integer equipoId)</argsstring>
+        <name>setEquipoId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setEquipoId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>equipoId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="110" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1aa047914e4d3f4ecea7e95b4b01d1ca0e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getNombreEquipo</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreEquipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getNombreEquipo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="114" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a3d6251460a8eec37f50aaf78d2d306ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setNombreEquipo</definition>
+        <argsstring>(String nombreEquipo)</argsstring>
+        <name>setNombreEquipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setNombreEquipo</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreEquipo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="118" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1abf61646bd722d5ac1832e2e5149d10e7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getPartidosJugados</definition>
+        <argsstring>()</argsstring>
+        <name>getPartidosJugados</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getPartidosJugados</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="122" column="16" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad0cb1ed9bf8f473a2893266baefc014a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setPartidosJugados</definition>
+        <argsstring>(int partidosJugados)</argsstring>
+        <name>setPartidosJugados</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setPartidosJugados</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>partidosJugados</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="126" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1acad1d99ab9088fea7ff154eccec971f9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getGoles</definition>
+        <argsstring>()</argsstring>
+        <name>getGoles</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getGoles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="130" column="16" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1aae09dc7721a4c0bcceed252c63745d26" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setGoles</definition>
+        <argsstring>(int goles)</argsstring>
+        <name>setGoles</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setGoles</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>goles</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="134" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1aa5b2b0c00d501dbf6241d6bf6951460a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getAsistencias</definition>
+        <argsstring>()</argsstring>
+        <name>getAsistencias</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.getAsistencias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="138" column="16" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad1d00fb96f8e0a3539ce10a604ecb43c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setAsistencias</definition>
+        <argsstring>(int asistencias)</argsstring>
+        <name>setAsistencias</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.setAsistencias</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>asistencias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="142" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a016f5bd2c1d35d83d777275cecaab604" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="147" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="147" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" kindref="compound">EstadisticasTemporada</ref> representa las estadisticas de un jugador de TransferDAW. <simplesect kind="author"><para>Iván Rafael Redondo. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" line="10" column="7" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EstadisticasTemporada.java" bodystart="10" bodyend="158"/>
+    <listofallmembers>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1af9dc7fe50663cc2deb70425c48a68516" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>asistencias</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a03d8bd44f9c013682f069089f1c7c012" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>competicionId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a43056b18890f70c62679d5f2fd6e12d5" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>equipoId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad880b12ec16818510cc1f65aab1de566" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>EstadisticasTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1acedac5f0101065a9577b5220bcf82fbb" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>EstadisticasTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1aa5b2b0c00d501dbf6241d6bf6951460a" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getAsistencias</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ab66dd1afd215d11dc32e74bf2c40d7a0" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getCompeticionId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a67e05f99c539db9b2a209ec80b45a28a" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getEquipoId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1acad1d99ab9088fea7ff154eccec971f9" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getGoles</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ac2eea0995a7698af539d126ff0ab7113" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getJugadorId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a88373eccd2b31c3c0d8d8450efc34029" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getNombreCompeticion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1aa047914e4d3f4ecea7e95b4b01d1ca0e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getNombreEquipo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1abe8e8bd0fa28a98e59b015d3e02fb88e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getNombreJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a2da326d7942541b5488c690e6c4aaf9e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getNombreTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1abf61646bd722d5ac1832e2e5149d10e7" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getPartidosJugados</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a69821bb88e2506ddd63a7d3b9c5a17e4" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>getTemporadaId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad12075042c486336e2f1330ba2dec0ed" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>goles</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a709ecd202af09604e134b02de0731139" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>jugadorId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ae734dd16b57e25b3ea45ddefd476374e" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>nombreCompeticion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ae7eb3391dafed8eb2294440b85bba5c5" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>nombreEquipo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad36516605ce2ba848fc0b160727ad718" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>nombreJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a82822b06c14719bf664f3b43fde6dfe3" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>nombreTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a8d686b50a42e0d148f341be6f1c7f8f5" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>partidosJugados</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad1d00fb96f8e0a3539ce10a604ecb43c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setAsistencias</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a338fb53c2b2cb6455a1f11be320225ef" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setCompeticionId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a88e47aa6d2276317768676e59021eb41" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setEquipoId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1aae09dc7721a4c0bcceed252c63745d26" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setGoles</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a7830b7e0997588ef2b1a175d1d5de5d7" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setJugadorId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1aae96500cfe61b09c0843771f67711d97" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setNombreCompeticion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a3d6251460a8eec37f50aaf78d2d306ca" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setNombreEquipo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ac47ed2c9413e460bbaea7ef08780d1d9" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setNombreJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a42de7c07e2be72722e204080ec5cc54c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setNombreTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1ad0cb1ed9bf8f473a2893266baefc014a" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setPartidosJugados</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a8e854437b1c9166da3065aebbc463754" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>setTemporadaId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a22a9044704873d0b778abb76548afd97" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>temporadaId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada_1a016f5bd2c1d35d83d777275cecaab604" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

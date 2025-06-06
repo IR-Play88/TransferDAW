@@ -1,0 +1,980 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador" kind="class" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::entities::Jugador</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a22d12970179ae6e1bc3e6dca38e7c184" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Jugador.idJugador</definition>
+        <argsstring></argsstring>
+        <name>idJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.idJugador</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="12" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a303f718c1afed975d849184a6ae2a78d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.nombre</definition>
+        <argsstring></argsstring>
+        <name>nombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="13" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a20ffd17db43a1d34eb2961e621783238" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.alias</definition>
+        <argsstring></argsstring>
+        <name>alias</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.alias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="14" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a03f9586e791e15d3f0d0e3bfb9316350" prot="private" static="no" mutable="no">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.Jugador.fechaNacimiento</definition>
+        <argsstring></argsstring>
+        <name>fechaNacimiento</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.fechaNacimiento</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="15" column="23" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a1fdc022a0a10090dedaf64022822fb3a" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.nacionalidad</definition>
+        <argsstring></argsstring>
+        <name>nacionalidad</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.nacionalidad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="16" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ab475ff04c63b246c8ff8af534c1eb3e5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double es.tierno.daw.trasnferdaw.model.entities.Jugador.altura</definition>
+        <argsstring></argsstring>
+        <name>altura</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.altura</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="17" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a7c63db0b8a45a305326ebab1fe2aa93b" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double es.tierno.daw.trasnferdaw.model.entities.Jugador.peso</definition>
+        <argsstring></argsstring>
+        <name>peso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.peso</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="18" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a3d485dc4d118c16f3afb70083dda5225" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.pieDominante</definition>
+        <argsstring></argsstring>
+        <name>pieDominante</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.pieDominante</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="19" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2ce15076f792631b373616af34c4c304" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double es.tierno.daw.trasnferdaw.model.entities.Jugador.valorMercado</definition>
+        <argsstring></argsstring>
+        <name>valorMercado</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.valorMercado</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="20" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a05e4451d13b481bf23c105d4561ac9c1" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.posicion</definition>
+        <argsstring></argsstring>
+        <name>posicion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.posicion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="21" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1af9f10e7b826dd35d450a019191acaebe" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.representanteNombre</definition>
+        <argsstring></argsstring>
+        <name>representanteNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.representanteNombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="22" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ae45d20d9a67ec6e51519b7bd4ed76770" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.seleccionNombre</definition>
+        <argsstring></argsstring>
+        <name>seleccionNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.seleccionNombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="23" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a531176be2f4f5638a37910e4c420018e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Jugador.Jugador</definition>
+        <argsstring>()</argsstring>
+        <name>Jugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.Jugador</qualifiedname>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador" kindref="compound">Jugador</ref>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="31" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="31" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6c1dee2006bc0ede77611dd3e6014cba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Jugador.Jugador</definition>
+        <argsstring>(String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura, double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre, String seleccionNombre)</argsstring>
+        <name>Jugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.Jugador</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaNacimiento</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>nacionalidad</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>altura</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>peso</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pieDominante</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>valorMercado</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>representanteNombre</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>seleccionNombre</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa un jugador con sus datos básicos, sin especificar el ID.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre completo del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apodo o nombre deportivo del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fechaNacimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha de nacimiento del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nacionalidad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nacionalidad del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>altura</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Altura del jugador en metros </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>peso</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Peso del jugador en kilogramos </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pieDominante</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pie dominante del jugador (izquierdo, derecho, ambos) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valorMercado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor de mercado estimado del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición en la que juega el jugador (por ejemplo, delantero, defensa, etc.) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>representanteNombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del representante del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seleccionNombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de la selección nacional con la que está asociado el jugador (si aplica) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Constructor que inicializa un jugador incluyendo su identificador único.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idJugador</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID único del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre completo del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alias</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Apodo o nombre deportivo del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fechaNacimiento</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha de nacimiento del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nacionalidad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nacionalidad del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>altura</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Altura del jugador en metros </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>peso</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Peso del jugador en kilogramos </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pieDominante</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pie dominante del jugador (izquierdo, derecho, ambos) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valorMercado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor de mercado estimado del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición en la que juega el jugador (por ejemplo, delantero, defensa, etc.) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>representanteNombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del representante del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seleccionNombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de la selección nacional con la que está asociado el jugador (si aplica) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="75" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="75" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1af2e4ef07cfeecbf8ca2cb69ffd05d2a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Jugador.Jugador</definition>
+        <argsstring>(Integer idJugador, String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura, double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre, String seleccionNombre)</argsstring>
+        <name>Jugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.Jugador</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idJugador</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>alias</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaNacimiento</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>nacionalidad</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>altura</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>peso</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pieDominante</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>valorMercado</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>posicion</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>representanteNombre</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>seleccionNombre</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="91" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="91" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ad514da91c6b37b6424fd023ad4227b4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Jugador.getIdJugador</definition>
+        <argsstring>()</argsstring>
+        <name>getIdJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getIdJugador</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="108" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1af7bc1a55b16054b44c7f731ea7d3e920" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setIdJugador</definition>
+        <argsstring>(Integer idJugador)</argsstring>
+        <name>setIdJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setIdJugador</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idJugador</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="112" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ae31adc75bc3a80ba1900151a98061a8e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.getNombre</definition>
+        <argsstring>()</argsstring>
+        <name>getNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getNombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="116" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a0daec1a26293a2218fbf836051a38086" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setNombre</definition>
+        <argsstring>(String nombre)</argsstring>
+        <name>setNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setNombre</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="120" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="120" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a272352dea03e28860e6ade5be2cc4d12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.getAlias</definition>
+        <argsstring>()</argsstring>
+        <name>getAlias</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getAlias</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="124" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="124" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2605b468fc5ab3bba8045e75e9e5db61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setAlias</definition>
+        <argsstring>(String alias)</argsstring>
+        <name>setAlias</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setAlias</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>alias</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="128" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="128" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a33d5a9290cfa04eaf8135e0700620a5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.Jugador.getFechaNacimiento</definition>
+        <argsstring>()</argsstring>
+        <name>getFechaNacimiento</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getFechaNacimiento</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="132" column="22" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="132" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a9eda2f7de9f55a01da4374aa4dd80c91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setFechaNacimiento</definition>
+        <argsstring>(LocalDate fechaNacimiento)</argsstring>
+        <name>setFechaNacimiento</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setFechaNacimiento</qualifiedname>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaNacimiento</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="136" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="136" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a9bc073dff998dfbc011998189bd23756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.getNacionalidad</definition>
+        <argsstring>()</argsstring>
+        <name>getNacionalidad</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getNacionalidad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="140" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a55d462c4bde01c87c052658aaddc74c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setNacionalidad</definition>
+        <argsstring>(String nacionalidad)</argsstring>
+        <name>setNacionalidad</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setNacionalidad</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nacionalidad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="144" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="144" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6fd0837304727ce27fef7d3c8050e8c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double es.tierno.daw.trasnferdaw.model.entities.Jugador.getAltura</definition>
+        <argsstring>()</argsstring>
+        <name>getAltura</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getAltura</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="148" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2e7c31d20a85bf69004562fb54bc889e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setAltura</definition>
+        <argsstring>(double altura)</argsstring>
+        <name>setAltura</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setAltura</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>altura</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="152" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="152" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a8f40925532491ab5dc3bad89c9344809" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double es.tierno.daw.trasnferdaw.model.entities.Jugador.getPeso</definition>
+        <argsstring>()</argsstring>
+        <name>getPeso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getPeso</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="156" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="156" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a40b9569b39c523ae8e73ef2000a18856" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setPeso</definition>
+        <argsstring>(double peso)</argsstring>
+        <name>setPeso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setPeso</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>peso</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="160" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1adf5e19d75fb9a2e7225c7985be320942" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.getPieDominante</definition>
+        <argsstring>()</argsstring>
+        <name>getPieDominante</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getPieDominante</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="164" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a1515d37aa2df7d7ec64e1114d0814418" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setPieDominante</definition>
+        <argsstring>(String pieDominante)</argsstring>
+        <name>setPieDominante</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setPieDominante</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>pieDominante</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="168" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a98fddce1bf85bd7b0ad32d029a5a67b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double es.tierno.daw.trasnferdaw.model.entities.Jugador.getValorMercado</definition>
+        <argsstring>()</argsstring>
+        <name>getValorMercado</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getValorMercado</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="172" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="172" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a585e67f097c1e90d0ef082210dbac148" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setValorMercado</definition>
+        <argsstring>(double valorMercado)</argsstring>
+        <name>setValorMercado</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setValorMercado</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>valorMercado</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="176" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="176" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2cc9349e634ca75baa12ca4bb51d4aaa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.getPosicion</definition>
+        <argsstring>()</argsstring>
+        <name>getPosicion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getPosicion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="180" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="180" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a853d95333f8fd55e6321a4c8a12e963f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setPosicion</definition>
+        <argsstring>(String posicion)</argsstring>
+        <name>setPosicion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setPosicion</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>posicion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="184" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="184" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a111377966edd56956dbb9b29d8c555ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.getRepresentanteNombre</definition>
+        <argsstring>()</argsstring>
+        <name>getRepresentanteNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getRepresentanteNombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="188" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="188" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ad0854610d0146e85d168c0902e058dd3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setRepresentanteNombre</definition>
+        <argsstring>(String representanteNombre)</argsstring>
+        <name>setRepresentanteNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setRepresentanteNombre</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>representanteNombre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="192" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="192" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a3faf6e7585e10ec43657c2a3ed1e75e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.getSeleccionNombre</definition>
+        <argsstring>()</argsstring>
+        <name>getSeleccionNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.getSeleccionNombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="196" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="196" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a5aee6d3e7e10756c645048041350382d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Jugador.setSeleccionNombre</definition>
+        <argsstring>(String seleccionNombre)</argsstring>
+        <name>setSeleccionNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.setSeleccionNombre</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>seleccionNombre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="200" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="200" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6346d8e0153415e52e7db0ac3c5283db" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Jugador.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Jugador.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="205" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="205" bodyend="218"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador" kindref="compound">Jugador</ref> representa un jugador de TransferDAW. <simplesect kind="author"><para>Iván Rafael Redondo. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" line="11" column="7" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java" bodystart="11" bodyend="220"/>
+    <listofallmembers>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a20ffd17db43a1d34eb2961e621783238" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>alias</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ab475ff04c63b246c8ff8af534c1eb3e5" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>altura</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a03f9586e791e15d3f0d0e3bfb9316350" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>fechaNacimiento</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a272352dea03e28860e6ade5be2cc4d12" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getAlias</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6fd0837304727ce27fef7d3c8050e8c4" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getAltura</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a33d5a9290cfa04eaf8135e0700620a5d" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getFechaNacimiento</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ad514da91c6b37b6424fd023ad4227b4c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getIdJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a9bc073dff998dfbc011998189bd23756" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getNacionalidad</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ae31adc75bc3a80ba1900151a98061a8e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a8f40925532491ab5dc3bad89c9344809" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getPeso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1adf5e19d75fb9a2e7225c7985be320942" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getPieDominante</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2cc9349e634ca75baa12ca4bb51d4aaa" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getPosicion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a111377966edd56956dbb9b29d8c555ba" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getRepresentanteNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a3faf6e7585e10ec43657c2a3ed1e75e1" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getSeleccionNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a98fddce1bf85bd7b0ad32d029a5a67b5" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>getValorMercado</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a22d12970179ae6e1bc3e6dca38e7c184" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>idJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a531176be2f4f5638a37910e4c420018e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>Jugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6c1dee2006bc0ede77611dd3e6014cba" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>Jugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1af2e4ef07cfeecbf8ca2cb69ffd05d2a4" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>Jugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a1fdc022a0a10090dedaf64022822fb3a" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>nacionalidad</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a303f718c1afed975d849184a6ae2a78d" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>nombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a7c63db0b8a45a305326ebab1fe2aa93b" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>peso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a3d485dc4d118c16f3afb70083dda5225" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>pieDominante</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a05e4451d13b481bf23c105d4561ac9c1" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>posicion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1af9f10e7b826dd35d450a019191acaebe" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>representanteNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ae45d20d9a67ec6e51519b7bd4ed76770" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>seleccionNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2605b468fc5ab3bba8045e75e9e5db61" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setAlias</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2e7c31d20a85bf69004562fb54bc889e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setAltura</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a9eda2f7de9f55a01da4374aa4dd80c91" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setFechaNacimiento</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1af7bc1a55b16054b44c7f731ea7d3e920" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setIdJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a55d462c4bde01c87c052658aaddc74c4" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setNacionalidad</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a0daec1a26293a2218fbf836051a38086" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a40b9569b39c523ae8e73ef2000a18856" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setPeso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a1515d37aa2df7d7ec64e1114d0814418" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setPieDominante</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a853d95333f8fd55e6321a4c8a12e963f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setPosicion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ad0854610d0146e85d168c0902e058dd3" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setRepresentanteNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a5aee6d3e7e10756c645048041350382d" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setSeleccionNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a585e67f097c1e90d0ef082210dbac148" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>setValorMercado</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6346d8e0153415e52e7db0ac3c5283db" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>toString</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2ce15076f792631b373616af34c4c304" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Jugador</scope><name>valorMercado</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

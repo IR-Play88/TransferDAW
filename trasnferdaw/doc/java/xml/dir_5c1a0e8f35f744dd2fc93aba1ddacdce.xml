@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dir_5c1a0e8f35f744dd2fc93aba1ddacdce" kind="dir">
+    <compoundname>/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model</compoundname>
+    <innerdir refid="dir_57d4d6a272ec6fb6ec9ae332f2afdbac">/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd</innerdir>
+    <innerdir refid="dir_d1f0f971e20563fb795f63ee7161d005">/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities</innerdir>
+    <innerdir refid="dir_55e9ee8393a39d5c9b299b5d7f078c8d">/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/exception</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/"/>
+  </compounddef>
+</doxygen>

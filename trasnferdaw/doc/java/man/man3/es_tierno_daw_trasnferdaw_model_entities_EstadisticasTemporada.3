@@ -1,0 +1,138 @@
+.TH "es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada" 3 "Wed Jun 4 2025" "Version 1.0" "TransferDAW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+es.tierno.daw.trasnferdaw.model.entities.EstadisticasTemporada
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBEstadisticasTemporada\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBEstadisticasTemporada\fP (Integer jugadorId, Integer temporadaId, Integer competicionId, Integer equipoId, int partidosJugados, int goles, int asistencias)  throws BBDDException "
+.br
+.ti -1c
+.RI "Integer \fBgetJugadorId\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "void \fBsetJugadorId\fP (Integer jugadorId)"
+.br
+.ti -1c
+.RI "String \fBgetNombreJugador\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombreJugador\fP (String nombreJugador)"
+.br
+.ti -1c
+.RI "Integer \fBgetTemporadaId\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTemporadaId\fP (Integer temporadaId)"
+.br
+.ti -1c
+.RI "String \fBgetNombreTemporada\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombreTemporada\fP (String nombreTemporada)"
+.br
+.ti -1c
+.RI "Integer \fBgetCompeticionId\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCompeticionId\fP (Integer competicionId)"
+.br
+.ti -1c
+.RI "String \fBgetNombreCompeticion\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombreCompeticion\fP (String nombreCompeticion)"
+.br
+.ti -1c
+.RI "Integer \fBgetEquipoId\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetEquipoId\fP (Integer equipoId)"
+.br
+.ti -1c
+.RI "String \fBgetNombreEquipo\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombreEquipo\fP (String nombreEquipo)"
+.br
+.ti -1c
+.RI "int \fBgetPartidosJugados\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPartidosJugados\fP (int partidosJugados)"
+.br
+.ti -1c
+.RI "int \fBgetGoles\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetGoles\fP (int goles)"
+.br
+.ti -1c
+.RI "int \fBgetAsistencias\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAsistencias\fP (int asistencias)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La clase \fBEstadisticasTemporada\fP representa las estadisticas de un jugador de TransferDAW\&. 
+.PP
+\fBAuthor\fP
+.RS 4
+Iván Rafael Redondo\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.EstadisticasTemporada\&.EstadisticasTemporada () throws \fBBBDDException\fP"
+Constructor por defecto de la clase \fBEstadisticasTemporada\fP\&. Inicializa una nueva instancia sin establecer valores para sus atributos\&.
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.EstadisticasTemporada\&.EstadisticasTemporada (Integer jugadorId, Integer temporadaId, Integer competicionId, Integer equipoId, int partidosJugados, int goles, int asistencias) throws \fBBBDDException\fP"
+Constructor que inicializa las estadísticas de un jugador en una temporada concreta, dentro de una competición y equipo\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIjugadorId\fP ID del jugador 
+.br
+\fItemporadaId\fP ID de la temporada 
+.br
+\fIcompeticionId\fP ID de la competición 
+.br
+\fIequipoId\fP ID del equipo en el que jugó el jugador durante la temporada 
+.br
+\fIpartidosJugados\fP Número de partidos que disputó el jugador 
+.br
+\fIgoles\fP Número de goles marcados por el jugador 
+.br
+\fIasistencias\fP Número de asistencias realizadas por el jugador 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TransferDAW from the source code\&.

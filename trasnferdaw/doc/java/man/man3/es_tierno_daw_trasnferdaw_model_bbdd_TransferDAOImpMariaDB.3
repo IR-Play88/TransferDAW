@@ -1,0 +1,729 @@
+.TH "es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB" 3 "Wed Jun 4 2025" "Version 1.0" "TransferDAW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherits \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAOImp\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBinsertar\fP (\fBJugador\fP jugador)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBJugador\fP jugador)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBeliminarJugador\fP (int idJugador)  throws BBDDException "
+.br
+.ti -1c
+.RI "List< \fBJugador\fP > \fBlistarJugadores\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBJugador\fP \fBvisualizarJugador\fP (int idJugador)  throws BBDDException "
+.br
+.ti -1c
+.RI "List< \fBTemporada\fP > \fBlistarTemporadas\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBEquipo\fP equipo)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBEquipo\fP equipo)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBeliminarEquipo\fP (int idEquipo)  throws BBDDException "
+.br
+.ti -1c
+.RI "List< \fBEquipo\fP > \fBlistarEquipos\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBEquipo\fP \fBvisualizarEquipo\fP (int idEquipo)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBCompeticion\fP competicion)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBCompeticion\fP competicion)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBeliminarCompeticion\fP (int idCompeticion)  throws BBDDException "
+.br
+.ti -1c
+.RI "List< \fBCompeticion\fP > \fBlistarCompeticiones\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBCompeticion\fP \fBvisualizarCompeticion\fP (int idCompeticion)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBEquipoCompeticion\fP ec)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBEquipoCompeticion\fP ec)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBeliminarEquipoCompeticion\fP (int equipoId, int competicionId, int temporadaId)  throws BBDDException "
+.br
+.ti -1c
+.RI "List< \fBEquipoCompeticion\fP > \fBlistarEquiposCompeticion\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBEquipoCompeticion\fP \fBvisualizarEquipoCompeticion\fP (int equipoId, int competicionId, int temporadaId)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBEstadisticasTemporada\fP est)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBEstadisticasTemporada\fP est)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBeliminarEstadisticasTemporada\fP (int jugadorId, int temporadaId, int competicionId, int equipoId)  throws BBDDException "
+.br
+.ti -1c
+.RI "List< \fBEstadisticasTemporada\fP > \fBlistarEstadisticasTemporada\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBEstadisticasTemporada\fP \fBbuscarEstadisticasTotalesPorJugador\fP (int jugadorId)  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBEstadisticasTemporada\fP \fBbuscarEstadisticasPorTemporada\fP (int jugadorId, int temporadaId)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBTraspaso\fP traspaso)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBTraspaso\fP traspaso)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBeliminarTraspaso\fP (int idTraspaso)  throws BBDDException "
+.br
+.ti -1c
+.RI "List< \fBTraspaso\fP > \fBlistarTraspasos\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBTraspaso\fP \fBvisualizarTraspaso\fP (int idTraspaso)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBValorMercadoHistorial\fP historial)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBValorMercadoHistorial\fP historial)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBeliminarValorMercadoHistorial\fP (int idHistorial)  throws BBDDException "
+.br
+.ti -1c
+.RI "List< \fBValorMercadoHistorial\fP > \fBlistarValorMercadoHistorial\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBValorMercadoHistorial\fP \fBvisualizarValorMercadoHistorial\fP (int idHistorial)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBUsuario\fP usuario)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBeliminar\fP (\fBUsuario\fP usuario)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBobtenerIdPorNombreJugador\fP (String nombre)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBobtenerIdPorNombreEquipo\fP (String nombre)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBobtenerIdPorNombreCompeticion\fP (String nombre)  throws BBDDException "
+.br
+.ti -1c
+.RI "int \fBobtenerIdPorNombreTemporada\fP (String nombre)  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBEstadisticasTemporada\fP \fBobtenerEstadisticaPorId\fP (int jugadorId, int temporadaId, int competicionId, int equipoId)  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBUsuario\fP \fBbuscarUsuarioPorNombre\fP (String nombre)  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBUsuario\fP \fBbuscarUsuarioPorEmail\fP (String email)  throws BBDDException "
+.br
+.in -1c
+.SS "Static Public Attributes"
+
+.in +1c
+.ti -1c
+.RI "static final String \fBID_JUGADOR\fP = 'id_jugador'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_JUGADOR\fP = 'nombre'"
+.br
+.ti -1c
+.RI "static final String \fBALIAS_JUGADOR\fP = 'alias'"
+.br
+.ti -1c
+.RI "static final String \fBFECHA_NACIMIENTO_JUGADOR\fP = 'fecha_nacimiento'"
+.br
+.ti -1c
+.RI "static final String \fBNACIONALIDAD_JUGADOR\fP = 'nacionalidad'"
+.br
+.ti -1c
+.RI "static final String \fBALTURA_JUGADOR\fP = 'altura'"
+.br
+.ti -1c
+.RI "static final String \fBPESO_JUGADOR\fP = 'peso'"
+.br
+.ti -1c
+.RI "static final String \fBPIE_JUGADOR\fP = 'pie_dominante'"
+.br
+.ti -1c
+.RI "static final String \fBVALOR_JUGADOR\fP = 'valor_mercado'"
+.br
+.ti -1c
+.RI "static final String \fBPOSICION_JUGADOR\fP = 'posicion'"
+.br
+.ti -1c
+.RI "static final String \fBREPRESENTANTE_NOMBRE_JUGADOR\fP = 'representante_nombre'"
+.br
+.ti -1c
+.RI "static final String \fBSELECCION_NOMBRE_JUGADOR\fP = 'seleccion_nombre'"
+.br
+.ti -1c
+.RI "static final String \fBID_TEMPORADA\fP = 'id_temporada'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_TEMPORADA\fP = 'nombre'"
+.br
+.ti -1c
+.RI "static final String \fBFECHA_INICIO_TEMPORADA\fP = 'fecha_inicio'"
+.br
+.ti -1c
+.RI "static final String \fBFECHA_FIN_TEMPORADA\fP = 'fecha_fin'"
+.br
+.ti -1c
+.RI "static final String \fBID_EQUIPO\fP = 'id_equipo'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_EQUIPO\fP = 'nombre'"
+.br
+.ti -1c
+.RI "static final String \fBCIUDAD_EQUIPO\fP = 'ciudad'"
+.br
+.ti -1c
+.RI "static final String \fBPAIS_EQUIPO\fP = 'pais'"
+.br
+.ti -1c
+.RI "static final String \fBANIO_FUNDACION_EQUIPO\fP = 'anio_fundacion'"
+.br
+.ti -1c
+.RI "static final String \fBPRESUPUESTO_EQUIPO\fP = 'presupuesto'"
+.br
+.ti -1c
+.RI "static final String \fBPROPIETARIO_EQUIPO\fP = 'propietario'"
+.br
+.ti -1c
+.RI "static final String \fBESTADIO_NOMBRE_EQUIPO\fP = 'estadio_nombre'"
+.br
+.ti -1c
+.RI "static final String \fBENTRENADOR_NOMBRE_EQUIPO\fP = 'entrenador_nombre'"
+.br
+.ti -1c
+.RI "static final String \fBID_COMPETICION\fP = 'id_competicion'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_COMPETICION\fP = 'nombre'"
+.br
+.ti -1c
+.RI "static final String \fBPAIS_COMPETICION\fP = 'pais'"
+.br
+.ti -1c
+.RI "static final String \fBTIPO_COMPETICION\fP = 'tipo'"
+.br
+.ti -1c
+.RI "static final String \fBNUM_EQUIPOS_COMPETICION\fP = 'numero_equipos'"
+.br
+.ti -1c
+.RI "static final String \fBANIO_CREACION_COMPETICION\fP = 'anio_creacion'"
+.br
+.ti -1c
+.RI "static final String \fBEQUIPO_ID_EQUIPO_COMPETICION\fP = 'equipo_id'"
+.br
+.ti -1c
+.RI "static final String \fBCOMPETICION_ID_EQUIPO_COMPETICION\fP = 'competicion_id'"
+.br
+.ti -1c
+.RI "static final String \fBTEMPORADA_ID_EQUIPO_COMPETICION\fP = 'temporada_id'"
+.br
+.ti -1c
+.RI "static final String \fBPOSICION_EQUIPO_COMPETICION\fP = 'posicion'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_EQUIPO_COMPETICION\fP = 'nombre_equipo'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_COMPETICION_EQUIPO_COMPETICION\fP = 'nombre_competicion'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_TEMPORADA_EQUIPO_COMPETICION\fP = 'nombre_temporada'"
+.br
+.ti -1c
+.RI "static final String \fBJUGADOR_ID_ESTADISTICAS\fP = 'jugador_id'"
+.br
+.ti -1c
+.RI "static final String \fBTEMPORADA_ID_ESTADISTICAS\fP = 'temporada_id'"
+.br
+.ti -1c
+.RI "static final String \fBCOMPETICION_ID_ESTADISTICAS\fP = 'competicion_id'"
+.br
+.ti -1c
+.RI "static final String \fBEQUIPO_ID_ESTADISTICAS\fP = 'equipo_id'"
+.br
+.ti -1c
+.RI "static final String \fBPARTIDOS_JUGADOS_ESTADISTICAS\fP = 'partidos_jugados'"
+.br
+.ti -1c
+.RI "static final String \fBGOLES_ESTADISTICAS\fP = 'goles'"
+.br
+.ti -1c
+.RI "static final String \fBASISTENCIAS_ESTADISTICAS\fP = 'asistencias'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_JUGADOR_ESTADISTICAS\fP = 'nombre_jugador'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_TEMPORADA_ESTADISTICAS\fP = 'nombre_temporada'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_COMPETICION_ESTADISTICAS\fP = 'nombre_competicion'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_EQUIPO_ESTADISTICAS\fP = 'nombre_equipo'"
+.br
+.ti -1c
+.RI "static final String \fBID_TRASPASO\fP = 'id_traspaso'"
+.br
+.ti -1c
+.RI "static final String \fBJUGADOR_ID_TRASPASO\fP = 'jugador_id'"
+.br
+.ti -1c
+.RI "static final String \fBEQUIPO_ORIGEN_ID_TRASPASO\fP = 'equipo_origen_id'"
+.br
+.ti -1c
+.RI "static final String \fBEQUIPO_DESTINO_ID_TRASPASO\fP = 'equipo_destino_id'"
+.br
+.ti -1c
+.RI "static final String \fBTEMPORADA_ID_TRASPASO\fP = 'temporada_id'"
+.br
+.ti -1c
+.RI "static final String \fBFECHA_TRASPASO\fP = 'fecha_traspaso'"
+.br
+.ti -1c
+.RI "static final String \fBCANTIDAD_TRASPASO\fP = 'cantidad'"
+.br
+.ti -1c
+.RI "static final String \fBTIPO_TRASPASO\fP = 'tipo'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_EQUIPO_ORIGEN_TRASPASO\fP = 'nombre_equipo_origen'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_EQUIPO_DESTINO_TRASPASO\fP = 'nombre_equipo_destino'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_JUGADOR_TRASPASO\fP = 'nombre_jugador'"
+.br
+.ti -1c
+.RI "static final String \fBEQUIPO_ORIGEN_TRASPASO\fP = 'equipo_origen'"
+.br
+.ti -1c
+.RI "static final String \fBEQUIPO_DESTINO_TRASPASO\fP = 'equipo_destino'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_TEMPORADA_TRASPASO\fP = 'nombre_temporada'"
+.br
+.ti -1c
+.RI "static final String \fBID_HISTORIAL\fP = 'id_historial'"
+.br
+.ti -1c
+.RI "static final String \fBJUGADOR_ID_HISTORIAL\fP = 'jugador_id'"
+.br
+.ti -1c
+.RI "static final String \fBFECHA_HISTORIAL\fP = 'fecha'"
+.br
+.ti -1c
+.RI "static final String \fBVALOR_MERCADO_HISTORIAL\fP = 'valor_mercado'"
+.br
+.ti -1c
+.RI "static final String \fBMOTIVO_HISTORIAL\fP = 'motivo'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_JUGADOR_HISTORIAL\fP = 'nombre_jugador'"
+.br
+.ti -1c
+.RI "static final String \fBID_USUARIO\fP = 'id_usuario'"
+.br
+.ti -1c
+.RI "static final String \fBNOMBRE_USUARIO\fP = 'nombre'"
+.br
+.ti -1c
+.RI "static final String \fBEMAIL_USUARIO\fP = 'email'"
+.br
+.ti -1c
+.RI "static final String \fBCONTRASENA_USUARIO\fP = 'contraseña'"
+.br
+.ti -1c
+.RI "static final String \fBROL_USUARIO\fP = 'rol'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_INSERTAR_JUGADOR\fP = 'Error al insertar jugador en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_MODIFICAR_JUGADOR\fP = 'Error al modificar jugador en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_ELIMINAR_JUGADOR\fP = 'Error al eliminar jugador en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_LISTAR_JUGADOR\fP = 'Error al listar jugadores en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_JUGADOR\fP = 'Error al buscar jugador en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_INSERTAR_EQUIPO\fP = 'Error al insertar equipo en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_MODIFICAR_EQUIPO\fP = 'Error al modificar equipo en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_ELIMINAR_EQUIPO\fP = 'Error al eliminar equipo en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_LISTAR_EQUIPO\fP = 'Error al listar equipos en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_EQUIPO\fP = 'Error al buscar equipo en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_LISTAR_TEMPORADA\fP = 'Error al listar temporadas en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_INSERTAR_COMPETICION\fP = 'Error al insertar competicion en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_MODIFICAR_COMPETICION\fP = 'Error al modificar competicion en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_ELIMINAR_COMPETICION\fP = 'Error al eliminar competicion en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_LISTAR_COMPETICION\fP = 'Error al listar competiciones en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_COMPETICION\fP = 'Error al buscar competicion en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_INSERTAR_EQUIPO_COMPETICION\fP = 'Error al insertar un equipo en una competicion en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_MODIFICAR_EQUIPO_COMPETICION\fP = 'Error al modificar un equipo en una competicion en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_ELIMINAR_EQUIPO_COMPETICION\fP = 'Error al eliminarr un equipo en una competicion en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_LISTAR_EQUIPO_COMPETICION\fP = 'Error al listar equipos en competiciones en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_EQUIPO_COMPETICION\fP = 'Error al buscar un equipo en una competicion en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_INSERTAR_ESTADISTICA\fP = 'Error al insertar estadística del jugador'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_MODIFICAR_ESTADISTICA\fP = 'Error al modificar estadística del jugador'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_ELIMINAR_ESTADISTICA\fP = 'Error al eliminar estadística del jugador'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_LISTAR_ESTADISTICA\fP = 'Error al listar estadísticas del jugador'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_ESTADISTICA_TOTAL\fP = 'Error al buscar estadísticas totales del jugador'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_ESTADISTICA_TEMPORADA\fP = 'Error al buscar estadística del jugador en una temporada'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_INSERTAR_TRASPASO\fP = 'Error al insertar traspaso en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_MODIFICAR_TRASPASO\fP = 'Error al modificar traspaso en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_ELIMINAR_TRASPASO\fP = 'Error al eliminar traspaso en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_LISTAR_TRASPASO\fP = 'Error al listar traspasos en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_TRASPASO\fP = 'Error al buscar traspaso en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_INSERTAR_HISTORIAL\fP = 'Error al insertar valor de mercado en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_MODIFICAR_HISTORIAL\fP = 'Error al modificar valor de mercado en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_ELIMINAR_HISTORIAL\fP = 'Error al eliminar valor de mercado en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_LISTAR_HISTORIAL\fP = 'Error al listar valores de mercado en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_HISTORIAL\fP = 'Error al buscar valor de mercado en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_INSERTAR_USUARIO\fP = 'Error al insertar usuario en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_ELIMINAR_USUARIO\fP = 'Error al eliminar usuario en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_JUGADOR\fP = 'Jugador no encontrado en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_EQUIPO\fP = 'Equipo no encontrado en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_COMPETICION\fP = 'Competicion no encontrada en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_TEMPORADA\fP = 'Temporada no encontrada en la base de datos'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_OBTENER_ID_JUGADOR\fP = 'Error al obtener ID del jugador'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_OBTENER_ID_EQUIPO\fP = 'Error al obtener ID del equipo'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_OBTENER_ID_TEMPORADA\fP = 'Error al obtener ID de la temporada'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_OBTENER_ID_COMPETICION\fP = 'Error al obtener ID de la competicion'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_OBTENER_ID_ESTADISTICA\fP = 'Error al obtener ID de la estadistica'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_USUARIO_NOMBRE\fP = 'Error al buscar usuario por nombre'"
+.br
+.ti -1c
+.RI "static final String \fBERROR_BUSCAR_USUARIO_EMAIL\fP = 'Error al buscar usuario por email'"
+.br
+.in -1c
+.SS "Additional Inherited Members"
+.SH "Detailed Description"
+.PP 
+La clase \fBTransferDAOImpMariaDB\fP implementa el comportamiento con la base de datos\&. 
+.PP
+\fBAuthor\fP
+.RS 4
+Iván Rafael Redondo\&. 
+.RE
+.PP
+
+.SH "Member Function Documentation"
+.PP 
+.SS "\fBEstadisticasTemporada\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.buscarEstadisticasPorTemporada (int jugadorId, int temporadaId) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBEstadisticasTemporada\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.buscarEstadisticasTotalesPorJugador (int jugadorId) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBUsuario\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.buscarUsuarioPorEmail (String email) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBUsuario\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.buscarUsuarioPorNombre (String nombre) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.eliminar (\fBUsuario\fP usuario) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.eliminarCompeticion (int idCompeticion) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.eliminarEquipo (int idEquipo) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.eliminarEquipoCompeticion (int equipoId, int competicionId, int temporadaId) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.eliminarEstadisticasTemporada (int jugadorId, int temporadaId, int competicionId, int equipoId) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.eliminarJugador (int idJugador) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.eliminarTraspaso (int idTraspaso) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.eliminarValorMercadoHistorial (int idHistorial) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.insertar (\fBCompeticion\fP competicion) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.insertar (\fBEquipo\fP equipo) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.insertar (\fBEquipoCompeticion\fP ec) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.insertar (\fBEstadisticasTemporada\fP est) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.insertar (\fBJugador\fP jugador) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.insertar (\fBTraspaso\fP traspaso) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.insertar (\fBUsuario\fP usuario) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.insertar (\fBValorMercadoHistorial\fP historial) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "List< \fBCompeticion\fP > es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.listarCompeticiones () throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "List< \fBEquipo\fP > es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.listarEquipos () throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "List< \fBEquipoCompeticion\fP > es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.listarEquiposCompeticion () throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "List< \fBEstadisticasTemporada\fP > es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.listarEstadisticasTemporada () throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "List< \fBJugador\fP > es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.listarJugadores () throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "List< \fBTemporada\fP > es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.listarTemporadas () throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "List< \fBTraspaso\fP > es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.listarTraspasos () throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "List< \fBValorMercadoHistorial\fP > es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.listarValorMercadoHistorial () throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.modificar (\fBCompeticion\fP competicion) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.modificar (\fBEquipo\fP equipo) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.modificar (\fBEquipoCompeticion\fP ec) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.modificar (\fBEstadisticasTemporada\fP est) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.modificar (\fBJugador\fP jugador) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.modificar (\fBTraspaso\fP traspaso) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.modificar (\fBValorMercadoHistorial\fP historial) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBEstadisticasTemporada\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.obtenerEstadisticaPorId (int jugadorId, int temporadaId, int competicionId, int equipoId) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.obtenerIdPorNombreCompeticion (String nombre) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.obtenerIdPorNombreEquipo (String nombre) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.obtenerIdPorNombreJugador (String nombre) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "int es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.obtenerIdPorNombreTemporada (String nombre) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBCompeticion\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.visualizarCompeticion (int idCompeticion) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBEquipo\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.visualizarEquipo (int idEquipo) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBEquipoCompeticion\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.visualizarEquipoCompeticion (int equipoId, int competicionId, int temporadaId) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBJugador\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.visualizarJugador (int idJugador) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBTraspaso\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.visualizarTraspaso (int idTraspaso) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+.SS "\fBValorMercadoHistorial\fP es\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAOImpMariaDB\&.visualizarValorMercadoHistorial (int idHistorial) throws \fBBBDDException\fP"
+
+.PP
+Implements \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAO\fP\&.
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TransferDAW from the source code\&.

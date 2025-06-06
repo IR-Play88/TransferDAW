@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception" kind="namespace" language="Java">
+    <compoundname>es::tierno::daw::trasnferdaw::model::exception</compoundname>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" prot="public">es::tierno::daw::trasnferdaw::model::exception::BBDDException</innerclass>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception" prot="public">es::tierno::daw::trasnferdaw::model::exception::TransferDAWException</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/exception/BBDDException.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,886 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso" kind="class" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::entities::Traspaso</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a9322fe664d2a8d2cba4dbcbc0ad94e8c" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.idTraspaso</definition>
+        <argsstring></argsstring>
+        <name>idTraspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.idTraspaso</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="12" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1aecacd50473e43b904565d3f3769daa60" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.jugadorId</definition>
+        <argsstring></argsstring>
+        <name>jugadorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.jugadorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="13" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a52c7ea51b372d971d1463dce78bab6d9" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.nombreJugador</definition>
+        <argsstring></argsstring>
+        <name>nombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.nombreJugador</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="14" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a066f193035a3964028a1bfa613da2a47" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.equipoOrigenId</definition>
+        <argsstring></argsstring>
+        <name>equipoOrigenId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.equipoOrigenId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="15" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ae77a9f83a0bd26d38ec8a94c356406b1" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.nombreEquipoOrigen</definition>
+        <argsstring></argsstring>
+        <name>nombreEquipoOrigen</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.nombreEquipoOrigen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="16" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1abbf4c7e4b0b875504f49d402d7c8c8bf" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.equipoDestinoId</definition>
+        <argsstring></argsstring>
+        <name>equipoDestinoId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.equipoDestinoId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="17" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ad8c2a493b2e8018bebd29b2581aadffb" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.nombreEquipoDestino</definition>
+        <argsstring></argsstring>
+        <name>nombreEquipoDestino</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.nombreEquipoDestino</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="18" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a5801e774a319ee22b001b63d7266e7a0" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.temporadaId</definition>
+        <argsstring></argsstring>
+        <name>temporadaId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.temporadaId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="19" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a0376e35ac6a75557bfa211008c889414" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.nombreTemporada</definition>
+        <argsstring></argsstring>
+        <name>nombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.nombreTemporada</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="20" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a7c1422024a08cf70ff5df7fe0cf2afa0" prot="private" static="no" mutable="no">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.Traspaso.fechaTraspaso</definition>
+        <argsstring></argsstring>
+        <name>fechaTraspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.fechaTraspaso</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="21" column="23" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a3a5ea6d9fa77f4db25df3e9c040cac69" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double es.tierno.daw.trasnferdaw.model.entities.Traspaso.cantidad</definition>
+        <argsstring></argsstring>
+        <name>cantidad</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.cantidad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="22" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1acf35b7a6d4ac7199e80122b60d65a4ee" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.tipo</definition>
+        <argsstring></argsstring>
+        <name>tipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.tipo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="23" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ab0e7fb34d60cb2a7bf8f8a72dd30df37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Traspaso.Traspaso</definition>
+        <argsstring>()</argsstring>
+        <name>Traspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.Traspaso</qualifiedname>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso" kindref="compound">Traspaso</ref>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="31" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="31" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a8c219c10dfb4698f56e20852600f33d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Traspaso.Traspaso</definition>
+        <argsstring>(Integer jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo)</argsstring>
+        <name>Traspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.Traspaso</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>jugadorId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>equipoOrigenId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>equipoDestinoId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>temporadaId</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaTraspaso</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cantidad</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>tipo</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa un traspaso con sus datos básicos, sin especificar el ID.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugadorId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del jugador que es traspasado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>equipoOrigenId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del equipo de origen </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>equipoDestinoId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del equipo de destino </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temporadaId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID de la temporada en la que se realiza el traspaso </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fechaTraspaso</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha en la que se realiza el traspaso </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cantidad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cantidad económica del traspaso </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tipo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo de traspaso (por ejemplo, &quot;compra&quot;, &quot;cesión&quot;, &quot;libre&quot;) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="48" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="48" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1abcbb21a5f4d72353c2b0c0cb021d14e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Traspaso.Traspaso</definition>
+        <argsstring>(Integer idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo)</argsstring>
+        <name>Traspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.Traspaso</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idTraspaso</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>jugadorId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>equipoOrigenId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>equipoDestinoId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>temporadaId</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaTraspaso</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>cantidad</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>tipo</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa un traspaso incluyendo su identificador único.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idTraspaso</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID único del traspaso </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jugadorId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del jugador que es traspasado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>equipoOrigenId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del equipo de origen </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>equipoDestinoId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del equipo de destino </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temporadaId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID de la temporada en la que se realiza el traspaso </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fechaTraspaso</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha en la que se realiza el traspaso </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>cantidad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Cantidad económica del traspaso </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>tipo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Tipo de traspaso (por ejemplo, &quot;compra&quot;, &quot;cesión&quot;, &quot;libre&quot;) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="73" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="73" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a42d6760b93cec3ef537a6ba853bae38b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.getIdTraspaso</definition>
+        <argsstring>()</argsstring>
+        <name>getIdTraspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getIdTraspaso</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="86" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ac4be1f6ebf7cdb932c47af8acfa8f7bc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setIdTraspaso</definition>
+        <argsstring>(Integer idTraspaso)</argsstring>
+        <name>setIdTraspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setIdTraspaso</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idTraspaso</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="90" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="90" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1aea4c32f8a55e8b8fe6f2dfcc5a772eb8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.getJugadorId</definition>
+        <argsstring>()</argsstring>
+        <name>getJugadorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getJugadorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="94" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="94" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1abd03487552cf8817b88b3f63c9bb7c16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setJugadorId</definition>
+        <argsstring>(Integer jugadorId)</argsstring>
+        <name>setJugadorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setJugadorId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>jugadorId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="98" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="98" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a5a28bb900b7df99746eaaf360fd06be6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.getNombreJugador</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getNombreJugador</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="102" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="102" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1aff757ae4f8d0ca85b2b0563652ce1b68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setNombreJugador</definition>
+        <argsstring>(String nombreJugador)</argsstring>
+        <name>setNombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setNombreJugador</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreJugador</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="106" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="106" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a39f7dcfefb320216ac3af21acef8022c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.getEquipoOrigenId</definition>
+        <argsstring>()</argsstring>
+        <name>getEquipoOrigenId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getEquipoOrigenId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="110" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="110" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a53e857bfe9e0ab91237987ac674b8839" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setEquipoOrigenId</definition>
+        <argsstring>(Integer equipoOrigenId)</argsstring>
+        <name>setEquipoOrigenId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setEquipoOrigenId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>equipoOrigenId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="114" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="114" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a9c3abae5aa12d297966384de259aaf6b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.getNombreEquipoOrigen</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreEquipoOrigen</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getNombreEquipoOrigen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="118" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="118" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a23c77307158ff8ecdbe1bcede3fabf7f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setNombreEquipoOrigen</definition>
+        <argsstring>(String nombreEquipoOrigen)</argsstring>
+        <name>setNombreEquipoOrigen</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setNombreEquipoOrigen</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreEquipoOrigen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="122" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a68316c74d81e8efa2e248e22f4e8576f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.getEquipoDestinoId</definition>
+        <argsstring>()</argsstring>
+        <name>getEquipoDestinoId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getEquipoDestinoId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="126" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="126" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ad5abfa6c6d7361b1e217b5593e5de7df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setEquipoDestinoId</definition>
+        <argsstring>(Integer equipoDestinoId)</argsstring>
+        <name>setEquipoDestinoId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setEquipoDestinoId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>equipoDestinoId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="130" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="130" bodyend="132"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1adcbcc6ad5cb1ce0085860422da70ad2c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.getNombreEquipoDestino</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreEquipoDestino</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getNombreEquipoDestino</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="134" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a8b977ede53842f7cd07da6bf7e08a5af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setNombreEquipoDestino</definition>
+        <argsstring>(String nombreEquipoDestino)</argsstring>
+        <name>setNombreEquipoDestino</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setNombreEquipoDestino</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreEquipoDestino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="138" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="138" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a3cf5f6acb9863f643a91a0170d96153d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Traspaso.getTemporadaId</definition>
+        <argsstring>()</argsstring>
+        <name>getTemporadaId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getTemporadaId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="142" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a78cbe474150ae54918009c01b4c287b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setTemporadaId</definition>
+        <argsstring>(Integer temporadaId)</argsstring>
+        <name>setTemporadaId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setTemporadaId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>temporadaId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="146" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="146" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a3511e6a5b263c8c8ad90d1cd761bb546" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.getNombreTemporada</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getNombreTemporada</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="150" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="150" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a490c1231b5fc20a6dc3541da2179631b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setNombreTemporada</definition>
+        <argsstring>(String nombreTemporada)</argsstring>
+        <name>setNombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setNombreTemporada</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreTemporada</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="154" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="154" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1afd5b5cc792b50b5960020f686b7b3462" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.Traspaso.getFechaTraspaso</definition>
+        <argsstring>()</argsstring>
+        <name>getFechaTraspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getFechaTraspaso</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="158" column="22" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="158" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1afb9010960b85ee65165bbfdac85c1b4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setFechaTraspaso</definition>
+        <argsstring>(LocalDate fechaTraspaso)</argsstring>
+        <name>setFechaTraspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setFechaTraspaso</qualifiedname>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaTraspaso</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="162" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="162" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a135d1e4a02fef7fd15cc1a9e301e3d54" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double es.tierno.daw.trasnferdaw.model.entities.Traspaso.getCantidad</definition>
+        <argsstring>()</argsstring>
+        <name>getCantidad</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getCantidad</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="166" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="166" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a824e5c1d5478b5a7008914742dc4573c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setCantidad</definition>
+        <argsstring>(double cantidad)</argsstring>
+        <name>setCantidad</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setCantidad</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>cantidad</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="170" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="170" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a6d51e22209143cf512515b6015fb543f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.getTipo</definition>
+        <argsstring>()</argsstring>
+        <name>getTipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.getTipo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="174" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="174" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ad1bd0b98fdd05ad9515ee1bc0b13ef5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Traspaso.setTipo</definition>
+        <argsstring>(String tipo)</argsstring>
+        <name>setTipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.setTipo</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>tipo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="178" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="178" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a4763fbd4b0f74261449e6280d7563c9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Traspaso.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Traspaso.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="183" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="183" bodyend="188"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso" kindref="compound">Traspaso</ref> representa un traspaso de TransferDAW. <simplesect kind="author"><para>Iván Rafael Redondo. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" line="11" column="7" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Traspaso.java" bodystart="11" bodyend="190"/>
+    <listofallmembers>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a3a5ea6d9fa77f4db25df3e9c040cac69" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>cantidad</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1abbf4c7e4b0b875504f49d402d7c8c8bf" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>equipoDestinoId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a066f193035a3964028a1bfa613da2a47" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>equipoOrigenId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a7c1422024a08cf70ff5df7fe0cf2afa0" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>fechaTraspaso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a135d1e4a02fef7fd15cc1a9e301e3d54" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getCantidad</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a68316c74d81e8efa2e248e22f4e8576f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getEquipoDestinoId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a39f7dcfefb320216ac3af21acef8022c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getEquipoOrigenId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1afd5b5cc792b50b5960020f686b7b3462" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getFechaTraspaso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a42d6760b93cec3ef537a6ba853bae38b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getIdTraspaso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1aea4c32f8a55e8b8fe6f2dfcc5a772eb8" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getJugadorId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1adcbcc6ad5cb1ce0085860422da70ad2c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getNombreEquipoDestino</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a9c3abae5aa12d297966384de259aaf6b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getNombreEquipoOrigen</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a5a28bb900b7df99746eaaf360fd06be6" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getNombreJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a3511e6a5b263c8c8ad90d1cd761bb546" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getNombreTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a3cf5f6acb9863f643a91a0170d96153d" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getTemporadaId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a6d51e22209143cf512515b6015fb543f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>getTipo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a9322fe664d2a8d2cba4dbcbc0ad94e8c" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>idTraspaso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1aecacd50473e43b904565d3f3769daa60" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>jugadorId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ad8c2a493b2e8018bebd29b2581aadffb" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>nombreEquipoDestino</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ae77a9f83a0bd26d38ec8a94c356406b1" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>nombreEquipoOrigen</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a52c7ea51b372d971d1463dce78bab6d9" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>nombreJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a0376e35ac6a75557bfa211008c889414" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>nombreTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a824e5c1d5478b5a7008914742dc4573c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setCantidad</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ad5abfa6c6d7361b1e217b5593e5de7df" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setEquipoDestinoId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a53e857bfe9e0ab91237987ac674b8839" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setEquipoOrigenId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1afb9010960b85ee65165bbfdac85c1b4d" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setFechaTraspaso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ac4be1f6ebf7cdb932c47af8acfa8f7bc" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setIdTraspaso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1abd03487552cf8817b88b3f63c9bb7c16" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setJugadorId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a8b977ede53842f7cd07da6bf7e08a5af" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setNombreEquipoDestino</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a23c77307158ff8ecdbe1bcede3fabf7f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setNombreEquipoOrigen</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1aff757ae4f8d0ca85b2b0563652ce1b68" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setNombreJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a490c1231b5fc20a6dc3541da2179631b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setNombreTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a78cbe474150ae54918009c01b4c287b0" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setTemporadaId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ad1bd0b98fdd05ad9515ee1bc0b13ef5b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>setTipo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a5801e774a319ee22b001b63d7266e7a0" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>temporadaId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1acf35b7a6d4ac7199e80122b60d65a4ee" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>tipo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a4763fbd4b0f74261449e6280d7563c9b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>toString</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1ab0e7fb34d60cb2a7bf8f8a72dd30df37" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>Traspaso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1a8c219c10dfb4698f56e20852600f33d9" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>Traspaso</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso_1abcbb21a5f4d72353c2b0c0cb021d14e8" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Traspaso</scope><name>Traspaso</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

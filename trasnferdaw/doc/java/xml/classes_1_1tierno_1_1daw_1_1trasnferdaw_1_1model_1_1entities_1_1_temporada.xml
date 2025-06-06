@@ -1,0 +1,398 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada" kind="class" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::entities::Temporada</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1af8ae777e7dfa7812a119310df400c979" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Temporada.idTemporada</definition>
+        <argsstring></argsstring>
+        <name>idTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.idTemporada</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="12" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1afda14075cb674b930164a3201aab92f2" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Temporada.nombre</definition>
+        <argsstring></argsstring>
+        <name>nombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="13" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1ad2d7f8852b73837639a2d5fb73f65e23" prot="private" static="no" mutable="no">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.Temporada.fechaInicio</definition>
+        <argsstring></argsstring>
+        <name>fechaInicio</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.fechaInicio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="14" column="23" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a80f71ffc338b2f79e018bbc724290e7b" prot="private" static="no" mutable="no">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.Temporada.fechaFin</definition>
+        <argsstring></argsstring>
+        <name>fechaFin</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.fechaFin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="15" column="23" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a627ebf588608f77468648de1e9c9c255" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Temporada.Temporada</definition>
+        <argsstring>()</argsstring>
+        <name>Temporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.Temporada</qualifiedname>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada" kindref="compound">Temporada</ref>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="23" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="23" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a28be1efd7bb651437e4f3c786d86c9f0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Temporada.Temporada</definition>
+        <argsstring>(String nombre, LocalDate fechaInicio, LocalDate fechaFin)</argsstring>
+        <name>Temporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.Temporada</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaInicio</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaFin</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa una temporada con sus datos básicos, sin especificar el ID.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de la temporada (por ejemplo, &quot;2024/2025&quot;) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fechaInicio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha de inicio de la temporada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fechaFin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha de finalización de la temporada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="35" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a6891ff0dbc4d278ffa74549606bf3bcd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Temporada.Temporada</definition>
+        <argsstring>(Integer idTemporada, String nombre, LocalDate fechaInicio, LocalDate fechaFin)</argsstring>
+        <name>Temporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.Temporada</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idTemporada</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaInicio</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaFin</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa una temporada incluyendo su identificador único.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idTemporada</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID único de la temporada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre de la temporada (por ejemplo, &quot;2024/2025&quot;) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fechaInicio</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha de inicio de la temporada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fechaFin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha de finalización de la temporada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="50" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="50" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1aa0f4dcddbedbb748b2e905a1126b546b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Temporada.getIdTemporada</definition>
+        <argsstring>()</argsstring>
+        <name>getIdTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.getIdTemporada</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="58" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="58" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1afe3613916d59f7c438920d8cf692f2a6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Temporada.setIdTemporada</definition>
+        <argsstring>(Integer idTemporada)</argsstring>
+        <name>setIdTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.setIdTemporada</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idTemporada</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="62" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="62" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1ad3ad5c93272407d4080bb4e6b9ee9bbd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Temporada.getNombre</definition>
+        <argsstring>()</argsstring>
+        <name>getNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.getNombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="66" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="66" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a29916dc3df2b18dd4546a93ffd5d1767" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Temporada.setNombre</definition>
+        <argsstring>(String nombre)</argsstring>
+        <name>setNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.setNombre</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="70" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="70" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1acd605ef2fdee136e52939436d80c10fc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.Temporada.getFechaInicio</definition>
+        <argsstring>()</argsstring>
+        <name>getFechaInicio</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.getFechaInicio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="74" column="22" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="74" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a950608b3c7495680430525668f1aa4e1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Temporada.setFechaInicio</definition>
+        <argsstring>(LocalDate fechaInicio)</argsstring>
+        <name>setFechaInicio</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.setFechaInicio</qualifiedname>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaInicio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="78" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="78" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a2dde6ef378120c0ec4a9b98c1a35780d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.Temporada.getFechaFin</definition>
+        <argsstring>()</argsstring>
+        <name>getFechaFin</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.getFechaFin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="82" column="22" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="82" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a20a34195cbb1d4046c96acbc640133b9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Temporada.setFechaFin</definition>
+        <argsstring>(LocalDate fechaFin)</argsstring>
+        <name>setFechaFin</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.setFechaFin</qualifiedname>
+        <param>
+          <type>LocalDate</type>
+          <declname>fechaFin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="86" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a0fd0dd80c0f2a42d65aed4e6f2030b09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Temporada.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Temporada.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="91" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="91" bodyend="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada" kindref="compound">Temporada</ref> representa una temporada de TransferDAW. <simplesect kind="author"><para>Iván Rafael Redondo. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" line="11" column="7" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Temporada.java" bodystart="11" bodyend="100"/>
+    <listofallmembers>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a80f71ffc338b2f79e018bbc724290e7b" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>fechaFin</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1ad2d7f8852b73837639a2d5fb73f65e23" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>fechaInicio</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a2dde6ef378120c0ec4a9b98c1a35780d" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>getFechaFin</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1acd605ef2fdee136e52939436d80c10fc" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>getFechaInicio</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1aa0f4dcddbedbb748b2e905a1126b546b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>getIdTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1ad3ad5c93272407d4080bb4e6b9ee9bbd" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>getNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1af8ae777e7dfa7812a119310df400c979" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>idTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1afda14075cb674b930164a3201aab92f2" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>nombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a20a34195cbb1d4046c96acbc640133b9" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>setFechaFin</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a950608b3c7495680430525668f1aa4e1" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>setFechaInicio</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1afe3613916d59f7c438920d8cf692f2a6" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>setIdTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a29916dc3df2b18dd4546a93ffd5d1767" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>setNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a627ebf588608f77468648de1e9c9c255" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>Temporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a28be1efd7bb651437e4f3c786d86c9f0" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>Temporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a6891ff0dbc4d278ffa74549606bf3bcd" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>Temporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada_1a0fd0dd80c0f2a42d65aed4e6f2030b09" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Temporada</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

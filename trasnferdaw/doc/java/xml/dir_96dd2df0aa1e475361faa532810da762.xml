@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="dir_96dd2df0aa1e475361faa532810da762" kind="dir">
+    <compoundname>/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno</compoundname>
+    <innerdir refid="dir_d15f1777baf5271a757aebb4c5d0aa7f">/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/"/>
+  </compounddef>
+</doxygen>

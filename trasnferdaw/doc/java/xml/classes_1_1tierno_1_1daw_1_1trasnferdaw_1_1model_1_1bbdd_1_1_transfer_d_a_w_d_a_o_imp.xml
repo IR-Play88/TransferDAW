@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp" kind="class" language="Java" prot="public" abstract="yes">
+    <compoundname>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</compoundname>
+    <basecompoundref refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o" prot="public" virt="non-virtual">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</basecompoundref>
+    <derivedcompoundref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b" prot="public" virt="non-virtual">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp_1a6ef31f4ee62d9fe50d456aaa263e8bb9" prot="protected" static="no" mutable="no">
+        <type>Connection</type>
+        <definition>Connection es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAOImp.conn</definition>
+        <argsstring></argsstring>
+        <name>conn</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAOImp.conn</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAOImp.java" line="10" column="26" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAOImp.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp" kindref="compound">TransferDAWDAOImp</ref> servirá para futuras actualizaciones. <simplesect kind="author"><para>Iván Rafael Redondo. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAOImp</label>
+        <link refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</label>
+        <link refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</label>
+        <link refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAOImp</label>
+        <link refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>conn</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</label>
+        <link refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o"/>
+      </node>
+      <node id="3">
+        <label>Connection</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAOImp.java" line="9" column="18" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAOImp.java" bodystart="9" bodyend="11"/>
+    <listofallmembers>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a83bb6afb0623e3b1d2889733bb7f61ed" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>buscarEstadisticasPorTemporada</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a248c8bac999b932c96607359e41d58cb" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>buscarEstadisticasTotalesPorJugador</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aebf7a317f252a2480797f9557047788f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>buscarUsuarioPorEmail</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aec63960b55b0c55b6c578bf33e771cb6" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>buscarUsuarioPorNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp_1a6ef31f4ee62d9fe50d456aaa263e8bb9" prot="protected" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>conn</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9f934012a13908976bb0393722bb6e3c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>eliminar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a91f3b4b86e4f705505613f9e3279d48f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>eliminarCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4380715b756ccdf578e4dcd53f950779" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>eliminarEquipo</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4d4ca983fb79ecbd348a50d92465cfc6" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>eliminarEquipoCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac478ca1d76a8d20ceb3e71abf376f75e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>eliminarEstadisticasTemporada</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a37a178b1300bbc9ea094c7a00c78d647" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>eliminarJugador</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a5245f49101cd99f9296d637fc710da81" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>eliminarTraspaso</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4c30d507fee838e9e9c7bae86e1c3189" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>eliminarValorMercadoHistorial</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a93d67c31ae1f930a8979dfa5c050cd6e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a953c10acadf01f9adddc065342469ee1" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1abf72861492fe1e425e72369c592edbd8" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac5bbb18b82efdd5276d8180c83d5e72e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a8ff7e26c01863315c78c4158248affd3" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a93d3250dda47ed201f86908c3a8bed3e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a50da2b38cd3f130a7199d583032ea972" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ad5212d4785b991385ea8ec2d54fa8af0" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a091d2d83165f7067f55a97709078537f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>listarCompeticiones</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9861ad4669cda1e9d25ba27b62aacd2e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>listarEquipos</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ae1b33a04f93467e1d768378e91ae2879" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>listarEquiposCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9cfb4bcfa8ee100c3c4c24477ae52c09" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>listarEstadisticasTemporada</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a487aba6c5f490e9e31b400d968e1f752" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>listarJugadores</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1af2c367977a333e732676e83371ef329e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>listarTemporadas</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9982bbc854eed57564328e2f8db58497" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>listarTraspasos</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aaf3a4670afda315487c149db6d3b4a5b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>listarValorMercadoHistorial</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ad3a64b2a1557941bae3eec1703946d3e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1abe545e58db4d5835932b6bff8d149e8a" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1adfca654a5555cc0a1c546fe7d3be6b9f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a90e6bfda283f9c210554ed354c847358" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1af04ee3bddc5e1e90e6dcde16dca0fdfe" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ae6e739d615e691f2bb05e09246faeeb0" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a8ed64f37cd9d3e7ca54f5dabf421edcf" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a66d1cba744cdf596eb3f09334caa5fda" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>obtenerEstadisticaPorId</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9f1b1fe778f087ae1fbd4bd6d8ee9c40" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>obtenerIdPorNombreCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a40a9ff10b69a8faec9c5c7defc7be445" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>obtenerIdPorNombreEquipo</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aaa5a2d01aec758f6756dfc63737c3324" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>obtenerIdPorNombreJugador</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a661692b750eeebfa2e3649392ec43afe" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>obtenerIdPorNombreTemporada</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac7149b999a129ab59163fb67b8b643e6" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>visualizarCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a32a9c9829813df700f626ef5157f850a" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>visualizarEquipo</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a07e05dcd669677135e4dd5c7823fda80" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>visualizarEquipoCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aa296a57181d316a9791ff7ec0c85ca83" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>visualizarJugador</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a042353cc0d40a0ecbf8f5fc47d38ed04" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>visualizarTraspaso</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a7e68bab2356537d2d0a7b4d3d93c5c78" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAOImp</scope><name>visualizarValorMercadoHistorial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

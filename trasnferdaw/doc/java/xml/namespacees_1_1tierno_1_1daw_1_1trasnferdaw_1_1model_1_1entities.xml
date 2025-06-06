@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities" kind="namespace" language="Java">
+    <compoundname>es::tierno::daw::trasnferdaw::model::entities</compoundname>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion" prot="public">es::tierno::daw::trasnferdaw::model::entities::Competicion</innerclass>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo" prot="public">es::tierno::daw::trasnferdaw::model::entities::Equipo</innerclass>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion" prot="public">es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</innerclass>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" prot="public">es::tierno::daw::trasnferdaw::model::entities::EstadisticasTemporada</innerclass>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador" prot="public">es::tierno::daw::trasnferdaw::model::entities::Jugador</innerclass>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada" prot="public">es::tierno::daw::trasnferdaw::model::entities::Temporada</innerclass>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso" prot="public">es::tierno::daw::trasnferdaw::model::entities::Traspaso</innerclass>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario" prot="public">es::tierno::daw::trasnferdaw::model::entities::Usuario</innerclass>
+    <innerclass refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial" prot="public">es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Competicion.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

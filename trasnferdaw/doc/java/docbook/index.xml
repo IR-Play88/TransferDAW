@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>TransferDAW</title>
+    </info>
+<chapter>
+    <title>Class Documentation</title>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="enumes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_database.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_b_factory.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

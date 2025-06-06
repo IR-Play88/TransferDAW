@@ -1,0 +1,175 @@
+.TH "es.tierno.daw.trasnferdaw.model.entities.Traspaso" 3 "Wed Jun 4 2025" "Version 1.0" "TransferDAW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+es.tierno.daw.trasnferdaw.model.entities.Traspaso
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBTraspaso\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBTraspaso\fP (Integer jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo)  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBTraspaso\fP (Integer idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo)  throws BBDDException "
+.br
+.ti -1c
+.RI "Integer \fBgetIdTraspaso\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetIdTraspaso\fP (Integer idTraspaso)"
+.br
+.ti -1c
+.RI "Integer \fBgetJugadorId\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetJugadorId\fP (Integer jugadorId)"
+.br
+.ti -1c
+.RI "String \fBgetNombreJugador\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombreJugador\fP (String nombreJugador)"
+.br
+.ti -1c
+.RI "Integer \fBgetEquipoOrigenId\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetEquipoOrigenId\fP (Integer equipoOrigenId)"
+.br
+.ti -1c
+.RI "String \fBgetNombreEquipoOrigen\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombreEquipoOrigen\fP (String nombreEquipoOrigen)"
+.br
+.ti -1c
+.RI "Integer \fBgetEquipoDestinoId\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetEquipoDestinoId\fP (Integer equipoDestinoId)"
+.br
+.ti -1c
+.RI "String \fBgetNombreEquipoDestino\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombreEquipoDestino\fP (String nombreEquipoDestino)"
+.br
+.ti -1c
+.RI "Integer \fBgetTemporadaId\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTemporadaId\fP (Integer temporadaId)"
+.br
+.ti -1c
+.RI "String \fBgetNombreTemporada\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombreTemporada\fP (String nombreTemporada)"
+.br
+.ti -1c
+.RI "LocalDate \fBgetFechaTraspaso\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFechaTraspaso\fP (LocalDate fechaTraspaso)"
+.br
+.ti -1c
+.RI "double \fBgetCantidad\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetCantidad\fP (double cantidad)"
+.br
+.ti -1c
+.RI "String \fBgetTipo\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetTipo\fP (String tipo)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La clase \fBTraspaso\fP representa un traspaso de TransferDAW\&. 
+.PP
+\fBAuthor\fP
+.RS 4
+Iván Rafael Redondo\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Traspaso\&.Traspaso () throws \fBBBDDException\fP"
+Constructor por defecto de la clase \fBTraspaso\fP\&. Inicializa una nueva instancia sin establecer valores para sus atributos\&.
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Traspaso\&.Traspaso (Integer jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo) throws \fBBBDDException\fP"
+Constructor que inicializa un traspaso con sus datos básicos, sin especificar el ID\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIjugadorId\fP ID del jugador que es traspasado 
+.br
+\fIequipoOrigenId\fP ID del equipo de origen 
+.br
+\fIequipoDestinoId\fP ID del equipo de destino 
+.br
+\fItemporadaId\fP ID de la temporada en la que se realiza el traspaso 
+.br
+\fIfechaTraspaso\fP Fecha en la que se realiza el traspaso 
+.br
+\fIcantidad\fP Cantidad económica del traspaso 
+.br
+\fItipo\fP Tipo de traspaso (por ejemplo, 'compra', 'cesión', 'libre') 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Traspaso\&.Traspaso (Integer idTraspaso, int jugadorId, Integer equipoOrigenId, Integer equipoDestinoId, Integer temporadaId, LocalDate fechaTraspaso, double cantidad, String tipo) throws \fBBBDDException\fP"
+Constructor que inicializa un traspaso incluyendo su identificador único\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIidTraspaso\fP ID único del traspaso 
+.br
+\fIjugadorId\fP ID del jugador que es traspasado 
+.br
+\fIequipoOrigenId\fP ID del equipo de origen 
+.br
+\fIequipoDestinoId\fP ID del equipo de destino 
+.br
+\fItemporadaId\fP ID de la temporada en la que se realiza el traspaso 
+.br
+\fIfechaTraspaso\fP Fecha en la que se realiza el traspaso 
+.br
+\fIcantidad\fP Cantidad económica del traspaso 
+.br
+\fItipo\fP Tipo de traspaso (por ejemplo, 'compra', 'cesión', 'libre') 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TransferDAW from the source code\&.

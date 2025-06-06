@@ -1,0 +1,520 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial" kind="class" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1ad5cdab57c91295232168ecda71585b3a" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.idHistorial</definition>
+        <argsstring></argsstring>
+        <name>idHistorial</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.idHistorial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="13" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a5e3ada02cd432e0fc486b62ea82d9084" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.jugadorId</definition>
+        <argsstring></argsstring>
+        <name>jugadorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.jugadorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="14" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a6fb0d5ca206daf58f80dd5d314725f7d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.nombreJugador</definition>
+        <argsstring></argsstring>
+        <name>nombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.nombreJugador</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="15" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a7916a2e1e8509d08495b6483420a145d" prot="private" static="no" mutable="no">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.fecha</definition>
+        <argsstring></argsstring>
+        <name>fecha</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.fecha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="16" column="23" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a3619d0ad51b82df7c47679d881e3addc" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.valorMercado</definition>
+        <argsstring></argsstring>
+        <name>valorMercado</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.valorMercado</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="17" column="18" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1add97023fa5fc2ceb65655411246ead3f" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.motivo</definition>
+        <argsstring></argsstring>
+        <name>motivo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.motivo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="18" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a99cc1e319c1a6290c6ac58bb756bd353" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.ValorMercadoHistorial</definition>
+        <argsstring>()</argsstring>
+        <name>ValorMercadoHistorial</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.ValorMercadoHistorial</qualifiedname>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial" kindref="compound">ValorMercadoHistorial</ref>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="26" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="26" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a3c53882cc6bf4b6fe6df49822f84313b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.ValorMercadoHistorial</definition>
+        <argsstring>(Integer jugadorId, LocalDate fecha, long valorMercado, String motivo)</argsstring>
+        <name>ValorMercadoHistorial</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.ValorMercadoHistorial</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>jugadorId</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fecha</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>valorMercado</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>motivo</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa un historial de valor de mercado para un jugador, sin especificar el ID.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>jugadorId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fecha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha en la que se registra el valor de mercado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valorMercado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor de mercado del jugador en la fecha indicada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>motivo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Motivo o descripción del cambio en el valor de mercado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="39" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="39" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1af5e786477c079d3b3e88a153133122b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.ValorMercadoHistorial</definition>
+        <argsstring>(Integer idHistorial, Integer jugadorId, LocalDate fecha, long valorMercado, String motivo)</argsstring>
+        <name>ValorMercadoHistorial</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.ValorMercadoHistorial</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idHistorial</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>jugadorId</declname>
+        </param>
+        <param>
+          <type>LocalDate</type>
+          <declname>fecha</declname>
+        </param>
+        <param>
+          <type>long</type>
+          <declname>valorMercado</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>motivo</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa un historial de valor de mercado para un jugador, incluyendo su identificador único.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idHistorial</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID único del historial de valor de mercado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>jugadorId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del jugador </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fecha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fecha en la que se registra el valor de mercado </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valorMercado</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Valor de mercado del jugador en la fecha indicada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>motivo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Motivo o descripción del cambio en el valor de mercado </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="58" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="58" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1acb16022dd2b832c35e4e8a4003888ce2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getIdHistorial</definition>
+        <argsstring>()</argsstring>
+        <name>getIdHistorial</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getIdHistorial</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="67" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1ad5123ef5700971d12566b5ea2ec4d21c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setIdHistorial</definition>
+        <argsstring>(Integer idHistorial)</argsstring>
+        <name>setIdHistorial</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setIdHistorial</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idHistorial</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="71" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1ae7670e3e3966ad0f2201accf45de1ca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getJugadorId</definition>
+        <argsstring>()</argsstring>
+        <name>getJugadorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getJugadorId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="75" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a3807e4919563c63d6209299dd4bcd8c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setJugadorId</definition>
+        <argsstring>(Integer jugadorId)</argsstring>
+        <name>setJugadorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setJugadorId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>jugadorId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="79" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a027c6820314202c9aadbd9c944b4e8b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getNombreJugador</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getNombreJugador</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="83" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a1ee737091e787e971f4ded9dcab776f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setNombreJugador</definition>
+        <argsstring>(String nombreJugador)</argsstring>
+        <name>setNombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setNombreJugador</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreJugador</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="87" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1aa1e463139615d85019d9649724138ac6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>LocalDate</type>
+        <definition>LocalDate es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getFecha</definition>
+        <argsstring>()</argsstring>
+        <name>getFecha</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getFecha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="91" column="22" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a7c114ddeb0a449264ac9017b2192a03c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setFecha</definition>
+        <argsstring>(LocalDate fecha)</argsstring>
+        <name>setFecha</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setFecha</qualifiedname>
+        <param>
+          <type>LocalDate</type>
+          <declname>fecha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="95" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a8d03a4bf4a9822f91b8b9e2560eab15a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getValorMercado</definition>
+        <argsstring>()</argsstring>
+        <name>getValorMercado</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getValorMercado</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="99" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a23d78740b5b47726d7e0164b40c5b05b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setValorMercado</definition>
+        <argsstring>(long valorMercado)</argsstring>
+        <name>setValorMercado</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setValorMercado</qualifiedname>
+        <param>
+          <type>long</type>
+          <declname>valorMercado</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="103" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a452b862ef387c35a05f05fb4fb9f5955" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getMotivo</definition>
+        <argsstring>()</argsstring>
+        <name>getMotivo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.getMotivo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="107" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="107" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a5cf11b8c5867cbba399b01399f3ad534" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setMotivo</definition>
+        <argsstring>(String motivo)</argsstring>
+        <name>setMotivo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.setMotivo</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>motivo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="111" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="111" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a722ba206e111698c1a00900e3aaa93df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="116" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="116" bodyend="121"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La clase ValorMercadpHistorial representa el valor de mercado de los jugadores de TransferDAW. <simplesect kind="author"><para>Iván Rafael Redondo. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" line="12" column="7" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/ValorMercadoHistorial.java" bodystart="12" bodyend="123"/>
+    <listofallmembers>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a7916a2e1e8509d08495b6483420a145d" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>fecha</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1aa1e463139615d85019d9649724138ac6" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>getFecha</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1acb16022dd2b832c35e4e8a4003888ce2" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>getIdHistorial</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1ae7670e3e3966ad0f2201accf45de1ca7" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>getJugadorId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a452b862ef387c35a05f05fb4fb9f5955" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>getMotivo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a027c6820314202c9aadbd9c944b4e8b5" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>getNombreJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a8d03a4bf4a9822f91b8b9e2560eab15a" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>getValorMercado</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1ad5cdab57c91295232168ecda71585b3a" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>idHistorial</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a5e3ada02cd432e0fc486b62ea82d9084" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>jugadorId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1add97023fa5fc2ceb65655411246ead3f" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>motivo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a6fb0d5ca206daf58f80dd5d314725f7d" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>nombreJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a7c114ddeb0a449264ac9017b2192a03c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>setFecha</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1ad5123ef5700971d12566b5ea2ec4d21c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>setIdHistorial</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a3807e4919563c63d6209299dd4bcd8c0" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>setJugadorId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a5cf11b8c5867cbba399b01399f3ad534" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>setMotivo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a1ee737091e787e971f4ded9dcab776f7" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>setNombreJugador</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a23d78740b5b47726d7e0164b40c5b05b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>setValorMercado</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a722ba206e111698c1a00900e3aaa93df" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>toString</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a3619d0ad51b82df7c47679d881e3addc" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>valorMercado</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a99cc1e319c1a6290c6ac58bb756bd353" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>ValorMercadoHistorial</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1a3c53882cc6bf4b6fe6df49822f84313b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>ValorMercadoHistorial</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial_1af5e786477c079d3b3e88a153133122b1" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::ValorMercadoHistorial</scope><name>ValorMercadoHistorial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

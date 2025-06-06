@@ -1,0 +1,187 @@
+.TH "es.tierno.daw.trasnferdaw.model.entities.Jugador" 3 "Wed Jun 4 2025" "Version 1.0" "TransferDAW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+es.tierno.daw.trasnferdaw.model.entities.Jugador
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBJugador\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBJugador\fP (String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura, double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre, String seleccionNombre)  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBJugador\fP (Integer idJugador, String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura, double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre, String seleccionNombre)  throws BBDDException "
+.br
+.ti -1c
+.RI "Integer \fBgetIdJugador\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetIdJugador\fP (Integer idJugador)"
+.br
+.ti -1c
+.RI "String \fBgetNombre\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombre\fP (String nombre)"
+.br
+.ti -1c
+.RI "String \fBgetAlias\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAlias\fP (String alias)"
+.br
+.ti -1c
+.RI "LocalDate \fBgetFechaNacimiento\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFechaNacimiento\fP (LocalDate fechaNacimiento)"
+.br
+.ti -1c
+.RI "String \fBgetNacionalidad\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNacionalidad\fP (String nacionalidad)"
+.br
+.ti -1c
+.RI "double \fBgetAltura\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetAltura\fP (double altura)"
+.br
+.ti -1c
+.RI "double \fBgetPeso\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPeso\fP (double peso)"
+.br
+.ti -1c
+.RI "String \fBgetPieDominante\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPieDominante\fP (String pieDominante)"
+.br
+.ti -1c
+.RI "double \fBgetValorMercado\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetValorMercado\fP (double valorMercado)"
+.br
+.ti -1c
+.RI "String \fBgetPosicion\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetPosicion\fP (String posicion)"
+.br
+.ti -1c
+.RI "String \fBgetRepresentanteNombre\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetRepresentanteNombre\fP (String representanteNombre)"
+.br
+.ti -1c
+.RI "String \fBgetSeleccionNombre\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetSeleccionNombre\fP (String seleccionNombre)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La clase \fBJugador\fP representa un jugador de TransferDAW\&. 
+.PP
+\fBAuthor\fP
+.RS 4
+Iván Rafael Redondo\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Jugador\&.Jugador () throws \fBBBDDException\fP"
+Constructor por defecto de la clase \fBJugador\fP\&. Inicializa una nueva instancia sin establecer valores para sus atributos\&.
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.Jugador\&.Jugador (String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura, double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre, String seleccionNombre) throws \fBBBDDException\fP"
+Constructor que inicializa un jugador con sus datos básicos, sin especificar el ID\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fInombre\fP Nombre completo del jugador 
+.br
+\fIalias\fP Apodo o nombre deportivo del jugador 
+.br
+\fIfechaNacimiento\fP Fecha de nacimiento del jugador 
+.br
+\fInacionalidad\fP Nacionalidad del jugador 
+.br
+\fIaltura\fP Altura del jugador en metros 
+.br
+\fIpeso\fP Peso del jugador en kilogramos 
+.br
+\fIpieDominante\fP Pie dominante del jugador (izquierdo, derecho, ambos) 
+.br
+\fIvalorMercado\fP Valor de mercado estimado del jugador 
+.br
+\fIposicion\fP Posición en la que juega el jugador (por ejemplo, delantero, defensa, etc\&.) 
+.br
+\fIrepresentanteNombre\fP Nombre del representante del jugador 
+.br
+\fIseleccionNombre\fP Nombre de la selección nacional con la que está asociado el jugador (si aplica) 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP Constructor que inicializa un jugador incluyendo su identificador único\&.
+.RE
+.PP
+\fBParameters\fP
+.RS 4
+\fIidJugador\fP ID único del jugador 
+.br
+\fInombre\fP Nombre completo del jugador 
+.br
+\fIalias\fP Apodo o nombre deportivo del jugador 
+.br
+\fIfechaNacimiento\fP Fecha de nacimiento del jugador 
+.br
+\fInacionalidad\fP Nacionalidad del jugador 
+.br
+\fIaltura\fP Altura del jugador en metros 
+.br
+\fIpeso\fP Peso del jugador en kilogramos 
+.br
+\fIpieDominante\fP Pie dominante del jugador (izquierdo, derecho, ambos) 
+.br
+\fIvalorMercado\fP Valor de mercado estimado del jugador 
+.br
+\fIposicion\fP Posición en la que juega el jugador (por ejemplo, delantero, defensa, etc\&.) 
+.br
+\fIrepresentanteNombre\fP Nombre del representante del jugador 
+.br
+\fIseleccionNombre\fP Nombre de la selección nacional con la que está asociado el jugador (si aplica) 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TransferDAW from the source code\&.

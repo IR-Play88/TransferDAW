@@ -1,0 +1,1013 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o" kind="interface" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</compoundname>
+    <derivedcompoundref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp" prot="public" virt="non-virtual">es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAOImp</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1af2c367977a333e732676e83371ef329e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_temporada" kindref="compound">Temporada</ref> &gt;</type>
+        <definition>List&lt; Temporada &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarTemporadas</definition>
+        <argsstring>()</argsstring>
+        <name>listarTemporadas</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarTemporadas</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a96fbdef934a1ff9d1ad32c0eec199443">listarTemporadas</reimplementedby>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="22" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a93d67c31ae1f930a8979dfa5c050cd6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</definition>
+        <argsstring>(Jugador jugador)</argsstring>
+        <name>insertar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ac96da6f2d88d63b2c873835dc5abae4b">insertar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jugador</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="26" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ad3a64b2a1557941bae3eec1703946d3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</definition>
+        <argsstring>(Jugador jugador)</argsstring>
+        <name>modificar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a45c2905e462dee9c3883cceca8f1238d">modificar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador" kindref="compound">Jugador</ref></type>
+          <declname>jugador</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="28" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a37a178b1300bbc9ea094c7a00c78d647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarJugador</definition>
+        <argsstring>(int idJugador)</argsstring>
+        <name>eliminarJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarJugador</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8548e5ea32988685d9bb03547eae2673">eliminarJugador</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idJugador</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="30" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a487aba6c5f490e9e31b400d968e1f752" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador" kindref="compound">Jugador</ref> &gt;</type>
+        <definition>List&lt; Jugador &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarJugadores</definition>
+        <argsstring>()</argsstring>
+        <name>listarJugadores</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarJugadores</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8f78ec697b426535c703afbd88020e89">listarJugadores</reimplementedby>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="32" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aa296a57181d316a9791ff7ec0c85ca83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador" kindref="compound">Jugador</ref></type>
+        <definition>Jugador es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarJugador</definition>
+        <argsstring>(int idJugador)</argsstring>
+        <name>visualizarJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarJugador</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a443df638ce47250aca0d5a4c0fbd480d">visualizarJugador</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idJugador</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="34" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a953c10acadf01f9adddc065342469ee1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</definition>
+        <argsstring>(Equipo equipo)</argsstring>
+        <name>insertar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7e5c174055b38230b052878204f12ac5">insertar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo" kindref="compound">Equipo</ref></type>
+          <declname>equipo</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="38" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1abe545e58db4d5835932b6bff8d149e8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</definition>
+        <argsstring>(Equipo equipo)</argsstring>
+        <name>modificar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a03a4327a428580a9b474c0b501a60353">modificar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo" kindref="compound">Equipo</ref></type>
+          <declname>equipo</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="40" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4380715b756ccdf578e4dcd53f950779" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarEquipo</definition>
+        <argsstring>(int idEquipo)</argsstring>
+        <name>eliminarEquipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarEquipo</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4fb293ee23fd830ee340e33533b687dd">eliminarEquipo</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idEquipo</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="42" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9861ad4669cda1e9d25ba27b62aacd2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo" kindref="compound">Equipo</ref> &gt;</type>
+        <definition>List&lt; Equipo &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarEquipos</definition>
+        <argsstring>()</argsstring>
+        <name>listarEquipos</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarEquipos</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1afb9524f6796d6068daea79ef5c7d2d6f">listarEquipos</reimplementedby>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="44" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a32a9c9829813df700f626ef5157f850a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo" kindref="compound">Equipo</ref></type>
+        <definition>Equipo es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarEquipo</definition>
+        <argsstring>(int idEquipo)</argsstring>
+        <name>visualizarEquipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarEquipo</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2520d2f66b44c7427c9e8dd43b820e69">visualizarEquipo</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idEquipo</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="46" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1abf72861492fe1e425e72369c592edbd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</definition>
+        <argsstring>(Competicion competicion)</argsstring>
+        <name>insertar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa7416e115ee2f8eaa44ccc8928b7b756">insertar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion" kindref="compound">Competicion</ref></type>
+          <declname>competicion</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="50" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1adfca654a5555cc0a1c546fe7d3be6b9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</definition>
+        <argsstring>(Competicion competicion)</argsstring>
+        <name>modificar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1abbe49af6bc9464c9ea5b7767fd213f19">modificar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion" kindref="compound">Competicion</ref></type>
+          <declname>competicion</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="52" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a91f3b4b86e4f705505613f9e3279d48f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarCompeticion</definition>
+        <argsstring>(int idCompeticion)</argsstring>
+        <name>eliminarCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarCompeticion</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a14cd47aeb71e676f4b9aa6bdcd67845b">eliminarCompeticion</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idCompeticion</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="54" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a091d2d83165f7067f55a97709078537f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion" kindref="compound">Competicion</ref> &gt;</type>
+        <definition>List&lt; Competicion &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarCompeticiones</definition>
+        <argsstring>()</argsstring>
+        <name>listarCompeticiones</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarCompeticiones</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a8ad8eb5e28c1248ef564644d1ad3adc2">listarCompeticiones</reimplementedby>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="56" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac7149b999a129ab59163fb67b8b643e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_competicion" kindref="compound">Competicion</ref></type>
+        <definition>Competicion es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarCompeticion</definition>
+        <argsstring>(int idCompeticion)</argsstring>
+        <name>visualizarCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarCompeticion</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1add09fb442df845d9ef6e6153bb295d69">visualizarCompeticion</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idCompeticion</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="58" column="24"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac5bbb18b82efdd5276d8180c83d5e72e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</definition>
+        <argsstring>(EquipoCompeticion equipoCompeticion)</argsstring>
+        <name>insertar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a319600cb6e0f303a383a0a3e5a9914cb">insertar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion" kindref="compound">EquipoCompeticion</ref></type>
+          <declname>equipoCompeticion</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="62" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a90e6bfda283f9c210554ed354c847358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</definition>
+        <argsstring>(EquipoCompeticion equipoCompeticion)</argsstring>
+        <name>modificar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7da46cb2d9ba52fd2f1a6915f1700d54">modificar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion" kindref="compound">EquipoCompeticion</ref></type>
+          <declname>equipoCompeticion</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="64" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4d4ca983fb79ecbd348a50d92465cfc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarEquipoCompeticion</definition>
+        <argsstring>(int equipoId, int competicionId, int temporadaId)</argsstring>
+        <name>eliminarEquipoCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarEquipoCompeticion</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a17138025127959e029db7330327d346b">eliminarEquipoCompeticion</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>equipoId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>competicionId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temporadaId</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="66" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ae1b33a04f93467e1d768378e91ae2879" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion" kindref="compound">EquipoCompeticion</ref> &gt;</type>
+        <definition>List&lt; EquipoCompeticion &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarEquiposCompeticion</definition>
+        <argsstring>()</argsstring>
+        <name>listarEquiposCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarEquiposCompeticion</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9234bf871ff054294a812ed7cdbe6f20">listarEquiposCompeticion</reimplementedby>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="68" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a07e05dcd669677135e4dd5c7823fda80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion" kindref="compound">EquipoCompeticion</ref></type>
+        <definition>EquipoCompeticion es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarEquipoCompeticion</definition>
+        <argsstring>(int equipoId, int competicionId, int temporadaId)</argsstring>
+        <name>visualizarEquipoCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarEquipoCompeticion</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a393fefc9c043e0d646cf8e0991a0c3c4">visualizarEquipoCompeticion</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>equipoId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>competicionId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temporadaId</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="70" column="30"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a8ff7e26c01863315c78c4158248affd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</definition>
+        <argsstring>(EstadisticasTemporada estadisticasTemporada)</argsstring>
+        <name>insertar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a76d5935b0cc35d85479d7211a09c2863">insertar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" kindref="compound">EstadisticasTemporada</ref></type>
+          <declname>estadisticasTemporada</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="74" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1af04ee3bddc5e1e90e6dcde16dca0fdfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</definition>
+        <argsstring>(EstadisticasTemporada estadisticasTemporada)</argsstring>
+        <name>modificar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a80d6f250da6afd6e67013018c0bc94a7">modificar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" kindref="compound">EstadisticasTemporada</ref></type>
+          <declname>estadisticasTemporada</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="76" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac478ca1d76a8d20ceb3e71abf376f75e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarEstadisticasTemporada</definition>
+        <argsstring>(int jugadorId, int temporadaId, int competicionId, int equipoId)</argsstring>
+        <name>eliminarEstadisticasTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarEstadisticasTemporada</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a159b838333f34b8a65d5bc4e5e4cc1bf">eliminarEstadisticasTemporada</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>jugadorId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temporadaId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>competicionId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>equipoId</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="78" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9cfb4bcfa8ee100c3c4c24477ae52c09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" kindref="compound">EstadisticasTemporada</ref> &gt;</type>
+        <definition>List&lt; EstadisticasTemporada &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarEstadisticasTemporada</definition>
+        <argsstring>()</argsstring>
+        <name>listarEstadisticasTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarEstadisticasTemporada</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a67faee2621ce1d91db15e19a0215900e">listarEstadisticasTemporada</reimplementedby>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="80" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a248c8bac999b932c96607359e41d58cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" kindref="compound">EstadisticasTemporada</ref></type>
+        <definition>EstadisticasTemporada es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.buscarEstadisticasTotalesPorJugador</definition>
+        <argsstring>(int jugadorId)</argsstring>
+        <name>buscarEstadisticasTotalesPorJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.buscarEstadisticasTotalesPorJugador</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a3fd668d7a2c689c5ea83b6f08dd70c1a">buscarEstadisticasTotalesPorJugador</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>jugadorId</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="82" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a83bb6afb0623e3b1d2889733bb7f61ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" kindref="compound">EstadisticasTemporada</ref></type>
+        <definition>EstadisticasTemporada es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.buscarEstadisticasPorTemporada</definition>
+        <argsstring>(int jugadorId, int temporadaId)</argsstring>
+        <name>buscarEstadisticasPorTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.buscarEstadisticasPorTemporada</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aafb6b81336980c8ff115957df661b9ea">buscarEstadisticasPorTemporada</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>jugadorId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temporadaId</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="84" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a93d3250dda47ed201f86908c3a8bed3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</definition>
+        <argsstring>(Traspaso traspaso)</argsstring>
+        <name>insertar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1abd4cbf0293ce78abf2c6fe7d5beee926">insertar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso" kindref="compound">Traspaso</ref></type>
+          <declname>traspaso</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="88" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ae6e739d615e691f2bb05e09246faeeb0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</definition>
+        <argsstring>(Traspaso traspaso)</argsstring>
+        <name>modificar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aa6424c590701da26bbe9f60af7d6529c">modificar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso" kindref="compound">Traspaso</ref></type>
+          <declname>traspaso</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="90" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a5245f49101cd99f9296d637fc710da81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarTraspaso</definition>
+        <argsstring>(int idTraspaso)</argsstring>
+        <name>eliminarTraspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarTraspaso</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a2502a5d55eae74f591a28a2559379285">eliminarTraspaso</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idTraspaso</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="92" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9982bbc854eed57564328e2f8db58497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso" kindref="compound">Traspaso</ref> &gt;</type>
+        <definition>List&lt; Traspaso &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarTraspasos</definition>
+        <argsstring>()</argsstring>
+        <name>listarTraspasos</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarTraspasos</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a5c6e13e2656290ebf4ba9ec0269ce7bd">listarTraspasos</reimplementedby>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="94" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a042353cc0d40a0ecbf8f5fc47d38ed04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_traspaso" kindref="compound">Traspaso</ref></type>
+        <definition>Traspaso es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarTraspaso</definition>
+        <argsstring>(int idTraspaso)</argsstring>
+        <name>visualizarTraspaso</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarTraspaso</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1adc34701f5eb1f3430c8f6f65db3b9ff4">visualizarTraspaso</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idTraspaso</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="96" column="21"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a50da2b38cd3f130a7199d583032ea972" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</definition>
+        <argsstring>(ValorMercadoHistorial valorMercadoHistorial)</argsstring>
+        <name>insertar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a7b6ad361ef45971159f2e788f2ce4000">insertar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial" kindref="compound">ValorMercadoHistorial</ref></type>
+          <declname>valorMercadoHistorial</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="99" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a8ed64f37cd9d3e7ca54f5dabf421edcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</definition>
+        <argsstring>(ValorMercadoHistorial valorMercadoHistorial)</argsstring>
+        <name>modificar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.modificar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a1b42fa3336da041fd81c0fb005d7bedd">modificar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial" kindref="compound">ValorMercadoHistorial</ref></type>
+          <declname>valorMercadoHistorial</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="101" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4c30d507fee838e9e9c7bae86e1c3189" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarValorMercadoHistorial</definition>
+        <argsstring>(int idHistorial)</argsstring>
+        <name>eliminarValorMercadoHistorial</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminarValorMercadoHistorial</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a6371aefe5989e49af7eda79e95b22aae">eliminarValorMercadoHistorial</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idHistorial</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="103" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aaf3a4670afda315487c149db6d3b4a5b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>List&lt; <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial" kindref="compound">ValorMercadoHistorial</ref> &gt;</type>
+        <definition>List&lt; ValorMercadoHistorial &gt; es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarValorMercadoHistorial</definition>
+        <argsstring>()</argsstring>
+        <name>listarValorMercadoHistorial</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.listarValorMercadoHistorial</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a78e78952186a373e4e78c1565d5be996">listarValorMercadoHistorial</reimplementedby>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="105" column="17"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a7e68bab2356537d2d0a7b4d3d93c5c78" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_valor_mercado_historial" kindref="compound">ValorMercadoHistorial</ref></type>
+        <definition>ValorMercadoHistorial es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarValorMercadoHistorial</definition>
+        <argsstring>(int idHistorial)</argsstring>
+        <name>visualizarValorMercadoHistorial</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.visualizarValorMercadoHistorial</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a280c83e711ccf6fe8ae53069e63d3b15">visualizarValorMercadoHistorial</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>idHistorial</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="107" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ad5212d4785b991385ea8ec2d54fa8af0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</definition>
+        <argsstring>(Usuario usuario)</argsstring>
+        <name>insertar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.insertar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1aedbfc379984b613b58dece0e2accf040">insertar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario" kindref="compound">Usuario</ref></type>
+          <declname>usuario</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="110" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9f934012a13908976bb0393722bb6e3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminar</definition>
+        <argsstring>(Usuario usuario)</argsstring>
+        <name>eliminar</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.eliminar</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a5ec92c20ceee033c197b2dce16c4f439">eliminar</reimplementedby>
+        <param>
+          <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario" kindref="compound">Usuario</ref></type>
+          <declname>usuario</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="111" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aaa5a2d01aec758f6756dfc63737c3324" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerIdPorNombreJugador</definition>
+        <argsstring>(String nombre)</argsstring>
+        <name>obtenerIdPorNombreJugador</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerIdPorNombreJugador</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1ab60722b930671070684e2dfdbfb02647">obtenerIdPorNombreJugador</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="114" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a40a9ff10b69a8faec9c5c7defc7be445" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerIdPorNombreEquipo</definition>
+        <argsstring>(String nombre)</argsstring>
+        <name>obtenerIdPorNombreEquipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerIdPorNombreEquipo</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a9944093a4cd9fe500cae086ef3605796">obtenerIdPorNombreEquipo</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="115" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9f1b1fe778f087ae1fbd4bd6d8ee9c40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerIdPorNombreCompeticion</definition>
+        <argsstring>(String nombre)</argsstring>
+        <name>obtenerIdPorNombreCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerIdPorNombreCompeticion</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a15705b50d3d5cbcc23084528f73be4eb">obtenerIdPorNombreCompeticion</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="116" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a661692b750eeebfa2e3649392ec43afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerIdPorNombreTemporada</definition>
+        <argsstring>(String nombre)</argsstring>
+        <name>obtenerIdPorNombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerIdPorNombreTemporada</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1af2bcb44d17b1bebcc9b4b11738c79063">obtenerIdPorNombreTemporada</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="117" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a66d1cba744cdf596eb3f09334caa5fda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_estadisticas_temporada" kindref="compound">EstadisticasTemporada</ref></type>
+        <definition>EstadisticasTemporada es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerEstadisticaPorId</definition>
+        <argsstring>(int jugadorId, int temporadaId, int competicionId, int equipoId)</argsstring>
+        <name>obtenerEstadisticaPorId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.obtenerEstadisticaPorId</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a40a52e3ff1927e6327654f5348242d54">obtenerEstadisticaPorId</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>jugadorId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>temporadaId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>competicionId</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>equipoId</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="118" column="34"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aec63960b55b0c55b6c578bf33e771cb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario" kindref="compound">Usuario</ref></type>
+        <definition>Usuario es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.buscarUsuarioPorNombre</definition>
+        <argsstring>(String nombre)</argsstring>
+        <name>buscarUsuarioPorNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.buscarUsuarioPorNombre</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a3dcda9ea44ceb0bef6a6c327d30df4c6">buscarUsuarioPorNombre</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="121" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aebf7a317f252a2480797f9557047788f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario" kindref="compound">Usuario</ref></type>
+        <definition>Usuario es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.buscarUsuarioPorEmail</definition>
+        <argsstring>(String email)</argsstring>
+        <name>buscarUsuarioPorEmail</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO.buscarUsuarioPorEmail</qualifiedname>
+        <reimplementedby refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b_1a4668ede07f1ce15f2482ce8a5f5600a9">buscarUsuarioPorEmail</reimplementedby>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref></exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="122" column="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La interfaz <ref refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o" kindref="compound">TransferDAWDAO</ref> expone los metodos de acceso a la base de datos. \Iván Rafael Redondo. </para>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO</label>
+        <link refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o"/>
+      </node>
+      <node id="3">
+        <label>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAOImpMariaDB</label>
+        <link refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_o_imp_maria_d_b"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAOImp</label>
+        <link refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_imp"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" line="20" column="18" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDAO.java" bodystart="20" bodyend="124"/>
+    <listofallmembers>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a83bb6afb0623e3b1d2889733bb7f61ed" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>buscarEstadisticasPorTemporada</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a248c8bac999b932c96607359e41d58cb" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>buscarEstadisticasTotalesPorJugador</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aebf7a317f252a2480797f9557047788f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>buscarUsuarioPorEmail</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aec63960b55b0c55b6c578bf33e771cb6" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>buscarUsuarioPorNombre</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9f934012a13908976bb0393722bb6e3c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>eliminar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a91f3b4b86e4f705505613f9e3279d48f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>eliminarCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4380715b756ccdf578e4dcd53f950779" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>eliminarEquipo</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4d4ca983fb79ecbd348a50d92465cfc6" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>eliminarEquipoCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac478ca1d76a8d20ceb3e71abf376f75e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>eliminarEstadisticasTemporada</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a37a178b1300bbc9ea094c7a00c78d647" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>eliminarJugador</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a5245f49101cd99f9296d637fc710da81" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>eliminarTraspaso</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a4c30d507fee838e9e9c7bae86e1c3189" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>eliminarValorMercadoHistorial</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a93d67c31ae1f930a8979dfa5c050cd6e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a953c10acadf01f9adddc065342469ee1" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1abf72861492fe1e425e72369c592edbd8" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac5bbb18b82efdd5276d8180c83d5e72e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a8ff7e26c01863315c78c4158248affd3" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a93d3250dda47ed201f86908c3a8bed3e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a50da2b38cd3f130a7199d583032ea972" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ad5212d4785b991385ea8ec2d54fa8af0" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>insertar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a091d2d83165f7067f55a97709078537f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>listarCompeticiones</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9861ad4669cda1e9d25ba27b62aacd2e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>listarEquipos</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ae1b33a04f93467e1d768378e91ae2879" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>listarEquiposCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9cfb4bcfa8ee100c3c4c24477ae52c09" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>listarEstadisticasTemporada</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a487aba6c5f490e9e31b400d968e1f752" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>listarJugadores</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1af2c367977a333e732676e83371ef329e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>listarTemporadas</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9982bbc854eed57564328e2f8db58497" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>listarTraspasos</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aaf3a4670afda315487c149db6d3b4a5b" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>listarValorMercadoHistorial</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ad3a64b2a1557941bae3eec1703946d3e" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1abe545e58db4d5835932b6bff8d149e8a" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1adfca654a5555cc0a1c546fe7d3be6b9f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a90e6bfda283f9c210554ed354c847358" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1af04ee3bddc5e1e90e6dcde16dca0fdfe" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ae6e739d615e691f2bb05e09246faeeb0" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a8ed64f37cd9d3e7ca54f5dabf421edcf" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>modificar</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a66d1cba744cdf596eb3f09334caa5fda" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>obtenerEstadisticaPorId</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a9f1b1fe778f087ae1fbd4bd6d8ee9c40" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>obtenerIdPorNombreCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a40a9ff10b69a8faec9c5c7defc7be445" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>obtenerIdPorNombreEquipo</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aaa5a2d01aec758f6756dfc63737c3324" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>obtenerIdPorNombreJugador</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a661692b750eeebfa2e3649392ec43afe" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>obtenerIdPorNombreTemporada</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1ac7149b999a129ab59163fb67b8b643e6" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>visualizarCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a32a9c9829813df700f626ef5157f850a" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>visualizarEquipo</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a07e05dcd669677135e4dd5c7823fda80" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>visualizarEquipoCompeticion</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1aa296a57181d316a9791ff7ec0c85ca83" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>visualizarJugador</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a042353cc0d40a0ecbf8f5fc47d38ed04" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>visualizarTraspaso</name></member>
+      <member refid="interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o_1a7e68bab2356537d2d0a7b4d3d93c5c78" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::bbdd::TransferDAWDAO</scope><name>visualizarValorMercadoHistorial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,30 @@
+@startuml exception
+set separator none
+
+class Exception{
+
+}
+
+package exception{
+    
+
+    class TransferDAWException{
+
+    }
+    
+
+    class BBDDException{
+
+    }
+}
+
+
+
+
+Exception <|-- TransferDAWException 
+
+    TransferDAWException <|-- BBDDException
+
+
+@enduml 
+

@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aac2db0dbd871d0986a7a6243e0de78b3">EquipoCompeticion</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a0b0bab5752eedaaae707d2dc68721b44">EquipoCompeticion</link> (Integer equipoId, Integer competicionId, Integer temporadaId, String posicion)  throws BBDDException </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aea3bcc08ffa3be99601bca1a048a6290"/>Integer <emphasis role="strong">getEquipoId</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a55b4b28bb8a9cbda2a1438aa1fe60253"/>void <emphasis role="strong">setEquipoId</emphasis> (Integer equipoId)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a5f0727b527b2aaa5e14cf7e3b0e49bfc"/>String <emphasis role="strong">getNombreEquipo</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aee00675334ebcc0449f1fab0f7d522c3"/>void <emphasis role="strong">setNombreEquipo</emphasis> (String nombreEquipo)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9d6981f7b5a8e856a83a4283081d4d43"/>Integer <emphasis role="strong">getCompeticionId</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9473f6db7047c2c6f7287cb0fa108dab"/>void <emphasis role="strong">setCompeticionId</emphasis> (Integer competicionId)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a37486191093d500ac0e2c1f624722a3d"/>String <emphasis role="strong">getNombreCompeticion</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9d644d7dd2cfed8f0f2542467bb8e975"/>void <emphasis role="strong">setNombreCompeticion</emphasis> (String nombreCompeticion)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a0a34a830bd2a081ec54d781865458203"/>Integer <emphasis role="strong">getTemporadaId</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a2b0fb06f503e408deebf07a1990ef477"/>void <emphasis role="strong">setTemporadaId</emphasis> (Integer temporadaId)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1ad74f0d01c1965eeb884226fc5179e914"/>String <emphasis role="strong">getNombreTemporada</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a4f75e1ab61937a2d08d757d1e8a7fcab"/>void <emphasis role="strong">setNombreTemporada</emphasis> (String nombreTemporada)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1adcc3b6b577f99d14a912ded3aa8eda71"/>String <emphasis role="strong">getPosicion</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1acb6ee737626568d750e2b22a8e320991"/>void <emphasis role="strong">setPosicion</emphasis> (String posicion)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1acde8f136d3d6d634db1d172edbbf16c0"/>String <emphasis role="strong">toString</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link> representa un equipo en una competición de TransferDAW. <formalpara><title>Author</title>
+
+<para>Iván Rafael Redondo. </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aac2db0dbd871d0986a7a6243e0de78b3"/><section>
+    <title>EquipoCompeticion()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>EquipoCompeticion</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion</primary><secondary>EquipoCompeticion</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.EquipoCompeticion ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor por defecto de la clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion">EquipoCompeticion</link>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a0b0bab5752eedaaae707d2dc68721b44"/><section>
+    <title>EquipoCompeticion()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>EquipoCompeticion</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion</primary><secondary>EquipoCompeticion</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.EquipoCompeticion (Integer equipoId, Integer competicionId, Integer temporadaId, String posicion) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa la relación entre un equipo, una competición y una temporada.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>equipoId</entry><entry>
+<para>ID del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>competicionId</entry><entry>
+<para>ID de la competición </para>
+</entry>
+                            </row>
+                            <row>
+<entry>temporadaId</entry><entry>
+<para>ID de la temporada </para>
+</entry>
+                            </row>
+                            <row>
+<entry>posicion</entry><entry>
+<para>Posición del equipo en esa competición durante la temporada </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java</section>
+</section>

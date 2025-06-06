@@ -1,0 +1,111 @@
+@startuml Descargar estadisticas del jugador
+|Usuario|
+start
+
+:Acceder a TransferDAW;
+:Seleccionar la categoría Estadisticas de los jugadores;
+:Visualiza la lista de jugadores;
+
+if (¿Es administrador?) then (No)
+    :No dispone de esa opción;
+    stop
+else (Si)
+:Escribe el nombre del jugador;
+    |Sistema|
+    :Generar el archivo con las estadisticas del jugador;
+    |Usuario|
+    :Descargar estadisticas;
+    stop
+endif
+
+@enduml
+
+
+@startuml Ver datos
+|Usuario|
+start
+
+:Acceder a TransferDAW;
+:Seleccionar categoría a consultar;
+
+|Sistema|
+:Mostrar datos de la categoría seleccionada;
+
+|Usuario|
+:Visualizar la información;
+
+stop
+@enduml
+
+@startuml Añadir información
+|Usuario|
+start
+
+:Acceder a TransferDAW;
+:Seleccionar una categoria;
+:Rellenar formulario;
+
+if (¿Es administrador?) then (No)
+    :No dispone de opción "Añadir";
+    stop
+else (Si)
+:Seleccionar opción "Añadir";
+    |Sistema|
+:Validar datos introducidos;
+
+if (¿Datos válidos?) then (Sí)
+    :Guardar en base de datos;
+    :Mostrar mensaje de éxito;
+else (No)
+    :Mostrar errores;
+endif
+stop
+@enduml
+
+@startuml Modificar información
+|Usuario|
+start
+
+:Acceder a TransferDAW;
+:Seleccionar una categoria;
+
+if (¿Es administrador?) then (No)
+    :No dispone de opción "Modificar";
+    stop
+else (Si)
+:Seleccionar opción "Modificar";
+:Confirma que quiere "Modificar";
+:Modifica los datos;
+    |Sistema|
+:Validar datos introducidos;
+
+if (¿Datos válidos?) then (Sí)
+    :Guardar en base de datos;
+    :Mostrar mensaje de éxito;
+else (No)
+    :Mostrar errores;
+endif
+stop
+@enduml
+
+@startuml Eliminar información
+|Usuario|
+start
+
+:Acceder a TransferDAW;
+:Seleccionar una categoria;
+
+if (¿Es administrador?) then (No)
+    :No dispone de opción "Eliminar";
+    stop
+else (Si)
+:Seleccionar opción "Eliminar";
+:Confirma que quiere "Eliminar";
+    |Sistema|
+:Elimina el registro seleccionado;
+
+|Usuario|
+:Muestra mensaje  y visualiza como se elimina el registo;
+stop
+@enduml
+

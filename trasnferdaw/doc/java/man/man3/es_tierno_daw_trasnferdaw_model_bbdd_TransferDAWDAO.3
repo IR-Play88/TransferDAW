@@ -1,0 +1,159 @@
+.TH "es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO" 3 "Wed Jun 4 2025" "Version 1.0" "TransferDAW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDAO
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Inherited by \fBes\&.tierno\&.daw\&.trasnferdaw\&.model\&.bbdd\&.TransferDAWDAOImp\fP\&.
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "List< \fBTemporada\fP > \fBlistarTemporadas\fP ()  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBJugador\fP jugador)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBJugador\fP jugador)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBeliminarJugador\fP (int idJugador)  throws BBDDException"
+.br
+.ti -1c
+.RI "List< \fBJugador\fP > \fBlistarJugadores\fP ()  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBJugador\fP \fBvisualizarJugador\fP (int idJugador)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBEquipo\fP equipo)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBEquipo\fP equipo)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBeliminarEquipo\fP (int idEquipo)  throws BBDDException"
+.br
+.ti -1c
+.RI "List< \fBEquipo\fP > \fBlistarEquipos\fP ()  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBEquipo\fP \fBvisualizarEquipo\fP (int idEquipo)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBCompeticion\fP competicion)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBCompeticion\fP competicion)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBeliminarCompeticion\fP (int idCompeticion)  throws BBDDException"
+.br
+.ti -1c
+.RI "List< \fBCompeticion\fP > \fBlistarCompeticiones\fP ()  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBCompeticion\fP \fBvisualizarCompeticion\fP (int idCompeticion)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBEquipoCompeticion\fP equipoCompeticion)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBEquipoCompeticion\fP equipoCompeticion)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBeliminarEquipoCompeticion\fP (int equipoId, int competicionId, int temporadaId)  throws BBDDException"
+.br
+.ti -1c
+.RI "List< \fBEquipoCompeticion\fP > \fBlistarEquiposCompeticion\fP ()  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBEquipoCompeticion\fP \fBvisualizarEquipoCompeticion\fP (int equipoId, int competicionId, int temporadaId)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBEstadisticasTemporada\fP estadisticasTemporada)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBEstadisticasTemporada\fP estadisticasTemporada)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBeliminarEstadisticasTemporada\fP (int jugadorId, int temporadaId, int competicionId, int equipoId)  throws BBDDException"
+.br
+.ti -1c
+.RI "List< \fBEstadisticasTemporada\fP > \fBlistarEstadisticasTemporada\fP ()  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBEstadisticasTemporada\fP \fBbuscarEstadisticasTotalesPorJugador\fP (int jugadorId)  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBEstadisticasTemporada\fP \fBbuscarEstadisticasPorTemporada\fP (int jugadorId, int temporadaId)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBTraspaso\fP traspaso)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBTraspaso\fP traspaso)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBeliminarTraspaso\fP (int idTraspaso)  throws BBDDException"
+.br
+.ti -1c
+.RI "List< \fBTraspaso\fP > \fBlistarTraspasos\fP ()  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBTraspaso\fP \fBvisualizarTraspaso\fP (int idTraspaso)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBValorMercadoHistorial\fP valorMercadoHistorial)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBmodificar\fP (\fBValorMercadoHistorial\fP valorMercadoHistorial)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBeliminarValorMercadoHistorial\fP (int idHistorial)  throws BBDDException"
+.br
+.ti -1c
+.RI "List< \fBValorMercadoHistorial\fP > \fBlistarValorMercadoHistorial\fP ()  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBValorMercadoHistorial\fP \fBvisualizarValorMercadoHistorial\fP (int idHistorial)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBinsertar\fP (\fBUsuario\fP usuario)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBeliminar\fP (\fBUsuario\fP usuario)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBobtenerIdPorNombreJugador\fP (String nombre)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBobtenerIdPorNombreEquipo\fP (String nombre)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBobtenerIdPorNombreCompeticion\fP (String nombre)  throws BBDDException"
+.br
+.ti -1c
+.RI "int \fBobtenerIdPorNombreTemporada\fP (String nombre)  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBEstadisticasTemporada\fP \fBobtenerEstadisticaPorId\fP (int jugadorId, int temporadaId, int competicionId, int equipoId)  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBUsuario\fP \fBbuscarUsuarioPorNombre\fP (String nombre)  throws BBDDException"
+.br
+.ti -1c
+.RI "\fBUsuario\fP \fBbuscarUsuarioPorEmail\fP (String email)  throws BBDDException"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La interfaz \fBTransferDAWDAO\fP expone los metodos de acceso a la base de datos\&. \\Iván Rafael Redondo\&. 
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TransferDAW from the source code\&.

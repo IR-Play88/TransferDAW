@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_b_factory" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDBFactory Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.bbdd.TransferDAWDBFactory</primary></indexterm>
+<simplesect>
+    <title>Static Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_b_factory_1a68bc37583c9ffb0d898e7a5423331579"/>static <link linkend="_interfacees_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_a_o">TransferDAWDAO</link> <emphasis role="strong">obtener</emphasis> (<link linkend="_enumes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_database">Database</link> tipo)  throws Exception </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1bbdd_1_1_transfer_d_a_w_d_b_factory">TransferDAWDBFactory</link> crea las posibles BD disponibles. <formalpara><title>Author</title>
+
+<para>Iván Rafael Redondo. </para>
+</formalpara>
+</para>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/bbdd/TransferDAWDBFactory.java</section>
+</section>

@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.entities.Equipo Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Equipo</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a37acb27427bc5365777613fb8e752c57">Equipo</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1ab453a29de46bf86b3726b24c1d52a064">Equipo</link> (String nombre, String ciudad, String pais, int anioFundacion, double presupuesto, String propietario, String estadioNombre, String entrenadorNombre)  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1afae43b5e982218b45b639601ed863bb3">Equipo</link> (Integer idEquipo, String nombre, String ciudad, String pais, int anioFundacion, double presupuesto, String propietario, String estadioNombre, String entrenadorNombre)  throws BBDDException </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a8b89825a29395a3c2fc911047dce9cc6"/>Integer <emphasis role="strong">getIdEquipo</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a2287f5d63cf59edcb99af5693d960627"/>void <emphasis role="strong">setIdEquipo</emphasis> (Integer idEquipo)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a094ba52d3a4f2a1df72e37781c0c0510"/>String <emphasis role="strong">getNombre</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1aef9e56c10b6ad18b87598a27b748db6f"/>void <emphasis role="strong">setNombre</emphasis> (String nombre)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a6dc0a9f5c63827097aee73ff53ef7b72"/>String <emphasis role="strong">getCiudad</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a1720e6ddce82d7bf1360928161496fab"/>void <emphasis role="strong">setCiudad</emphasis> (String ciudad)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1ae5001903ac139c89fc8fcc98a2a17fca"/>String <emphasis role="strong">getPais</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a30ebd5285e17204b542046331d22d1d5"/>void <emphasis role="strong">setPais</emphasis> (String pais)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1aca9c0ccb2f12847dd9a5f950b86d1f21"/>int <emphasis role="strong">getAnioFundacion</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a3ce0ce541ec36b6f92686b3a8e08597c"/>void <emphasis role="strong">setAnioFundacion</emphasis> (int anioFundacion)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a47183faeb6a3c0d2bf7059dea5326695"/>double <emphasis role="strong">getPresupuesto</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a60d50545c7032285d23db8c6c193e7a5"/>void <emphasis role="strong">setPresupuesto</emphasis> (double presupuesto)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a1a26e47e22c39487a0473c0473c9acce"/>String <emphasis role="strong">getPropietario</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1ad1a851db208eb6a149f3c003de9f34d9"/>void <emphasis role="strong">setPropietario</emphasis> (String propietario)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a346c76d7977911082ce1f3ef45fa8e46"/>String <emphasis role="strong">getEstadioNombre</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a987648976d3359c12535a673132aaf9d"/>void <emphasis role="strong">setEstadioNombre</emphasis> (String estadioNombre)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1aaf6fc5069cd9e5b4bfa33570a633cc1a"/>String <emphasis role="strong">getEntrenadorNombre</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a44f4e5719061ffb2be0f1227e7cfce60"/>void <emphasis role="strong">setEntrenadorNombre</emphasis> (String entrenadorNombre)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a4851d4ffd85472a8f144421ad4e6c530"/>String <emphasis role="strong">toString</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link> representa un equipo de TransferDAW. <formalpara><title>Author</title>
+
+<para>Iván Rafael Redondo. </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1a37acb27427bc5365777613fb8e752c57"/><section>
+    <title>Equipo()<computeroutput>[1/3]</computeroutput></title>
+<indexterm><primary>Equipo</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Equipo</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Equipo</primary><secondary>Equipo</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Equipo.Equipo ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor por defecto de la clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo">Equipo</link>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1ab453a29de46bf86b3726b24c1d52a064"/><section>
+    <title>Equipo()<computeroutput>[2/3]</computeroutput></title>
+<indexterm><primary>Equipo</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Equipo</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Equipo</primary><secondary>Equipo</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Equipo.Equipo (String nombre, String ciudad, String pais, int anioFundacion, double presupuesto, String propietario, String estadioNombre, String entrenadorNombre) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa un equipo con sus datos básicos, sin especificar el ID.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>nombre</entry><entry>
+<para>Nombre del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>ciudad</entry><entry>
+<para>Ciudad a la que pertenece el equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pais</entry><entry>
+<para>País del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>anioFundacion</entry><entry>
+<para>Año en que fue fundado el equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>presupuesto</entry><entry>
+<para>Presupuesto económico del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>propietario</entry><entry>
+<para>Nombre del propietario del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>estadioNombre</entry><entry>
+<para>Nombre del estadio del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>entrenadorNombre</entry><entry>
+<para>Nombre del entrenador del equipo </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_1afae43b5e982218b45b639601ed863bb3"/><section>
+    <title>Equipo()<computeroutput>[3/3]</computeroutput></title>
+<indexterm><primary>Equipo</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Equipo</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Equipo</primary><secondary>Equipo</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Equipo.Equipo (Integer idEquipo, String nombre, String ciudad, String pais, int anioFundacion, double presupuesto, String propietario, String estadioNombre, String entrenadorNombre) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa un equipo incluyendo su identificador único.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>idEquipo</entry><entry>
+<para>ID único del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nombre</entry><entry>
+<para>Nombre del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>ciudad</entry><entry>
+<para>Ciudad a la que pertenece el equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pais</entry><entry>
+<para>País del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>anioFundacion</entry><entry>
+<para>Año en que fue fundado el equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>presupuesto</entry><entry>
+<para>Presupuesto económico del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>propietario</entry><entry>
+<para>Nombre del propietario del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>estadioNombre</entry><entry>
+<para>Nombre del estadio del equipo </para>
+</entry>
+                            </row>
+                            <row>
+<entry>entrenadorNombre</entry><entry>
+<para>Nombre del entrenador del equipo </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Equipo.java</section>
+</section>

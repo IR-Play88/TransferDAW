@@ -1,0 +1,490 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario" kind="class" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::entities::Usuario</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a94d224a584491fa94264a6dc2d2292dc" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Usuario.idUsuario</definition>
+        <argsstring></argsstring>
+        <name>idUsuario</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.idUsuario</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="12" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a44b3a82419476f3364f3745396af7774" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Usuario.nombre</definition>
+        <argsstring></argsstring>
+        <name>nombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.nombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="13" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1aab223bc356d741587a33e2d1095b867a" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Usuario.email</definition>
+        <argsstring></argsstring>
+        <name>email</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.email</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="14" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1abcc13480266825a20b92f7f7ecb4d7f8" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Usuario.contrasena</definition>
+        <argsstring></argsstring>
+        <name>contrasena</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.contrasena</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="15" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1ad763b0fb4a7e041ac2fc26281a825344" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Usuario.rol</definition>
+        <argsstring></argsstring>
+        <name>rol</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.rol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="16" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1af696014476adeb64c4fc6d588d693c2f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Usuario.Usuario</definition>
+        <argsstring>()</argsstring>
+        <name>Usuario</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.Usuario</qualifiedname>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario" kindref="compound">Usuario</ref>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="24" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a5c231f9ad23a2ca4275674a5bde9770f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Usuario.Usuario</definition>
+        <argsstring>(String nombre, String email, String contrasena, String rol)</argsstring>
+        <name>Usuario</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.Usuario</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>contrasena</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>rol</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa un usuario con sus datos básicos, sin especificar el ID.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del usuario </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Correo electrónico del usuario </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contrasena</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contraseña del usuario </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rol asignado al usuario (por ejemplo, &quot;admin&quot;, &quot;usuario&quot;) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="37" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a584d8c54a2d0223ad71bc1e5103b85fa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.Usuario.Usuario</definition>
+        <argsstring>(Integer idUsuario, String nombre, String email, String contrasena, String rol)</argsstring>
+        <name>Usuario</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.Usuario</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idUsuario</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>contrasena</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>rol</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa un usuario incluyendo su identificador único.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idUsuario</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID único del usuario </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nombre del usuario </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>email</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Correo electrónico del usuario </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contrasena</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Contraseña del usuario </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>rol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Rol asignado al usuario (por ejemplo, &quot;admin&quot;, &quot;usuario&quot;) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="55" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="55" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1acb322ccc9e38eaaa13d55daa1067de0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.Usuario.getIdUsuario</definition>
+        <argsstring>()</argsstring>
+        <name>getIdUsuario</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.getIdUsuario</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="63" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a7e0c52bdc6aff3018214b700726728ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Usuario.setIdUsuario</definition>
+        <argsstring>(Integer idUsuario)</argsstring>
+        <name>setIdUsuario</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.setIdUsuario</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>idUsuario</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="67" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a1c3a4d878b9ccd9e594e586e0f1f8868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Usuario.getNombre</definition>
+        <argsstring>()</argsstring>
+        <name>getNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.getNombre</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="71" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a9813bb6963491a2c5a1f88dda133f3c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Usuario.setNombre</definition>
+        <argsstring>(String nombre)</argsstring>
+        <name>setNombre</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.setNombre</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="75" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a16735569b90096a2730a4c18dba6b385" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Usuario.getEmail</definition>
+        <argsstring>()</argsstring>
+        <name>getEmail</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.getEmail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="79" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1aabc10dbab6d248153397b396f677c5c4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Usuario.setEmail</definition>
+        <argsstring>(String email)</argsstring>
+        <name>setEmail</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.setEmail</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>email</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="83" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a3c11cfeae26f8d9c5134f3b71b87c322" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Usuario.getRol</definition>
+        <argsstring>()</argsstring>
+        <name>getRol</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.getRol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="87" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1ac84e994f603c8ad76aa718d2035cd6e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Usuario.setRol</definition>
+        <argsstring>(String rol)</argsstring>
+        <name>setRol</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.setRol</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>rol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="91" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a5a6d8baf98249fdde4c1c10449bd86f8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Usuario.getContrasena</definition>
+        <argsstring>()</argsstring>
+        <name>getContrasena</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.getContrasena</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="95" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1abf865002c4e9207bf6a601c5dcb0b310" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Usuario.setContrasena</definition>
+        <argsstring>(String contrasena)</argsstring>
+        <name>setContrasena</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.setContrasena</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>contrasena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="99" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1aafe29174861da16bc74e7d2a6cfae854" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.Usuario.setContrasenaHash</definition>
+        <argsstring>(String contrasena)</argsstring>
+        <name>setContrasenaHash</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.setContrasenaHash</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>contrasena</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="103" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="103" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1ae5df756b3e9cc7f966dd522a698f22e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.Usuario.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.Usuario.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="108" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="108" bodyend="113"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario" kindref="compound">Usuario</ref> representa un usuario de TransferDAW. <simplesect kind="author"><para>Iván Rafael Redondo. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" line="11" column="7" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Usuario.java" bodystart="11" bodyend="114"/>
+    <listofallmembers>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1abcc13480266825a20b92f7f7ecb4d7f8" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>contrasena</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1aab223bc356d741587a33e2d1095b867a" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>email</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a5a6d8baf98249fdde4c1c10449bd86f8" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>getContrasena</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a16735569b90096a2730a4c18dba6b385" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>getEmail</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1acb322ccc9e38eaaa13d55daa1067de0c" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>getIdUsuario</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a1c3a4d878b9ccd9e594e586e0f1f8868" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>getNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a3c11cfeae26f8d9c5134f3b71b87c322" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>getRol</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a94d224a584491fa94264a6dc2d2292dc" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>idUsuario</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a44b3a82419476f3364f3745396af7774" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>nombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1ad763b0fb4a7e041ac2fc26281a825344" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>rol</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1abf865002c4e9207bf6a601c5dcb0b310" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>setContrasena</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1aafe29174861da16bc74e7d2a6cfae854" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>setContrasenaHash</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1aabc10dbab6d248153397b396f677c5c4" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>setEmail</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a7e0c52bdc6aff3018214b700726728ca" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>setIdUsuario</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a9813bb6963491a2c5a1f88dda133f3c4" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>setNombre</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1ac84e994f603c8ad76aa718d2035cd6e5" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>setRol</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1ae5df756b3e9cc7f966dd522a698f22e3" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>toString</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1af696014476adeb64c4fc6d588d693c2f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>Usuario</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a5c231f9ad23a2ca4275674a5bde9770f" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>Usuario</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_usuario_1a584d8c54a2d0223ad71bc1e5103b85fa" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::Usuario</scope><name>Usuario</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

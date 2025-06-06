@@ -1,0 +1,127 @@
+.TH "es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial" 3 "Wed Jun 4 2025" "Version 1.0" "TransferDAW" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+es.tierno.daw.trasnferdaw.model.entities.ValorMercadoHistorial
+.SH SYNOPSIS
+.br
+.PP
+.SS "Public Member Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBValorMercadoHistorial\fP ()  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBValorMercadoHistorial\fP (Integer jugadorId, LocalDate fecha, long valorMercado, String motivo)  throws BBDDException "
+.br
+.ti -1c
+.RI "\fBValorMercadoHistorial\fP (Integer idHistorial, Integer jugadorId, LocalDate fecha, long valorMercado, String motivo)  throws BBDDException "
+.br
+.ti -1c
+.RI "Integer \fBgetIdHistorial\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetIdHistorial\fP (Integer idHistorial)"
+.br
+.ti -1c
+.RI "Integer \fBgetJugadorId\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetJugadorId\fP (Integer jugadorId)"
+.br
+.ti -1c
+.RI "String \fBgetNombreJugador\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetNombreJugador\fP (String nombreJugador)"
+.br
+.ti -1c
+.RI "LocalDate \fBgetFecha\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetFecha\fP (LocalDate fecha)"
+.br
+.ti -1c
+.RI "long \fBgetValorMercado\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetValorMercado\fP (long valorMercado)"
+.br
+.ti -1c
+.RI "String \fBgetMotivo\fP ()"
+.br
+.ti -1c
+.RI "void \fBsetMotivo\fP (String motivo)"
+.br
+.ti -1c
+.RI "String \fBtoString\fP ()"
+.br
+.in -1c
+.SH "Detailed Description"
+.PP 
+La clase ValorMercadpHistorial representa el valor de mercado de los jugadores de TransferDAW\&. 
+.PP
+\fBAuthor\fP
+.RS 4
+Iván Rafael Redondo\&. 
+.RE
+.PP
+
+.SH "Constructor & Destructor Documentation"
+.PP 
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.ValorMercadoHistorial\&.ValorMercadoHistorial () throws \fBBBDDException\fP"
+Constructor por defecto de la clase \fBValorMercadoHistorial\fP\&. Inicializa una nueva instancia sin establecer valores para sus atributos\&.
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.ValorMercadoHistorial\&.ValorMercadoHistorial (Integer jugadorId, LocalDate fecha, long valorMercado, String motivo) throws \fBBBDDException\fP"
+Constructor que inicializa un historial de valor de mercado para un jugador, sin especificar el ID\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIjugadorId\fP ID del jugador 
+.br
+\fIfecha\fP Fecha en la que se registra el valor de mercado 
+.br
+\fIvalorMercado\fP Valor de mercado del jugador en la fecha indicada 
+.br
+\fImotivo\fP Motivo o descripción del cambio en el valor de mercado 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+.SS "es\&.tierno\&.daw\&.trasnferdaw\&.model\&.entities\&.ValorMercadoHistorial\&.ValorMercadoHistorial (Integer idHistorial, Integer jugadorId, LocalDate fecha, long valorMercado, String motivo) throws \fBBBDDException\fP"
+Constructor que inicializa un historial de valor de mercado para un jugador, incluyendo su identificador único\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIidHistorial\fP ID único del historial de valor de mercado 
+.br
+\fIjugadorId\fP ID del jugador 
+.br
+\fIfecha\fP Fecha en la que se registra el valor de mercado 
+.br
+\fIvalorMercado\fP Valor de mercado del jugador en la fecha indicada 
+.br
+\fImotivo\fP Motivo o descripción del cambio en el valor de mercado 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIBBDDException\fP 
+.RE
+.PP
+
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for TransferDAW from the source code\&.

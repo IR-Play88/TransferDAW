@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador" xml:lang="en-US">
+<title>es.tierno.daw.trasnferdaw.model.entities.Jugador Class Reference</title>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Jugador</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a531176be2f4f5638a37910e4c420018e">Jugador</link> ()  throws BBDDException </para>
+</listitem>
+            <listitem><para><link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6c1dee2006bc0ede77611dd3e6014cba">Jugador</link> (String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura, double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre, String seleccionNombre)  throws BBDDException </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1af2e4ef07cfeecbf8ca2cb69ffd05d2a4"/><emphasis role="strong">Jugador</emphasis> (Integer idJugador, String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura, double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre, String seleccionNombre)  throws BBDDException </para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ad514da91c6b37b6424fd023ad4227b4c"/>Integer <emphasis role="strong">getIdJugador</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1af7bc1a55b16054b44c7f731ea7d3e920"/>void <emphasis role="strong">setIdJugador</emphasis> (Integer idJugador)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ae31adc75bc3a80ba1900151a98061a8e"/>String <emphasis role="strong">getNombre</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a0daec1a26293a2218fbf836051a38086"/>void <emphasis role="strong">setNombre</emphasis> (String nombre)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a272352dea03e28860e6ade5be2cc4d12"/>String <emphasis role="strong">getAlias</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2605b468fc5ab3bba8045e75e9e5db61"/>void <emphasis role="strong">setAlias</emphasis> (String alias)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a33d5a9290cfa04eaf8135e0700620a5d"/>LocalDate <emphasis role="strong">getFechaNacimiento</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a9eda2f7de9f55a01da4374aa4dd80c91"/>void <emphasis role="strong">setFechaNacimiento</emphasis> (LocalDate fechaNacimiento)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a9bc073dff998dfbc011998189bd23756"/>String <emphasis role="strong">getNacionalidad</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a55d462c4bde01c87c052658aaddc74c4"/>void <emphasis role="strong">setNacionalidad</emphasis> (String nacionalidad)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6fd0837304727ce27fef7d3c8050e8c4"/>double <emphasis role="strong">getAltura</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2e7c31d20a85bf69004562fb54bc889e"/>void <emphasis role="strong">setAltura</emphasis> (double altura)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a8f40925532491ab5dc3bad89c9344809"/>double <emphasis role="strong">getPeso</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a40b9569b39c523ae8e73ef2000a18856"/>void <emphasis role="strong">setPeso</emphasis> (double peso)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1adf5e19d75fb9a2e7225c7985be320942"/>String <emphasis role="strong">getPieDominante</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a1515d37aa2df7d7ec64e1114d0814418"/>void <emphasis role="strong">setPieDominante</emphasis> (String pieDominante)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a98fddce1bf85bd7b0ad32d029a5a67b5"/>double <emphasis role="strong">getValorMercado</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a585e67f097c1e90d0ef082210dbac148"/>void <emphasis role="strong">setValorMercado</emphasis> (double valorMercado)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a2cc9349e634ca75baa12ca4bb51d4aaa"/>String <emphasis role="strong">getPosicion</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a853d95333f8fd55e6321a4c8a12e963f"/>void <emphasis role="strong">setPosicion</emphasis> (String posicion)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a111377966edd56956dbb9b29d8c555ba"/>String <emphasis role="strong">getRepresentanteNombre</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1ad0854610d0146e85d168c0902e058dd3"/>void <emphasis role="strong">setRepresentanteNombre</emphasis> (String representanteNombre)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a3faf6e7585e10ec43657c2a3ed1e75e1"/>String <emphasis role="strong">getSeleccionNombre</emphasis> ()</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a5aee6d3e7e10756c645048041350382d"/>void <emphasis role="strong">setSeleccionNombre</emphasis> (String seleccionNombre)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6346d8e0153415e52e7db0ac3c5283db"/>String <emphasis role="strong">toString</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>La clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link> representa un jugador de TransferDAW. <formalpara><title>Author</title>
+
+<para>Iván Rafael Redondo. </para>
+</formalpara>
+</para>
+</section>
+<section>
+<title>Constructor &amp; Destructor Documentation</title>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a531176be2f4f5638a37910e4c420018e"/><section>
+    <title>Jugador()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>Jugador</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Jugador</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Jugador</primary><secondary>Jugador</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Jugador.Jugador ( ) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor por defecto de la clase <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador">Jugador</link>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<anchor xml:id="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_jugador_1a6c1dee2006bc0ede77611dd3e6014cba"/><section>
+    <title>Jugador()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>Jugador</primary><secondary>es.tierno.daw.trasnferdaw.model.entities.Jugador</secondary></indexterm>
+<indexterm><primary>es.tierno.daw.trasnferdaw.model.entities.Jugador</primary><secondary>Jugador</secondary></indexterm>
+<para><computeroutput>es.tierno.daw.trasnferdaw.model.entities.Jugador.Jugador (String nombre, String alias, LocalDate fechaNacimiento, String nacionalidad, double altura, double peso, String pieDominante, double valorMercado, String posicion, String representanteNombre, String seleccionNombre) throws <link linkend="_classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception">BBDDException</link></computeroutput></para>
+<para>Constructor que inicializa un jugador con sus datos básicos, sin especificar el ID.</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>nombre</entry><entry>
+<para>Nombre completo del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>alias</entry><entry>
+<para>Apodo o nombre deportivo del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>fechaNacimiento</entry><entry>
+<para>Fecha de nacimiento del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nacionalidad</entry><entry>
+<para>Nacionalidad del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>altura</entry><entry>
+<para>Altura del jugador en metros </para>
+</entry>
+                            </row>
+                            <row>
+<entry>peso</entry><entry>
+<para>Peso del jugador en kilogramos </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pieDominante</entry><entry>
+<para>Pie dominante del jugador (izquierdo, derecho, ambos) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>valorMercado</entry><entry>
+<para>Valor de mercado estimado del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>posicion</entry><entry>
+<para>Posición en la que juega el jugador (por ejemplo, delantero, defensa, etc.) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>representanteNombre</entry><entry>
+<para>Nombre del representante del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>seleccionNombre</entry><entry>
+<para>Nombre de la selección nacional con la que está asociado el jugador (si aplica) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para>Constructor que inicializa un jugador incluyendo su identificador único.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>idJugador</entry><entry>
+<para>ID único del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nombre</entry><entry>
+<para>Nombre completo del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>alias</entry><entry>
+<para>Apodo o nombre deportivo del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>fechaNacimiento</entry><entry>
+<para>Fecha de nacimiento del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>nacionalidad</entry><entry>
+<para>Nacionalidad del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>altura</entry><entry>
+<para>Altura del jugador en metros </para>
+</entry>
+                            </row>
+                            <row>
+<entry>peso</entry><entry>
+<para>Peso del jugador en kilogramos </para>
+</entry>
+                            </row>
+                            <row>
+<entry>pieDominante</entry><entry>
+<para>Pie dominante del jugador (izquierdo, derecho, ambos) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>valorMercado</entry><entry>
+<para>Valor de mercado estimado del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>posicion</entry><entry>
+<para>Posición en la que juega el jugador (por ejemplo, delantero, defensa, etc.) </para>
+</entry>
+                            </row>
+                            <row>
+<entry>representanteNombre</entry><entry>
+<para>Nombre del representante del jugador </para>
+</entry>
+                            </row>
+                            <row>
+<entry>seleccionNombre</entry><entry>
+<para>Nombre de la selección nacional con la que está asociado el jugador (si aplica) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                
+                <formalpara>
+                    <title>
+Exceptions</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>BBDDException</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+<para>
+The documentation for this class was generated from the following file:</para>
+/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/Jugador.java</section>
+</section>

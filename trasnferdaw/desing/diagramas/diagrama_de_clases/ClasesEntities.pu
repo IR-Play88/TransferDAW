@@ -1,0 +1,103 @@
+@startuml entities
+
+class Jugador {
+    - idJugador: Integer
+    - nombre: String
+    - alias: String
+    - fechaNacimiento: LocalDate
+    - nacionalidad: String
+    - altura: double
+    - peso: double
+    - pieDominante: String
+    - valorMercado: double
+    - posicion: String
+    - representanteNombre: String
+    - seleccionNombre: String
+}
+
+class Temporada {
+    - idTemporada: Integer
+    - nombre: String
+    - fechaInicio: LocalDate
+    - fechaFin: LocalDate
+}
+
+class Equipo {
+    - idEquipo: Integer
+    - nombre: String
+    - ciudad: String
+    - pais: String
+    - anioFundacion: int
+    - presupuesto: double
+    - propietario: String
+    - estadioNombre: String
+    - entrenadorNombre: String
+}
+
+class Competicion {
+    - idCompeticion: Integer
+    - nombre: String
+    - pais: String
+    - tipo: String
+    - numeroEquipos: int
+    - anioCreacion: int
+}
+
+class EquipoCompeticion {
+    - equipoId: Integer
+    - nombreEquipo: String
+    - competicionId: Integer
+    - nombreCompeticion: String
+    - temporadaId: Integer
+    - nombreTemporada: String
+    - posicion: String
+}
+
+class EstadisticasTemporada {
+    - jugadorId: Integer
+    - nombreJugador: String
+    - temporadaId: Integer
+    - nombreTemporada: String
+    - competicionId: Integer
+    - nombreCompeticion: String
+    - equipoId: Integer
+    - nombreEquipo: String
+    - partidosJugados: int
+    - goles: int
+    - asistencias: int
+}
+
+class Traspaso {
+    - idTraspaso: Integer
+    - jugadorId: Integer
+    - nombreJugador: String
+    - equipoOrigenId: Integer
+    - nombreEquipoOrigen: String
+    - equipoDestinoId: Integer
+    - nombreEquipoDestino: String
+    - temporadaId: Integer
+    - nombreTemporada: String
+    - fechaTraspaso: LocalDate
+    - cantidad: double
+    - tipo: String
+}
+
+class ValorMercadoHistorial {
+    - idHistorial: Integer
+    - jugadorId: Integer
+    - nombreJUgador: String
+    - fecha: LocalDate
+    - valorMercado: long
+    - motivo: String
+}
+
+class Usuario {
+    - idUsuario: Integer
+    - nombre: String
+    - email: String
+    - contraseña: String
+    - rol: String
+}
+
+
+@enduml

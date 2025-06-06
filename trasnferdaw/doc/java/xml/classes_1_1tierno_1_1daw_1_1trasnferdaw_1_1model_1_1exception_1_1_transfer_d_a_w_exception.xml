@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception" kind="class" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::exception::TransferDAWException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+    <derivedcompoundref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" prot="public" virt="non-virtual">es.tierno.daw.trasnferdaw.model.exception.BBDDException</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception_1a86b6e102a56a6c8fab3959a0c011a165" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.exception.TransferDAWException.TransferDAWException</definition>
+        <argsstring>(String message, Throwable cause)</argsstring>
+        <name>TransferDAWException</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.exception.TransferDAWException.TransferDAWException</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type>Throwable</type>
+          <declname>cause</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/exception/TransferDAWException.java" line="4" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/exception/TransferDAWException.java" bodystart="4" bodyend="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>es.tierno.daw.trasnferdaw.model.exception.TransferDAWException</label>
+        <link refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>es.tierno.daw.trasnferdaw.model.exception.BBDDException</label>
+        <link refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Exception</label>
+      </node>
+      <node id="1">
+        <label>es.tierno.daw.trasnferdaw.model.exception.TransferDAWException</label>
+        <link refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/exception/TransferDAWException.java" line="3" column="7" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/exception/TransferDAWException.java" bodystart="3" bodyend="7"/>
+    <listofallmembers>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_transfer_d_a_w_exception_1a86b6e102a56a6c8fab3959a0c011a165" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::exception::TransferDAWException</scope><name>TransferDAWException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,481 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion" kind="class" language="Java" prot="public">
+    <compoundname>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a7afae55e86a07872bd8ac07d065b34d3" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.equipoId</definition>
+        <argsstring></argsstring>
+        <name>equipoId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.equipoId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="11" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aa17fba2b50e6dd259e6612951a0d4675" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.nombreEquipo</definition>
+        <argsstring></argsstring>
+        <name>nombreEquipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.nombreEquipo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="12" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a68437e394cbf034160477a402cd26508" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.competicionId</definition>
+        <argsstring></argsstring>
+        <name>competicionId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.competicionId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="13" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a7a13b92c6e3516c2d20e78d8aafc4421" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.nombreCompeticion</definition>
+        <argsstring></argsstring>
+        <name>nombreCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.nombreCompeticion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="14" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a2746508dc933738a5542a13cc546ca28" prot="private" static="no" mutable="no">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.temporadaId</definition>
+        <argsstring></argsstring>
+        <name>temporadaId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.temporadaId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="15" column="21" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1ab84768505e04d1545e1f181525ccea58" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.nombreTemporada</definition>
+        <argsstring></argsstring>
+        <name>nombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.nombreTemporada</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="16" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9dc5be27d28330d9299a5c6ac1fde7ed" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.posicion</definition>
+        <argsstring></argsstring>
+        <name>posicion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.posicion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="17" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aac2db0dbd871d0986a7a6243e0de78b3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.EquipoCompeticion</definition>
+        <argsstring>()</argsstring>
+        <name>EquipoCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.EquipoCompeticion</qualifiedname>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de la clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion" kindref="compound">EquipoCompeticion</ref>. Inicializa una nueva instancia sin establecer valores para sus atributos.</para>
+<para><parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="25" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="25" bodyend="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a0b0bab5752eedaaae707d2dc68721b44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.EquipoCompeticion</definition>
+        <argsstring>(Integer equipoId, Integer competicionId, Integer temporadaId, String posicion)</argsstring>
+        <name>EquipoCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.EquipoCompeticion</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>equipoId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>competicionId</declname>
+        </param>
+        <param>
+          <type>Integer</type>
+          <declname>temporadaId</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>posicion</declname>
+        </param>
+        <exceptions> throws <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1exception_1_1_b_b_d_d_exception" kindref="compound">BBDDException</ref> </exceptions>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor que inicializa la relación entre un equipo, una competición y una temporada.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>equipoId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID del equipo </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>competicionId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID de la competición </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>temporadaId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>ID de la temporada </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>posicion</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Posición del equipo en esa competición durante la temporada </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>BBDDException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="39" column="12" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="39" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aea3bcc08ffa3be99601bca1a048a6290" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getEquipoId</definition>
+        <argsstring>()</argsstring>
+        <name>getEquipoId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getEquipoId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="47" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="47" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a55b4b28bb8a9cbda2a1438aa1fe60253" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setEquipoId</definition>
+        <argsstring>(Integer equipoId)</argsstring>
+        <name>setEquipoId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setEquipoId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>equipoId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="51" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a5f0727b527b2aaa5e14cf7e3b0e49bfc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getNombreEquipo</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreEquipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getNombreEquipo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="55" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aee00675334ebcc0449f1fab0f7d522c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setNombreEquipo</definition>
+        <argsstring>(String nombreEquipo)</argsstring>
+        <name>setNombreEquipo</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setNombreEquipo</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreEquipo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="59" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9d6981f7b5a8e856a83a4283081d4d43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getCompeticionId</definition>
+        <argsstring>()</argsstring>
+        <name>getCompeticionId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getCompeticionId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="63" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9473f6db7047c2c6f7287cb0fa108dab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setCompeticionId</definition>
+        <argsstring>(Integer competicionId)</argsstring>
+        <name>setCompeticionId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setCompeticionId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>competicionId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="67" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="67" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a37486191093d500ac0e2c1f624722a3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getNombreCompeticion</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getNombreCompeticion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="71" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="71" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9d644d7dd2cfed8f0f2542467bb8e975" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setNombreCompeticion</definition>
+        <argsstring>(String nombreCompeticion)</argsstring>
+        <name>setNombreCompeticion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setNombreCompeticion</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreCompeticion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="75" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a0a34a830bd2a081ec54d781865458203" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Integer</type>
+        <definition>Integer es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getTemporadaId</definition>
+        <argsstring>()</argsstring>
+        <name>getTemporadaId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getTemporadaId</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="79" column="20" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="79" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a2b0fb06f503e408deebf07a1990ef477" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setTemporadaId</definition>
+        <argsstring>(Integer temporadaId)</argsstring>
+        <name>setTemporadaId</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setTemporadaId</qualifiedname>
+        <param>
+          <type>Integer</type>
+          <declname>temporadaId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="83" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="83" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1ad74f0d01c1965eeb884226fc5179e914" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getNombreTemporada</definition>
+        <argsstring>()</argsstring>
+        <name>getNombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getNombreTemporada</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="87" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="87" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a4f75e1ab61937a2d08d757d1e8a7fcab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setNombreTemporada</definition>
+        <argsstring>(String nombreTemporada)</argsstring>
+        <name>setNombreTemporada</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setNombreTemporada</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>nombreTemporada</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="91" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1adcc3b6b577f99d14a912ded3aa8eda71" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getPosicion</definition>
+        <argsstring>()</argsstring>
+        <name>getPosicion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.getPosicion</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="95" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="95" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1acb6ee737626568d750e2b22a8e320991" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setPosicion</definition>
+        <argsstring>(String posicion)</argsstring>
+        <name>setPosicion</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.setPosicion</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>posicion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="99" column="17" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="99" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1acde8f136d3d6d634db1d172edbbf16c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.toString</definition>
+        <argsstring>()</argsstring>
+        <name>toString</name>
+        <qualifiedname>es.tierno.daw.trasnferdaw.model.entities.EquipoCompeticion.toString</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="104" column="19" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="104" bodyend="111"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>La clase <ref refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion" kindref="compound">EquipoCompeticion</ref> representa un equipo en una competición de TransferDAW. <simplesect kind="author"><para>Iván Rafael Redondo. </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" line="10" column="7" bodyfile="/home/usuario/Desktop/TransferDAW/trasnferdaw/src/main/java/es/tierno/daw/trasnferdaw/model/entities/EquipoCompeticion.java" bodystart="10" bodyend="113"/>
+    <listofallmembers>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a68437e394cbf034160477a402cd26508" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>competicionId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aac2db0dbd871d0986a7a6243e0de78b3" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>EquipoCompeticion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a0b0bab5752eedaaae707d2dc68721b44" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>EquipoCompeticion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a7afae55e86a07872bd8ac07d065b34d3" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>equipoId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9d6981f7b5a8e856a83a4283081d4d43" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>getCompeticionId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aea3bcc08ffa3be99601bca1a048a6290" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>getEquipoId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a37486191093d500ac0e2c1f624722a3d" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>getNombreCompeticion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a5f0727b527b2aaa5e14cf7e3b0e49bfc" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>getNombreEquipo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1ad74f0d01c1965eeb884226fc5179e914" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>getNombreTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1adcc3b6b577f99d14a912ded3aa8eda71" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>getPosicion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a0a34a830bd2a081ec54d781865458203" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>getTemporadaId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a7a13b92c6e3516c2d20e78d8aafc4421" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>nombreCompeticion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aa17fba2b50e6dd259e6612951a0d4675" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>nombreEquipo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1ab84768505e04d1545e1f181525ccea58" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>nombreTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9dc5be27d28330d9299a5c6ac1fde7ed" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>posicion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9473f6db7047c2c6f7287cb0fa108dab" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>setCompeticionId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a55b4b28bb8a9cbda2a1438aa1fe60253" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>setEquipoId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a9d644d7dd2cfed8f0f2542467bb8e975" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>setNombreCompeticion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1aee00675334ebcc0449f1fab0f7d522c3" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>setNombreEquipo</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a4f75e1ab61937a2d08d757d1e8a7fcab" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>setNombreTemporada</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1acb6ee737626568d750e2b22a8e320991" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>setPosicion</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a2b0fb06f503e408deebf07a1990ef477" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>setTemporadaId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1a2746508dc933738a5542a13cc546ca28" prot="private" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>temporadaId</name></member>
+      <member refid="classes_1_1tierno_1_1daw_1_1trasnferdaw_1_1model_1_1entities_1_1_equipo_competicion_1acde8f136d3d6d634db1d172edbbf16c0" prot="public" virt="non-virtual"><scope>es::tierno::daw::trasnferdaw::model::entities::EquipoCompeticion</scope><name>toString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
