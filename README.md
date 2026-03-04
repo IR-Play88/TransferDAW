@@ -26,4 +26,9 @@ Dando como resultado una plataforma moderna, funcional y con potencial real de a
   - CSS
   - JS
 - Tomcat para desplegar la web 
-- Crontab para copias de seguridad 
+- Crontab para copias de seguridad
+
+## Autor
+Nombre: Iván Rafael Redondo
+TFG realizado en: IES Enrique Tierno Galván
+Año: 2025
