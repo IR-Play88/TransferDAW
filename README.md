@@ -15,20 +15,20 @@ Dando como resultado una plataforma moderna, funcional y con potencial real de a
 - Visual Studio Code como IDE.
 - BBDD:
   - ERD plus para diseños
-  - MariaDB para sistema gestor de BBDD 
+  - MariaDB para sistema gestor de BBDD
 - Logica de negocio:
   - JAVA
-  - Javadoc y doxygen para comentarios
+  - Javadoc y Doxygen para comentarios.
   - Maven
   - Servlet 
 - Frontend:
   - JSP
   - CSS
   - JS
-- Tomcat para desplegar la web 
-- Crontab para copias de seguridad
+- Tomcat para desplegar la web.
+- Crontab para copias de seguridad.
 
 ## Autor
-Nombre: Iván Rafael Redondo
-TFG realizado en: IES Enrique Tierno Galván
-Año: 2025
+- Nombre: Iván Rafael Redondo
+- TFG realizado en: IES Enrique Tierno Galván
+- Año: 2025
